@@ -1,0 +1,27 @@
+[
+    {
+        "PLZ": "09456",
+        "ORT": "Annaberg-Buchholz",
+        "E-Mail": "info@kreis-erz.de"
+    },
+    {
+        "PLZ": "09439",
+        "ORT": "Amtsberg",
+        "E-Mail": "info@amtsberg.eu"
+    },
+    {
+        "PLZ": "09456",
+        "ORT": "Annaberg-Buchholz",
+        "E-Mail": "buergerzentrum@annaberg-buchholz.de"
+    },
+    {
+        "PLZ": "08280",
+        "ORT": "Aue",
+        "E-Mail": "stadtinformation@aue.de"
+    },
+    {
+        "PLZ": "09392",
+        "ORT": "Auerbach",
+        "E-Mail": "info@auerbach-erzgebirge.de"
+    }
+]

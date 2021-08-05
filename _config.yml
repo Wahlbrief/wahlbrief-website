@@ -1,0 +1,21 @@
+title: Wahlbrief
+email: contact@wahlbrief.de
+description: >-
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: ""
+url: ""
+twitter_username:
+github_username:
+
+# Build settings
+plugins:
+  - jekyll-multiple-languages-plugin
+
+languages: ["en", "de"]
+defaultLang: en
+exclude_from_localizations: ["assets"]
+default_locale_in_subfolder: false
+
+markdown: kramdown

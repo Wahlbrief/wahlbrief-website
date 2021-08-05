@@ -1,0 +1,106 @@
+// Default colors
+$white: #ffffff;
+$black: #000000;
+
+// Color palettes
+
+$gray-list: (
+  "50": #fafafa,
+  "100": #f4f4f5,
+  "200": #e4e4e7,
+  "300": #d4d4d8,
+  "400": #a1a1aa,
+  "500": #71717a,
+  "600": #52525b,
+  "700": #3f3f46,
+  "800": #27272a,
+  "900": #18181b,
+);
+
+$gray-50: map-get($gray-list, "50");
+$gray-100: map-get($gray-list, "100");
+$gray-200: map-get($gray-list, "200");
+$gray-300: map-get($gray-list, "300");
+$gray-400: map-get($gray-list, "400");
+$gray-500: map-get($gray-list, "500");
+$gray-600: map-get($gray-list, "600");
+$gray-700: map-get($gray-list, "700");
+$gray-800: map-get($gray-list, "800");
+$gray-900: map-get($gray-list, "900");
+
+$bluegray-list: (
+  "50": #f8fafc,
+  "100": #f1f5f9,
+  "200": #e2e8f0,
+  "300": #cbd5e1,
+  "400": #94a3b8,
+  "500": #64748b,
+  "600": #475569,
+  "700": #334155,
+  "800": #1e293b,
+  "900": #0f172a,
+);
+
+$bluegray-50: map-get($bluegray-list, "50");
+$bluegray-100: map-get($bluegray-list, "100");
+$bluegray-200: map-get($bluegray-list, "200");
+$bluegray-300: map-get($bluegray-list, "300");
+$bluegray-400: map-get($bluegray-list, "400");
+$bluegray-500: map-get($bluegray-list, "500");
+$bluegray-600: map-get($bluegray-list, "600");
+$bluegray-700: map-get($bluegray-list, "700");
+$bluegray-800: map-get($bluegray-list, "800");
+$bluegray-900: map-get($bluegray-list, "900");
+
+$cyan-list: (
+  "50": #ecfeff,
+  "100": #cffafe,
+  "200": #a5f3fc,
+  "300": #67e8f9,
+  "400": #22d3ee,
+  "500": #06b6d4,
+  "600": #0891b2,
+  "700": #0e7490,
+  "800": #155e75,
+  "900": #164e63,
+);
+
+$cyan-50: map-get($cyan-list, "50");
+$cyan-100: map-get($cyan-list, "100");
+$cyan-200: map-get($cyan-list, "200");
+$cyan-300: map-get($cyan-list, "300");
+$cyan-400: map-get($cyan-list, "400");
+$cyan-500: map-get($cyan-list, "500");
+$cyan-600: map-get($cyan-list, "600");
+$cyan-700: map-get($cyan-list, "700");
+$cyan-800: map-get($cyan-list, "800");
+$cyan-900: map-get($cyan-list, "900");
+
+// Dynamic background and color classes creation
+
+@each $value in $gray-list {
+  .background-gray-#{nth($value, 1)} {
+    background-color: nth($value, 2) !important;
+  }
+  .color-gray-#{nth($value, 1)} {
+    color: nth($value, 2) !important;
+  }
+}
+
+@each $value in $bluegray-list {
+  .background-bluegray-#{nth($value, 1)} {
+    background-color: nth($value, 2) !important;
+  }
+  .color-bluegray-#{nth($value, 1)} {
+    color: nth($value, 2) !important;
+  }
+}
+
+@each $value in $cyan-list {
+  .background-cyan-#{nth($value, 1)} {
+    background-color: nth($value, 2) !important;
+  }
+  .color-cyan-#{nth($value, 1)} {
+    color: nth($value, 2) !important;
+  }
+}

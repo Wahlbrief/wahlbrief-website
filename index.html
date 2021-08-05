@@ -1,0 +1,543 @@
+---
+layout: default
+---
+
+<div class="container-fluid h-100">
+    <div class="row h-100">
+        <!-- Left side -->
+        <div class="col-md-12 col-lg-6 background-bluegray-100 pattern">
+            <div class="container d-flex flex-column flex-fill h-100 py-5 px-2 px-lg-4">
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <div class="navbar navbar-expand-xl justify-content-between">
+                            <div>
+                                <a href="{{ site.baseurl }}">
+                                    <img src="{{ site.baseurl_root }}/assets/images/wahlbrief.svg" alt="Wahlbrief logo"
+                                        width="200px" height="auto">
+                                </a>
+                            </div>
+
+                            <div class="d-lg-none">
+                                <button class="navbar-toggler" onclick="openNav()"><img
+                                        src="{{ site.baseurl_root }}/assets/images/burger.svg"></button>
+                                {% include nav-mobile.html %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <!-- Intro section -->
+                    <div id="intro" class="col-12">
+                        <h1>{% t left.title %}</h1>
+                        <p class="subtitle">{% t left.subtitle %}</p>
+                    </div>
+
+                    <!-- Big letter preview -->
+                    <div id="bigletter" class="col-xl-11 col-12 letter p-5">
+                        <h4 class="fw-bold mb-4">{% t left.preview %}</h4>
+                        <p>Sehr geehrte Damen und Herren,<br />
+                            hiermit beantrage ich die Zusendung der Briefwahlunterlagen für die Wahl(en)
+                            2021.</p>
+                        <p>
+                            Familienname: <span class="fw-bold" id="surname"></span><br />
+                            Vorname: <span class="fw-bold" id="name"></span><br />
+                            Geburtsdatum: <span class="fw-bold" id="birthday"></span>
+                        </p>
+
+                        <p id="ogaddress">Bitte senden Sie mir die Unterlagen an meine Meldeadresse</p>
+
+                        <p id="newaddress">Bitte senden Sie mir die Unterlagen an folgende Adresse:<br /><br />
+
+                            Street <span class="fw-bold ms-2" id="street"></span><br />
+                            Number <span class="fw-bold ms-2" id="number"></span><br />
+                            ZIP <span class="fw-bold ms-2" id="zip"></span><br />
+                            City <span class="fw-bold ms-2" id="city"></span><br />
+
+                        </p>
+
+                        <p>Mit freundlichen Grüßen,<br />
+                            <span class="fw-bold me-1" id="newsurname"></span>
+                            <span class="fw-bold" id="newname"></span>
+                        </p>
+                    </div>
+
+                    <!-- Mobile view step 2 -->
+                    <div id="address-mobile">
+                        <div class="d-flex mb-3 justify-content-between align-items-center">
+                            <button class="btn back-small" onclick="backtofirstpage();">Back</button>
+                            <h4 class="fw-bold">2/3</h4>
+                        </div>
+                        <h2>{% t right.residence %}</h2>
+                        <p>{% t right.optional %}</p>
+                        <div class="background-white p-4">
+                            <h4 id="muniname" class="fw-bold mb-0"></h4>
+                            <p id="muniemail" class="mb-0 me-1 d-inline-block"></p>
+                            <button class="btn copy p-0 d-inline-block" data-clipboard-target="#muniemail">
+                                <i class="far fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- CTA/Share outro -->
+                    <div id="outro" class="col-12 col-xl-8 outro">
+                        <h1>{% t left.share %}</h1>
+                        <p class="mb-4">{% t left.description %}</p>
+                        <a href="{{ site.facebook }}" target="_blank" rel="noreferrer nopener"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="{{ site.twitter }}" target="_blank" rel="noreferrer nopener"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="{{ site.linkedin }}" target="_blank" rel="noreferrer nopener"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+
+                    <!-- Mobile view step 3 -->
+                    <div id="preview-mobile">
+                        <div class="d-flex mb-3 justify-content-between align-items-center">
+                            <button class="btn back-small" onclick="backtosecondpage();">Back</button>
+                            <h4 class="fw-bold">3/3</h4>
+                        </div>
+                        <h2>{% t right.preview-letter %}</h2>
+                        <p>{% t right.preview-description %}</p>
+                    </div>
+
+                </div>
+
+                <div class="row mt-auto d-none d-lg-block">
+                    <div class="col-12">
+                        {% include nav.html %}
+                        {% include footer.html %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Right side -->
+        <div class="col-md-12 col-lg-6">
+            <div class="container d-flex flex-column h-100 py-5 px-2 px-lg-4">
+                <div class="row">
+                    <!-- Necessary nav for toggling steps from 1 to 3, hidden because we control them via JS -->
+                    <nav class="d-none">
+                        <div class="nav-collapse">
+                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="step-1-tab" data-bs-toggle="pill"
+                                        data-bs-target="#step-1" type="button" role="tab" aria-controls="step-1"
+                                        aria-selected="true">Step 1</button>
+                                </li>
+
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="step-2-tab" data-bs-toggle="pill"
+                                        data-bs-target="#step-2" type="button" role="tab" aria-controls="step-2"
+                                        aria-selected="true">Step 2</button>
+                                </li>
+
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="step-3-tab" data-bs-toggle="pill"
+                                        data-bs-target="#step-3" type="button" role="tab" aria-controls="step-3"
+                                        aria-selected="true">Step 3</button>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <div class="tab-content" id="pills-tabContent">
+
+                        <!-- Step 1 -->
+                        <div class="tab-pane fade show active" id="step-1" role="tabpanel" aria-labelledby="step-1-tab">
+                            <div class="col-12">
+                                <h4 class="fw-bold">1/3</h4>
+                                <h2>{% t right.zip %}</h2>
+                                <p>{% t right.description %}</p>
+                            </div>
+                            <div class="col-xl-8 col-12">
+                                <div class="input-group mb-3">
+                                    <input id="zipcode" type="list" name="zipcode" list="codes" inputmode="numeric"
+                                        oninput="this.value=this.value.slice(0,this.maxLength)" pattern="[0-9]{5}"
+                                        class="form-control mb-3 mb-lg-0" minlength="5" maxlength="5"
+                                        placeholder="{% t right.placeholder %}" aria-label="{% t right.placeholder %}"
+                                        aria-describedby="{% t right.placeholder %}">
+                                    <datalist id="codes">
+                                        {% for item in site.data.test %}
+                                        <option value="{{ item.PLZ }}" data-mun="{{ item.ORT }}"
+                                            data-email="{{ item.E-Mail }}">
+                                            {% endfor %}
+                                    </datalist>
+                                    <div class="input-group-append">
+                                        <button onclick="secondpage();" class="btn btn-new"><i
+                                                class="fas fa-search me-2"></i>{% t
+                                            right.button
+                                            %}</button>
+                                    </div>
+                                </div>
+                                <p class="mb-3" id="validation"></p>
+                                <p>{% t right.tos %}</p>
+                            </div>
+                            <div class="d-flex d-lg-none align-items-center justify-content-between mt-4">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenu3"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        {% for lang in site.languages %}
+                                        {% assign lang_name = site.data[lang].l10n.lang_name %}
+                                        {% if lang == site.lang %}
+                                        {{ lang_name }}
+                                        {% endif %}
+                                        {% endfor %}
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+                                        {% for lang in site.languages %}
+                                        {% assign lang_name = site.data[lang].l10n.lang_name %}
+                                        {% if lang == site.default_lang %}
+                                        <li><a class="dropdown-item" href="{{ page.url }}">{{ lang_name }}</a></li>
+                                        {% else %}
+                                        <li><a class="dropdown-item" href="/{{ lang }}{{ page.url }}">{{ lang_name
+                                                }}</a></li>
+                                        {% endif %}
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                                <p class="mb-0">© {{ 'now' | date: "%Y" }} {% t left.copyright %} - Wahlbrief</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="tab-pane fade" id="step-2" role="tabpanel" aria-labelledby="step-2-tab">
+                            <div class="col-12">
+                                <div id="address-desktop">
+                                    <h4 class="fw-bold">2/3</h4>
+                                    <h2>{% t right.residence %}</h2>
+                                    <p>{% t right.optional %}</p>
+                                    <div class="background-gray-100 p-4">
+                                        <h4 id="munname" class="fw-bold mb-0"></h4>
+                                        <p id="munemail" class="mb-0 me-1 d-inline-block"></p>
+                                        <button class="btn copy p-0 d-inline-block" data-clipboard-target="#munemail">
+                                            <i class="far fa-copy"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <form name="main" class="my-4">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                            <input type="text" class="form-control" id="form-name"
+                                                pattern="[a-zA-Z]{2,}" placeholder="{% t right.firstname %}"
+                                                aria-label="{% t right.firstname %}"
+                                                aria-describedby="{% t right.firstname %}">
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <input type="text" class="form-control" id="form-surname"
+                                                pattern="[a-zA-Z]{2,}" placeholder="{% t right.lastname %}"
+                                                aria-label="{% t right.lastname %}"
+                                                aria-describedby="{% t right.lastname %}">
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-12">
+                                            <input type="text" class="form-control" onfocus="(this.type='date')"
+                                                onchange="this.blur();" id="form-birthday"
+                                                placeholder="{% t right.birthday %}" aria-label="{% t right.birthday %}"
+                                                aria-describedby="{% t right.birthday %}">
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-12">
+                                            <input type="email" class="form-control" id="form-email"
+                                                pattern="(?![_.-])((?![_.-][_.-])[a-z\d_.-]){0,63}[a-z\d]@((?!-)((?!--)[a-z\d-]){0,63}[a-z\d]\.){1,2}([a-z]{2,14}\.)?[a-z]{2,14}"
+                                                placeholder="{% t right.email %}" aria-label="{% t right.email %}"
+                                                aria-describedby="{% t right.email %}">
+                                        </div>
+                                    </div>
+                                    <div class="background-gray-100 py-3 px-4 my-3">
+                                        <div class="d-flex align-items-center justify-content-lg-start">
+                                            <i class="fas fa-info-circle color-cyan-700 me-2"></i>
+                                            <p class="mb-0">{% t right.arrival %}</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-check d-none d-lg-block">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="sameaddress" value="normal" checked>
+                                        <label class="form-check-label" for="sameaddress">
+                                            {% t right.same-address %}
+                                        </label>
+                                    </div>
+                                    <div class="form-check d-none d-lg-block">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="differentaddress" value="different">
+                                        <label class="form-check-label" for="differentaddress">
+                                            {% t right.different-address %}
+                                        </label>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center d-block d-lg-none">
+                                        <p class="mb-0">{% t right.checkbox-address %}</p>
+                                        <div>
+                                            <input class="tgl tgl-light" id="cb1" type="checkbox" />
+                                            <label class="tgl-btn" for="cb1"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-10 d-block d-lg-none">
+                                        <p class="small text-muted">{% t right.checkbox-description %}</p>
+                                    </div>
+                                </form>
+                                <form id="newform">
+                                    <h3 class="mb-3">{% t right.shipping.address %}</h3>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                            <input type="text" class="form-control" id="form-newname"
+                                                pattern="[a-zA-Z]{2,}" placeholder="{% t right.shipping.name %}"
+                                                aria-label="{% t right.shipping.name %}"
+                                                aria-describedby="{% t right.shipping.name %}">
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <input type="text" class="form-control" id="form-newsurname"
+                                                pattern="[a-zA-Z]{2,}" placeholder="{% t right.shipping.surname %}"
+                                                aria-label="{% t right.shipping.surname %}"
+                                                aria-describedby="{% t right.shipping.surname %}">
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-12 col-lg-10 mb-3 mb-lg-0">
+                                            <input type="text" class="form-control" id="form-street"
+                                                pattern="[a-zA-Z]{3,}" placeholder="{% t right.shipping.street %}"
+                                                aria-label="{% t right.shipping.street %}"
+                                                aria-describedby="{% t right.shipping.street %}">
+                                        </div>
+                                        <div class="col-12 col-lg-2">
+                                            <input type="text" class="form-control" id="form-number" pattern="[0-9]"
+                                                placeholder="{% t right.shipping.number %}"
+                                                aria-label="{% t right.shipping.number %}"
+                                                aria-describedby="{% t right.shipping.number %}">
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-12 col-lg-2 mb-3 mb-lg-0">
+                                            <input type="number" oninput="this.value=this.value.slice(0,this.maxLength)"
+                                                class="form-control" id="form-zip" minlength="5" maxlength="5"
+                                                pattern="[0-9]{5}" placeholder="{% t right.shipping.zipcode %}"
+                                                aria-label="{% t right.shipping.zipcode %}"
+                                                aria-describedby="{% t right.shipping.zipcode %}">
+                                        </div>
+                                        <div class="col-12 col-lg-10">
+                                            <input type="text" class="form-control" id="form-city"
+                                                pattern="[a-zA-Z]{2,}" placeholder="{% t right.shipping.city %}"
+                                                aria-label="{% t right.shipping.city %}"
+                                                aria-describedby="{% t right.shipping.city %}">
+                                        </div>
+                                    </div>
+                                </form>
+                                <hr>
+                                <div class="form-check d-none d-lg-flex align-items-center mt-3">
+                                    <input class="form-check-input me-2" type="checkbox" value="" id="emailupdates">
+                                    <label class="form-check-label" for="emailupdates">
+                                        {% t right.email-updates %}
+                                    </label>
+                                </div>
+                                <div
+                                    class="form-check big-chb align-items-center justify-content-between d-lg-none mt-2">
+                                    <label class="form-check-label" for="emailupdatesMobile">
+                                        {% t right.email-updates %}
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="emailupdatesMobile">
+                                </div>
+
+                                <!-- AJAX newsletter subscription -->
+                                <div id="subscription" class="pt-3">
+                                    <script type="text/javascript"
+                                        src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+                                    <div class="col-xl-9 col-12">
+
+                                        <h3>{% t right.subscription.title %}</h3>
+                                        <p>{% t right.subscription.description %}</p>
+
+                                        <form class="pt-2" method="post" name="subscribeform" id="subscribeform"
+                                            enctype="multipart/form-data">
+
+                                            <div class="input-group mb-3">
+                                                <input class="form-control mb-3 mb-lg-0"
+                                                    pattern="(?![_.-])((?![_.-][_.-])[a-z\d_.-]){0,63}[a-z\d]@((?!-)((?!--)[a-z\d-]){0,63}[a-z\d]\.){1,2}([a-z]{2,14}\.)?[a-z]{2,14}"
+                                                    type="email" name="email" value="" placeholder="{% t right.email %}"
+                                                    id="email" size="40">
+
+                                                <input type=hidden name="htmlemail" value="1">
+                                                <input type="hidden" name="list[11]" value="signup" />
+                                                <input type="hidden" name="subscribe" value="subscribe" />
+
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-new"
+                                                        onclick="if (checkform()) {submitForm();} return false;"><i
+                                                            class="fas fa-user-plus me-2"></i>{% t
+                                                        right.subscription.button %}</button>
+                                                </div>
+                                            </div>
+                                            <div id="result"></div>
+                                        </form>
+                                    </div>
+
+                                    <script>
+                                        function checkform() {
+                                            re = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
+                                            if (!re.test(jQuery("#email").val())) {
+                                                jQuery("#result").empty().append("Please enter a valid email address");
+                                                jQuery("#email").focus();
+                                                return false;
+                                            }
+                                            return true;
+                                        }
+                                        function submitForm() {
+                                            successMessage =
+                                                "Thank you for your registration. Please check your email to confirm.";
+                                            data = jQuery("#subscribeform").serialize();
+                                            jQuery.ajax({
+                                                type: "POST",
+                                                data: data,
+                                                url: "https://list.walhbrief.de/lists/?p=subscribe&id=1",
+                                                dataType: "html",
+                                                success: function (data, status, request) {
+                                                    jQuery("#result")
+                                                        .empty()
+                                                        .append(data != "" ? data : successMessage);
+                                                    jQuery("#email").val("");
+                                                },
+                                                error: function (request, status, error) {
+                                                    alert("Sorry, we were unable to process your subscription.");
+                                                },
+                                            });
+                                        }
+                                    </script>
+                                </div>
+                                <!-- AJAX newsletter subscription -->
+
+                                <div class="row mt-4">
+                                    <div class="col-12 d-flex justify-content-end">
+                                        <button class="btn back d-none d-lg-block"
+                                            onclick="backtofirstpage();">Back</button>
+                                        <button class="btn btn-preview" onclick="thirdpage();"><i
+                                                class="fas fa-eye me-2"></i>{% t right.preview
+                                            %}</button>
+                                    </div>
+                                </div>
+                                <div class="d-flex d-lg-none align-items-center justify-content-between mt-4">
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenu4"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            {% for lang in site.languages %}
+                                            {% assign lang_name = site.data[lang].l10n.lang_name %}
+                                            {% if lang == site.lang %}
+                                            {{ lang_name }}
+                                            {% endif %}
+                                            {% endfor %}
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
+                                            {% for lang in site.languages %}
+                                            {% assign lang_name = site.data[lang].l10n.lang_name %}
+                                            {% if lang == site.default_lang %}
+                                            <li><a class="dropdown-item" href="{{ page.url }}">{{ lang_name }}</a></li>
+                                            {% else %}
+                                            <li><a class="dropdown-item" href="/{{ lang }}{{ page.url }}">{{ lang_name
+                                                    }}</a></li>
+                                            {% endif %}
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                    <p class="mb-0">© {{ 'now' | date: "%Y" }} {% t left.copyright %} - Wahlbrief</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="tab-pane fade" id="step-3" role="tabpanel" aria-labelledby="step-3-tab">
+                            <div class="col-12">
+                                <div id="preview">
+                                    <button class="btn back-small mb-4" onclick="backtosecondpage();">Back</button>
+                                    <h4 class="fw-bold">3/3</h4>
+                                    <h2>{% t right.preview-letter %}</h2>
+                                    <p>{% t right.preview-description %}</p>
+                                </div>
+
+                                <div id="final-letter" class="final-letter py-3 px-4">
+                                    <p>Sehr geehrte Damen und Herren,<br />
+                                        hiermit beantrage ich die Zusendung der Briefwahlunterlagen für die Wahl(en)
+                                        2021.</p>
+                                    <p>
+                                        Familienname: <span class="fw-bold" id="final-surname"></span><br />
+                                        Vorname: <span class="fw-bold" id="final-name"></span><br />
+                                        Geburtsdatum: <span class="fw-bold" id="final-birthday"></span>
+                                    </p>
+
+                                    <p id="finalogaddress">Bitte senden Sie mir die Unterlagen an meine Meldeadresse
+                                    </p>
+
+                                    <p id="finalnewaddress">Bitte senden Sie mir die Unterlagen an folgende
+                                        Adresse:<br /><br />
+
+                                        Street <span class="fw-bold ms-2" id="final-street"></span><br />
+                                        Number <span class="fw-bold ms-2" id="final-number"></span><br />
+                                        ZIP <span class="fw-bold ms-2" id="final-zip"></span><br />
+                                        City <span class="fw-bold ms-2" id="final-city"></span>
+
+                                    </p>
+
+                                    <p>Mit freundlichen Grüßen,<br />
+                                        <span class="fw-bold me-1" id="final-newsurname"></span>
+                                        <span class="fw-bold" id="final-newname"></span>
+                                    </p>
+                                </div>
+
+                                <div class="row py-4 justify-content-center align-items-center">
+                                    <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                        <a href="#" class="btn-send" onclick="return getContent(this)">
+                                            <i class="fas fa-paper-plane me-2"></i>Send email
+                                        </a>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <button class="btn-copy copy" data-clipboard-target="#final-letter">
+                                            <i class="fas fa-clone me-2"></i>Copy text
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div id="outro-bottom" class="col-12 col-xl-8 outro">
+                                    <h1>{% t left.share %}</h1>
+                                    <p class="mb-4">{% t left.description %}</p>
+                                    <div class="text-center">
+                                        <a href="{{ site.facebook }}" target="_blank" rel="noreferrer nopener"><i
+                                                class="fab fa-facebook"></i></a>
+                                        <a href="{{ site.twitter }}" target="_blank" rel="noreferrer nopener"><i
+                                                class="fab fa-twitter"></i></a>
+                                        <a href="{{ site.linkedin }}" target="_blank" rel="noreferrer nopener"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                                <div class="d-flex d-lg-none align-items-center justify-content-between mt-4">
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenu5"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            {% for lang in site.languages %}
+                                            {% assign lang_name = site.data[lang].l10n.lang_name %}
+                                            {% if lang == site.lang %}
+                                            {{ lang_name }}
+                                            {% endif %}
+                                            {% endfor %}
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu5">
+                                            {% for lang in site.languages %}
+                                            {% assign lang_name = site.data[lang].l10n.lang_name %}
+                                            {% if lang == site.default_lang %}
+                                            <li><a class="dropdown-item" href="{{ page.url }}">{{ lang_name }}</a></li>
+                                            {% else %}
+                                            <li><a class="dropdown-item" href="/{{ lang }}{{ page.url }}">{{ lang_name
+                                                    }}</a></li>
+                                            {% endif %}
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                    <p class="mb-0">© {{ 'now' | date: "%Y" }} {% t left.copyright %} - Wahlbrief</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+<div class="row justify-content-between align-items-center mb-3">
+    <div class="col-xl-3 col-lg-3 col-12">
+        <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenu" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fas fa-language me-1"></i>
+                {% for lang in site.languages %}
+                {% assign lang_name = site.data[lang].l10n.lang_name %}
+                {% if lang == site.lang %}
+                {{ lang_name }}
+                {% endif %}
+                {% endfor %}
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                {% for lang in site.languages %}
+                {% assign lang_name = site.data[lang].l10n.lang_name %}
+                {% if lang == site.default_lang %}
+                <li><a class="dropdown-item" href="{{ page.url | replace:'index.html','' }}">{{ lang_name }}</a></li>
+                {% else %}
+                <li><a class="dropdown-item" href="/{{ lang }}{{ page.url | replace:'index.html','' }}">{{ lang_name
+                        }}</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-3 col-12 d-flex justify-content-start pages">
+        <a class="me-4" href="{{ site.baseurl }}/faq">{% t left.faq %}</a>
+        <a class="ms-3" href="{{ site.baseurl }}/imprint">{% t left.imprint %}</a>
+    </div>
+    <div class="col-xl-6 col-lg-6 col-12 d-flex justify-content-end">
+        <div class="social-links">
+            <p class="mb-0 me-2 d-inline-block">{% t left.find %}</p>
+            <a href="{{ site.facebook }}" target="_blank" rel="noreferrer nopener"><i class="fab fa-facebook"></i></a>
+            <a href="{{ site.twitter }}" target="_blank" rel="noreferrer nopener"><i class="fab fa-twitter"></i></a>
+            <a href="{{ site.linkedin }}" target="_blank" rel="noreferrer nopener"><i
+                    class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</div>
