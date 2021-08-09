@@ -161,7 +161,7 @@ layout: default
                                     <datalist id="codes">
                                         {% for item in site.data.test %}
                                         <option value="{{ item.PLZ }}" data-mun="{{ item.ORT }}"
-                                            data-email="{{ item.E-Mail }}">
+                                            data-email="{{ item.E-Mail }}">{{ item.PLZ }} {{ item.ORT }}
                                             {% endfor %}
                                     </datalist>
                                     <div class="input-group-append">

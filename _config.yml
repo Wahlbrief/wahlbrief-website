@@ -13,8 +13,8 @@ github_username:
 plugins:
   - jekyll-multiple-languages-plugin
 
-languages: ["en", "de"]
-defaultLang: en
+languages: ["de", "en"]
+defaultLang: de
 exclude_from_localizations: ["assets"]
 default_locale_in_subfolder: false
 
