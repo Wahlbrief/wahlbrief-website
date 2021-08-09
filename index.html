@@ -154,13 +154,13 @@ layout: default
                             <div class="col-xl-8 col-12">
                                 <div class="input-group mb-3">
                                     <input id="zipcode" type="list" name="zipcode" list="codes" inputmode="numeric"
-                                        oninput="this.value=this.value.slice(0,this.maxLength)" pattern="[0-9]{5}"
-                                        class="form-control mb-3 mb-lg-0" minlength="5" maxlength="5"
+                                        oninput="this.value=this.value.slice(0,this.maxLength)"
+                                        class="form-control mb-3 mb-lg-0" minlength="5" maxlength="100"
                                         placeholder="{% t right.placeholder %}" aria-label="{% t right.placeholder %}"
                                         aria-describedby="{% t right.placeholder %}">
                                     <datalist id="codes">
                                         {% for item in site.data.test %}
-                                        <option value="{{ item.PLZ }}" data-mun="{{ item.ORT }}"
+                                        <option value="{{ item.PLZ }} {{ item.ORT }}" data-mun="{{ item.ORT }}"
                                             data-email="{{ item.E-Mail }}">{{ item.PLZ }} {{ item.ORT }}
                                             {% endfor %}
                                     </datalist>
