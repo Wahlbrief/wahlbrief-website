@@ -57,8 +57,8 @@ layout: default
                         </p>
 
                         <p>Mit freundlichen Grüßen,<br />
-                            <span class="fw-bold me-1" id="newsurname"></span>
-                            <span class="fw-bold" id="newname"></span>
+                            <span id="id-name"></span>
+                            <span id="id-surname"></span>
                         </p>
                     </div>
 
@@ -205,6 +205,8 @@ layout: default
                         <div class="tab-pane fade" id="step-2" role="tabpanel" aria-labelledby="step-2-tab">
                             <div class="col-12">
                                 <div id="address-desktop">
+                                    <button class="btn back-small mb-4 d-none d-lg-block"
+                                        onclick="backtofirstpage();">Back</button>
                                     <h4 class="fw-bold">2/3</h4>
                                     <h2>{% t right.residence %}</h2>
                                     <p>{% t right.optional %}</p>
@@ -216,7 +218,7 @@ layout: default
                                         </button>
                                     </div>
                                 </div>
-                                <form name="main" class="my-4">
+                                <form name="main" class="mt-4">
                                     <div class="row">
                                         <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                             <input type="text" class="form-control" id="form-name"
@@ -239,14 +241,80 @@ layout: default
                                                 aria-describedby="{% t right.birthday %}">
                                         </div>
                                     </div>
+
                                     <div class="row mt-3">
-                                        <div class="col-12">
-                                            <input type="email" class="form-control" id="form-email"
-                                                pattern="(?![_.-])((?![_.-][_.-])[a-z\d_.-]){0,63}[a-z\d]@((?!-)((?!--)[a-z\d-]){0,63}[a-z\d]\.){1,2}([a-z]{2,14}\.)?[a-z]{2,14}"
-                                                placeholder="{% t right.email %}" aria-label="{% t right.email %}"
-                                                aria-describedby="{% t right.email %}">
-                                        </div>
+                                        <script type="text/javascript"
+                                            src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+                                        <form method="post" name="subscribeform" id="subscribeform"
+                                            enctype="multipart/form-data">
+
+                                            <div class="col-12">
+                                                <input type="email" name="email" class="form-control" id="email"
+                                                    pattern="(?![_.-])((?![_.-][_.-])[a-z\d_.-]){0,63}[a-z\d]@((?!-)((?!--)[a-z\d-]){0,63}[a-z\d]\.){1,2}([a-z]{2,14}\.)?[a-z]{2,14}"
+                                                    placeholder="{% t right.email %}" aria-label="{% t right.email %}"
+                                                    aria-describedby="{% t right.email %}">
+
+                                                <input type=hidden name="htmlemail" value="1">
+                                                <input type="hidden" name="list[11]" value="signup" />
+                                                <input type="hidden" name="subscribe" value="subscribe" />
+                                            </div>
+
+                                            <div id="result"></div>
+                                        </form>
                                     </div>
+
+                                    <!-- AJAX newsletter subscription -->
+                                    <script>
+                                        function checkform() {
+                                            re = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
+                                            if (!re.test(jQuery("#email").val())) {
+                                                jQuery("#result").empty().append("Please enter a valid email address");
+                                                jQuery("#email").focus();
+                                                return false;
+                                            }
+                                            return true;
+                                        }
+                                        function submitForm() {
+                                            successMessage =
+                                                "Thank you for your registration. Please check your email to confirm.";
+                                            data = jQuery("#subscribeform").serialize();
+                                            jQuery.ajax({
+                                                type: "POST",
+                                                data: data,
+                                                url: "https://list.walhbrief.de/lists/?p=subscribe&id=1",
+                                                dataType: "html",
+                                                success: function (data, status, request) {
+                                                    jQuery("#result")
+                                                        .empty()
+                                                        .append(data != "" ? data : successMessage);
+                                                },
+                                                error: function (request, status, error) {
+                                                    alert("Sorry, we were unable to process your subscription.");
+                                                },
+                                            });
+                                        }
+                                    </script>
+                                    <!-- AJAX newsletter subscription -->
+
+                                    <div class="form-check mt-2 d-none d-lg-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            onchange="if (checkform()) {submitForm();} return false;" value=""
+                                            id="emailupdates">
+                                        <label class="form-check-label" for="emailupdates">
+                                            {% t right.email-updates %}
+                                        </label>
+                                    </div>
+                                    <div
+                                        class="form-check big-chb align-items-center justify-content-between d-lg-none mt-2">
+                                        <label class="form-check-label" for="emailupdatesMobile">
+                                            {% t right.email-updates %}
+                                        </label>
+                                        <input class="form-check-input" type="checkbox"
+                                            onchange="if (checkform()) {submitForm();} return false;" value=""
+                                            id="emailupdatesMobile">
+                                    </div>
+
                                     <div class="background-gray-100 py-3 px-4 my-3">
                                         <div class="d-flex align-items-center justify-content-lg-start">
                                             <i class="fas fa-info-circle color-cyan-700 me-2"></i>
@@ -278,7 +346,7 @@ layout: default
                                         <p class="small text-muted">{% t right.checkbox-description %}</p>
                                     </div>
                                 </form>
-                                <form id="newform">
+                                <form id="newform" class="mt-3">
                                     <h3 class="mb-3">{% t right.shipping.address %}</h3>
                                     <div class="row">
                                         <div class="col-12 col-lg-6 mb-3 mb-lg-0">
@@ -302,7 +370,7 @@ layout: default
                                                 aria-describedby="{% t right.shipping.street %}">
                                         </div>
                                         <div class="col-12 col-lg-2">
-                                            <input type="text" class="form-control" id="form-number" pattern="[0-9]"
+                                            <input type="text" class="form-control" id="form-number" pattern="[0-9]*"
                                                 placeholder="{% t right.shipping.number %}"
                                                 aria-label="{% t right.shipping.number %}"
                                                 aria-describedby="{% t right.shipping.number %}">
@@ -324,95 +392,12 @@ layout: default
                                         </div>
                                     </div>
                                 </form>
-                                <hr>
-                                <div class="form-check d-none d-lg-flex align-items-center mt-3">
-                                    <input class="form-check-input me-2" type="checkbox" value="" id="emailupdates">
-                                    <label class="form-check-label" for="emailupdates">
-                                        {% t right.email-updates %}
-                                    </label>
-                                </div>
-                                <div
-                                    class="form-check big-chb align-items-center justify-content-between d-lg-none mt-2">
-                                    <label class="form-check-label" for="emailupdatesMobile">
-                                        {% t right.email-updates %}
-                                    </label>
-                                    <input class="form-check-input" type="checkbox" value="" id="emailupdatesMobile">
-                                </div>
-
-                                <!-- AJAX newsletter subscription -->
-                                <div id="subscription" class="pt-3">
-                                    <script type="text/javascript"
-                                        src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-
-                                    <div class="col-xl-9 col-12">
-
-                                        <h3>{% t right.subscription.title %}</h3>
-                                        <p>{% t right.subscription.description %}</p>
-
-                                        <form class="pt-2" method="post" name="subscribeform" id="subscribeform"
-                                            enctype="multipart/form-data">
-
-                                            <div class="input-group mb-3">
-                                                <input class="form-control mb-3 mb-lg-0"
-                                                    pattern="(?![_.-])((?![_.-][_.-])[a-z\d_.-]){0,63}[a-z\d]@((?!-)((?!--)[a-z\d-]){0,63}[a-z\d]\.){1,2}([a-z]{2,14}\.)?[a-z]{2,14}"
-                                                    type="email" name="email" value="" placeholder="{% t right.email %}"
-                                                    id="email" size="40">
-
-                                                <input type=hidden name="htmlemail" value="1">
-                                                <input type="hidden" name="list[11]" value="signup" />
-                                                <input type="hidden" name="subscribe" value="subscribe" />
-
-                                                <div class="input-group-append">
-                                                    <button class="btn btn-new"
-                                                        onclick="if (checkform()) {submitForm();} return false;"><i
-                                                            class="fas fa-user-plus me-2"></i>{% t
-                                                        right.subscription.button %}</button>
-                                                </div>
-                                            </div>
-                                            <div id="result"></div>
-                                        </form>
-                                    </div>
-
-                                    <script>
-                                        function checkform() {
-                                            re = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
-                                            if (!re.test(jQuery("#email").val())) {
-                                                jQuery("#result").empty().append("Please enter a valid email address");
-                                                jQuery("#email").focus();
-                                                return false;
-                                            }
-                                            return true;
-                                        }
-                                        function submitForm() {
-                                            successMessage =
-                                                "Thank you for your registration. Please check your email to confirm.";
-                                            data = jQuery("#subscribeform").serialize();
-                                            jQuery.ajax({
-                                                type: "POST",
-                                                data: data,
-                                                url: "https://list.walhbrief.de/lists/?p=subscribe&id=1",
-                                                dataType: "html",
-                                                success: function (data, status, request) {
-                                                    jQuery("#result")
-                                                        .empty()
-                                                        .append(data != "" ? data : successMessage);
-                                                    jQuery("#email").val("");
-                                                },
-                                                error: function (request, status, error) {
-                                                    alert("Sorry, we were unable to process your subscription.");
-                                                },
-                                            });
-                                        }
-                                    </script>
-                                </div>
-                                <!-- AJAX newsletter subscription -->
 
                                 <div class="row mt-4">
                                     <div class="col-12 d-flex justify-content-end">
-                                        <button class="btn back d-none d-lg-block"
-                                            onclick="backtofirstpage();">Back</button>
                                         <button class="btn btn-preview" onclick="thirdpage();"><i
-                                                class="fas fa-eye me-2"></i>{% t right.preview
+                                                class="fas fa-eye me-2"></i>{%
+                                            t right.preview
                                             %}</button>
                                     </div>
                                 </div>
@@ -454,6 +439,14 @@ layout: default
                                     <p>{% t right.preview-description %}</p>
                                 </div>
 
+                                <div class="background-gray-100 p-4 mb-3">
+                                    <h4 id="final-munname" class="fw-bold mb-0"></h4>
+                                    <p id="final-munemail" class="mb-0 me-1 d-inline-block"></p>
+                                    <button class="btn copy p-0 d-inline-block" data-clipboard-target="#final-munemail">
+                                        <i class="far fa-copy"></i>
+                                    </button>
+                                </div>
+
                                 <div id="final-letter" class="final-letter py-3 px-4">
                                     <p>Sehr geehrte Damen und Herren,<br />
                                         hiermit beantrage ich die Zusendung der Briefwahlunterlagen für die Wahl(en)
@@ -478,8 +471,8 @@ layout: default
                                     </p>
 
                                     <p>Mit freundlichen Grüßen,<br />
-                                        <span class="fw-bold me-1" id="final-newsurname"></span>
-                                        <span class="fw-bold" id="final-newname"></span>
+                                        <span class="fw-bold me-1" id="final-id-name"></span>
+                                        <span class="fw-bold" id="final-id-surname"></span>
                                     </p>
                                 </div>
 

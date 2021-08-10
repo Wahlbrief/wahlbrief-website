@@ -5,6 +5,7 @@
                 <div class="dropdown">
                     <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
                         aria-expanded="false">
+                        <i class="fas fa-globe me-1"></i>
                         {% for lang in site.languages %}
                         {% assign lang_name = site.data[lang].l10n.lang_name %}
                         {% if lang == site.lang %}
@@ -38,7 +39,6 @@
 
     <div class="overlay-footer">
         <div class="social-links">
-            <p class="mb-3 d-block">{% t left.find %}</p>
             <a href="{{ site.facebook }}" target="_blank" rel="noreferrer nopener"><i class="fab fa-facebook-f"></i></a>
             <a href="{{ site.twitter }}" target="_blank" rel="noreferrer nopener"><i class="fab fa-twitter"></i></a>
             <a href="{{ site.linkedin }}" target="_blank" rel="noreferrer nopener"><i

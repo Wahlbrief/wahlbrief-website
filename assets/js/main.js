@@ -9,7 +9,7 @@ const el5 = document.getElementById("preview-mobile");
 const el6 = document.getElementById("preview");
 const el7 = document.getElementById("outro-bottom");
 
-let rad = document.main.flexRadioDefault;
+let rad = document.getElementsByName("flexRadioDefault");
 let newform = document.getElementById("newform");
 let address = document.getElementById("ogaddress");
 let newaddress = document.getElementById("newaddress");
@@ -20,9 +20,9 @@ const munname = document.getElementById("munname");
 const munemail = document.getElementById("munemail");
 const muniname = document.getElementById("muniname");
 const muniemail = document.getElementById("muniemail");
+const finalmuniname = document.getElementById("final-munname");
+const finalmuniemail = document.getElementById("final-munemail");
 const cb = document.getElementById("cb1");
-const cbnews = document.getElementById("emailupdates");
-const cbnewsmobile = document.getElementById("emailupdatesMobile");
 
 for (var i = 0; i < rad.length; i++) {
   rad[i].onclick = function () {
@@ -42,24 +42,6 @@ for (var i = 0; i < rad.length; i++) {
   };
 }
 
-cbnews.addEventListener("change", (event) => {
-  const result = cbnews.checked;
-  if (result == true) {
-    newsletter.style.display = "block";
-  } else if (result == false) {
-    newsletter.style.display = "none";
-  }
-});
-
-cbnewsmobile.addEventListener("change", (event) => {
-  const result = cbnewsmobile.checked;
-  if (result == true) {
-    newsletter.style.display = "block";
-  } else if (result == false) {
-    newsletter.style.display = "none";
-  }
-});
-
 cb.addEventListener("change", (event) => {
   const result = cb.checked;
   if (result == true) {
@@ -77,25 +59,19 @@ cb.addEventListener("change", (event) => {
   }
 });
 
-const checks = [
-  "name",
-  "surname",
-  "birthday",
-  "newname",
-  "newsurname",
-  "street",
-  "number",
-  "zip",
-  "city",
-];
+const checks = ["name", "surname", "street", "number", "zip", "city"];
 
 checks.forEach((check) => {
   const spans = document.getElementById(`${check}`);
   const form = document.getElementById(`form-${check}`);
   const final = document.getElementById(`final-${check}`);
+  const identity = document.getElementById(`id-${check}`);
+  const finalid = document.getElementById(`final-id-${check}`);
 
   form.addEventListener("input", (e) => {
     spans.textContent = e.target.value;
+    identity.textContent = e.target.value;
+    finalid.textContent = e.target.value;
     final.textContent = e.target.value;
   });
 });
@@ -124,30 +100,12 @@ function is_valid_datalist_value(idDataList, inputValue) {
     munemail.textContent = option.getAttribute("data-email");
     muniname.textContent = option.getAttribute("data-mun");
     muniemail.textContent = option.getAttribute("data-email");
+    finalmuniname.textContent = option.getAttribute("data-mun");
+    finalmuniemail.textContent = option.getAttribute("data-email");
     return option.value.length > 0;
   }
   return false;
 }
-
-document.getElementById("zipcode").addEventListener("click", function (e) {
-  let input = e.target,
-    list = input.getAttribute("list");
-
-  if (list) {
-    input.setAttribute("data-list", list);
-    input.removeAttribute("list");
-  }
-});
-
-document.getElementById("zipcode").addEventListener("keydown", function (e) {
-  let input = e.target,
-    list = input.getAttribute("data-list");
-
-  if (list) {
-    input.setAttribute("list", list);
-    input.removeAttribute("data-list");
-  }
-});
 
 function secondpage() {
   let SecondTab = document.querySelector("#step-2-tab");
