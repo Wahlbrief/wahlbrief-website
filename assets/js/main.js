@@ -1,3 +1,5 @@
+const zips = [];
+
 const mql = window.matchMedia("(max-width: 768px)");
 const mqlr = mql.matches;
 
@@ -92,25 +94,26 @@ function scrollTop() {
 }
 
 function is_valid_datalist_value(idDataList, inputValue) {
-  let option = document.querySelector(
-    "#" + idDataList + " option[value='" + inputValue + "']"
-  );
-  if (option != null) {
-    munname.textContent = option.getAttribute("data-mun");
-    munemail.textContent = option.getAttribute("data-email");
-    muniname.textContent = option.getAttribute("data-mun");
-    muniemail.textContent = option.getAttribute("data-email");
-    finalmuniname.textContent = option.getAttribute("data-mun");
-    finalmuniemail.textContent = option.getAttribute("data-email");
-    return option.value.length > 0;
+  const filtered = zips.filter(({ PLZ }) => PLZ.toString() == inputValue);
+
+  if (filtered.length > 0) {
+    const data = filtered[0];
+    munname.textContent = data.ORT;
+    munemail.textContent = data["E-Mail"];
+    muniname.textContent = data.ORT;
+    muniemail.textContent = data["E-Mail"];
+    finalmuniname.textContent = data.ORT;
+    finalmuniemail.textContent = data["E-Mail"];
+    return true;
   }
+
   return false;
 }
 
 function secondpage() {
   let SecondTab = document.querySelector("#step-2-tab");
   let tab = new bootstrap.Tab(SecondTab);
-  let x = document.getElementById("zipcode").value;
+  let x = document.getElementById("zipcode").value.split(",")[0].trim();
   let y = document.getElementById("zipcode");
   let z = document.getElementById("validation");
 
@@ -120,9 +123,7 @@ function secondpage() {
       z.textContent = "";
     }, 3500);
     return false;
-  } else if (
-    is_valid_datalist_value("codes", document.getElementById("zipcode").value)
-  ) {
+  } else if (is_valid_datalist_value("codes", x)) {
     tab.show();
     scrollTop();
 
@@ -279,4 +280,99 @@ function getContent(link) {
 var clipboard = new ClipboardJS(".copy");
 clipboard.on("success", function (e) {
   e.clearSelection();
+});
+
+(async () => {
+  const endpoint = "/assets/test.json";
+  const result = await fetch(endpoint).then((blob) => blob.json());
+
+  zips.push(...result);
+})();
+
+function findMatches(keyword, zips) {
+  return zips.filter((place) => {
+    const regex = new RegExp(keyword, "gi");
+    return place.PLZ.match(regex);
+  });
+}
+
+const searchInput = document.querySelector("#zipcode");
+const suggestions = document.querySelector("#autocomplete-list");
+
+let active = -1;
+
+function setFocus() {
+  const children = Array.from(suggestions.children);
+  const len = children.length;
+  if (len == 0) {
+    return;
+  }
+
+  if (active >= 0) {
+    active %= len;
+
+    children.forEach((child) => child.classList.remove("autocomplete-active"));
+    children[active].classList.add("autocomplete-active");
+  }
+}
+
+function onEnter() {
+  const children = Array.from(suggestions.children);
+  const len = children.length;
+  if (len == 0) {
+    return;
+  }
+
+  if (active >= 0) {
+    active %= len;
+
+    children[active].click();
+  }
+}
+
+searchInput.addEventListener("keyup", (e) => {
+  switch (e.keyCode) {
+    case 40:
+      active++;
+      setFocus();
+      return;
+
+    case 38:
+      active--;
+      setFocus();
+      return;
+
+    case 13:
+      onEnter();
+      return;
+  }
+
+  active = -1;
+
+  if (!e.target.value) {
+    suggestions.innerHTML = "";
+    return;
+  }
+
+  const matchArray = findMatches(e.target.value, zips);
+  const divs = matchArray.map((place) => {
+    const div = document.createElement("div");
+    const nameSpan = document.createElement("span");
+    nameSpan.classList.add("name");
+
+    const val = `${place.PLZ}, ${place.ORT}`;
+
+    nameSpan.innerText = val;
+    div.appendChild(nameSpan);
+
+    div.addEventListener("click", () => {
+      searchInput.value = val;
+      suggestions.innerHTML = "";
+    });
+
+    return div;
+  });
+
+  suggestions.innerHTML = "";
+  suggestions.append(...divs);
 });

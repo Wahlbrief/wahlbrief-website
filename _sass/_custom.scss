@@ -468,6 +468,54 @@ input[type="number"] {
   color: #cc3333;
 }
 
+.autocomplete {
+  position: relative;
+
+  &-items {
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    & div {
+      padding: 10px;
+      cursor: pointer;
+      color: $gray-900;
+
+      &:hover {
+        background-color: $bluegray-300 !important;
+      }
+
+      &:nth-child(odd) {
+        background-color: $bluegray-100;
+      }
+
+      &:nth-child(even) {
+        background-color: $bluegray-200;
+      }
+    }
+  }
+
+  &-active {
+    background-color: $bluegray-300 !important;
+    color: $white;
+  }
+}
+
+.highlight {
+  background-color: #fbc93d !important;
+}
+
+#id-street,
+#id-number,
+#id-zip,
+#id-city,
+#final-id-street,
+#final-id-number,
+#final-id-zip,
+#final-id-city {
+  display: none;
+}
+
 input[type="search"],
 input[type="text"],
 input[type="email"],
