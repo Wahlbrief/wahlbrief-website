@@ -156,14 +156,14 @@ layout: default
                                 <p>{% t right.description %}</p>
                             </div>
                             <div class="col-xl-8 col-12">
-                                <div class="input-group autocomplete mb-2">
+                                <div class="input-group autocomplete mb-0 mb-lg-2">
                                     <input id="zipcode" type="text" name="zipcode" inputmode="numeric"
                                         oninput="this.value=this.value.slice(0,this.maxLength)"
                                         class="form-control mb-3 mb-lg-0" minlength="5" maxlength="100"
                                         placeholder="{% t right.placeholder %}" aria-label="{% t right.placeholder %}"
                                         aria-describedby="{% t right.placeholder %}">
 
-                                    <div class="input-group-append">
+                                    <div class="input-group-append d-none d-lg-inline-block">
                                         <button onclick="secondpage();" class="btn btn-new"><i
                                                 class="fas fa-search me-2"></i>{% t
                                             right.button
@@ -171,8 +171,13 @@ layout: default
                                     </div>
                                 </div>
 
-                                <div class="autocomplete-items" id="autocomplete-list">
+                                <div class="autocomplete-items mb-2" id="autocomplete-list">
                                 </div>
+
+                                <button onclick="secondpage();" class="btn btn-new d-block d-lg-none"><i
+                                        class="fas fa-search me-2"></i>{% t
+                                    right.button
+                                    %}</button>
 
                                 <p class="mb-3" id="validation"></p>
                                 <p>{% t right.tos %}</p>
