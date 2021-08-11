@@ -460,7 +460,7 @@ input[type="number"] {
 }
 
 .form-control:focus {
-  box-shadow: 0 0 0 0.1rem #0e7490;
+  box-shadow: inset 0 0 0 0.15rem #0e7490;
 }
 
 .form-check-input:checked {
@@ -469,7 +469,7 @@ input[type="number"] {
 }
 
 .form-control:invalid {
-  box-shadow: 0 0 0 0.1rem #cc3333;
+  box-shadow: inset 0 0 0 0.15rem #cc3333;
 }
 
 #validation {
