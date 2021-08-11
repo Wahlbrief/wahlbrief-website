@@ -5,7 +5,7 @@
     throw new Error("window is undefined");
   }
 
-  var _hash = "!";
+  var _hash = "";
   var noBackPlease = function () {
     global.location.href += "#";
 
@@ -71,6 +71,7 @@ for (var i = 0; i < rad.length; i++) {
   rad[i].onclick = function () {
     if (this.value == "different") {
       newform.style.display = "block";
+      newform.scrollIntoView();
       address.style.display = "none";
       finaladdress.style.display = "none";
       newaddress.style.display = "inline-block";
@@ -91,6 +92,7 @@ cb.addEventListener("change", (event) => {
   const result = cb.checked;
   if (result == true) {
     newform.style.display = "block";
+    newform.scrollIntoView();
     address.style.display = "none";
     finaladdress.style.display = "none";
     newaddress.style.display = "inline-block";
