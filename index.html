@@ -267,16 +267,16 @@ layout: default
                                         <div class="col-4 col-lg-4">
                                             <input type="text" class="form-control" id="form-day"
                                                 onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
-                                                pattern="[0-3][0-9]" inputmode="numeric" minlength="1" maxlength="2"
-                                                placeholder="{% t right.day %}" aria-label="{% t right.day %}"
-                                                aria-describedby="{% t right.day %}">
+                                                pattern="(0[1-9]|[12]\d|3[01])" inputmode="numeric" minlength="1"
+                                                maxlength="2" placeholder="{% t right.day %}"
+                                                aria-label="{% t right.day %}" aria-describedby="{% t right.day %}">
                                         </div>
                                         <div class="col-4 col-lg-4">
                                             <input type="text" class="form-control" id="form-month"
                                                 onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
-                                                pattern="[0-1][0-9]" inputmode="numeric" minlength="1" maxlength="2"
-                                                placeholder="{% t right.month %}" aria-label="{% t right.month %}"
-                                                aria-describedby="{% t right.month %}">
+                                                pattern="(0[1-9]|1[012])" inputmode="numeric" minlength="1"
+                                                maxlength="2" placeholder="{% t right.month %}"
+                                                aria-label="{% t right.month %}" aria-describedby="{% t right.month %}">
                                         </div>
                                         <div class="col-4 col-lg-4">
                                             <input type="text" class="form-control" id="form-year"
