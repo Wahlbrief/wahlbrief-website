@@ -251,14 +251,14 @@ layout: default
                                     <div class="row">
                                         <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                             <input type="text" class="form-control" id="form-name"
-                                                pattern="^[a-zA-Z0-9-,.\säöüÄÖÜ]{2,}$"
+                                                pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
                                                 placeholder="{% t right.firstname %}"
                                                 aria-label="{% t right.firstname %}"
                                                 aria-describedby="{% t right.firstname %}">
                                         </div>
                                         <div class="col-12 col-lg-6">
                                             <input type="text" class="form-control" id="form-surname"
-                                                pattern="^[a-zA-Z0-9-,.\säöüÄÖÜ]{2,}$"
+                                                pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
                                                 placeholder="{% t right.lastname %}" aria-label="{% t right.lastname %}"
                                                 aria-describedby="{% t right.lastname %}">
                                         </div>
@@ -275,7 +275,8 @@ layout: default
                                     <div class="row mt-3">
                                         <div class="col-12 col-lg-10 mb-3 mb-lg-0">
                                             <input type="text" class="form-control" id="form-street"
-                                                pattern="[a-z A-Z]{3,}" placeholder="{% t right.shipping.street %}"
+                                                pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
+                                                placeholder="{% t right.shipping.street %}"
                                                 aria-label="{% t right.shipping.street %}"
                                                 aria-describedby="{% t right.shipping.street %}">
                                         </div>
@@ -296,7 +297,8 @@ layout: default
                                         </div>
                                         <div class="col-12 col-lg-10">
                                             <input type="text" class="form-control" id="form-city"
-                                                pattern="[a-z A-Z]{2,}" placeholder="{% t right.shipping.city %}"
+                                                pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
+                                                placeholder="{% t right.shipping.city %}"
                                                 aria-label="{% t right.shipping.city %}"
                                                 aria-describedby="{% t right.shipping.city %}">
                                         </div>
@@ -418,13 +420,15 @@ layout: default
                                     <div class="row">
                                         <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                             <input type="text" class="form-control" id="form-newname"
-                                                pattern="[a-z A-Z]{2,}" placeholder="{% t right.shipping.name %}"
+                                                pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
+                                                placeholder="{% t right.shipping.name %}"
                                                 aria-label="{% t right.shipping.name %}"
                                                 aria-describedby="{% t right.shipping.name %}">
                                         </div>
                                         <div class="col-12 col-lg-6">
                                             <input type="text" class="form-control" id="form-newsurname"
-                                                pattern="[a-z A-Z]{2,}" placeholder="{% t right.shipping.surname %}"
+                                                pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
+                                                placeholder="{% t right.shipping.surname %}"
                                                 aria-label="{% t right.shipping.surname %}"
                                                 aria-describedby="{% t right.shipping.surname %}">
                                         </div>
@@ -432,7 +436,8 @@ layout: default
                                     <div class="row mt-3">
                                         <div class="col-12 col-lg-10 mb-3 mb-lg-0">
                                             <input type="text" class="form-control" id="form-newstreet"
-                                                pattern="[a-z A-Z]{3,}" placeholder="{% t right.shipping.street %}"
+                                                pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
+                                                placeholder="{% t right.shipping.street %}"
                                                 aria-label="{% t right.shipping.street %}"
                                                 aria-describedby="{% t right.shipping.street %}">
                                         </div>
@@ -453,7 +458,8 @@ layout: default
                                         </div>
                                         <div class="col-12 col-lg-10">
                                             <input type="text" class="form-control" id="form-newcity"
-                                                pattern="[a-z A-Z]{2,}" placeholder="{% t right.shipping.city %}"
+                                                pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
+                                                placeholder="{% t right.shipping.city %}"
                                                 aria-label="{% t right.shipping.city %}"
                                                 aria-describedby="{% t right.shipping.city %}">
                                         </div>
