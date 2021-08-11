@@ -52,7 +52,7 @@ right:
 faq:
   left:
     title: "FAQ’s: Häufig gestellte Fragen"
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet facilisis at erat tincidunt. Viverra vel ultrices faucibus tempus egestas pellentesque aliquam in diam."
+    subtitle: "Per Briefwahl wählen ist einfach, sicher und unkompliziert. Jede wahlberechtigte Person kann statt am Tag der Wahl im Wahllokal vorher per Brief wählen. Die wichtigsten Fragen und Antworten."
   right:
     title: "Antworten auf die wichtigsten Fragen"
 questions:
@@ -71,7 +71,7 @@ questions:
   - title: "Kann ich trotzdem im Wahllokal wählen, wenn ich die Unterlagen nicht rechtzeitig abschicke?"
     answer: "Wenn du deine Wahl-Unterlagen noch nicht ausgefüllt hast, kannst du mit dem Wahlschein auch im Wahllokal wählen, allerdings nur im Wahllokal, was dir in der Wahlbenachrichtigung zugewiesen wurde."
   - title: "Kann ich den Wahlbrief auch direkt beim Wahlamt einwerfen?"
-    answer: "Das ist möglich und z.B. eine Möglichkeit, um eine verspätete Zustellung des Wahlbriefs zu vermeiden, wenn die Briefwahlunterlagen erst am Tag vor oder am Tag der Wahl ausgefüllt werden. Der Brief muss bis zur Schließung der Wahllokale beim Wahlamt eingegangen sein."
+    answer: "Das ist möglich und z.B. sinnvoll, um eine verspätete Zustellung des Wahlbriefs zu vermeiden, wenn die Briefwahlunterlagen erst am Tag vor oder am Tag der Wahl ausgefüllt werden. Der Brief muss bis zur Schließung der Wahllokale beim Wahlamt eingegangen sein."
 imprint:
   left:
     title: "Impressum"
