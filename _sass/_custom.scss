@@ -489,7 +489,7 @@ input[type="number"] {
     right: 0;
 
     & div {
-      padding: 10px;
+      padding: 12px 22px;
       cursor: pointer;
       color: $gray-900;
 
@@ -511,10 +511,6 @@ input[type="number"] {
     background-color: $bluegray-300 !important;
     color: $white;
   }
-}
-
-.highlight {
-  background-color: #fbc93d !important;
 }
 
 #newname,
@@ -557,7 +553,7 @@ input[type="list"] {
     background: url("/assets/images/checkmark.svg");
     background-size: 25px;
     background-repeat: no-repeat;
-    background-position: right 20px center;
+    background-position: right 15px center;
     box-shadow: inset 0 0 0 0.15rem green;
   }
 
@@ -565,7 +561,7 @@ input[type="list"] {
     background: url("/assets/images/xmark.svg");
     background-size: 25px;
     background-repeat: no-repeat;
-    background-position: right 20px center;
+    background-position: right 15px center;
     box-shadow: inset 0 0 0 0.15rem #cc3333;
   }
 }

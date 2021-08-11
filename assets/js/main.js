@@ -465,7 +465,6 @@ searchInput.addEventListener("keyup", (e) => {
   const divs = matchArray.map((place) => {
     const div = document.createElement("div");
     const nameSpan = document.createElement("span");
-    nameSpan.classList.add("name");
 
     const val = `${place.PLZ}, ${place.ORT}`;
 
