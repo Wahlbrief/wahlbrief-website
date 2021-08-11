@@ -33,7 +33,7 @@ right:
   checkbox-description: "Andernfalls werden die Unterlagen an die Meldeadresse zugestellt."
   email-updates: "Ich möchte von Wahlbrief an das rechtzeitige Ausfüllen der Unterlagen erinnert werden."
   invalidemail: "Please enter a valid email address"
-  successfulregistration: "Thank you for your registration. Please check your email to confirm."
+  successfulregistration: "Bitte überprüfe deine E-Mails, wir haben dir einen Bestätigungs-Link geschickt."
   noprocess: "Sorry, we were unable to process your subscription."
   shipping:
     address: "Versand-Adresse für die Unterlagen"
