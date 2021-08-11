@@ -391,8 +391,7 @@ clipboard.on("success", function (e) {
 
 function findMatches(keyword, zips) {
   return zips.filter((place) => {
-    const regex = new RegExp(keyword, "gi");
-    return place.PLZ.match(regex);
+    return place.PLZ.toLowerCase().startsWith(keyword.toLowerCase());
   });
 }
 

@@ -175,6 +175,7 @@ layout: default
                             <div class="col-xl-8 col-12">
                                 <div class="input-group autocomplete mb-0 mb-lg-2">
                                     <input id="zipcode" type="text" name="zipcode" inputmode="numeric"
+                                        onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
                                         oninput="this.value=this.value.slice(0,this.maxLength)"
                                         class="form-control mb-3 mb-lg-0" minlength="5" maxlength="100"
                                         placeholder="{% t right.placeholder %}" aria-label="{% t right.placeholder %}"
