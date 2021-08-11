@@ -19,7 +19,7 @@ right:
   residence: "Angaben zum Hauptwohnsitz"
   optional: "Bitte gib nun deinen vollständigen Namen (wie auf dem Ausweis), deine vollständige Meldeadresse des Hauptwohnsitzes und dein Geburtsdatum an. Das Wahlamt führt einen Datenabgleich durch.<br />Du kannst alternativ die Vorlage kopieren und deine persönlichen Daten von Hand ergänzen."
   firstname: "Vorname"
-  lastname: "Zuname"
+  lastname: "Nachname"
   street: "Straße"
   number: "Nr."
   zipcode: "Postleitzahl"
