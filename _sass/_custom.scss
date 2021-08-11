@@ -578,7 +578,7 @@ input[type="date"] {
 
 .form-floating > label {
   color: $gray-500;
-  padding-left: 20px !important;
+  padding: 1.25rem 0.75rem 1.25rem 1.25rem !important;
   z-index: 3;
 }
 
@@ -593,6 +593,7 @@ input[type="date"] {
 .form-floating > .form-control:not(:placeholder-shown) ~ label,
 .form-floating > .form-select ~ label {
   opacity: 0.8 !important;
+  transform: scale(0.85) translateY(-0.7rem) translateX(0.15rem);
 }
 
 .input-group.form-floating label {
@@ -673,6 +674,18 @@ input[type="date"] {
   }
 }
 
+legend {
+  font-size: 1rem;
+  color: $gray-500;
+  display: block;
+}
+
+fieldset {
+  padding: 10px;
+  border: 1px solid $gray-500;
+  border-radius: 0.25rem;
+}
+
 // Media queries
 @media (max-width: 768px) {
   .h1,
@@ -724,7 +737,14 @@ input[type="date"] {
   input[type="date"],
   input[type="number"] {
     background-color: rgba(100, 116, 139, 0.08);
-    border-radius: 2px !important;
+    border-radius: 0.25rem !important;
+  }
+  fieldset {
+    background-color: rgba(100, 116, 139, 0.08);
+
+    & input {
+      background-color: rgba(255, 255, 255, 0.7) !important;
+    }
   }
   #address-desktop {
     display: none;
