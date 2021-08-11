@@ -16,8 +16,8 @@ right:
   tos: "Mit der Nutzung von Wahlbrief stimmst du den Nutzungsbedingungen und den Datenschutz-Hinweisen zu. Wir speichern deine persönlichen Daten nicht."
   placeholder: "PLZ (Hauptwohnsitz)"
   button: "Wahlamt suchen"
-  residence: "Angaben zum Hauptwohnsitz"
-  optional: "Bitte gib nun deinen vollständigen Namen (wie auf dem Ausweis), deine vollständige Meldeadresse des Hauptwohnsitzes und dein Geburtsdatum an. Das Wahlamt führt einen Datenabgleich durch.<br />Du kannst alternativ die Vorlage kopieren und deine persönlichen Daten von Hand ergänzen."
+  residence: "Persönliche Angaben"
+  optional: "Bitte gib nun deinen vollständigen Namen (wie auf dem Ausweis), deine vollständige Meldeadresse des Hauptwohnsitzes und dein Geburtsdatum an. Das Wahlamt führt einen Datenabgleich durch.<br /><small>Du kannst alternativ die Vorlage kopieren und deine persönlichen Daten von Hand ergänzen.</small>"
   firstname: "Vorname"
   lastname: "Nachname"
   street: "Straße"
@@ -52,7 +52,7 @@ right:
 faq:
   left:
     title: "FAQ’s: Häufig gestellte Fragen"
-    subtitle: "Per Briefwahl wählen ist einfach, sicher und unkompliziert. Jede wahlberechtigte Person kann statt am Tag der Wahl im Wahllokal vorher per Brief wählen. Die wichtigsten Fragen und Antworten."
+    subtitle: "Per Briefwahl wählen ist einfach, sicher und unkompliziert. Jede wahlberechtigte Person kann statt am Tag der Wahl vorher per Brief wählen. Die wichtigsten Fragen und Antworten."
   right:
     title: "Antworten auf die wichtigsten Fragen"
 questions:
