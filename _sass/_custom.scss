@@ -63,6 +63,14 @@ p {
   font-size: 16px;
 }
 
+a {
+  color: $cyan-600;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    color: $cyan-800;
+}
+
 .subtitle {
   font-size: 18px;
 }
@@ -129,7 +137,7 @@ p {
   color: $white;
 
   & a {
-    font-size: 20px;
+    color: $white;
   }
 
   & .social-links a {
