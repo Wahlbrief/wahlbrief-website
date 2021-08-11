@@ -1,7 +1,6 @@
 left:
   title: "Heute Briefwahl beantragen für die Bundestagswahl 2021"
-  subtitle:
-    "Bequem online die Unterlagen für die Briefwahl beantragen: Nimm dir 2 Minuten, um per E-Mail den Antrag an dein Wahlamt zu erstellen. Einfach abschicken, nach ein paar Tagen die Unterlagen per Post erhalten, abstimmen. Jede Stimme zählt."
+  subtitle: "Bequem online die Unterlagen für die Briefwahl beantragen: Nimm dir 2 Minuten, um per E-Mail den Antrag an dein Wahlamt zu erstellen. Einfach abschicken, nach ein paar Tagen die Unterlagen per Post erhalten, abstimmen. Jede Stimme zählt."
   preview: "Vorschau: Dein Antrag auf Briefwahl"
   home: "Home"
   faq: "FAQ"
@@ -33,6 +32,9 @@ right:
   checkbox-address: "Abweichende Adresse für den Versand hinterlegen."
   checkbox-description: "Andernfalls werden die Unterlagen an die Meldeadresse zugestellt."
   email-updates: "Ich möchte von Wahlbrief an das rechtzeitige Ausfüllen der Unterlagen erinnert werden."
+  invalidemail: "Please enter a valid email address"
+  successfulregistration: "Thank you for your registration. Please check your email to confirm."
+  noprocess: "Sorry, we were unable to process your subscription."
   shipping:
     address: "Versand-Adresse für die Unterlagen"
     name: "Vorname"
@@ -49,6 +51,9 @@ right:
   preview-letter: "Dein Briefwahl-Antrag"
   preview-description: "Das wars! Du kannst den Antrag an dein Wahlamt per E-Mail übermitteln. Bitte überprüfe deine Angaben vorher noch einmal sorgfältig. Falsche Angaben werden die Bearbeitung verzögern."
   preview-address: "Address goes here. Lorem ipsum 65124"
+  send: "Send e-mail"
+  copy: "Copy text"
+  back: "Back"
 faq:
   left:
     title: "FAQ’s: Häufig gestellte Fragen"

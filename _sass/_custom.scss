@@ -63,6 +63,15 @@ p {
   font-size: 16px;
 }
 
+a {
+  color: $cyan-600;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    color: $cyan-800;
+  }
+}
+
 .subtitle {
   font-size: 18px;
 }
@@ -129,7 +138,7 @@ p {
   color: $white;
 
   & a {
-    font-size: 20px;
+    color: $white;
   }
 
   & .social-links a {
@@ -463,7 +472,6 @@ input[type="number"] {
   box-shadow: 0 0 0 0.1rem #cc3333;
 }
 
-#result,
 #validation {
   color: #cc3333;
 }
@@ -505,14 +513,34 @@ input[type="number"] {
   background-color: #fbc93d !important;
 }
 
+#newname,
+#newsurname,
+#id-newname,
+#id-newsurname,
 #id-street,
+#id-newstreet,
 #id-number,
+#id-newnumber,
 #id-zip,
+#id-newzip,
 #id-city,
+#id-newcity,
+#final-newname,
+#final-newsurname,
+#final-number,
+#final-street,
+#final-zip,
+#final-city,
 #final-id-street,
+#final-id-newname,
+#final-id-newsurname,
+#final-id-newstreet,
 #final-id-number,
+#final-id-newnumber,
 #final-id-zip,
-#final-id-city {
+#final-id-newzip,
+#final-id-city,
+#final-id-newcity {
   display: none;
 }
 
