@@ -264,12 +264,26 @@ layout: default
                                         </div>
                                     </div>
                                     <div class="row mt-3">
-                                        <div class="col-12">
-                                            <input type="text" class="form-control" onfocus="(this.type='date')"
-                                                onchange="this.blur();" min="1900-01-01" max="2003-08-15"
-                                                id="form-birthday" placeholder="{% t right.birthday %}"
-                                                aria-label="{% t right.birthday %}"
-                                                aria-describedby="{% t right.birthday %}">
+                                        <div class="col-4 col-lg-4">
+                                            <input type="text" class="form-control" id="form-day"
+                                                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+                                                pattern="[0-3][0-9]" inputmode="numeric" minlength="1" maxlength="2"
+                                                placeholder="{% t right.day %}" aria-label="{% t right.day %}"
+                                                aria-describedby="{% t right.day %}">
+                                        </div>
+                                        <div class="col-4 col-lg-4">
+                                            <input type="text" class="form-control" id="form-month"
+                                                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+                                                pattern="[0-1][0-9]" inputmode="numeric" minlength="1" maxlength="2"
+                                                placeholder="{% t right.month %}" aria-label="{% t right.month %}"
+                                                aria-describedby="{% t right.month %}">
+                                        </div>
+                                        <div class="col-4 col-lg-4">
+                                            <input type="text" class="form-control" id="form-year"
+                                                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+                                                pattern="19\d{2}|2003\d{0}" inputmode="numeric" minlength="4"
+                                                maxlength="4" placeholder="{% t right.year %}"
+                                                aria-label="{% t right.year %}" aria-describedby="{% t right.year %}">
                                         </div>
                                     </div>
                                     <div class="row mt-3">

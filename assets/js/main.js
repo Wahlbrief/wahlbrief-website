@@ -93,12 +93,14 @@ checks.forEach((check) => {
 
 const spanDate = document.getElementById("birthday");
 const finalDate = document.getElementById("final-birthday");
-const birthdayInput = document.getElementById("form-birthday");
+const DayInput = document.getElementById("form-day");
+const MonthInput = document.getElementById("form-month");
+const YearInput = document.getElementById("form-year");
 
-birthdayInput.addEventListener("input", (e) => {
-  spanDate.textContent = e.target.value.split("-").reverse().join(".");
-  finalDate.textContent = e.target.value.split("-").reverse().join(".");
-});
+// birthdayInput.addEventListener("input", (e) => {
+//   spanDate.textContent = e.target.value.split("-").reverse().join(".");
+//   finalDate.textContent = e.target.value.split("-").reverse().join(".");
+// });
 
 function scrollTop() {
   setTimeout(() => {
