@@ -395,9 +395,11 @@ layout: default
                                         <label class="form-check-label" for="emailupdatesMobile">
                                             {% t right.email-updates %}
                                         </label>
-                                        <input class="form-check-input" type="checkbox"
-                                            onchange="if (checkform()) {submitForm();} return false;" value=""
-                                            id="emailupdatesMobile">
+                                        <div>
+                                            <input class="form-check-input" type="checkbox"
+                                                onchange="if (checkform()) {submitForm();} return false;" value=""
+                                                id="emailupdatesMobile">
+                                        </div>
                                     </div>
 
                                     <div class="background-gray-100 py-3 px-4 my-3">
