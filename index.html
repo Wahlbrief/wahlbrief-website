@@ -173,12 +173,13 @@ layout: default
                                 <p>{% t right.description %}</p>
                             </div>
                             <div class="col-xl-8 col-12">
-                                <div class="input-group autocomplete mb-0 mb-lg-2">
+                                <div class="input-group form-floating autocomplete mb-0 mb-lg-2">
                                     <input id="zipcode" type="text" name="zipcode" inputmode="numeric"
                                         onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
                                         class="form-control mb-3 mb-lg-0" minlength="5" maxlength="100"
                                         placeholder="{% t right.placeholder %}" aria-label="{% t right.placeholder %}"
                                         aria-describedby="{% t right.placeholder %}">
+                                    <label for="zipcode">{% t right.placeholder %}</label>
 
                                     <div class="input-group-append d-none d-xxl-inline-block">
                                         <button onclick="secondpage();" class="btn btn-new"><i
@@ -251,72 +252,102 @@ layout: default
                                 <form name="main" class="mt-4">
                                     <div class="row">
                                         <div class="col-12 col-lg-6 mb-3 mb-lg-0">
-                                            <input type="text" class="form-control" id="form-name"
-                                                pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
-                                                placeholder="{% t right.firstname %}"
-                                                aria-label="{% t right.firstname %}"
-                                                aria-describedby="{% t right.firstname %}">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="form-name"
+                                                    pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
+                                                    placeholder="{% t right.firstname %}"
+                                                    aria-label="{% t right.firstname %}"
+                                                    aria-describedby="{% t right.firstname %}">
+                                                <label for="form-name">{% t right.firstname %}</label>
+                                            </div>
                                         </div>
                                         <div class="col-12 col-lg-6">
-                                            <input type="text" class="form-control" id="form-surname"
-                                                pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
-                                                placeholder="{% t right.lastname %}" aria-label="{% t right.lastname %}"
-                                                aria-describedby="{% t right.lastname %}">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="form-surname"
+                                                    pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
+                                                    placeholder="{% t right.lastname %}"
+                                                    aria-label="{% t right.lastname %}"
+                                                    aria-describedby="{% t right.lastname %}">
+                                                <label for="form-surname">{% t right.lastname %}</label>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row mt-3">
                                         <div class="col-4 col-lg-4">
-                                            <input type="text" class="form-control" id="form-day"
-                                                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
-                                                pattern="(0[1-9]|[12]\d|3[01])" inputmode="numeric" minlength="1"
-                                                maxlength="2" placeholder="{% t right.day %}"
-                                                aria-label="{% t right.day %}" aria-describedby="{% t right.day %}">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="form-day"
+                                                    onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+                                                    pattern="(0[1-9]|[12]\d|3[01])" inputmode="numeric" minlength="1"
+                                                    maxlength="2" placeholder="{% t right.day %}"
+                                                    aria-label="{% t right.day %}" aria-describedby="{% t right.day %}">
+                                                <label for="form-day">{% t right.day %}</label>
+                                            </div>
                                         </div>
                                         <div class="col-4 col-lg-4">
-                                            <input type="text" class="form-control" id="form-month"
-                                                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
-                                                pattern="(0[1-9]|1[012])" inputmode="numeric" minlength="1"
-                                                maxlength="2" placeholder="{% t right.month %}"
-                                                aria-label="{% t right.month %}" aria-describedby="{% t right.month %}">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="form-month"
+                                                    onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+                                                    pattern="(0[1-9]|1[012])" inputmode="numeric" minlength="1"
+                                                    maxlength="2" placeholder="{% t right.month %}"
+                                                    aria-label="{% t right.month %}"
+                                                    aria-describedby="{% t right.month %}">
+                                                <label for="form-month">{% t right.month %}</label>
+                                            </div>
                                         </div>
                                         <div class="col-4 col-lg-4">
-                                            <input type="text" class="form-control" id="form-year"
-                                                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
-                                                pattern="19\d{2}|200\d{1}" inputmode="numeric" minlength="4"
-                                                maxlength="4" placeholder="{% t right.year %}"
-                                                aria-label="{% t right.year %}" aria-describedby="{% t right.year %}">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="form-year"
+                                                    onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+                                                    pattern="19\d{2}|200\d{1}" inputmode="numeric" minlength="4"
+                                                    maxlength="4" placeholder="{% t right.year %}"
+                                                    aria-label="{% t right.year %}"
+                                                    aria-describedby="{% t right.year %}">
+                                                <label for="form-year">{% t right.year %}</label>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row mt-3">
                                         <div class="col-12 col-lg-10 mb-3 mb-lg-0">
-                                            <input type="text" class="form-control" id="form-street"
-                                                pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
-                                                placeholder="{% t right.shipping.street %}"
-                                                aria-label="{% t right.shipping.street %}"
-                                                aria-describedby="{% t right.shipping.street %}">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="form-street"
+                                                    pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
+                                                    placeholder="{% t right.shipping.street %}"
+                                                    aria-label="{% t right.shipping.street %}"
+                                                    aria-describedby="{% t right.shipping.street %}">
+                                                <label for="form-street">{% t right.shipping.street %}</label>
+                                            </div>
                                         </div>
                                         <div class="col-12 col-lg-2">
-                                            <input type="text" class="form-control" id="form-number" pattern="[0-9a-Z]*"
-                                                placeholder="{% t right.shipping.number %}"
-                                                aria-label="{% t right.shipping.number %}"
-                                                aria-describedby="{% t right.shipping.number %}">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="form-number"
+                                                    pattern="[a-zA-Z0-9]+" placeholder="{% t right.shipping.number %}"
+                                                    aria-label="{% t right.shipping.number %}"
+                                                    aria-describedby="{% t right.shipping.number %}">
+                                                <label for="form-number">{% t right.shipping.number %}</label>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row mt-3">
                                         <div class="col-12 col-lg-2 mb-3 mb-lg-0">
-                                            <input type="text" class="form-control"
-                                                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
-                                                id="form-zip" minlength="5" maxlength="5" pattern="[0-9]{5}"
-                                                placeholder="{% t right.shipping.zipcode %}"
-                                                aria-label="{% t right.shipping.zipcode %}"
-                                                aria-describedby="{% t right.shipping.zipcode %}">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control"
+                                                    onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+                                                    id="form-zip" minlength="5" maxlength="5" pattern="[0-9]{5}"
+                                                    placeholder="{% t right.shipping.zipcode %}"
+                                                    aria-label="{% t right.shipping.zipcode %}"
+                                                    aria-describedby="{% t right.shipping.zipcode %}">
+                                                <label for="form-zip">{% t right.shipping.zipcode %}</label>
+                                            </div>
                                         </div>
                                         <div class="col-12 col-lg-10">
-                                            <input type="text" class="form-control" id="form-city"
-                                                pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
-                                                placeholder="{% t right.shipping.city %}"
-                                                aria-label="{% t right.shipping.city %}"
-                                                aria-describedby="{% t right.shipping.city %}">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="form-city"
+                                                    pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
+                                                    placeholder="{% t right.shipping.city %}"
+                                                    aria-label="{% t right.shipping.city %}"
+                                                    aria-describedby="{% t right.shipping.city %}">
+                                                <label for="form-city">{% t right.shipping.city %}</label>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -328,10 +359,14 @@ layout: default
                                             enctype="multipart/form-data">
 
                                             <div class="col-12">
-                                                <input type="email" name="email" class="form-control" id="email"
-                                                    pattern="(?![_.-])((?![_.-][_.-])[a-z\d_.-]){0,63}[a-z\d]@((?!-)((?!--)[a-z\d-]){0,63}[a-z\d]\.){1,2}([a-z]{2,14}\.)?[a-z]{2,14}"
-                                                    placeholder="{% t right.email %}" aria-label="{% t right.email %}"
-                                                    aria-describedby="{% t right.email %}">
+                                                <div class="form-floating">
+                                                    <input type="email" name="email" class="form-control" id="email"
+                                                        pattern="(?![_.-])((?![_.-][_.-])[a-z\d_.-]){0,63}[a-z\d]@((?!-)((?!--)[a-z\d-]){0,63}[a-z\d]\.){1,2}([a-z]{2,14}\.)?[a-z]{2,14}"
+                                                        placeholder="{% t right.email %}"
+                                                        aria-label="{% t right.email %}"
+                                                        aria-describedby="{% t right.email %}">
+                                                    <label for="email">{% t right.email %}</label>
+                                                </div>
 
                                                 <input type=hidden name="htmlemail" value="1">
                                                 <input type="hidden" name="list[11]" value="signup" />
@@ -437,49 +472,68 @@ layout: default
                                     <h3 class="mb-3">{% t right.shipping.address %}</h3>
                                     <div class="row">
                                         <div class="col-12 col-lg-6 mb-3 mb-lg-0">
-                                            <input type="text" class="form-control" id="form-newname"
-                                                pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
-                                                placeholder="{% t right.shipping.name %}"
-                                                aria-label="{% t right.shipping.name %}"
-                                                aria-describedby="{% t right.shipping.name %}">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="form-newname"
+                                                    pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
+                                                    placeholder="{% t right.shipping.name %}"
+                                                    aria-label="{% t right.shipping.name %}"
+                                                    aria-describedby="{% t right.shipping.name %}">
+                                                <label for="form-newname">{% t right.shipping.name %}</label>
+                                            </div>
                                         </div>
                                         <div class="col-12 col-lg-6">
-                                            <input type="text" class="form-control" id="form-newsurname"
-                                                pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
-                                                placeholder="{% t right.shipping.surname %}"
-                                                aria-label="{% t right.shipping.surname %}"
-                                                aria-describedby="{% t right.shipping.surname %}">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="form-newsurname"
+                                                    pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
+                                                    placeholder="{% t right.shipping.surname %}"
+                                                    aria-label="{% t right.shipping.surname %}"
+                                                    aria-describedby="{% t right.shipping.surname %}">
+                                                <label for="form-newsurname">{% t right.shipping.surname %}</label>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row mt-3">
                                         <div class="col-12 col-lg-10 mb-3 mb-lg-0">
-                                            <input type="text" class="form-control" id="form-newstreet"
-                                                pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
-                                                placeholder="{% t right.shipping.street %}"
-                                                aria-label="{% t right.shipping.street %}"
-                                                aria-describedby="{% t right.shipping.street %}">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="form-newstreet"
+                                                    pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
+                                                    placeholder="{% t right.shipping.street %}"
+                                                    aria-label="{% t right.shipping.street %}"
+                                                    aria-describedby="{% t right.shipping.street %}">
+                                                <label for="form-newstreet">{% t right.shipping.street %}</label>
+                                            </div>
                                         </div>
                                         <div class="col-12 col-lg-2">
-                                            <input type="text" class="form-control" id="form-newnumber" pattern="[0-9]*"
-                                                placeholder="{% t right.shipping.number %}"
-                                                aria-label="{% t right.shipping.number %}"
-                                                aria-describedby="{% t right.shipping.number %}">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="form-newnumber"
+                                                    pattern="[a-zA-Z0-9]+" placeholder="{% t right.shipping.number %}"
+                                                    aria-label="{% t right.shipping.number %}"
+                                                    aria-describedby="{% t right.shipping.number %}">
+                                                <label for="form-newnumber">{% t right.shipping.number %}</label>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row mt-3">
                                         <div class="col-12 col-lg-2 mb-3 mb-lg-0">
-                                            <input type="number" oninput="this.value=this.value.slice(0,this.maxLength)"
-                                                class="form-control" id="form-newzip" minlength="5" maxlength="5"
-                                                pattern="[0-9]{5}" placeholder="{% t right.shipping.zipcode %}"
-                                                aria-label="{% t right.shipping.zipcode %}"
-                                                aria-describedby="{% t right.shipping.zipcode %}">
+                                            <div class="form-floating">
+                                                <input type="number"
+                                                    oninput="this.value=this.value.slice(0,this.maxLength)"
+                                                    class="form-control" id="form-newzip" minlength="5" maxlength="5"
+                                                    pattern="[0-9]{5}" placeholder="{% t right.shipping.zipcode %}"
+                                                    aria-label="{% t right.shipping.zipcode %}"
+                                                    aria-describedby="{% t right.shipping.zipcode %}">
+                                                <label for="form-newzip">{% t right.shipping.zipcode %}</label>
+                                            </div>
                                         </div>
                                         <div class="col-12 col-lg-10">
-                                            <input type="text" class="form-control" id="form-newcity"
-                                                pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
-                                                placeholder="{% t right.shipping.city %}"
-                                                aria-label="{% t right.shipping.city %}"
-                                                aria-describedby="{% t right.shipping.city %}">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="form-newcity"
+                                                    pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
+                                                    placeholder="{% t right.shipping.city %}"
+                                                    aria-label="{% t right.shipping.city %}"
+                                                    aria-describedby="{% t right.shipping.city %}">
+                                                <label for="form-newcity">{% t right.shipping.city %}</label>
+                                            </div>
                                         </div>
                                     </div>
                                 </form>
