@@ -42,7 +42,8 @@ layout: default
                         <p>
                             Nachname: <span class="fw-bold" id="surname"></span><br />
                             Vorname: <span class="fw-bold" id="name"></span><br />
-                            Geburtsdatum: <span class="fw-bold" id="birthday"></span>
+                            Geburtsdatum: <span class="fw-bold" id="birthdate"></span><span class="fw-bold"
+                                id="birthmonth"></span><span class="fw-bold" id="birthyear"></span>
 
                             <span class="fw-bold" id="newsurname"></span>
                             <span class="fw-bold" id="newname"></span>
@@ -295,7 +296,7 @@ layout: default
                                                 aria-describedby="{% t right.shipping.street %}">
                                         </div>
                                         <div class="col-12 col-lg-2">
-                                            <input type="text" class="form-control" id="form-number" pattern="[0-9]*"
+                                            <input type="text" class="form-control" id="form-number" pattern="[0-9a-Z]*"
                                                 placeholder="{% t right.shipping.number %}"
                                                 aria-label="{% t right.shipping.number %}"
                                                 aria-describedby="{% t right.shipping.number %}">
@@ -303,9 +304,10 @@ layout: default
                                     </div>
                                     <div class="row mt-3">
                                         <div class="col-12 col-lg-2 mb-3 mb-lg-0">
-                                            <input type="number" oninput="this.value=this.value.slice(0,this.maxLength)"
-                                                class="form-control" id="form-zip" minlength="5" maxlength="5"
-                                                pattern="[0-9]{5}" placeholder="{% t right.shipping.zipcode %}"
+                                            <input type="text" class="form-control"
+                                                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+                                                id="form-zip" minlength="5" maxlength="5" pattern="[0-9]{5}"
+                                                placeholder="{% t right.shipping.zipcode %}"
                                                 aria-label="{% t right.shipping.zipcode %}"
                                                 aria-describedby="{% t right.shipping.zipcode %}">
                                         </div>
@@ -547,7 +549,9 @@ layout: default
                                     <p>
                                         Nachname: <span class="fw-bold" id="final-surname"></span><br />
                                         Vorname: <span class="fw-bold" id="final-name"></span><br />
-                                        Geburtsdatum: <span class="fw-bold" id="final-birthday"></span>
+                                        Geburtsdatum: <span class="fw-bold" id="final-birthdate"></span><span
+                                            class="fw-bold" id="final-birthmonth"></span><span class="fw-bold"
+                                            id="final-birthyear"></span>
 
                                         <span class="fw-bold ms-2" id="final-newname"></span>
                                         <span class="fw-bold ms-2" id="final-newsurname"></span>

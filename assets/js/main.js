@@ -126,25 +126,31 @@ checks.forEach((check) => {
   });
 });
 
-const spanDate = document.getElementById("birthday");
-const finalDate = document.getElementById("final-birthday");
+const spanDay = document.getElementById("birthdate");
+const spanMonth = document.getElementById("birthmonth");
+const spanYear = document.getElementById("birthyear");
+
+const finalDay = document.getElementById("final-birthdate");
+const finalMonth = document.getElementById("final-birthmonth");
+const finalYear = document.getElementById("final-birthyear");
+
 const DayInput = document.getElementById("form-day");
 const MonthInput = document.getElementById("form-month");
 const YearInput = document.getElementById("form-year");
 
 DayInput.addEventListener("input", (e) => {
-  spanDate.textContent = e.target.value;
-  finalDate.textContent = e.target.value;
+  spanDay.textContent = e.target.value + ".";
+  finalDay.textContent = e.target.value + ".";
 });
 
 MonthInput.addEventListener("input", (e) => {
-  spanDate.textContent = e.target.value;
-  finalDate.textContent = e.target.value;
+  spanMonth.textContent = e.target.value + ".";
+  finalMonth.textContent = e.target.value + ".";
 });
 
 YearInput.addEventListener("input", (e) => {
-  spanDate.textContent = e.target.value;
-  finalDate.textContent = e.target.value;
+  spanYear.textContent = e.target.value;
+  finalYear.textContent = e.target.value;
 });
 
 function scrollTop() {
