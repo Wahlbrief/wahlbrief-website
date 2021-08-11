@@ -31,7 +31,7 @@ right:
   same-address: "Unterlagen an die Meldeadresse versenden."
   different-address: "Abweichende Adresse für den Versand hinterlegen."
   checkbox-address: "Abweichende Adresse für den Versand hinterlegen."
-  checkbox-description: "Check if you want to use a different address for the mail"
+  checkbox-description: "Andernfalls werden die Unterlagen an die Meldeadresse zugestellt."
   email-updates: "Ich möchte von Wahlbrief an das rechtzeitige Ausfüllen der Unterlagen erinnert werden."
   shipping:
     address: "Versand-Adresse für die Unterlagen"
