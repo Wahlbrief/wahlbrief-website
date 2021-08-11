@@ -61,7 +61,20 @@ cb.addEventListener("change", (event) => {
   }
 });
 
-const checks = ["name", "surname", "street", "number", "zip", "city"];
+const checks = [
+  "name",
+  "newname",
+  "surname",
+  "newsurname",
+  "street",
+  "newstreet",
+  "number",
+  "newnumber",
+  "zip",
+  "newzip",
+  "city",
+  "newcity",
+];
 
 checks.forEach((check) => {
   const spans = document.getElementById(`${check}`);

@@ -1,7 +1,6 @@
 left:
   title: "Heute zur Briefwahl registrieren für die Bundestagswahl 2021"
-  subtitle:
-    "Bequem online Briefwahlunterlagen beantragen: Nimm dir 2 Minuten, um eine Antrags-Email an dein Wahlamt zu erstellen. Einfach abschicken, nach ein paar Tagen die Unterlagen per Post erhalten, Stimme setzen."
+  subtitle: "Bequem online Briefwahlunterlagen beantragen: Nimm dir 2 Minuten, um eine Antrags-Email an dein Wahlamt zu erstellen. Einfach abschicken, nach ein paar Tagen die Unterlagen per Post erhalten, Stimme setzen."
   preview: "Vorschau: Dein Antrag auf Briefwahl"
   home: "Home"
   faq: "FAQ"
@@ -19,7 +18,7 @@ right:
   residence: "Angaben zum Hauptwohnsitz"
   optional: "Bitte gib nun deinen vollständigen Namen (wie auf dem Ausweis), deine vollständige Meldeadresse des Hauptwohnsitzes und dein Geburtsdatum an. Das Wahlamt führt einen Datenabgleich durch.<br />Du kannst alternativ die Vorlage kopieren und deine persönlichen Daten von Hand ergänzen."
   firstname: "Vorname"
-  lastname: "Zuname"
+  lastname: "Nachname"
   street: "Straße"
   number: "Nr."
   zipcode: "Postleitzahl"
@@ -49,6 +48,9 @@ right:
   preview-letter: "Dein Briefwahl-Antrag"
   preview-description: "Das wars! Du kannst den Antrag an dein Wahlamt per E-Mail übermitteln. Bitte überprüfe deine Angaben vorher noch einmal sorgfältig. Falsche Angaben werden die Bearbeitung verzögern."
   preview-address: "Address goes here. Lorem ipsum 65124"
+  send: "Send e-mail"
+  copy: "Copy text"
+  back: "Back"
 faq:
   left:
     title: "FAQ’s"

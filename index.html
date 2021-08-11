@@ -28,7 +28,7 @@ layout: default
                 <div class="row">
 
                     <!-- Intro section -->
-                    <div id="intro" class="col-12">
+                    <div id="intro" class="col-12 col-lg-8">
                         <h1>{% t left.title %}</h1>
                         <p class="subtitle">{% t left.subtitle %}</p>
                     </div>
@@ -40,36 +40,52 @@ layout: default
                             hiermit beantrage ich die Zusendung der Briefwahlunterlagen für die Wahl(en)
                             2021.</p>
                         <p>
-                            Name: <span class="fw-bold" id="surname"></span><br />
+                            Nachname: <span class="fw-bold" id="surname"></span><br />
                             Vorname: <span class="fw-bold" id="name"></span><br />
                             Geburtsdatum: <span class="fw-bold" id="birthday"></span>
+
+                            <span class="fw-bold" id="newsurname"></span>
+                            <span class="fw-bold" id="newname"></span>
                         </p>
 
-                        <p id="ogaddress">Bitte senden Sie mir die Unterlagen an meine Meldeadresse!</p>
+                        <p id="ogaddress">Bitte senden Sie mir die Unterlagen an meine Meldeadresse!<br /><br />
+
+                            Straße <span class="fw-bold ms-2" id="street"></span><br />
+                            Nr. <span class="fw-bold ms-2" id="number"></span><br />
+                            Postleitzah <span class="fw-bold ms-2" id="zip"></span><br />
+                            Ort <span class="fw-bold ms-2" id="city"></span><br />
+
+                        </p>
 
                         <p id="newaddress">Bitte senden Sie mir die Unterlagen an folgende Adresse:<br /><br />
 
-                            Street <span class="fw-bold ms-2" id="street"></span><br />
-                            Number <span class="fw-bold ms-2" id="number"></span><br />
-                            ZIP <span class="fw-bold ms-2" id="zip"></span><br />
-                            City <span class="fw-bold ms-2" id="city"></span><br />
+                            Straße <span class="fw-bold ms-2" id="newstreet"></span><br />
+                            Nr. <span class="fw-bold ms-2" id="newnumber"></span><br />
+                            Postleitzah <span class="fw-bold ms-2" id="newzip"></span><br />
+                            Ort <span class="fw-bold ms-2" id="newcity"></span><br />
 
                         </p>
 
                         <p>Mit freundlichen Grüßen,<br />
-                            <span id="id-name"></span>
-                            <span id="id-surname"></span>
+                            <span class="fw-bold" id="id-name"></span>
+                            <span class="fw-bold" id="id-surname"></span>
+                            <span id="id-newname"></span>
+                            <span id="id-newsurname"></span>
                             <span id="id-street"></span>
+                            <span id="id-newstreet"></span>
                             <span id="id-number"></span>
+                            <span id="id-newnumber"></span>
                             <span id="id-zip"></span>
+                            <span id="id-newzip"></span>
                             <span id="id-city"></span>
+                            <span id="id-newcity"></span>
                         </p>
                     </div>
 
                     <!-- Mobile view step 2 -->
                     <div id="address-mobile">
                         <div class="d-flex mb-3 justify-content-between align-items-center">
-                            <button class="btn back-small" onclick="backtofirstpage();">Back</button>
+                            <button class="btn back-small" onclick="backtofirstpage();">{% t right.back %}</button>
                             <h4 class="fw-bold">2/3</h4>
                         </div>
                         <h2>{% t right.residence %}</h2>
@@ -98,7 +114,7 @@ layout: default
                     <!-- Mobile view step 3 -->
                     <div id="preview-mobile">
                         <div class="d-flex mb-3 justify-content-between align-items-center">
-                            <button class="btn back-small" onclick="backtosecondpage();">Back</button>
+                            <button class="btn back-small" onclick="backtosecondpage();">{% t right.back %}</button>
                             <h4 class="fw-bold">3/3</h4>
                         </div>
                         <h2>{% t right.preview-letter %}</h2>
@@ -171,7 +187,7 @@ layout: default
                                     </div>
                                 </div>
 
-                                <div class="autocomplete-items mb-2" id="autocomplete-list">
+                                <div class="autocomplete-items mb-3" id="autocomplete-list">
                                 </div>
 
                                 <button onclick="secondpage();" class="btn btn-new d-block d-lg-none"><i
@@ -186,6 +202,7 @@ layout: default
                                 <div class="dropdown">
                                     <button class="btn dropdown-toggle" type="button" id="dropdownMenu3"
                                         data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-globe me-1"></i>
                                         {% for lang in site.languages %}
                                         {% assign lang_name = site.data[lang].l10n.lang_name %}
                                         {% if lang == site.lang %}
@@ -214,7 +231,7 @@ layout: default
                             <div class="col-12">
                                 <div id="address-desktop">
                                     <button class="btn back-small mb-4 d-none d-lg-block"
-                                        onclick="backtofirstpage();">Back</button>
+                                        onclick="backtofirstpage();">{% t right.back %}</button>
                                     <h4 class="fw-bold">2/3</h4>
                                     <h2>{% t right.residence %}</h2>
                                     <p>{% t right.optional %}</p>
@@ -230,23 +247,54 @@ layout: default
                                     <div class="row">
                                         <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                             <input type="text" class="form-control" id="form-name"
-                                                pattern="[a-zA-Z]{2,}" placeholder="{% t right.firstname %}"
+                                                pattern="^[a-zA-Z0-9-,.\säöüÄÖÜ]{2,}$"
+                                                placeholder="{% t right.firstname %}"
                                                 aria-label="{% t right.firstname %}"
                                                 aria-describedby="{% t right.firstname %}">
                                         </div>
                                         <div class="col-12 col-lg-6">
                                             <input type="text" class="form-control" id="form-surname"
-                                                pattern="[a-zA-Z]{2,}" placeholder="{% t right.lastname %}"
-                                                aria-label="{% t right.lastname %}"
+                                                pattern="^[a-zA-Z0-9-,.\säöüÄÖÜ]{2,}$"
+                                                placeholder="{% t right.lastname %}" aria-label="{% t right.lastname %}"
                                                 aria-describedby="{% t right.lastname %}">
                                         </div>
                                     </div>
                                     <div class="row mt-3">
                                         <div class="col-12">
                                             <input type="text" class="form-control" onfocus="(this.type='date')"
-                                                onchange="this.blur();" id="form-birthday"
-                                                placeholder="{% t right.birthday %}" aria-label="{% t right.birthday %}"
+                                                onchange="this.blur();" min="1900-01-01" max="2003-08-15"
+                                                id="form-birthday" placeholder="{% t right.birthday %}"
+                                                aria-label="{% t right.birthday %}"
                                                 aria-describedby="{% t right.birthday %}">
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-12 col-lg-10 mb-3 mb-lg-0">
+                                            <input type="text" class="form-control" id="form-street"
+                                                pattern="[a-z A-Z]{3,}" placeholder="{% t right.shipping.street %}"
+                                                aria-label="{% t right.shipping.street %}"
+                                                aria-describedby="{% t right.shipping.street %}">
+                                        </div>
+                                        <div class="col-12 col-lg-2">
+                                            <input type="text" class="form-control" id="form-number" pattern="[0-9]*"
+                                                placeholder="{% t right.shipping.number %}"
+                                                aria-label="{% t right.shipping.number %}"
+                                                aria-describedby="{% t right.shipping.number %}">
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-12 col-lg-2 mb-3 mb-lg-0">
+                                            <input type="number" oninput="this.value=this.value.slice(0,this.maxLength)"
+                                                class="form-control" id="form-zip" minlength="5" maxlength="5"
+                                                pattern="[0-9]{5}" placeholder="{% t right.shipping.zipcode %}"
+                                                aria-label="{% t right.shipping.zipcode %}"
+                                                aria-describedby="{% t right.shipping.zipcode %}">
+                                        </div>
+                                        <div class="col-12 col-lg-10">
+                                            <input type="text" class="form-control" id="form-city"
+                                                pattern="[a-z A-Z]{2,}" placeholder="{% t right.shipping.city %}"
+                                                aria-label="{% t right.shipping.city %}"
+                                                aria-describedby="{% t right.shipping.city %}">
                                         </div>
                                     </div>
 
@@ -359,26 +407,26 @@ layout: default
                                     <div class="row">
                                         <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                             <input type="text" class="form-control" id="form-newname"
-                                                pattern="[a-zA-Z]{2,}" placeholder="{% t right.shipping.name %}"
+                                                pattern="[a-z A-Z]{2,}" placeholder="{% t right.shipping.name %}"
                                                 aria-label="{% t right.shipping.name %}"
                                                 aria-describedby="{% t right.shipping.name %}">
                                         </div>
                                         <div class="col-12 col-lg-6">
                                             <input type="text" class="form-control" id="form-newsurname"
-                                                pattern="[a-zA-Z]{2,}" placeholder="{% t right.shipping.surname %}"
+                                                pattern="[a-z A-Z]{2,}" placeholder="{% t right.shipping.surname %}"
                                                 aria-label="{% t right.shipping.surname %}"
                                                 aria-describedby="{% t right.shipping.surname %}">
                                         </div>
                                     </div>
                                     <div class="row mt-3">
                                         <div class="col-12 col-lg-10 mb-3 mb-lg-0">
-                                            <input type="text" class="form-control" id="form-street"
-                                                pattern="[a-zA-Z]{3,}" placeholder="{% t right.shipping.street %}"
+                                            <input type="text" class="form-control" id="form-newstreet"
+                                                pattern="[a-z A-Z]{3,}" placeholder="{% t right.shipping.street %}"
                                                 aria-label="{% t right.shipping.street %}"
                                                 aria-describedby="{% t right.shipping.street %}">
                                         </div>
                                         <div class="col-12 col-lg-2">
-                                            <input type="text" class="form-control" id="form-number" pattern="[0-9]*"
+                                            <input type="text" class="form-control" id="form-newnumber" pattern="[0-9]*"
                                                 placeholder="{% t right.shipping.number %}"
                                                 aria-label="{% t right.shipping.number %}"
                                                 aria-describedby="{% t right.shipping.number %}">
@@ -387,14 +435,14 @@ layout: default
                                     <div class="row mt-3">
                                         <div class="col-12 col-lg-2 mb-3 mb-lg-0">
                                             <input type="number" oninput="this.value=this.value.slice(0,this.maxLength)"
-                                                class="form-control" id="form-zip" minlength="5" maxlength="5"
+                                                class="form-control" id="form-newzip" minlength="5" maxlength="5"
                                                 pattern="[0-9]{5}" placeholder="{% t right.shipping.zipcode %}"
                                                 aria-label="{% t right.shipping.zipcode %}"
                                                 aria-describedby="{% t right.shipping.zipcode %}">
                                         </div>
                                         <div class="col-12 col-lg-10">
-                                            <input type="text" class="form-control" id="form-city"
-                                                pattern="[a-zA-Z]{2,}" placeholder="{% t right.shipping.city %}"
+                                            <input type="text" class="form-control" id="form-newcity"
+                                                pattern="[a-z A-Z]{2,}" placeholder="{% t right.shipping.city %}"
                                                 aria-label="{% t right.shipping.city %}"
                                                 aria-describedby="{% t right.shipping.city %}">
                                         </div>
@@ -413,6 +461,7 @@ layout: default
                                     <div class="dropdown">
                                         <button class="btn dropdown-toggle" type="button" id="dropdownMenu4"
                                             data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fas fa-globe me-1"></i>
                                             {% for lang in site.languages %}
                                             {% assign lang_name = site.data[lang].l10n.lang_name %}
                                             {% if lang == site.lang %}
@@ -441,7 +490,8 @@ layout: default
                         <div class="tab-pane fade" id="step-3" role="tabpanel" aria-labelledby="step-3-tab">
                             <div class="col-12">
                                 <div id="preview">
-                                    <button class="btn back-small mb-4" onclick="backtosecondpage();">Back</button>
+                                    <button class="btn back-small mb-4" onclick="backtosecondpage();">{% t right.back
+                                        %}</button>
                                     <h4 class="fw-bold">3/3</h4>
                                     <h2>{% t right.preview-letter %}</h2>
                                     <p>{% t right.preview-description %}</p>
@@ -460,21 +510,36 @@ layout: default
                                         hiermit beantrage ich die Zusendung der Briefwahlunterlagen für die Wahl(en)
                                         2021.</p>
                                     <p>
-                                        Familienname: <span class="fw-bold" id="final-surname"></span><br />
+                                        Nachname: <span class="fw-bold" id="final-surname"></span><br />
                                         Vorname: <span class="fw-bold" id="final-name"></span><br />
                                         Geburtsdatum: <span class="fw-bold" id="final-birthday"></span>
+
+                                        <span class="fw-bold ms-2" id="final-newname"></span>
+                                        <span class="fw-bold ms-2" id="final-newsurname"></span>
                                     </p>
 
-                                    <p id="finalogaddress">Bitte senden Sie mir die Unterlagen an meine Meldeadresse
+                                    <p id="finalogaddress">Bitte senden Sie mir die Unterlagen an meine
+                                        Meldeadresse:<br /><br />
+
+                                        Straße <span class="fw-bold ms-2" id="final-id-street"></span><br />
+                                        Nr. <span class="fw-bold ms-2" id="final-id-number"></span><br />
+                                        Postleitzah <span class="fw-bold ms-2" id="final-id-zip"></span><br />
+                                        Ort <span class="fw-bold ms-2" id="final-id-city"></span><br />
+
                                     </p>
 
                                     <p id="finalnewaddress">Bitte senden Sie mir die Unterlagen an folgende
                                         Adresse:<br /><br />
 
-                                        Street <span class="fw-bold ms-2" id="final-street"></span><br />
-                                        Number <span class="fw-bold ms-2" id="final-number"></span><br />
-                                        ZIP <span class="fw-bold ms-2" id="final-zip"></span><br />
-                                        City <span class="fw-bold ms-2" id="final-city"></span>
+                                        Straße <span class="fw-bold ms-2" id="final-newstreet"></span><br />
+                                        Nr. <span class="fw-bold ms-2" id="final-newnumber"></span><br />
+                                        Postleitzah <span class="fw-bold ms-2" id="final-newzip"></span><br />
+                                        Ort <span class="fw-bold ms-2" id="final-newcity"></span>
+
+                                        <span class="fw-bold ms-2" id="final-street"></span>
+                                        <span class="fw-bold ms-2" id="final-number"></span>
+                                        <span class="fw-bold ms-2" id="final-zip"></span>
+                                        <span class="fw-bold ms-2" id="final-city"></span>
 
                                     </p>
 
@@ -485,18 +550,24 @@ layout: default
                                         <span id="final-id-number"></span>
                                         <span id="final-id-zip"></span>
                                         <span id="final-id-city"></span>
+                                        <span id="final-id-newname"></span>
+                                        <span id="final-id-newsurname"></span>
+                                        <span id="final-id-newstreet"></span>
+                                        <span id="final-id-newnumber"></span>
+                                        <span id="final-id-newzip"></span>
+                                        <span id="final-id-newcity"></span>
                                     </p>
                                 </div>
 
                                 <div class="row py-4 justify-content-center align-items-center">
                                     <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                         <a href="#" class="btn-send" onclick="return getContent(this)">
-                                            <i class="fas fa-paper-plane me-2"></i>Send email
+                                            <i class="fas fa-paper-plane me-2"></i>{% t right.send %}
                                         </a>
                                     </div>
                                     <div class="col-12 col-lg-6">
                                         <button class="btn-copy copy" data-clipboard-target="#final-letter">
-                                            <i class="fas fa-clone me-2"></i>Copy text
+                                            <i class="fas fa-clone me-2"></i>{% t right.copy %}
                                         </button>
                                     </div>
                                 </div>
@@ -517,6 +588,7 @@ layout: default
                                     <div class="dropdown">
                                         <button class="btn dropdown-toggle" type="button" id="dropdownMenu5"
                                             data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fas fa-globe me-1"></i>
                                             {% for lang in site.languages %}
                                             {% assign lang_name = site.data[lang].l10n.lang_name %}
                                             {% if lang == site.lang %}
