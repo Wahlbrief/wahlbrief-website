@@ -13,7 +13,7 @@ left:
 right:
   zip: "Zuständiges Wahlamt suchen"
   description: "Bitte gib die Postleitzahl deiner Meldeadresse ein. Zuständig für den Briefwahl-Antrag ist das Bürgeramt an deinem Hauptwohnsitz."
-  tos: "<small>Mit der Nutzung von Wahlbrief stimmst du den Nutzungsbedingungen und den Datenschutz-Hinweisen zu. Wir speichern deine persönlichen Daten nicht.</small>"
+  tos: "<small>Mit der Nutzung von Wahlbrief stimmst du den Nutzungsbedingungen und den Datenschutz-Hinweisen zu.<br>Wir speichern deine persönlichen Daten nicht.</small>"
   placeholder: "PLZ (Hauptwohnsitz)"
   button: "Wahlamt suchen"
   residence: "Persönliche Angaben"
