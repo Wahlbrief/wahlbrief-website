@@ -329,7 +329,10 @@ layout: default
                                         function checkform() {
                                             re = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
                                             if (!re.test(jQuery("#email").val())) {
-                                                jQuery("#result").empty().append("Please enter a valid email address");
+                                                jQuery("#result").empty().append("<p class='mb-0' style='color: #cc3333'>{% t right.invalidemail %}</p>");
+                                                jQuery("#email").val("");
+                                                jQuery("#emailupdates").prop("checked", false);
+                                                jQuery("#emailupdatesMobile").prop("checked", false);
                                                 jQuery("#email").focus();
                                                 return false;
                                             }
@@ -337,7 +340,7 @@ layout: default
                                         }
                                         function submitForm() {
                                             successMessage =
-                                                "Thank you for your registration. Please check your email to confirm.";
+                                                "<p class='mb-0' style='color: green;'>{% t right.successfulregistration %}</p>";
                                             data = jQuery("#subscribeform").serialize();
                                             jQuery.ajax({
                                                 type: "POST",
@@ -350,7 +353,11 @@ layout: default
                                                         .append(data != "" ? data : successMessage);
                                                 },
                                                 error: function (request, status, error) {
-                                                    alert("Sorry, we were unable to process your subscription.");
+                                                    alert("{% t right.noprocess %}");
+                                                    jQuery("#email").val("");
+                                                    jQuery("#emailupdates").prop("checked", false);
+                                                    jQuery("#emailupdatesMobile").prop("checked", false);
+                                                    jQuery("#email").focus();
                                                 },
                                             });
                                         }

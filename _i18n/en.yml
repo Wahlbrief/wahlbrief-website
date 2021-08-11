@@ -34,6 +34,9 @@ right:
   checkbox-address: "Use a different address for the mail"
   checkbox-description: "Check if you want to use a different address for the mail"
   email-updates: "I want to receive email updates from Wahlbrief"
+  invalidemail: "Please enter a valid email address"
+  successfulregistration: "Thank you for your registration. Please check your email to confirm."
+  noprocess: "Sorry, we were unable to process your subscription."
   shipping:
     address: "Shipping address"
     name: "First Name"
