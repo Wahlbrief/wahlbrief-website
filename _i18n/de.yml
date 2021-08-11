@@ -54,9 +54,9 @@ right:
   preview-letter: "Dein Briefwahl-Antrag"
   preview-description: "Das wars! Du kannst den Antrag an dein Wahlamt per E-Mail übermitteln. Bitte überprüfe deine Angaben vorher noch einmal sorgfältig. Falsche Angaben werden die Bearbeitung verzögern."
   preview-address: "Address goes here. Lorem ipsum 65124"
-  send: "Send e-mail"
-  copy: "Copy text"
-  back: "Back"
+  send: "E-Mail senden"
+  copy: "Text kopieren"
+  back: "Zurück"
 faq:
   left:
     title: "FAQ’s: Häufig gestellte Fragen"

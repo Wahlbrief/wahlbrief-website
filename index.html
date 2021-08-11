@@ -356,8 +356,7 @@ layout: default
                                     </div>
 
                                     <div class="row mt-3">
-                                        <script type="text/javascript"
-                                            src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+                                        <script src="{{ site.baseurl_root }}/assets/js/jquery.min.js"></script>
 
                                         <form method="post" name="subscribeform" id="subscribeform"
                                             enctype="multipart/form-data">
@@ -386,7 +385,7 @@ layout: default
                                         function checkform() {
                                             re = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
                                             if (!re.test(jQuery("#email").val())) {
-                                                jQuery("#result").empty().append("<p class='mb-0' style='color: #cc3333'>{% t right.invalidemail %}</p>");
+                                                jQuery("#result").empty().append("<p class='mb-0' style='color: #cc3333'>{% t right.invalidemail %}</p>").delay(3500).hide(1);
                                                 jQuery("#email").val("");
                                                 jQuery("#emailupdates").prop("checked", false);
                                                 jQuery("#emailupdatesMobile").prop("checked", false);
@@ -407,7 +406,7 @@ layout: default
                                                 success: function (data, status, request) {
                                                     jQuery("#result")
                                                         .empty()
-                                                        .append(data != "" ? data : successMessage);
+                                                        .append(data != "" ? data : successMessage).delay(3500).hide(1);
                                                 },
                                                 error: function (request, status, error) {
                                                     alert("{% t right.noprocess %}");
