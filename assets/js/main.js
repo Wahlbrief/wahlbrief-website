@@ -1,3 +1,5 @@
+// Global function to disable back functionality from browser
+
 (function (global) {
   if (typeof global === "undefined") {
     throw new Error("window is undefined");
@@ -33,6 +35,8 @@
   };
 })(window);
 
+// Declaration of most const and lets
+
 const zips = [];
 
 const mql = window.matchMedia("(max-width: 768px)");
@@ -61,6 +65,8 @@ const finalmuniname = document.getElementById("final-munname");
 const finalmuniemail = document.getElementById("final-munemail");
 const cb = document.getElementById("cb1");
 
+// Function to hide/show items based on radio buttons selected
+
 for (var i = 0; i < rad.length; i++) {
   rad[i].onclick = function () {
     if (this.value == "different") {
@@ -79,6 +85,8 @@ for (var i = 0; i < rad.length; i++) {
   };
 }
 
+// Function to show/hide items based on the mobile toggle
+
 cb.addEventListener("change", (event) => {
   const result = cb.checked;
   if (result == true) {
@@ -95,6 +103,8 @@ cb.addEventListener("change", (event) => {
     finalnewaddress.style.display = "none";
   }
 });
+
+// Declaration of form inputs and plugging their data into the letter previews
 
 const checks = [
   "name",
@@ -126,6 +136,8 @@ checks.forEach((check) => {
   });
 });
 
+// Birthday inputs
+
 const spanDay = document.getElementById("birthdate");
 const spanMonth = document.getElementById("birthmonth");
 const spanYear = document.getElementById("birthyear");
@@ -153,11 +165,15 @@ YearInput.addEventListener("input", (e) => {
   finalYear.textContent = e.target.value;
 });
 
+// Scroll to top function
+
 function scrollTop() {
   setTimeout(() => {
     window.scrollTo(0, 0);
   }, 100);
 }
+
+// Validation for ZIP code input
 
 function is_valid_datalist_value(idDataList, inputValue) {
   const filtered = zips.filter(({ PLZ }) => PLZ.toString() == inputValue);
@@ -175,6 +191,8 @@ function is_valid_datalist_value(idDataList, inputValue) {
 
   return false;
 }
+
+// Function to go to step 2
 
 function secondpage() {
   let SecondTab = document.querySelector("#step-2-tab");
@@ -208,6 +226,8 @@ function secondpage() {
   }
 }
 
+// Function to go to step 3
+
 function thirdpage() {
   let ThirdTab = document.querySelector("#step-3-tab");
   let tab = new bootstrap.Tab(ThirdTab);
@@ -232,6 +252,8 @@ function thirdpage() {
   }
 }
 
+// Function to go back to step 1 from step 2
+
 function backtofirstpage() {
   let FirstTab = document.querySelector("#step-1-tab");
   let tab = new bootstrap.Tab(FirstTab);
@@ -242,6 +264,8 @@ function backtofirstpage() {
   el2.style.display = "none";
   el4.style.display = "none";
 }
+
+// Function to go back to step 2 from step 3
 
 function backtosecondpage() {
   let SecondTab = document.querySelector("#step-2-tab");
@@ -261,6 +285,8 @@ function backtosecondpage() {
     el5.style.display = "none";
   }
 }
+
+// Function to grab letter content and add it to the email send button
 
 function Mailto_url() {
   var encode_mailto_component = function (str) {
@@ -330,6 +356,8 @@ function Mailto_url() {
   };
 }
 
+// Function to get the full text and set subject, to: field
+
 function getContent(link) {
   var quote = document.getElementById("final-letter");
   if (quote && quote.innerText) {
@@ -343,10 +371,14 @@ function getContent(link) {
   return false;
 }
 
+// Function to initiate clipboard copy
+
 var clipboard = new ClipboardJS(".copy");
 clipboard.on("success", function (e) {
   e.clearSelection();
 });
+
+// Function to get items from JSON and build array
 
 (async () => {
   const endpoint = "/assets/test.json";
@@ -354,6 +386,8 @@ clipboard.on("success", function (e) {
 
   zips.push(...result);
 })();
+
+// Function to find matches
 
 function findMatches(keyword, zips) {
   return zips.filter((place) => {
@@ -366,6 +400,8 @@ const searchInput = document.querySelector("#zipcode");
 const suggestions = document.querySelector("#autocomplete-list");
 
 let active = -1;
+
+// Function to set the focus on elements on keypress
 
 function setFocus() {
   const children = Array.from(suggestions.children);
@@ -381,6 +417,8 @@ function setFocus() {
     children[active].classList.add("autocomplete-active");
   }
 }
+
+// Function to set input box content on enter button on suggestion
 
 function onEnter() {
   const children = Array.from(suggestions.children);
@@ -419,6 +457,8 @@ searchInput.addEventListener("keyup", (e) => {
     suggestions.innerHTML = "";
     return;
   }
+
+  // Function to create autocomplete suggestions
 
   const matchArray = findMatches(e.target.value, zips);
   const divs = matchArray.map((place) => {
