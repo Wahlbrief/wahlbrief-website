@@ -297,9 +297,9 @@ layout: default
                                                 <div class="form-floating">
                                                     <input type="text" class="form-control" id="form-year"
                                                         onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
-                                                        pattern="19\d{2}|200\d{1}" inputmode="numeric" minlength="4"
-                                                        maxlength="4" placeholder="{% t right.year %}"
-                                                        aria-label="{% t right.year %}"
+                                                        pattern="^((200[0-3])|(19[0-9]{2})|(189[0-9]))$"
+                                                        inputmode="numeric" minlength="4" maxlength="4"
+                                                        placeholder="{% t right.year %}" aria-label="{% t right.year %}"
                                                         aria-describedby="{% t right.year %}">
                                                     <label for="form-year">{% t right.year %}</label>
                                                 </div>
