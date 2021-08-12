@@ -109,7 +109,7 @@ a {
 
 .overlay-content {
   position: relative;
-  top: 15%;
+  top: 8%;
   width: 100%;
   text-align: center;
 
@@ -132,7 +132,7 @@ a {
 
 .overlay-footer {
   position: relative;
-  top: 25%;
+  top: 20%;
   width: 100%;
   text-align: center;
   color: $white;
@@ -519,22 +519,18 @@ input[type="number"] {
 #id-newsurname,
 #id-street,
 #id-newstreet,
-#id-number,
-#id-newnumber,
 #id-zip,
 #id-newzip,
 #id-city,
 #id-newcity,
 #final-newname,
 #final-newsurname,
-#final-number,
 #final-street,
 #final-zip,
 #final-city,
 #final-id-newname,
 #final-id-newsurname,
 #final-id-newstreet,
-#final-id-newnumber,
 #final-id-newzip,
 #final-id-newcity {
   display: none;

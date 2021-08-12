@@ -26,10 +26,9 @@ layout: page
                     </div>
                 </div>
                 <div class="row">
-                    <!-- Intro section -->
                     <div class="col-12 col-lg-8">
-                        <h1>{% t faq.left.title %}</h1>
-                        <p class="subtitle">{% t faq.left.subtitle %}</p>
+                        <h1>{% t about.left.title %}</h1>
+                        <p class="subtitle">{% t about.left.subtitle %}</p>
                     </div>
                 </div>
 
@@ -46,13 +45,8 @@ layout: page
             <div class="container d-flex flex-column h-100 py-5 px-2 px-lg-4">
                 <div class="row h-100 d-flex justify-content-between">
                     <div class="col-12">
-                        <h2 class="mb-5">{% t faq.right.title %}</h2>
-                        {% for item in site.translations[site.lang]["questions"] %}
-                        <details>
-                            <summary>{{ item["title"] }}</summary>
-                            {{ item["answer"] }}
-                        </details>
-                        {% endfor %}
+                        <h2 class="mb-5">{% t about.right.title %}</h2>
+                        <p>{% t about.right.text %}</p>
                     </div>
                     <p class="mb-0 mt-4 d-flex d-lg-none"><small>Ein <a
                                 href="https://github.com/Wahlbrief/wahlbrief-website" target="_blank"
@@ -75,9 +69,11 @@ layout: page
                                 {% for lang in site.languages %}
                                 {% assign lang_name = site.data[lang].l10n.lang_name %}
                                 {% if lang == site.default_lang %}
-                                <li><a class="dropdown-item" href="{{ page.url }}">{{ lang_name }}</a></li>
+                                <li><a class="dropdown-item" href="{{ page.url | replace:'index.html','' }}">{{
+                                        lang_name }}</a></li>
                                 {% else %}
-                                <li><a class="dropdown-item" href="/{{ lang }}{{ page.url }}">{{ lang_name
+                                <li><a class="dropdown-item"
+                                        href="/{{ lang }}{{ page.url | replace:'index.html','' }}">{{ lang_name
                                         }}</a></li>
                                 {% endif %}
                                 {% endfor %}

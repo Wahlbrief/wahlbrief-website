@@ -115,8 +115,6 @@ const checks = [
   "newsurname",
   "street",
   "newstreet",
-  "number",
-  "newnumber",
   "zip",
   "newzip",
   "city",

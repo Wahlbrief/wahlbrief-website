@@ -5,6 +5,7 @@ left:
     erat tincidunt. Viverra vel ultrices faucibus tempus egestas pellentesque aliquam in diam."
   preview: "Letter Preview"
   home: "Home"
+  about: "About"
   faq: "FAQ"
   imprint: "Imprint"
   copyright: "Copyright"
@@ -86,3 +87,10 @@ imprint:
     title: "Responsible for the contents of the website wahlbrief.de"
     text: "<strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet facilisis at erat tincidunt. Viverra vel ultrices faucibus tempus egestas pellentesque aliquam in diam.<strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet facilisis at erat tincidunt. Viverra vel ultrices faucibus tempus egestas pellentesque aliquam in diam.<strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet facilisis at erat tincidunt. Viverra vel ultrices faucibus tempus egestas pellentesque aliquam in diam.<ul><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li></ul><br /><strong>Contact</strong><br />Aboalarm GmbH<br />Buttermelcherstraße 16<br />80469 München<br />E-Mail: (Keine Kundenanfragen)"
     button: "Contact us"
+about:
+  left:
+    title: "About"
+    subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet facilisis at erat tincidunt. Viverra vel ultrices faucibus tempus egestas pellentesque aliquam in diam."
+  right:
+    title: "Responsible for the contents of the website wahlbrief.de"
+    text: "<strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet facilisis at erat tincidunt. Viverra vel ultrices faucibus tempus egestas pellentesque aliquam in diam.<strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet facilisis at erat tincidunt. Viverra vel ultrices faucibus tempus egestas pellentesque aliquam in diam.<strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet facilisis at erat tincidunt. Viverra vel ultrices faucibus tempus egestas pellentesque aliquam in diam.<ul><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li></ul><br /><strong>Contact</strong><br />Aboalarm GmbH<br />Buttermelcherstraße 16<br />80469 München<br />E-Mail: (Keine Kundenanfragen)"

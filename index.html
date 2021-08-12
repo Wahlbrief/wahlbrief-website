@@ -42,26 +42,23 @@ layout: default
                         <p>
                             Nachname: <span class="fw-bold" id="surname"></span><br />
                             Vorname: <span class="fw-bold" id="name"></span><br />
-                            Geburtsdatum: <span class="fw-bold" id="birthdate"></span><span class="fw-bold"
-                                id="birthmonth"></span><span class="fw-bold" id="birthyear"></span>
+                            Geburtsdatum:
+                            <span class="fw-bold" id="birthdate"></span><span class="fw-bold"
+                                id="birthmonth"></span><span class="fw-bold" id="birthyear"></span><br />
+                            Addresse:<br />
+                            <span class="fw-bold" id="street"></span><br />
+                            <span class="fw-bold" id="zip"></span>
+                            <span class="fw-bold" id="city"></span><br />
 
                             <span class="fw-bold" id="newsurname"></span>
                             <span class="fw-bold" id="newname"></span>
                         </p>
 
-                        <p id="ogaddress">Bitte senden Sie mir die Unterlagen an meine Meldeadresse!<br /><br />
-
-                            Straße <span class="fw-bold ms-2" id="street"></span><br />
-                            Nr. <span class="fw-bold ms-2" id="number"></span><br />
-                            Postleitzah <span class="fw-bold ms-2" id="zip"></span><br />
-                            Ort <span class="fw-bold ms-2" id="city"></span><br />
-
-                        </p>
+                        <p id="ogaddress">Bitte senden Sie mir die Unterlagen an meine Meldeadresse!</p>
 
                         <p id="newaddress">Bitte senden Sie mir die Unterlagen an folgende Adresse:<br /><br />
 
                             Straße <span class="fw-bold ms-2" id="newstreet"></span><br />
-                            Nr. <span class="fw-bold ms-2" id="newnumber"></span><br />
                             Postleitzah <span class="fw-bold ms-2" id="newzip"></span><br />
                             Ort <span class="fw-bold ms-2" id="newcity"></span><br />
 
@@ -74,8 +71,6 @@ layout: default
                             <span id="id-newsurname"></span>
                             <span id="id-street"></span>
                             <span id="id-newstreet"></span>
-                            <span id="id-number"></span>
-                            <span id="id-newnumber"></span>
                             <span id="id-zip"></span>
                             <span id="id-newzip"></span>
                             <span id="id-city"></span>
@@ -174,7 +169,8 @@ layout: default
                             </div>
                             <div class="col-xl-8 col-12">
                                 <div class="input-group form-floating autocomplete mb-0 mb-lg-2">
-                                    <input id="zipcode" type="text" name="zipcode" inputmode="numeric"
+                                    <input id="zipcode" type="text" name="zipcode" autocomplete="off"
+                                        inputmode="numeric"
                                         onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
                                         class="form-control mb-3 mb-lg-0" minlength="5" maxlength="100"
                                         placeholder="{% t right.placeholder %}" aria-label="{% t right.placeholder %}"
@@ -264,7 +260,7 @@ layout: default
                                         <div class="col-12 col-lg-6">
                                             <div class="form-floating">
                                                 <input type="text" class="form-control" id="form-surname"
-                                                    pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
+                                                    pattern="^[a-zA-Z0-9-,.\säöüÄÖÜß]{2,}$"
                                                     placeholder="{% t right.lastname %}"
                                                     aria-label="{% t right.lastname %}"
                                                     aria-describedby="{% t right.lastname %}">
@@ -311,23 +307,14 @@ layout: default
                                         </div>
                                     </fieldset>
                                     <div class="row mt-3">
-                                        <div class="col-12 col-lg-10 mb-3 mb-lg-0">
+                                        <div class="col-12 col-lg-12 mb-3 mb-lg-0">
                                             <div class="form-floating">
                                                 <input type="text" class="form-control" id="form-street"
-                                                    pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
+                                                    pattern="^[a-zA-Z0-9-,.\säöüÄÖÜß]{2,}$"
                                                     placeholder="{% t right.shipping.street %}"
                                                     aria-label="{% t right.shipping.street %}"
                                                     aria-describedby="{% t right.shipping.street %}">
                                                 <label for="form-street">{% t right.shipping.street %}</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-2">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control" id="form-number"
-                                                    pattern="[a-zA-Z0-9]+" placeholder="{% t right.shipping.number %}"
-                                                    aria-label="{% t right.shipping.number %}"
-                                                    aria-describedby="{% t right.shipping.number %}">
-                                                <label for="form-number">{% t right.shipping.number %}</label>
                                             </div>
                                         </div>
                                     </div>
@@ -385,7 +372,7 @@ layout: default
                                         function checkform() {
                                             re = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
                                             if (!re.test(jQuery("#email").val())) {
-                                                jQuery("#result").empty().append("<p class='mb-0' style='color: #cc3333'>{% t right.invalidemail %}</p>").delay(3500).hide(1);
+                                                jQuery("#result").empty().append("<p class='mb-0' style='color: #cc3333'>{% t right.invalidemail %}</p>");
                                                 jQuery("#email").val("");
                                                 jQuery("#emailupdates").prop("checked", false);
                                                 jQuery("#emailupdatesMobile").prop("checked", false);
@@ -406,7 +393,7 @@ layout: default
                                                 success: function (data, status, request) {
                                                     jQuery("#result")
                                                         .empty()
-                                                        .append(data != "" ? data : successMessage).delay(3500).hide(1);
+                                                        .append(data != "" ? data : successMessage);
                                                 },
                                                 error: function (request, status, error) {
                                                     alert("{% t right.noprocess %}");
@@ -496,7 +483,7 @@ layout: default
                                         </div>
                                     </div>
                                     <div class="row mt-3">
-                                        <div class="col-12 col-lg-10 mb-3 mb-lg-0">
+                                        <div class="col-12 col-lg-12 mb-3 mb-lg-0">
                                             <div class="form-floating">
                                                 <input type="text" class="form-control" id="form-newstreet"
                                                     pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
@@ -504,15 +491,6 @@ layout: default
                                                     aria-label="{% t right.shipping.street %}"
                                                     aria-describedby="{% t right.shipping.street %}">
                                                 <label for="form-newstreet">{% t right.shipping.street %}</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-2">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control" id="form-newnumber"
-                                                    pattern="[a-zA-Z0-9]+" placeholder="{% t right.shipping.number %}"
-                                                    aria-label="{% t right.shipping.number %}"
-                                                    aria-describedby="{% t right.shipping.number %}">
-                                                <label for="form-newnumber">{% t right.shipping.number %}</label>
                                             </div>
                                         </div>
                                     </div>
@@ -610,32 +588,27 @@ layout: default
                                         Vorname: <span class="fw-bold" id="final-name"></span><br />
                                         Geburtsdatum: <span class="fw-bold" id="final-birthdate"></span><span
                                             class="fw-bold" id="final-birthmonth"></span><span class="fw-bold"
-                                            id="final-birthyear"></span>
+                                            id="final-birthyear"></span><br />
+                                        Addresse:<br />
+                                        <span class="fw-bold" id="final-id-street"></span><br />
+                                        <span class="fw-bold ms-2" id="final-id-zip"></span><span class="fw-bold"
+                                            id="final-id-city"></span>
 
                                         <span class="fw-bold ms-2" id="final-newname"></span>
                                         <span class="fw-bold ms-2" id="final-newsurname"></span>
                                     </p>
 
                                     <p id="finalogaddress">Bitte senden Sie mir die Unterlagen an meine
-                                        Meldeadresse:<br /><br />
-
-                                        Straße <span class="fw-bold ms-2" id="final-id-street"></span><br />
-                                        Nr. <span class="fw-bold ms-2" id="final-id-number"></span><br />
-                                        Postleitzah <span class="fw-bold ms-2" id="final-id-zip"></span><br />
-                                        Ort <span class="fw-bold ms-2" id="final-id-city"></span><br />
-
-                                    </p>
+                                        Meldeadresse:</p>
 
                                     <p id="finalnewaddress">Bitte senden Sie mir die Unterlagen an folgende
                                         Adresse:<br /><br />
 
                                         Straße <span class="fw-bold ms-2" id="final-newstreet"></span><br />
-                                        Nr. <span class="fw-bold ms-2" id="final-newnumber"></span><br />
                                         Postleitzah <span class="fw-bold ms-2" id="final-newzip"></span><br />
                                         Ort <span class="fw-bold ms-2" id="final-newcity"></span>
 
                                         <span class="fw-bold ms-2" id="final-street"></span>
-                                        <span class="fw-bold ms-2" id="final-number"></span>
                                         <span class="fw-bold ms-2" id="final-zip"></span>
                                         <span class="fw-bold ms-2" id="final-city"></span>
 
@@ -645,13 +618,11 @@ layout: default
                                         <span class="fw-bold me-1" id="final-id-name"></span>
                                         <span class="fw-bold" id="final-id-surname"></span>
                                         <span id="final-id-street"></span>
-                                        <span id="final-id-number"></span>
                                         <span id="final-id-zip"></span>
                                         <span id="final-id-city"></span>
                                         <span id="final-id-newname"></span>
                                         <span id="final-id-newsurname"></span>
                                         <span id="final-id-newstreet"></span>
-                                        <span id="final-id-newnumber"></span>
                                         <span id="final-id-newzip"></span>
                                         <span id="final-id-newcity"></span>
                                     </p>
