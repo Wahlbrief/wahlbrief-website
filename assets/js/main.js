@@ -175,7 +175,7 @@ function scrollTop() {
 
 // Validation for ZIP code input
 
-function is_valid_datalist_value(idDataList, inputValue) {
+function is_valid_datalist_value(inputValue) {
   const filtered = zips.filter(({ PLZ }) => PLZ.toString() == inputValue);
 
   if (filtered.length > 0) {
@@ -197,7 +197,7 @@ function is_valid_datalist_value(idDataList, inputValue) {
 function secondpage() {
   let SecondTab = document.querySelector("#step-2-tab");
   let tab = new bootstrap.Tab(SecondTab);
-  let x = document.getElementById("zipcode").value.split(",")[0].trim();
+  let x = document.getElementById("zipcode").value.split(" ")[0].trim();
   let y = document.getElementById("zipcode");
   let z = document.getElementById("validation");
 
@@ -207,7 +207,7 @@ function secondpage() {
       z.textContent = "";
     }, 3500);
     return false;
-  } else if (is_valid_datalist_value("codes", x)) {
+  } else if (is_valid_datalist_value(x)) {
     tab.show();
     scrollTop();
 
@@ -391,9 +391,7 @@ clipboard.on("success", function (e) {
 
 function findMatches(keyword, zips) {
   return zips.filter((place) => {
-    return place.PLZ.toLowerCase().startsWith(
-      keyword.toLocaleLowerCase("en-US")
-    );
+    return place.PLZ.toLowerCase().startsWith(keyword.toLowerCase());
   });
 }
 
@@ -466,7 +464,7 @@ searchInput.addEventListener("keyup", (e) => {
     const div = document.createElement("div");
     const nameSpan = document.createElement("span");
 
-    const val = `${place.PLZ}, ${place.ORT}`;
+    const val = `${place.PLZ} ${place.ORT}`;
 
     nameSpan.innerText = val;
     div.appendChild(nameSpan);
