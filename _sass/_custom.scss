@@ -379,15 +379,6 @@ a {
   }
 }
 
-#newform,
-#newaddress,
-#finalnewaddress,
-#address-mobile,
-#preview-mobile,
-#subscription {
-  display: none;
-}
-
 // Inputs
 details {
   position: relative;
@@ -443,16 +434,6 @@ details[open] > summary::before {
   left: 0px;
   top: 15px;
   transform: translateY(-50%);
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type="number"] {
-  -moz-appearance: textfield;
 }
 
 .form-control {
@@ -531,6 +512,15 @@ input[type="number"] {
 #final-id-newstreet,
 #final-id-newzip,
 #final-id-newcity {
+  display: none;
+}
+
+#newform,
+#newaddress,
+#finalnewaddress,
+#address-mobile,
+#preview-mobile,
+#subscription {
   display: none;
 }
 
