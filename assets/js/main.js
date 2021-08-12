@@ -391,7 +391,9 @@ clipboard.on("success", function (e) {
 
 function findMatches(keyword, zips) {
   return zips.filter((place) => {
-    return place.PLZ.toLowerCase().startsWith(keyword.toLowerCase());
+    return place.PLZ.toLowerCase().startsWith(
+      keyword.toLocaleLowerCase("en-US")
+    );
   });
 }
 
