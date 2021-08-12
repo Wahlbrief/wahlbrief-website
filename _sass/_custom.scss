@@ -553,6 +553,22 @@ input[type="list"] {
     box-shadow: inset 0 0 0 0.15rem green;
   }
 
+  &:valid:focus:not(:placeholder-shown) {
+    background: url("/assets/images/checkmark.svg");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    box-shadow: inset 0 0 0 0.15rem green;
+  }
+
+  &:invalid:focus:not(:placeholder-shown) {
+    background: url("/assets/images/xmark.svg");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    box-shadow: inset 0 0 0 0.15rem #cc3333;
+  }
+
   &:invalid:not(:focus):not(:placeholder-shown) {
     background: url("/assets/images/xmark.svg");
     background-size: 25px;
