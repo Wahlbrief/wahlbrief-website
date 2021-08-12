@@ -436,6 +436,16 @@ details[open] > summary::before {
   transform: translateY(-50%);
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .form-control {
   position: relative;
 }
@@ -684,6 +694,19 @@ fieldset {
   padding: 10px;
   border: 1px solid $gray-500;
   border-radius: 0.25rem;
+}
+
+#final-message {
+  padding: 20px;
+  background-color: #eff6ff;
+  color: #1e40af;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+
+  & .fa-info-circle {
+    font-size: 1em;
+  }
 }
 
 // Media queries

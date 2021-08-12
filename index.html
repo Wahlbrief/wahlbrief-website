@@ -497,7 +497,8 @@ layout: default
                                     <div class="row mt-3">
                                         <div class="col-12 col-lg-2 mb-3 mb-lg-0">
                                             <div class="form-floating">
-                                                <input type="number"
+                                                <input type="text"
+                                                    onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
                                                     oninput="this.value=this.value.slice(0,this.maxLength)"
                                                     class="form-control" id="form-newzip" minlength="5" maxlength="5"
                                                     pattern="[0-9]{5}" placeholder="{% t right.shipping.zipcode %}"
@@ -601,8 +602,8 @@ layout: default
 
                                     <p id="finalnewaddress">Bitte senden Sie mir die Unterlagen an folgende<br /><br />
 
-                                        Nachname: <span class="fw-bold ms-2" id="final-newname"></span>
-                                        Vorname: <span class="fw-bold ms-2" id="final-newsurname"></span>
+                                        Nachname: <span class="fw-bold ms-2" id="final-newname"></span><br />
+                                        Vorname: <span class="fw-bold ms-2" id="final-newsurname"></span><br />
                                         Adresse:<br /><br />
                                         <span class="fw-bold" id="final-newstreet"></span><br />
                                         <span class="fw-bold" id="final-newzip"></span>
@@ -625,20 +626,56 @@ layout: default
                                         <span id="final-id-newzip"></span>
                                         <span id="final-id-newcity"></span>
                                     </p>
+
                                 </div>
+
+                                <p class="mb-0 mt-4" id="final-message"><i class='fas fa-info-circle me-2'></i>{% t
+                                    right.message.waiting
+                                    %}</p>
 
                                 <div class="row py-4 justify-content-center align-items-center">
                                     <div class="col-12 col-lg-6 mb-3 mb-lg-0">
-                                        <a href="#" class="btn-send" onclick="return getContent(this)">
+                                        <a id="send-text" href="#" class="btn-send" onclick="return getContent(this)">
                                             <i class="fas fa-paper-plane me-2"></i>{% t right.send %}
                                         </a>
                                     </div>
                                     <div class="col-12 col-lg-6">
-                                        <button class="btn-copy copy" data-clipboard-target="#final-letter">
+                                        <button id="copy-text" class="btn-copy copy"
+                                            data-clipboard-target="#final-letter">
                                             <i class="fas fa-clone me-2"></i>{% t right.copy %}
                                         </button>
                                     </div>
                                 </div>
+
+                                <script>
+                                    // Function to show/hide message after clicking on the copy text button
+                                    const copier = document.getElementById("copy-text");
+                                    copier.addEventListener("click", (event) => {
+                                        const displayMessage = document.getElementById("final-message");
+                                        displayMessage.innerHTML = "<i class='fas fa-check-circle me-2'></i>{% t right.message.success %}";
+                                        displayMessage.style.backgroundColor = "#ECFDF5";
+                                        displayMessage.style.color = "#065F46";
+                                        setTimeout(function () {
+                                            displayMessage.innerHTML = "<i class='fas fa-info-circle me-2'></i>{% t right.message.waiting %}";
+                                            displayMessage.style.backgroundColor = "#eff6ff";
+                                            displayMessage.style.color = "#1e40af";
+                                        }, 4000);
+                                    });
+
+                                    // Function to show/hide message after clicking on the send email button
+                                    const sender = document.getElementById("send-text");
+                                    sender.addEventListener("click", (event) => {
+                                        const displayMessage = document.getElementById("final-message");
+                                        displayMessage.innerHTML = "<i class='fas fa-check-circle me-2'></i>{% t right.message.sent %}";
+                                        displayMessage.style.backgroundColor = "#ECFDF5";
+                                        displayMessage.style.color = "#065F46";
+                                        setTimeout(function () {
+                                            displayMessage.innerHTML = "<i class='fas fa-info-circle me-2'></i>{% t right.message.waiting %}";
+                                            displayMessage.style.backgroundColor = "#eff6ff";
+                                            displayMessage.style.color = "#1e40af";
+                                        }, 4000);
+                                    });
+                                </script>
 
                                 <div id="outro-bottom" class="col-12 col-xl-8 outro">
                                     <h1>{% t left.share %}</h1>

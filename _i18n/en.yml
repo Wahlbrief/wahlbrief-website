@@ -60,6 +60,10 @@ right:
   send: "Send e-mail"
   copy: "Copy text"
   back: "Back"
+  message:
+    success: "Text copied, paste it in your email client!"
+    sent: "Your email client was opened with prefilled content, ready to send!"
+    waiting: "Waiting for action!"
 faq:
   left:
     title: "FAQ’s"
