@@ -541,6 +541,10 @@ input[type="list"] {
   border: 1px solid $gray-500 !important;
   border-radius: 0.25rem;
 
+  &:valid:focus:not(:placeholder-shown) {
+    box-shadow: inset 0 0 0 0.15rem green;
+  }
+
   &:valid:not(:focus):not(:placeholder-shown) {
     background: url("/assets/images/checkmark.svg");
     background-size: 25px;
