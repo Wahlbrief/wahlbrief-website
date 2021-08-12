@@ -331,7 +331,7 @@ layout: default
                                         <div class="col-12 col-lg-10">
                                             <div class="form-floating">
                                                 <input type="text" class="form-control" id="form-city"
-                                                    pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
+                                                    pattern="^[a-zA-Z-,.\säöüÄÖÜß()]{2,}$"
                                                     placeholder="{% t right.shipping.city %}"
                                                     aria-label="{% t right.shipping.city %}"
                                                     aria-describedby="{% t right.shipping.city %}">
@@ -484,7 +484,7 @@ layout: default
                                         <div class="col-12 col-lg-12 mb-3 mb-lg-0">
                                             <div class="form-floating">
                                                 <input type="text" class="form-control" id="form-newstreet"
-                                                    pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
+                                                    pattern="^[a-zA-Z0-9-,.\säöüÄÖÜß]{2,}$"
                                                     placeholder="{% t right.shipping.street %}"
                                                     aria-label="{% t right.shipping.street %}"
                                                     aria-describedby="{% t right.shipping.street %}">
@@ -507,7 +507,7 @@ layout: default
                                         <div class="col-12 col-lg-10">
                                             <div class="form-floating">
                                                 <input type="text" class="form-control" id="form-newcity"
-                                                    pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
+                                                    pattern="^[a-zA-Z-,.\säöüÄÖÜß()]{2,}$"
                                                     placeholder="{% t right.shipping.city %}"
                                                     aria-label="{% t right.shipping.city %}"
                                                     aria-describedby="{% t right.shipping.city %}">
