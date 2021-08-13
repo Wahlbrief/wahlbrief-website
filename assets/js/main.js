@@ -430,6 +430,12 @@ function onEnter() {
     return;
   }
 
+  if (len == 1) {
+    active %= len;
+    children[active].click();
+    secondpage();
+  }
+
   if (active >= 0) {
     active %= len;
 
