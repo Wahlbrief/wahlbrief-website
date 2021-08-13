@@ -197,10 +197,12 @@ function is_valid_datalist_value(inputValue, cityValue) {
 function secondpage() {
   let SecondTab = document.querySelector("#step-2-tab");
   let tab = new bootstrap.Tab(SecondTab);
-  let x = document.getElementById("zipcode").value.split(" ")[0].trim();
-  let xi = document.getElementById("zipcode").value.split(" ")[1].trim();
   let y = document.getElementById("zipcode");
   let z = document.getElementById("validation");
+  let x = document.getElementById("zipcode").value.split(" ")[0].trim();
+  let xi = document.getElementById("zipcode").value.split(" ")[1]
+    ? y.value.substr(y.value.indexOf(" ") + 1)
+    : "";
 
   if (x.length < 5) {
     z.textContent = "You have inserted less than 5 digits!";
