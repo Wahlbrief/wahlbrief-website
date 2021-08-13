@@ -63,7 +63,7 @@ right:
     waiting: "Waiting for action!"
 faq:
   left:
-    title: "FAQ’s: Häufig gestellte Fragen"
+    title: "FAQ: Häufig gestellte Fragen"
     subtitle: "Per Briefwahl wählen ist einfach, sicher und unkompliziert. Jede wahlberechtigte Person kann statt am Tag der Wahl vorher per Brief wählen. Die wichtigsten Fragen und Antworten."
   right:
     title: "Antworten auf die wichtigsten Fragen"
@@ -97,5 +97,5 @@ about:
     title: "Über das Projekt"
     subtitle: "Wahlbrief ist ein Open Source Projekt von Mehr Demokratie e.V. zur Bundestagswahl 2021"
   right:
-    title: "Jede Stimme zählt: Wahlbeteiligung steigern, Demokratie stärken"
+    title: "Jede Stimme zählt: Wahlbeteiligung erhöhen, Demokratie stärken"
     text: "Bla bla bla"
