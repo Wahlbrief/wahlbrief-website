@@ -484,7 +484,8 @@ searchInput.addEventListener("keyup", (e) => {
   });
 
   if (matchArray.length <= 0) {
-    suggestions.innerHTML = "<div><span>Nothing Found</span></div>";
+    suggestions.innerHTML =
+      "<div class='no-items'><i class='fas fa-times-circle me-2'></i><span>Nothing Found</span></div>";
     return;
   }
 

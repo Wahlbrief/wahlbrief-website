@@ -482,6 +482,7 @@ input[type="number"] {
     overflow: auto;
 
     & div {
+      border-radius: 3px;
       padding: 12px 22px;
       cursor: pointer;
       color: $gray-900;
@@ -496,6 +497,17 @@ input[type="number"] {
 
       &:nth-child(even) {
         background-color: $bluegray-200;
+      }
+    }
+
+    & div.no-items {
+      padding: 12px 22px;
+      pointer-events: none;
+      color: #991b1b;
+      background-color: #fef2f2;
+
+      &:hover {
+        background-color: #fef2f2 !important;
       }
     }
   }
