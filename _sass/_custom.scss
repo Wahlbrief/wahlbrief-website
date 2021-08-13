@@ -488,7 +488,7 @@ input[type="number"] {
       color: $gray-900;
 
       &:hover {
-        background-color: $bluegray-300 !important;
+        background-color: $bluegray-400 !important;
       }
 
       &:nth-child(odd) {
@@ -513,8 +513,8 @@ input[type="number"] {
   }
 
   &-active {
-    background-color: $bluegray-300 !important;
-    color: $white;
+    background-color: $bluegray-400 !important;
+    color: $black !important;
   }
 }
 

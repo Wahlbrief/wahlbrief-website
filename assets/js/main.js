@@ -417,6 +417,7 @@ function setFocus() {
 
     children.forEach((child) => child.classList.remove("autocomplete-active"));
     children[active].classList.add("autocomplete-active");
+    children[active].scrollIntoView();
   }
 }
 
@@ -433,6 +434,7 @@ function onEnter() {
     active %= len;
 
     children[active].click();
+    secondpage();
   }
 }
 
