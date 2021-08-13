@@ -175,11 +175,12 @@ function scrollTop() {
 
 // Validation for ZIP code input
 
-function is_valid_datalist_value(inputValue) {
+function is_valid_datalist_value(inputValue, cityValue) {
   const filtered = zips.filter(({ PLZ }) => PLZ.toString() == inputValue);
+  const filteredCity = zips.filter(({ ORT }) => ORT.toString() == cityValue);
 
-  if (filtered.length > 0) {
-    const data = filtered[0];
+  if (filtered.length > 0 && filteredCity.length > 0) {
+    const data = filteredCity[0];
     munname.textContent = data.ORT;
     munemail.textContent = data["E-Mail"];
     muniname.textContent = data.ORT;
@@ -188,7 +189,6 @@ function is_valid_datalist_value(inputValue) {
     finalmuniemail.textContent = data["E-Mail"];
     return true;
   }
-
   return false;
 }
 
@@ -198,6 +198,7 @@ function secondpage() {
   let SecondTab = document.querySelector("#step-2-tab");
   let tab = new bootstrap.Tab(SecondTab);
   let x = document.getElementById("zipcode").value.split(" ")[0].trim();
+  let xi = document.getElementById("zipcode").value.split(" ")[1].trim();
   let y = document.getElementById("zipcode");
   let z = document.getElementById("validation");
 
@@ -207,7 +208,7 @@ function secondpage() {
       z.textContent = "";
     }, 3500);
     return false;
-  } else if (is_valid_datalist_value(x)) {
+  } else if (is_valid_datalist_value(x, xi)) {
     tab.show();
     scrollTop();
 
