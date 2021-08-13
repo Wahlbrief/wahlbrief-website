@@ -60,7 +60,7 @@ right:
   message:
     success: "Text copied, paste it in your email client!"
     sent: "Your email client was opened with prefilled content, ready to send!"
-    waiting: "Waiting for action!"
+    intro: "Please use these buttons to copy the text or send it directly via your email client!"
 faq:
   left:
     title: "FAQ: Häufig gestellte Fragen"

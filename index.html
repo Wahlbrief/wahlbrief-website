@@ -630,9 +630,10 @@ layout: default
 
                                 </div>
 
-                                <p class="mb-0 mt-4" id="final-message"><i class='fas fa-info-circle me-2'></i>{% t
-                                    right.message.waiting
-                                    %}</p>
+                                <p class="mb-0 mt-4" id="final-message">
+                                    <i class='fas fa-info-circle me-2'></i>
+                                    {% t right.message.intro %}
+                                </p>
 
                                 <div class="row py-4 justify-content-center align-items-center">
                                     <div class="col-12 col-lg-6 mb-3 mb-lg-0">
@@ -656,11 +657,6 @@ layout: default
                                         displayMessage.innerHTML = "<i class='fas fa-check-circle me-2'></i>{% t right.message.success %}";
                                         displayMessage.style.backgroundColor = "#ECFDF5";
                                         displayMessage.style.color = "#065F46";
-                                        setTimeout(function () {
-                                            displayMessage.innerHTML = "<i class='fas fa-info-circle me-2'></i>{% t right.message.waiting %}";
-                                            displayMessage.style.backgroundColor = "#eff6ff";
-                                            displayMessage.style.color = "#1e40af";
-                                        }, 4000);
                                     });
 
                                     // Function to show/hide message after clicking on the send email button
@@ -670,11 +666,6 @@ layout: default
                                         displayMessage.innerHTML = "<i class='fas fa-check-circle me-2'></i>{% t right.message.sent %}";
                                         displayMessage.style.backgroundColor = "#ECFDF5";
                                         displayMessage.style.color = "#065F46";
-                                        setTimeout(function () {
-                                            displayMessage.innerHTML = "<i class='fas fa-info-circle me-2'></i>{% t right.message.waiting %}";
-                                            displayMessage.style.backgroundColor = "#eff6ff";
-                                            displayMessage.style.color = "#1e40af";
-                                        }, 4000);
                                     });
                                 </script>
 
