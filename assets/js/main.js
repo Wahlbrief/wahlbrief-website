@@ -449,6 +449,11 @@ searchInput.addEventListener("keyup", (e) => {
     case 13:
       onEnter();
       return;
+
+    case 27:
+      e.target.value = "";
+      suggestions.innerHTML = "";
+      return;
   }
 
   active = -1;
@@ -477,6 +482,11 @@ searchInput.addEventListener("keyup", (e) => {
 
     return div;
   });
+
+  if (matchArray.length <= 0) {
+    suggestions.innerHTML = "<div><span>Nothing Found</span></div>";
+    return;
+  }
 
   suggestions.innerHTML = "";
   suggestions.append(...divs);
