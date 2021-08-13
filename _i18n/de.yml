@@ -20,7 +20,7 @@ right:
   optional: "Bitte gib nun deinen vollständigen Namen (wie auf dem Ausweis), deine vollständige Meldeadresse des Hauptwohnsitzes und dein Geburtsdatum an. Das Wahlamt führt einen Datenabgleich durch.<br /><small>Du kannst alternativ die Vorlage kopieren und deine persönlichen Daten von Hand ergänzen.</small>"
   firstname: "Vorname"
   lastname: "Nachname"
-  street: "Straße"
+  street: "Straße und Hausnummer"
   number: "Nr."
   zipcode: "PLZ"
   city: "Ort"
@@ -43,8 +43,7 @@ right:
     address: "Versand-Adresse für die Unterlagen"
     name: "Vorname"
     surname: "Nachname (wie auf Briefkasten, c/o)"
-    street: "Straße"
-    number: "Nr."
+    street: "Straße und Hausnummer"
     zipcode: "PLZ"
     city: "Ort"
   subscription:

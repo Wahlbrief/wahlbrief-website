@@ -57,14 +57,14 @@ layout: default
 
                             Nachname: <span class="fw-bold" id="newsurname"></span><br />
                             Vorname: <span class="fw-bold" id="newname"></span><br />
-                            Addresse:<br />
+                            <br />
                             <span class="fw-bold" id="newstreet"></span><br />
                             <span class="fw-bold" id="newzip"></span>
                             <span class="fw-bold" id="newcity"></span><br />
 
                         </p>
 
-                        <p>Mit freundlichen Grüßen,<br />
+                        <p>Mit freundlichen Grüßen<br />
                             <span class="fw-bold" id="id-name"></span>
                             <span class="fw-bold" id="id-surname"></span>
                             <span id="id-newname"></span>
@@ -310,7 +310,7 @@ layout: default
                                         <div class="col-12 col-lg-12 mb-0">
                                             <div class="form-floating">
                                                 <input type="text" class="form-control" id="form-street"
-                                                    pattern="^[a-zA-Z0-9-,.\säöüÄÖÜß]{2,}$"
+                                                    pattern="^[a-zA-Z0-9-,.\säöüÄÖÜß\/]{2,}$"
                                                     placeholder="{% t right.shipping.street %}"
                                                     aria-label="{% t right.shipping.street %}"
                                                     aria-describedby="{% t right.shipping.street %}">
@@ -323,8 +323,8 @@ layout: default
                                             <div class="form-floating">
                                                 <input type="text" class="form-control"
                                                     onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
-                                                    id="form-zip" minlength="5" maxlength="5" pattern="[0-9]{5}"
-                                                    placeholder="{% t right.shipping.zipcode %}"
+                                                    id="form-zip" inputmode="numeric" minlength="5" maxlength="5"
+                                                    pattern="[0-9]{5}" placeholder="{% t right.shipping.zipcode %}"
                                                     aria-label="{% t right.shipping.zipcode %}"
                                                     aria-describedby="{% t right.shipping.zipcode %}">
                                                 <label for="form-zip">{% t right.shipping.zipcode %}</label>
@@ -486,7 +486,7 @@ layout: default
                                         <div class="col-12 col-lg-12 mb-0">
                                             <div class="form-floating">
                                                 <input type="text" class="form-control" id="form-newstreet"
-                                                    pattern="^[a-zA-Z0-9-,.\säöüÄÖÜß]{2,}$"
+                                                    pattern="^[a-zA-Z0-9-,.\säöüÄÖÜß\/]{2,}$"
                                                     placeholder="{% t right.shipping.street %}"
                                                     aria-label="{% t right.shipping.street %}"
                                                     aria-describedby="{% t right.shipping.street %}">
@@ -500,8 +500,9 @@ layout: default
                                                 <input type="text"
                                                     onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
                                                     oninput="this.value=this.value.slice(0,this.maxLength)"
-                                                    class="form-control" id="form-newzip" minlength="5" maxlength="5"
-                                                    pattern="[0-9]{5}" placeholder="{% t right.shipping.zipcode %}"
+                                                    inputmode="numeric" class="form-control" id="form-newzip"
+                                                    minlength="5" maxlength="5" pattern="[0-9]{5}"
+                                                    placeholder="{% t right.shipping.zipcode %}"
                                                     aria-label="{% t right.shipping.zipcode %}"
                                                     aria-describedby="{% t right.shipping.zipcode %}">
                                                 <label for="form-newzip">{% t right.shipping.zipcode %}</label>
@@ -598,13 +599,13 @@ layout: default
                                     </p>
 
                                     <p id="finalogaddress">Bitte senden Sie mir die Unterlagen an meine
-                                        Meldeadresse:</p>
+                                        Meldeadresse</p>
 
-                                    <p id="finalnewaddress">Bitte senden Sie mir die Unterlagen an folgende<br /><br />
+                                    <p id="finalnewaddress">Bitte senden Sie mir die Unterlagen an folgende
+                                        adresse:<br /><br />
 
                                         Nachname: <span class="fw-bold ms-2" id="final-newname"></span><br />
                                         Vorname: <span class="fw-bold ms-2" id="final-newsurname"></span><br />
-                                        Adresse:<br /><br />
                                         <span class="fw-bold" id="final-newstreet"></span><br />
                                         <span class="fw-bold" id="final-newzip"></span>
                                         <span class="fw-bold" id="final-newcity"></span><br />
@@ -614,7 +615,7 @@ layout: default
                                         <span class="fw-bold ms-2" id="final-city"></span>
                                     </p>
 
-                                    <p>Mit freundlichen Grüßen,<br />
+                                    <p>Mit freundlichen Grüßen<br />
                                         <span class="fw-bold me-1" id="final-id-name"></span>
                                         <span class="fw-bold" id="final-id-surname"></span>
                                         <span id="final-id-street"></span>
