@@ -387,7 +387,19 @@ clipboard.on("success", function (e) {
   const endpoint = "/assets/test.json";
   const result = await fetch(endpoint).then((blob) => blob.json());
 
-  zips.push(...result);
+  const sorted = result.sort((a, b) => {
+    if (a.PLZ !== b.PLZ) {
+      return a.PLZ - b.PLZ;
+    }
+
+    if (a.ORT > b.ORT) {
+      return 1;
+    } else {
+      return -1;
+    }
+  });
+
+  zips.push(...sorted);
 })();
 
 // Function to find matches
@@ -421,11 +433,20 @@ function setFocus() {
   }
 }
 
+const keyUpListener = (e) => {
+  if (e.keyCode == "13") {
+    e.target.removeEventListener("keyup", keyUpListener);
+    secondpage();
+    active = -1;
+  }
+};
+
 // Function to set input box content on enter button on suggestion
 
 function onEnter() {
   const children = Array.from(suggestions.children);
   const len = children.length;
+
   if (len == 0) {
     return;
   }
@@ -433,14 +454,14 @@ function onEnter() {
   if (len == 1) {
     active %= len;
     children[active].click();
-    secondpage();
+    searchInput.addEventListener("keyup", keyUpListener);
+    return;
   }
 
-  if (active >= 0) {
+  if (active > 1) {
     active %= len;
-
     children[active].click();
-    secondpage();
+    searchInput.addEventListener("keyup", keyUpListener);
   }
 }
 
