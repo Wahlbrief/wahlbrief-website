@@ -1,5 +1,9 @@
-// Smooth Scrolling
+// Root variables
+:root {
+  font-size: 16px;
+}
 
+// Smooth Scrolling
 html,
 body {
   scroll-behavior: smooth;
@@ -29,39 +33,35 @@ h6 {
 
 .h1,
 h1 {
-  font-size: 65px;
+  font-size: clamp(3rem, 1.5vw + 2.7rem, 4rem);
 }
 
 .h2,
 h2 {
-  font-size: 48px;
+  font-size: clamp(2rem, 1.5vw + 1.7rem, 3rem);
 }
 
 .h3,
 h3 {
-  font-size: 34px;
+  font-size: clamp(1.5rem, 0.7vw + 1.3rem, 2rem);
 }
 
 .h4,
 h4 {
-  font-size: 24px;
+  font-size: clamp(1.125rem, 0.6vw + 1rem, 1.5rem);
 }
 
 .h5,
 h5 {
-  font-size: 18px;
+  font-size: clamp(1rem, 0.2vw + 1rem, 1.125rem);
 }
 
 .h6,
 h6 {
-  font-size: 16px;
+  font-size: clamp(0.875rem, 0.4vw + 0.8rem, 1.125rem);
 }
 
 // Paragraphs and Custom Font Sizes
-
-p {
-  font-size: 16px;
-}
 
 a {
   color: $cyan-600;
@@ -73,7 +73,7 @@ a {
 }
 
 .subtitle {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 // Nav
@@ -82,7 +82,7 @@ a {
 }
 
 #dropdownMenu2 {
-  padding: 12px 20px;
+  padding: 0.75rem 1.25rem;
   background-color: rgba(255, 255, 255, 0.1);
   color: $white;
 }
@@ -114,9 +114,9 @@ a {
   text-align: center;
 
   & a {
-    padding: 5px;
+    padding: 0.313rem;
     text-decoration: none;
-    font-size: 48px;
+    font-size: 2.5rem;
     color: $white;
     display: block;
     transition: 0.35s;
@@ -147,13 +147,13 @@ a {
     justify-content: center;
     text-decoration: none;
     border-radius: 50%;
-    padding: 3px;
-    margin: 0 3px;
+    padding: 0.2rem;
+    margin: 0 0.2rem;
     color: $cyan-700;
     background-color: $white;
-    font-size: 26px;
-    width: 48px;
-    height: 48px;
+    font-size: 1.625rem;
+    width: 3rem;
+    height: 3rem;
     transition: 0.3s ease-in-out;
 
     &:hover {
@@ -167,7 +167,7 @@ a {
   background-color: transparent;
   color: $white;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25rem;
 
   &:hover,
   :focus,
@@ -197,9 +197,9 @@ a {
 
 .letter {
   background-color: $white;
-  box-shadow: 0px -4px 4px rgba(227, 227, 227, 0.25);
-  border-radius: 2px;
-  border-bottom: 6px solid rgba(14, 116, 144, 0.35);
+  box-shadow: 0rem -0.25rem 0.25rem rgba(227, 227, 227, 0.25);
+  border-radius: 0.125rem;
+  border-bottom: 0.375rem solid rgba(14, 116, 144, 0.35);
   display: none;
 
   & h4 {
@@ -210,11 +210,10 @@ a {
 
 .final-letter {
   background-color: $white;
-  box-shadow: 0px -4px 4px rgba(227, 227, 227, 0.25),
-    0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 2px;
-  min-height: 250px;
-  border-left: 5px solid $gray-200;
+  box-shadow: 0rem -0.25rem 0.25rem rgba(227, 227, 227, 0.25),
+  0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.125rem;
+  border-left: 0.375rem solid $gray-200;
 }
 
 .outro {
@@ -226,13 +225,13 @@ a {
     justify-content: center;
     text-decoration: none;
     border-radius: 50%;
-    padding: 1px;
-    margin: 0 3px;
+    padding: 0.125rem;
+    margin: 0 0.2rem;
     color: $white;
     background-color: $cyan-700;
-    font-size: 24px;
-    width: 42px;
-    height: 42px;
+    font-size: 1.5rem;
+    width: 2.625rem;
+    height: 2.625rem;
     transition: 0.3s ease-in-out;
 
     &:hover {
@@ -247,12 +246,12 @@ a {
   justify-content: center;
   text-decoration: none;
   border-radius: 50%;
-  padding: 3px;
-  margin: 0 3px;
+  padding: 0.2rem;
+  margin: 0 0.2rem;
   color: $white;
   background-color: $cyan-700;
-  width: 28px;
-  height: 28px;
+  width: 1.75rem;
+  height: 1.75rem;
   transition: 0.3s ease-in-out;
 
   &:hover {
@@ -261,7 +260,7 @@ a {
 }
 
 .pages a {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   color: $cyan-700;
   transition: 0.3s ease-in-out;
@@ -273,10 +272,10 @@ a {
 
 // Buttons
 .btn-new {
-  padding: 20px 26px;
+  padding: 1.25rem 1.625rem;
   color: $gray-100;
   background-color: $cyan-700;
-  border-radius: 2px;
+  border-radius: 0.125rem;
   transition: 0.3s ease-in-out;
 
   &:hover {
@@ -286,7 +285,7 @@ a {
 }
 
 .btn-contact {
-  padding: 12px 26px;
+  padding: 0.75rem 1.625rem;
   color: $gray-100;
   background-color: $cyan-700;
   border-radius: 2px;
@@ -299,10 +298,10 @@ a {
 }
 
 .btn-preview {
-  padding: 20px 40px;
+  padding: 1.25rem 2.5rem;
   color: $gray-100;
   background-color: $cyan-700;
-  border-radius: 2px;
+  border-radius: 0.125rem;
   transition: 0.3s ease-in-out;
 
   &:hover {
@@ -315,10 +314,10 @@ a {
   display: block;
   color: $gray-100;
   background-color: $cyan-700;
-  border-radius: 2px;
+  border-radius: 0.125rem;
   font-weight: 500;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
   width: 100%;
   text-align: center;
   text-decoration: none;
@@ -335,9 +334,9 @@ a {
   color: $gray-700;
   font-weight: 500;
   background-color: rgba(14, 116, 144, 0.1);
-  border-radius: 2px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  border-radius: 0.125rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
   width: 100%;
   text-align: center;
   border: none;
@@ -351,12 +350,12 @@ a {
 
 .back {
   color: $gray-600;
-  font-size: 18px;
-  margin-right: 20px;
+  font-size: 1.125rem;
+  margin-right: 1.25rem;
   transition: 0.3s ease-in-out;
 
   &:hover:before {
-    margin-right: 10px;
+    margin-right: 0.625rem;
   }
 
   &:before {
@@ -364,35 +363,32 @@ a {
     font-family: "Font Awesome 5 Free";
     font-weight: bold;
     font-size: inherit;
-    margin-right: 6px;
+    margin-right: 0.375rem;
     color: inherit;
     transition: 0.3s ease-in-out;
   }
-}
 
-.back-small {
-  color: $gray-600;
-  font-size: 18px;
-  transition: 0.3s ease-in-out;
-  padding: 0;
+  &-small {
+    padding: 0;
 
-  &:before {
-    content: "\f053";
-    font-family: "Font Awesome 5 Free";
-    font-weight: bold;
-    font-size: inherit;
-    margin-right: 6px;
-    color: inherit;
+    &:before {
+      content: "\f053";
+      font-family: "Font Awesome 5 Free";
+      font-weight: bold;
+      font-size: inherit;
+      margin-right: 0.375rem;
+      color: inherit;
+    }
   }
 }
 
 // Inputs
 details {
   position: relative;
-  margin-bottom: 15px;
-  padding-bottom: 20px;
-  padding-left: 40px;
-  font-size: 16px;
+  margin-bottom: 1rem;
+  padding-bottom: 1.25rem;
+  padding-left: 2.5rem;
+  font-size: 1rem;
   font-weight: 400;
 
   &:not(:last-of-type) {
@@ -410,36 +406,36 @@ details > summary::marker {
 
 details > summary {
   list-style: none !important;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: $gray-900;
   font-weight: 500;
 }
 
 details[open] > summary {
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
 details > summary::before {
   content: "\f078";
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: "font awesome 5 free";
   font-weight: 700;
   color: $cyan-600;
   position: absolute;
   left: 0px;
-  top: 15px;
+  top: 1rem;
   transform: translateY(-50%);
 }
 
 details[open] > summary::before {
   content: "\f077";
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: "font awesome 5 free";
   font-weight: 700;
   color: $cyan-600;
   position: absolute;
   left: 0px;
-  top: 15px;
+  top: 1rem;
   transform: translateY(-50%);
 }
 
@@ -485,12 +481,12 @@ input[type="number"] {
     top: 100%;
     left: 0;
     right: 0;
-    max-height: 248px;
+    max-height: 15.5rem;
     overflow: auto;
 
     & div {
-      border-radius: 3px;
-      padding: 12px 22px;
+      border-radius: 0.25rem;
+      padding: 0.75rem 1.375rem;
       cursor: pointer;
       color: $gray-900;
 
@@ -508,7 +504,7 @@ input[type="number"] {
     }
 
     & div.no-items {
-      padding: 12px 22px;
+      padding: 0.75rem 1.375rem;
       pointer-events: none;
       color: #991b1b;
       background-color: #fef2f2;
@@ -556,7 +552,7 @@ input[type="number"] {
 input[type="text"],
 input[type="email"],
 input[type="number"] {
-  padding: 25px 20px 10px 20px !important;
+  padding: 1.5rem 1.25rem 0.625rem 1.25rem !important;
   border: 1px solid $gray-500 !important;
   border-radius: 0.25rem;
 
@@ -566,33 +562,33 @@ input[type="number"] {
 
   &:valid:not(:focus):not(:placeholder-shown) {
     background: url("/assets/images/checkmark.svg");
-    background-size: 25px;
+    background-size: 1.5rem;
     background-repeat: no-repeat;
-    background-position: right 15px center;
+    background-position: right 1rem center;
     box-shadow: inset 0 0 0 0.15rem green;
   }
 
   &:valid:focus:not(:placeholder-shown) {
     background: url("/assets/images/checkmark.svg");
-    background-size: 25px;
+    background-size: 1.5rem;
     background-repeat: no-repeat;
-    background-position: right 15px center;
+    background-position: right 1rem center;
     box-shadow: inset 0 0 0 0.15rem green;
   }
 
   &:invalid:focus:not(:placeholder-shown) {
     background: url("/assets/images/xmark.svg");
-    background-size: 25px;
+    background-size: 1.5rem;
     background-repeat: no-repeat;
-    background-position: right 15px center;
+    background-position: right 1rem center;
     box-shadow: inset 0 0 0 0.15rem #cc3333;
   }
 
   &:invalid:not(:focus):not(:placeholder-shown) {
     background: url("/assets/images/xmark.svg");
-    background-size: 25px;
+    background-size: 1.5rem;
     background-repeat: no-repeat;
-    background-position: right 15px center;
+    background-position: right 1rem center;
     box-shadow: inset 0 0 0 0.15rem #cc3333;
   }
 }
@@ -605,9 +601,9 @@ input[type="number"] {
 
 .form-floating > .form-control,
 .form-floating > .form-select {
-  height: calc(3.5rem + 10px);
+  height: calc(3.5rem + 0.625rem);
   line-height: initial;
-  padding-top: 25px !important;
+  padding-top: 1.5rem !important;
 }
 
 .form-floating > .form-control:focus ~ label,
@@ -618,7 +614,7 @@ input[type="number"] {
 }
 
 .input-group.form-floating label {
-  padding-top: 20px;
+  padding-top: 1.25rem;
 }
 
 .input-group.form-floating > .form-control:focus ~ label,
@@ -681,7 +677,7 @@ input[type="number"] {
   + .tgl-btn {
     background: #f0f0f0;
     border-radius: 2em;
-    padding: 2px;
+    padding: 0.125rem;
     transition: all 0.4s ease;
     &:after {
       border-radius: 50%;
@@ -702,16 +698,16 @@ legend {
 }
 
 fieldset {
-  padding: 10px;
+  padding: 0.625rem;
   border: 1px solid $gray-500;
   border-radius: 0.25rem;
 }
 
 #final-message {
-  padding: 20px;
+  padding: 1.25rem;
   background-color: #eff6ff;
   color: #1e40af;
-  border-radius: 3px;
+  border-radius: 0.25rem;
   display: flex;
   align-items: center;
 
@@ -721,36 +717,7 @@ fieldset {
 }
 
 // Media queries
-@media (max-width: 768px) {
-  .h1,
-  h1 {
-    font-size: 48px;
-  }
-
-  .h2,
-  h2 {
-    font-size: 34px;
-  }
-
-  .h3,
-  h3 {
-    font-size: 24px;
-  }
-
-  .h4,
-  h4 {
-    font-size: 18px;
-  }
-
-  .h5,
-  h5 {
-    font-size: 16px;
-  }
-
-  .h6,
-  h6 {
-    font-size: 14px;
-  }
+@media (max-width: 48rem) {
   .input-group {
     display: block;
     & input {
@@ -777,33 +744,33 @@ fieldset {
 
     &:valid:not(:focus):not(:placeholder-shown) {
       background: url("/assets/images/checkmark.svg");
-      background-size: 20px;
+      background-size: 1.25rem;
       background-repeat: no-repeat;
-      background-position: right 15px center;
+      background-position: right 1rem center;
       box-shadow: inset 0 0 0 0.15rem green;
     }
 
     &:valid:focus:not(:placeholder-shown) {
       background: url("/assets/images/checkmark.svg");
-      background-size: 20px;
+      background-size: 1.25rem;
       background-repeat: no-repeat;
-      background-position: right 15px center;
+      background-position: right 1rem center;
       box-shadow: inset 0 0 0 0.15rem green;
     }
 
     &:invalid:focus:not(:placeholder-shown) {
       background: url("/assets/images/xmark.svg");
-      background-size: 20px;
+      background-size: 1.25rem;
       background-repeat: no-repeat;
-      background-position: right 15px center;
+      background-position: right 1rem center;
       box-shadow: inset 0 0 0 0.15rem #cc3333;
     }
 
     &:invalid:not(:focus):not(:placeholder-shown) {
       background: url("/assets/images/xmark.svg");
-      background-size: 20px;
+      background-size: 1.25rem;
       background-repeat: no-repeat;
-      background-position: right 15px center;
+      background-position: right 1rem center;
       box-shadow: inset 0 0 0 0.15rem #cc3333;
     }
   }
@@ -830,8 +797,7 @@ fieldset {
   }
   .final-letter {
     box-shadow: none;
-    border-radius: 2px;
-    min-height: auto;
+    border-radius: 0.25rem;
     background: linear-gradient(0deg, #f1f5f9, #f1f5f9);
   }
 }
