@@ -506,6 +506,8 @@ searchInput.addEventListener("keyup", (e) => {
     nameSpan.innerText = val;
     div.appendChild(nameSpan);
 
+    searchInput.scrollIntoView();
+
     div.addEventListener("click", () => {
       searchInput.value = val;
       suggestions.innerHTML = "";
