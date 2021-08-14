@@ -412,6 +412,7 @@ function findMatches(keyword, zips) {
 
 const searchInput = document.querySelector("#zipcode");
 const suggestions = document.querySelector("#autocomplete-list");
+const nextButton = document.querySelector("#next-click");
 
 let active = -1;
 
@@ -506,7 +507,7 @@ searchInput.addEventListener("keyup", (e) => {
     nameSpan.innerText = val;
     div.appendChild(nameSpan);
 
-    searchInput.scrollIntoView();
+    nextButton.scrollIntoView();
 
     div.addEventListener("click", () => {
       searchInput.value = val;
