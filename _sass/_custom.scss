@@ -176,6 +176,13 @@ a {
   }
 }
 
+.dropdown-toggle {
+  border: none;
+  outline: none;
+  background: transparent;
+  border-radius: 0.25rem;
+}
+
 // Misc
 .background-white {
   background-color: $white;
