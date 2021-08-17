@@ -7,7 +7,7 @@ layout: default
         <!-- Left side -->
         <div class="col-lg-12 col-xl-6 background-bluegray-100">
             <div class="container d-flex flex-column flex-fill h-100 py-5 px-2 px-lg-5">
-                <div class="row mb-5">
+                <div class="row mb-4 mb-lg-5">
                     <div class="col-12">
                         <div class="navbar navbar-expand-xl justify-content-between">
                             <div>
@@ -117,6 +117,9 @@ layout: default
                         <p>{% t right.preview-description %}</p>
                     </div>
 
+                    <!--<button onclick="window.scrollTo(0,document.body.scrollHeight);" class="icon-scroll"><i
+                            class="fas fa-chevron-down"></i></button>-->
+
                 </div>
 
                 <div class="row mt-auto d-none d-lg-block">
@@ -188,8 +191,8 @@ layout: default
                                 <div class="autocomplete-items mb-3" id="autocomplete-list">
                                 </div>
 
-                                <button id="next-click" onclick="secondpage();" class="btn btn-new d-block w-100 d-xxl-none"><i
-                                        class="fas fa-search me-2"></i>{% t
+                                <button id="next-click" onclick="secondpage();"
+                                    class="btn btn-new d-block w-100 d-xxl-none"><i class="fas fa-search me-2"></i>{% t
                                     right.button
                                     %}</button>
 
