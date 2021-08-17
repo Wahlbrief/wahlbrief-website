@@ -66,26 +66,26 @@ right:
 faq:
   left:
     title: "FAQ: Häufig gestellte Fragen"
-    subtitle: "Per Briefwahl wählen ist einfach, sicher und unkompliziert. Jede wahlberechtigte Person kann statt am Tag der Wahl vorher per Brief wählen. Die wichtigsten Fragen und Antworten."
+    subtitle: "Per Briefwahl zu wählen ist einfach, sicher und unkompliziert. Jede wahlberechtigte Person in Deutschland kann vor der Wahl per Brief ihre Stimme abgeben, statt am Tag der Wahl in ein Wahllokal zu gehen. Die häufigsten Fragen, die dazu auftauchen, beantworten wir hier."
   right:
     title: "Antworten auf die wichtigsten Fragen"
 questions:
   - title: "Wer kann Briefwahl beantragen?"
     answer: "Jede Person, die stimmberechtigt ist, kann ohne Angabe von Gründen per Briefwahl statt persönlich im Wahllokal wählen."
   - title: "Welche Fristen gibt es zu beachten?"
-    answer: "Es gelten keine besonderen Fristen. Die Briefwahlunterlagen können ab sofort beantragt werden, und solange der Wahlbrief mit der abgegebenen Stimme rechtzeitig zum Wahltag eingeht (Zustellung beim Wahlamt), wird die Stimme mitgezählt."
+    answer: "Die Briefwahlunterlagen können ab sofort beantragt werden. Der Bundeswahlleiter empfiehlt sogar, die Briefwahl so frühzeitig wie möglich zu beantragen und nicht abzuwarten, bis die Wahlbenachrichtigung eingetroffen ist (LINK). Solange der Wahlbrief mit der abgegebenen Stimme rechtzeitig zum Wahltag eingeht, wird die Stimme mitgezählt. Spätestens sollte der Wahlbrief am dritten Werktag vor der Wahl in die Post gegeben werden - also am Donnerstag, 23. September 2021."
   - title: "Wann kann ich mit den Unterlagen rechnen?"
     answer: "Die Unterlagen werden meistens wenige Werktage nach Eingang deines Antrags beim Wahlamt versandt."
   - title: "Muss ich für den Wahlbrief Porto zahlen?"
     answer: "Nein, innerhalb Deutschlands werden Wahlbriefe kostenfrei durch die Deutsche Post zugestellt."
   - title: "Ich werde nicht an meiner Meldeadresse sein. Kann ich die Unterlagen an eine andere Adresse versenden lassen?"
-    answer: "Das ist problemlos möglich. Bitte beachte jedoch, dass dein Antrag auf Briefwahlunterlagen auf jeden Fall deine Meldeadresse enthalten muss. Du kannst dann angeben, dass die Unterlagen an eine andere Adresse versandt werden sollen."
+    answer: "Das ist problemlos möglich. Bitte beachten Sie jedoch, dass Ihr Antrag auf Briefwahlunterlagen auf jeden Fall Ihre Meldeadresse enthalten muss. Sie können dann angeben, dass die Unterlagen an eine andere Adresse versandt werden sollen."
   - title: "Muss ich auf die Wahlbenachrichtigung warten?"
-    answer: "Nein, das ist nicht nötig, auch wenn manche Online-Portale der Kommunen oder Länder das für einen Online-Antrag auf Briefwahlunterlagen voraussetzen, weil sie die dort aufgedruckte Wählerverzeichnisnummer abfragen. Der formlose Antrag per E-Mail an das Wahlamt deines Wohnsitzes mit deinen persönlichen Angaben ist jedoch ausreichend."
+    answer: "Nein, das ist nicht nötig, auch wenn manche Online-Portale der Kommunen oder Länder die Wahlbenachrichtigung für einen Online-Antrag auf Briefwahlunterlagen voraussetzen, weil sie die dort aufgedruckte Wählerverzeichnisnummer abfragen. Der formlose Antrag per E-Mail an das Wahlamt Ihres Wohnsitzes mit Ihren persönlichen Angaben ist jedoch ausreichend."
   - title: "Kann ich trotzdem im Wahllokal wählen, wenn ich die Unterlagen nicht rechtzeitig abschicke?"
-    answer: "Wenn du deine Wahl-Unterlagen noch nicht ausgefüllt hast, kannst du mit dem Wahlschein auch im Wahllokal wählen, allerdings nur im Wahllokal, was dir in der Wahlbenachrichtigung zugewiesen wurde."
+    answer: "Wenn Sie Ihre Wahlunterlagen noch nicht ausgefüllt haben, können Sie den zugesendeten Wahlschein auch im Wahllokal abgeben - allerdings nur im Wahllokal, was Ihnen in der Wahlbenachrichtigung zugewiesen wurde."
   - title: "Kann ich den Wahlbrief auch direkt beim Wahlamt einwerfen?"
-    answer: "Das ist möglich und z.B. sinnvoll, um eine verspätete Zustellung des Wahlbriefs zu vermeiden, wenn die Briefwahlunterlagen erst am Tag vor oder am Tag der Wahl ausgefüllt werden. Der Brief muss bis zur Schließung der Wahllokale beim Wahlamt eingegangen sein."
+    answer: "Das ist möglich und dann sinnvoll, wenn Sie die Briefwahlunterlagen erst am Tag vor oder am Tag der Wahl ausgefüllt haben. Der Brief muss bis zur Schließung der Wahllokale beim Wahlamt eingegangen sein."
 imprint:
   left:
     title: "Impressum"
@@ -97,7 +97,11 @@ imprint:
 about:
   left:
     title: "Über das Projekt"
-    subtitle: "Wahlbrief ist ein Open Source Projekt von Mehr Demokratie e.V. zur Bundestagswahl 2021. Wir setzen uns dafür ein, dass jeder wahlberechtigte Mensch seine Stimme abgibt, damit unsere Demokratie lebendig ist."
+    subtitle: "wahlbrief ist ein Open Source Projekt von Mehr Demokratie e.V. (LINK) zur Bundestagswahl 2021. Wir setzen uns dafür ein, dass jeder wahlberechtigte Mensch seine Stimme abgibt, damit unsere Demokratie lebendig bleibt. Zu einer starken Demokratie gehört eine hohe Wahlbeteiligung. Mit dem Projekt wollen wir es allen wahlberechtigten Bürgerinnen und Bürgern mithilfe der Briefwahl so leicht wie möglich machen, an der Wahl teilzunehmen. Mehr Demokratie e.V. ist überparteilich und gemeinnützig.
+
+Die Seite funktioniert in drei einfachen Schritten: Zuerst finden wir die E-Mail-Adresse Ihres zuständigen Wahlamts. Dann geben Sie Ihre persönlichen Daten ein, die das Wahlamt zur Zusendung der Unterlagen benötigt. Zum Schluss erstellen wir die fertige E-Mail an das Wahlamt für Sie, so dass Sie nur noch auf 'Senden' klicken müssen.'<br /><small>Wir speichern dabei Ihre persönlichen Daten nicht. [technische Erklärung, was stattdessen passiert]</small> 
+
+Open Source bedeutet, dass der Quellcode der Webseite öffentlich einsehbar ist (Link)."
   right:
     title: "Jede Stimme zählt: Wahlbeteiligung erhöhen, Demokratie stärken"
-    text: "Bla bla bla"
+    text: "Wie stark eine Demokratie ist, zeigt sich daran, wie viele Menschen sich an den Wahlen beteiligen. Auch wenn die Zahlen etwas schwanken, darf man zusammenfassend sagen, dass seit 1990 in Deutschland etwa drei Viertel der Wahlberechtigten bei Bundestagswahlen ihre Stimme abgeben. Viele Nichtwählerinnen und Nichtwähler geben hierfür Gründe an, die mit ihrer Entfremdung oder Enttäuschung von dem politischen System zu tun haben. Wir können diese Entwicklung allein nicht ändern. Aber wir können helfen, das Wählen leichter zu machen, indem wir den Gang in das Wahllokal am Sonntag, 26. September 2021, überflüssig machen. wahlbrief hilft dabei, in dem wir die Beantragung der Unterlagen papierlos und mit wenigen Klicks für alle ermöglichen."
