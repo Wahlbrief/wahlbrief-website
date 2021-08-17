@@ -4,7 +4,9 @@ left:
 
  <br><b>Mit unserem Service können Sie bequem und schnell alle nötigen Unterlagen für die Briefwahl online beantragen.</b> 
  
- <br><small>Hinweis: In manchen Regionen finden am 26. September zusätzlich noch andere Wahlen und Abstimmungen statt. Diese Unterlagen werden bei der Beantragung der Briefwahlunterlagen von den jeweiligen Wahlämtern automatisch mit versendet.</small>"
+ <br>Die Seite funktioniert in drei einfachen Schritten: Zuerst finden wir die E-Mail-Adresse Ihres zuständigen Wahlamts. Dann geben Sie Ihre persönlichen Daten ein, die das Wahlamt zur Zusendung der Unterlagen benötigt. Zum Schluss erstellen wir die fertige E-Mail an das Wahlamt für Sie, so dass Sie nur noch auf "Senden" klicken müssen."
+
+ <br><small>Wir speichern Ihre persönlichen Daten nicht. [technische Erklärung]</small>
   preview: "Vorschau: Dein Antrag auf Briefwahl"
   home: "Home"
   about: "Projekt"
@@ -17,7 +19,7 @@ left:
 right:
   zip: "Zuständiges Wahlamt suchen"
   description: "Bitte gib die Postleitzahl deiner Meldeadresse ein. Zuständig für den Briefwahl-Antrag ist das Bürgeramt an deinem Hauptwohnsitz."
-  tos: "<small>Mit der Nutzung von Wahlbrief stimmst du den Nutzungsbedingungen und den Datenschutz-Hinweisen zu.<br>Wir speichern deine persönlichen Daten nicht.</small>"
+  tos: "<small>Mit der Nutzung von Wahlbrief stimmst du den Nutzungsbedingungen und den Datenschutz-Hinweisen zu.<br>Hinweis: In manchen Regionen finden am 26. September zusätzlich noch andere Wahlen und Abstimmungen statt. Diese Unterlagen werden bei der Beantragung der Briefwahlunterlagen von den jeweiligen Wahlämtern automatisch mit versendet.</small>"
   placeholder: "PLZ (Hauptwohnsitz)"
   button: "Wahlamt suchen"
   residence: "Persönliche Angaben"
