@@ -382,6 +382,20 @@ a {
   }
 }
 
+// Scrolling indicator arrow
+
+.scrollIndicator {
+  z-index: 2;
+  position: sticky;
+  bottom: 5%;
+
+  & button {
+    background: transparent;
+    outline: none;
+    border: none;
+  }
+}
+
 // Inputs
 details {
   position: relative;
