@@ -4,7 +4,7 @@ left:
 
   <br /><b>Jetzt die Unterlagen zur Briefwahl beantragen: Schnell, bequem und online. Wahl und Versand sind kostenfrei.</b>
 
-  <br><br><small>Je nach Region wird die Briefwahl für weitere Wahlen und Abstimmungen (Landtagswahlen, Bürgerbegehren) direkt mitbeantragt.</small>"
+  <br><br><small>Je nach Region wird die Briefwahl für weitere Wahlen direkt mitbeantragt (Landtagswahlen, Bürgerbegehren).</small>"
   preview: "Vorschau: Dein Antrag auf Briefwahl"
   home: "Home"
   about: "Projekt"
@@ -35,9 +35,9 @@ right:
   month: "Monat"
   year: "Jahr"
   arrival: "Die Briefwahl-Unterlagen werden voraussichtlich am <strong>15. August 2021</strong> zugestellt."
-  same-address: "Unterlagen an die Meldeadresse versenden."
-  different-address: "Abweichende Adresse für den Versand angeben."
-  checkbox-address: "Abweichende Adresse für den Versand angeben."
+  same-address: "Unterlagen an die Meldeadresse versenden"
+  different-address: "Abweichende Adresse für den Versand angeben"
+  checkbox-address: "Abweichende Adresse für den Versand angeben"
   checkbox-description: "Andernfalls werden die Unterlagen an die Meldeadresse zugestellt."
   email-updates: "Ich möchte von Wahlbrief an das rechtzeitige Ausfüllen der Unterlagen erinnert werden."
   invalidemail: "Bitte gültige Email-Adresse angeben"
@@ -63,7 +63,7 @@ right:
   back: "Zurück"
   message:
     success: "Text kopiert. Jetzt in der Email-App einfügen und an die oben genannte Adresse versenden."
-    sent: "Der Antrag sollte sich in der Email-App geöffnet haben. Einfach absenden."
+    sent: "Der Antrag sollte sich in der Email-App geöffnet haben. Nur noch versenden."
     intro: "Auf einen der Buttons klicken und den fertigen Antrag per E-Mail versenden."
 faq:
   left:
