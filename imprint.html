@@ -5,7 +5,7 @@ layout: page
 <div class="container-fluid h-100">
     <div class="row h-100">
         <!-- Left side -->
-        <div class="col-md-12 col-lg-6 background-bluegray-100 pattern">
+        <div class="col-md-12 col-lg-6 background-bluegray-100">
             <div class="container d-flex flex-column flex-fill h-100 py-5 px-2 px-lg-4">
                 <div class="row mb-5">
                     <div class="col-12">
@@ -49,12 +49,12 @@ layout: page
                         <p>{% t imprint.right.text %}</p>
                         <a class="btn btn-contact" href="mailto:contact@walhbrief.de">{% t imprint.right.button %}</a>
                     </div>
-                    <p class="mb-0 mt-4 d-flex d-lg-none"><small>Ein <a
+                    <p class="mb-0 mt-4 d-block d-lg-none"><small>Ein <a
                                 href="https://github.com/Wahlbrief/wahlbrief-website" target="_blank"
                                 rel="noreferrer noopener">Open Source Projekt</a> von Mehr
                             Demokratie. {{ 'now' |
                             date: "%Y" }}</small></p>
-                    <div class="d-flex d-lg-none align-items-center justify-content-between mt-4">
+                    <div class="d-block d-lg-none mt-4">
                         <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" id="dropdownMenu3"
                                 data-bs-toggle="dropdown" aria-expanded="false">

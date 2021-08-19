@@ -1,40 +1,3 @@
-// Global function to disable back functionality from browser
-
-(function (global) {
-  if (typeof global === "undefined") {
-    throw new Error("window is undefined");
-  }
-
-  var _hash = "";
-  var noBackPlease = function () {
-    global.location.href += "#";
-
-    global.setTimeout(function () {
-      global.location.href += "";
-    }, 50);
-  };
-
-  global.onhashchange = function () {
-    if (global.location.hash !== _hash) {
-      global.location.hash = _hash;
-    }
-  };
-
-  global.onload = function () {
-    noBackPlease();
-
-    // Disables backspace on page except on input fields and textarea
-    document.body.onkeydown = function (e) {
-      var elm = e.target.nodeName.toLowerCase();
-      if (e.which === 8 && elm !== "input" && elm !== "textarea") {
-        e.preventDefault();
-      }
-      // Stopping the event bubbling up the DOM tree
-      e.stopPropagation();
-    };
-  };
-})(window);
-
 // Declaration of most const and lets
 
 const zips = [];
@@ -197,10 +160,12 @@ function is_valid_datalist_value(inputValue, cityValue) {
 function secondpage() {
   let SecondTab = document.querySelector("#step-2-tab");
   let tab = new bootstrap.Tab(SecondTab);
-  let x = document.getElementById("zipcode").value.split(" ")[0].trim();
-  let xi = document.getElementById("zipcode").value.split(" ")[1].trim();
   let y = document.getElementById("zipcode");
   let z = document.getElementById("validation");
+  let x = document.getElementById("zipcode").value.split(" ")[0].trim();
+  let xi = document.getElementById("zipcode").value.split(" ")[1]
+    ? y.value.substr(y.value.indexOf(" ") + 1)
+    : "";
 
   if (x.length < 5) {
     z.textContent = "You have inserted less than 5 digits!";
@@ -385,7 +350,19 @@ clipboard.on("success", function (e) {
   const endpoint = "/assets/test.json";
   const result = await fetch(endpoint).then((blob) => blob.json());
 
-  zips.push(...result);
+  const sorted = result.sort((a, b) => {
+    if (a.PLZ !== b.PLZ) {
+      return a.PLZ - b.PLZ;
+    }
+
+    if (a.ORT > b.ORT) {
+      return 1;
+    } else {
+      return -1;
+    }
+  });
+
+  zips.push(...sorted);
 })();
 
 // Function to find matches
@@ -398,6 +375,7 @@ function findMatches(keyword, zips) {
 
 const searchInput = document.querySelector("#zipcode");
 const suggestions = document.querySelector("#autocomplete-list");
+const scrollTo = document.querySelector("#dropdownMenu3");
 
 let active = -1;
 
@@ -415,22 +393,39 @@ function setFocus() {
 
     children.forEach((child) => child.classList.remove("autocomplete-active"));
     children[active].classList.add("autocomplete-active");
+    children[active].scrollIntoView();
   }
 }
+
+const keyUpListener = (e) => {
+  if (e.keyCode == "13") {
+    e.target.removeEventListener("keyup", keyUpListener);
+    secondpage();
+    active = -1;
+  }
+};
 
 // Function to set input box content on enter button on suggestion
 
 function onEnter() {
   const children = Array.from(suggestions.children);
   const len = children.length;
+
   if (len == 0) {
     return;
   }
 
-  if (active >= 0) {
+  if (len == 1) {
     active %= len;
-
     children[active].click();
+    searchInput.addEventListener("keyup", keyUpListener);
+    return;
+  }
+
+  if (active > 1) {
+    active %= len;
+    children[active].click();
+    searchInput.addEventListener("keyup", keyUpListener);
   }
 }
 
@@ -474,6 +469,8 @@ searchInput.addEventListener("keyup", (e) => {
 
     nameSpan.innerText = val;
     div.appendChild(nameSpan);
+
+    scrollTo.scrollIntoView();
 
     div.addEventListener("click", () => {
       searchInput.value = val;

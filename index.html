@@ -7,7 +7,7 @@ layout: default
         <!-- Left side -->
         <div class="col-lg-12 col-xl-6 background-bluegray-100">
             <div class="container d-flex flex-column flex-fill h-100 py-5 px-2 px-lg-5">
-                <div class="row mb-5">
+                <div class="row mb-4 mb-lg-5">
                     <div class="col-12">
                         <div class="navbar navbar-expand-xl justify-content-between">
                             <div>
@@ -117,6 +117,15 @@ layout: default
                         <p>{% t right.preview-description %}</p>
                     </div>
 
+                    <div class="d-block d-lg-none scrollIndicator">
+                        <div class="container">
+                            <div class="text-center">
+                                <button onclick="window.scrollTo(0,document.body.scrollHeight);"><i
+                                        class="fas fa-2x fa-chevron-down"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="row mt-auto d-none d-lg-block">
@@ -129,7 +138,7 @@ layout: default
         </div>
         <!-- Right side -->
         <div class="col-lg-12 col-xl-6">
-            <div class="container d-flex flex-column h-100 py-5 px-2 px-lg-5">
+            <div class="container d-flex flex-column h-100 py-3 py-lg-5 px-2 px-lg-5">
                 <div class="row">
                     <!-- Necessary nav for toggling steps from 1 to 3, hidden because we control them via JS -->
                     <nav class="d-none">
@@ -188,8 +197,8 @@ layout: default
                                 <div class="autocomplete-items mb-3" id="autocomplete-list">
                                 </div>
 
-                                <button onclick="secondpage();" class="btn btn-new d-block w-100 d-xxl-none"><i
-                                        class="fas fa-search me-2"></i>{% t
+                                <button id="next-click" onclick="secondpage();"
+                                    class="btn btn-new d-block w-100 d-xxl-none"><i class="fas fa-search me-2"></i>{% t
                                     right.button
                                     %}</button>
 
@@ -203,7 +212,7 @@ layout: default
                                     date: "%Y" }}</small></p>
                             <div class="d-flex d-lg-none align-items-center justify-content-between mt-4">
                                 <div class="dropdown">
-                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenu3"
+                                    <button class="dropdown-toggle" type="button" id="dropdownMenu3"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fas fa-globe me-1"></i>
                                         {% for lang in site.languages %}
@@ -529,14 +538,14 @@ layout: default
                                             %}</button>
                                     </div>
                                 </div>
-                                <p class="mb-0 mt-4 d-flex d-lg-none"><small>Ein <a
+                                <p class="mb-0 mt-4 d-block d-lg-none"><small>Ein <a
                                             href="https://github.com/Wahlbrief/wahlbrief-website" target="_blank"
                                             rel="noreferrer noopener">Open Source Projekt</a> von Mehr
                                         Demokratie. {{ 'now' |
                                         date: "%Y" }}</small></p>
-                                <div class="d-flex d-lg-none align-items-center justify-content-between mt-4">
+                                <div class="d-block d-lg-none mt-4">
                                     <div class="dropdown">
-                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenu4"
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenu4"
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             <i class="fas fa-globe me-1"></i>
                                             {% for lang in site.languages %}
@@ -630,9 +639,10 @@ layout: default
 
                                 </div>
 
-                                <p class="mb-0 mt-4" id="final-message"><i class='fas fa-info-circle me-2'></i>{% t
-                                    right.message.waiting
-                                    %}</p>
+                                <p class="mb-0 mt-4" id="final-message">
+                                    <i class='fas fa-info-circle me-2'></i>
+                                    {% t right.message.intro %}
+                                </p>
 
                                 <div class="row py-4 justify-content-center align-items-center">
                                     <div class="col-12 col-lg-6 mb-3 mb-lg-0">
@@ -656,11 +666,6 @@ layout: default
                                         displayMessage.innerHTML = "<i class='fas fa-check-circle me-2'></i>{% t right.message.success %}";
                                         displayMessage.style.backgroundColor = "#ECFDF5";
                                         displayMessage.style.color = "#065F46";
-                                        setTimeout(function () {
-                                            displayMessage.innerHTML = "<i class='fas fa-info-circle me-2'></i>{% t right.message.waiting %}";
-                                            displayMessage.style.backgroundColor = "#eff6ff";
-                                            displayMessage.style.color = "#1e40af";
-                                        }, 4000);
                                     });
 
                                     // Function to show/hide message after clicking on the send email button
@@ -670,11 +675,6 @@ layout: default
                                         displayMessage.innerHTML = "<i class='fas fa-check-circle me-2'></i>{% t right.message.sent %}";
                                         displayMessage.style.backgroundColor = "#ECFDF5";
                                         displayMessage.style.color = "#065F46";
-                                        setTimeout(function () {
-                                            displayMessage.innerHTML = "<i class='fas fa-info-circle me-2'></i>{% t right.message.waiting %}";
-                                            displayMessage.style.backgroundColor = "#eff6ff";
-                                            displayMessage.style.color = "#1e40af";
-                                        }, 4000);
                                     });
                                 </script>
 
@@ -690,14 +690,14 @@ layout: default
                                                 class="fab fa-linkedin-in"></i></a>
                                     </div>
                                 </div>
-                                <p class="mb-0 mt-4 d-flex d-lg-none"><small>Ein <a
+                                <p class="mb-0 mt-4 d-block d-lg-none"><small>Ein <a
                                             href="https://github.com/Wahlbrief/wahlbrief-website" target="_blank"
                                             rel="noreferrer noopener">Open Source Projekt</a> von Mehr
                                         Demokratie. {{ 'now' |
                                         date: "%Y" }}</small></p>
-                                <div class="d-flex d-lg-none align-items-center justify-content-between mt-4">
+                                <div class="d-block d-lg-none mt-4">
                                     <div class="dropdown">
-                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenu5"
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenu5"
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             <i class="fas fa-globe me-1"></i>
                                             {% for lang in site.languages %}
