@@ -1,10 +1,8 @@
 left:
-  title: "Jetzt Briefwahl beantragen"
-  subtitle: "Am 26. September ist Bundestagswahl. Schon heute kann die Stimme vorab per Briefwahl abgegeben werden: ab sofort zu Hause oder von jedem anderen Ort aus wählen. Die Briefwahl ist kostenfrei.
-
-  <br /><b>Jetzt die Unterlagen zur Briefwahl zu beantragen: Schnell, bequem und online.</b><br />
-
-  <br><br><small>Je nach Region wird die Briefwahl für weitere Wahlen und Abstimmungen direkt mitbeantragt.</small>"
+  title: "Von Zuhause wählen - per Briefwahl"
+  subtitle: "Die Bundestagswahl steht an. Der entscheidendste Tag des Jahres hängt davon ab, dass Sie Kreuze auf Papier machen. Aber das muss nicht am 26. September im Wahllokal sein. Denn Sie können jederzeit vorab zu Hause wählen.   
+  
+  <br /><b>Wir helfen Ihnen, die Unterlagen zur Briefwahl zu beantragen: Schnell, bequem und papierlos.</b><br />"
   preview: "Vorschau: Dein Antrag auf Briefwahl"
   home: "Home"
   about: "Projekt"
@@ -101,7 +99,7 @@ about:
     title: "Über das Projekt"
     subtitle: "wahlbrief ist ein Open Source Projekt von Mehr Demokratie e.V. (LINK) zur Bundestagswahl 2021. Wir setzen uns dafür ein, dass jeder wahlberechtigte Mensch seine Stimme abgibt, damit unsere Demokratie lebendig bleibt. Zu einer starken Demokratie gehört eine hohe Wahlbeteiligung. Mit dem Projekt wollen wir es allen wahlberechtigten Bürgerinnen und Bürgern mithilfe der Briefwahl so leicht wie möglich machen, an der Wahl teilzunehmen. Mehr Demokratie e.V. ist überparteilich und gemeinnützig.
 
-Die Seite funktioniert in drei einfachen Schritten: Zuerst finden wir die E-Mail-Adresse Ihres zuständigen Wahlamts. Dann geben Sie Ihre persönlichen Daten ein, die das Wahlamt zur Zusendung der Unterlagen benötigt. Zum Schluss erstellen wir die fertige E-Mail an das Wahlamt für Sie, so dass Sie nur noch auf 'Senden' klicken müssen.'<br /><small>Wir speichern dabei Ihre persönlichen Daten nicht. [technische Erklärung, was stattdessen passiert]</small>
+Die Seite funktioniert in drei einfachen Schritten: Zuerst finden wir die E-Mail-Adresse Ihres zuständigen Wahlamts. Dann geben Sie Ihre persönlichen Daten ein, die das Wahlamt zur Zusendung der Unterlagen benötigt. Zum Schluss erstellen wir die fertige E-Mail an das Wahlamt für Sie, so dass Sie nur noch auf 'Senden' klicken müssen.'<br /><small>Wir speichern dabei Ihre persönlichen Daten nicht. [technische Erklärung, was stattdessen passiert]</small> 
 
 Open Source bedeutet, dass der Quellcode der Webseite öffentlich einsehbar ist (Link)."
   right:
