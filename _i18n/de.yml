@@ -4,7 +4,7 @@ left:
 
   <br /><b>Jetzt die Unterlagen zur Briefwahl beantragen: Schnell, bequem und online. Wahl und Versand sind kostenfrei.</b>
 
-  <br><br><small>Je nach Region wird die Briefwahl für weitere Wahlen und Abstimmungen direkt mitbeantragt.</small>"
+  <br><br><small>Je nach Region wird die Briefwahl für weitere Wahlen und Abstimmungen (Landtagswahlen, Bürgerbegehren) direkt mitbeantragt.</small>"
   preview: "Vorschau: Dein Antrag auf Briefwahl"
   home: "Home"
   about: "Projekt"
@@ -16,8 +16,8 @@ left:
   description: "Helfen Sie Menschen in Ihrem Umfeld, an der Bundestagswahl teilzunehmen. Per Briefwahl zu wählen ist unkompliziert, einfach und schnell. Teilen Sie jetzt Wahlbrief auf Ihren Kanälen."
 right:
   zip: "Zuständiges Wahlamt suchen"
-  description: "Geben Sie hier die Postleitzahl Ihrer Meldeadresse ein. Zuständig für den Briefwahl-Antrag ist das Bürgeramt an Ihrem Hauptwohnsitz."
-  tos: "<small>Mit der Nutzung von Wahlbrief stimmen Sie den Nutzungsbedingungen und den Datenschutzhinweisen zu.<br />Hinweis: In manchen Regionen finden am 26. September zusätzlich noch andere Wahlen und Abstimmungen statt (z.B. Landtagswahlen, Volksabstimmungen). Diese Unterlagen werden bei der Beantragung der Briefwahlunterlagen von den jeweiligen Wahlämtern automatisch mit versendet.</small>"
+  description: "Wir benötigen zunächst die Postleitzahl der Meldeadresse. Zuständig für den Briefwahl-Antrag ist meist das Bürgeramt am Hauptwohnsitz."
+  tos: "<small>Mit der Nutzung von Wahlbrief stimmen Sie den Nutzungsbedingungen und den Datenschutzhinweisen zu.</small>"
   placeholder: "PLZ (Hauptwohnsitz)"
   button: "Wahlamt suchen"
   residence: "Persönliche Angaben eintragen"
