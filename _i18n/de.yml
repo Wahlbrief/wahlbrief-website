@@ -21,7 +21,7 @@ right:
   placeholder: "PLZ (Hauptwohnsitz)"
   button: "Wahlamt suchen"
   residence: "Persönliche Angaben"
-  optional: "Das Wahlamt benötigt zum Abgleich den vollständigen Namen (wie auf dem Ausweis), die vollständige Meldeadresse des Hauptwohnsitzes und das Geburtsdatum.<br /><small>Alternativ kann die Vorlage kopiert und persönlichen Daten von Hand ergänzt werden.</small>"
+  optional: "Das Wahlamt benötigt zum Abgleich den vollständigen Namen (wie auf dem Ausweis), die vollständige Meldeadresse des Hauptwohnsitzes und das Geburtsdatum.<br /><small>Alternativ kann die Vorlage kopiert und die persönlichen Daten von Hand ergänzt werden.</small>"
   firstname: "Vorname"
   lastname: "Nachname"
   street: "Straße und Hausnummer (Hauptwohnsitz)"
@@ -55,16 +55,16 @@ right:
     description: "Sign up if you haven't already and we will let you know all the latest updates on your mail. We won't spam, we promise!"
     button: "Sign up"
   preview: "Antrag generieren"
-  preview-letter: "Briefwahl-Antrag per E-Mail versenden"
+  preview-letter: "Briefwahl-Antrag versenden"
   preview-description: "Das wars! Der Antrag kann nun per E-Mail an das zuständige Wahlamt übermittelt werden. Alle Angaben sollten vorher noch einmal sorgfältig überprüft werden: Falsche Angaben werden die Bearbeitung verzögern."
   preview-address: "Address goes here. Lorem ipsum 65124"
   send: "E-Mail senden"
   copy: "Text kopieren"
   back: "Zurück"
   message:
-    success: "Text kopiert. Jetzt in der Email-App einfügen und senden."
+    success: "Text kopiert. Jetzt in der Email-App einfügen und an die oben genannte Adresse versenden."
     sent: "Der Antrag sollte sich in der Email-App geöffnet haben. Einfach absenden."
-    intro: "Auf einen der Buttons klicken um den fertigen Antrag per E-Mail zu versenden."
+    intro: "Auf einen der Buttons klicken und den fertigen Antrag per E-Mail versenden."
 faq:
   left:
     title: "FAQ: Häufig gestellte Fragen"
