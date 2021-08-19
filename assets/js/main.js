@@ -481,8 +481,16 @@ searchInput.addEventListener("keyup", (e) => {
   });
 
   if (matchArray.length <= 0) {
-    suggestions.innerHTML =
-      "<div class='no-items'><i class='fas fa-times-circle me-2'></i><span>Nothing Found</span></div>";
+    let string = location.href;
+    let convertedString = string.toLowerCase();
+
+    if (convertedString.indexOf("en") != -1) {
+      suggestions.innerHTML =
+        "<div class='no-items'><i class='fas fa-times-circle me-2'></i><span>No Results</span></div>";
+    } else {
+      suggestions.innerHTML =
+        "<div class='no-items'><i class='fas fa-times-circle me-2'></i><span>Keine Ergebnisse</span></div>";
+    }
     return;
   }
 

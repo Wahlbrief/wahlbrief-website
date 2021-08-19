@@ -62,6 +62,7 @@ right:
     success: "Text copied, paste it in your email client!"
     sent: "Your email client was opened with prefilled content, ready to send!"
     intro: "Please use these buttons to copy the text or send it directly via your email client!"
+    nothing: "Nothing found"
 faq:
   left:
     title: "FAQ’s"
