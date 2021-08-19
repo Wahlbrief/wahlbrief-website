@@ -1,10 +1,6 @@
 left:
   title: "Jetzt Briefwahl beantragen"
-  subtitle: "Am 26. September ist Bundestagswahl. Schon heute kann die Stimme vorab per Briefwahl abgegeben werden – Ab sofort zu Hause und überall sonst wählen.<br>
-
-  <br /><b>Jetzt die Unterlagen zur Briefwahl beantragen: Schnell, bequem und online. Wahl und Versand sind kostenfrei.</b>
-
-  <br><br><small>Je nach Region wird die Briefwahl für weitere Wahlen direkt mitbeantragt (Landtagswahlen, Bürgerbegehren).</small>"
+  subtitle: "Am 26. September ist Bundestagswahl. Schon heute kann die Stimme vorab per Briefwahl abgegeben werden – Ab sofort zu Hause und überall sonst wählen.<br><br /><b>Jetzt die Unterlagen zur Briefwahl beantragen: Schnell, bequem und online. Wahl und Versand sind kostenfrei.</b><br><br><small>Je nach Region wird die Briefwahl für weitere Wahlen direkt mitbeantragt (Landtagswahlen, Bürgerbegehren).</small>"
   preview: "Vorschau: Dein Antrag auf Briefwahl"
   home: "Home"
   about: "Projekt"
@@ -89,7 +85,7 @@ questions:
   - title: "Kann ich den Wahlbrief auch direkt beim Wahlamt einwerfen?"
     answer: "Das ist möglich und dann sinnvoll, wenn Sie die Briefwahlunterlagen erst am Tag vor oder am Tag der Wahl ausgefüllt haben. Der Brief muss bis zur Schließung der Wahllokale beim Wahlamt eingegangen sein."
   - title: "Wie geht es nach meinem Antrag auf Briefwahl weiter?"
-    answer: "Die Briefwahlunterlagen werden innerhalb weniger Werktage an die angegebene Adresse versandt. Eine Anleitung, wie die Briefwahlunterlagen ausgefüllt werden, gibt es auf der <a href="https://www.bundeswahlleiter.de/bundestagswahlen/2021/informationen-waehler/briefwahl.html#96bee7af-c797-46aa-afee-cab29dd428e4">Website des Bundeswahlleiters </a>."
+    answer: "Die Briefwahlunterlagen werden innerhalb weniger Werktage an die angegebene Adresse versandt. Eine Anleitung, wie die Briefwahlunterlagen ausgefüllt werden, gibt es auf der <a href='https://www.bundeswahlleiter.de/bundestagswahlen/2021/informationen-waehler/briefwahl.html#96bee7af-c797-46aa-afee-cab29dd428e4'>Website des Bundeswahlleiters</a>."
 imprint:
   left:
     title: "Impressum"
