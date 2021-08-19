@@ -489,7 +489,7 @@ searchInput.addEventListener("keyup", (e) => {
         "<div class='no-items'><i class='fas fa-times-circle me-2'></i><span>No Results</span></div>";
     } else {
       suggestions.innerHTML =
-        "<div class='no-items'><i class='fas fa-times-circle me-2'></i><span>Keine Ergebnisse</span></div>";
+        "<div class='no-items'><i class='fas fa-times-circle me-2'></i><span>Keine Resultate</span></div>";
     }
     return;
   }
