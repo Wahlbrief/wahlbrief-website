@@ -16,8 +16,8 @@ left:
   description: "Helfen Sie Menschen in Ihrem Umfeld, an der Bundestagswahl teilzunehmen. Per Briefwahl zu wählen ist unkompliziert, einfach und schnell. Teilen Sie jetzt Wahlbrief auf Ihren Kanälen."
 right:
   zip: "Zuständiges Wahlamt suchen"
-  description: "Wir benötigen zunächst die Postleitzahl der Meldeadresse. Zuständig für den Briefwahl-Antrag ist meist das Bürgeramt am Hauptwohnsitz."
-  tos: "<small>Mit der Nutzung von Wahlbrief stimmen Sie den Nutzungsbedingungen und den Datenschutzhinweisen zu.</small>"
+  description: "Wir benötigen zunächst die Postleitzahl der Meldeadresse.<br> Zuständig für den Briefwahl-Antrag ist meist das Bürgeramt am Hauptwohnsitz."
+  tos: "<small>Mit der Nutzung von Wahlbrief stimmen Sie den Nutzungsbedingungen und den Datenschutzhinweisen zu. Wir speichern keine persönlichen Daten.</small>"
   placeholder: "PLZ (Hauptwohnsitz)"
   button: "Wahlamt suchen"
   residence: "Persönliche Angaben"
