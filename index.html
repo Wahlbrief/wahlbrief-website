@@ -36,24 +36,22 @@ layout: default
                     <!-- Big letter preview -->
                     <div id="bigletter" class="col-xl-11 col-12 letter p-5">
                         <h4 class="fw-bold mb-4">{% t left.preview %}</h4>
-                        <p>Sehr geehrte Damen und Herren,<br />
-                            hiermit beantrage ich die Zusendung der Briefwahlunterlagen für die Wahl(en)
-                            2021.</p>
+                        <p>{% t right.letter.title %}</p>
                         <p>
-                            Nachname: <span class="fw-bold" id="surname"></span><br />
-                            Vorname: <span class="fw-bold" id="name"></span><br />
-                            Geburtsdatum:
+                            {% t right.letter.name %}: <span class="fw-bold" id="name"></span><br />
+                            {% t right.letter.surname %}: <span class="fw-bold" id="surname"></span><br />
+                            {% t right.letter.birthday %}:
                             <span class="fw-bold" id="birthdate"></span><span class="fw-bold"
                                 id="birthmonth"></span><span class="fw-bold" id="birthyear"></span><br />
-                            Addresse:<br />
+                            {% t right.letter.address %}:<br />
                             <span class="fw-bold" id="street"></span><br />
                             <span class="fw-bold" id="zip"></span>
                             <span class="fw-bold" id="city"></span><br />
                         </p>
 
-                        <p id="ogaddress">Bitte senden Sie mir die Unterlagen an meine Meldeadresse!</p>
+                        <p id="ogaddress">{% t right.letter.sendtomine %}</p>
 
-                        <p id="newaddress">Bitte senden Sie mir die Unterlagen an folgende Adresse:<br /><br />
+                        <p id="newaddress">{% t right.letter.sendalternative %}<br /><br />
 
                             <span class="fw-bold" id="newname"></span>
                             <span class="fw-bold" id="newsurname"></span>
@@ -65,7 +63,7 @@ layout: default
 
                         </p>
 
-                        <p>Mit freundlichen Grüßen<br />
+                        <p>{% t right.letter.regards %}<br />
                             <span class="fw-bold" id="id-name"></span>
                             <span class="fw-bold" id="id-surname"></span>
                             <span id="id-newname"></span>
@@ -611,26 +609,25 @@ layout: default
                                 </div>
 
                                 <div id="final-letter" class="final-letter py-3 px-4">
-                                    <p>Sehr geehrte Damen und Herren,<br />
-                                        hiermit beantrage ich die Zusendung der Briefwahlunterlagen für die Wahl(en)
-                                        2021.</p>
+                                    <p>{% t right.letter.title %}</p>
                                     <p>
-                                        Nachname: <span class="fw-bold" id="final-surname"></span><br />
-                                        Vorname: <span class="fw-bold" id="final-name"></span><br />
-                                        Geburtsdatum: <span class="fw-bold" id="final-birthdate"></span><span
-                                            class="fw-bold" id="final-birthmonth"></span><span class="fw-bold"
+                                        {% t right.letter.name %}: <span class="fw-bold" id="final-name"></span><br />
+                                        {% t right.letter.surname %}: <span class="fw-bold"
+                                            id="final-surname"></span><br />
+
+                                        {% t right.letter.birthday %}: <span class="fw-bold"
+                                            id="final-birthdate"></span><span class="fw-bold"
+                                            id="final-birthmonth"></span><span class="fw-bold"
                                             id="final-birthyear"></span><br />
-                                        Addresse:<br />
+                                        {% t right.letter.address %}:<br />
                                         <span class="fw-bold" id="final-id-street"></span><br />
                                         <span class="fw-bold" id="final-id-zip"></span>
                                         <span class="fw-bold" id="final-id-city"></span><br />
                                     </p>
 
-                                    <p id="finalogaddress">Bitte senden Sie mir die Unterlagen an meine
-                                        Meldeadresse</p>
+                                    <p id="finalogaddress">{% t right.letter.sendtomine %}</p>
 
-                                    <p id="finalnewaddress">Bitte senden Sie mir die Unterlagen an folgende
-                                        Adresse:<br /><br />
+                                    <p id="finalnewaddress">{% t right.letter.sendalternative %}<br /><br />
 
                                         <span class="fw-bold" id="final-newsurname"></span>
                                         <span class="fw-bold" id="final-newname"></span><br />
@@ -643,7 +640,7 @@ layout: default
                                         <span class="fw-bold ms-2" id="final-city"></span>
                                     </p>
 
-                                    <p>Mit freundlichen Grüßen<br />
+                                    <p>{% t right.letter.regards %}<br />
                                         <span class="fw-bold me-1" id="final-id-name"></span>
                                         <span class="fw-bold" id="final-id-surname"></span>
                                         <span id="final-id-street"></span>

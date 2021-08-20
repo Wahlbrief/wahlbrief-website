@@ -65,6 +65,15 @@ right:
     success: "Text copied, paste it in your email client!"
     sent: "Your email client was opened with prefilled content, ready to send!"
     intro: "Please use these buttons to copy the text or send it directly via your email client!"
+  letter:
+    title: "Sehr geehrte Damen und Herren,<br />hiermit beantrage ich die Zusendung der Briefwahlunterlagen für die Wahl(en) 2021."
+    name: "Vorname"
+    surname: "Nachname"
+    birthday: "Geburtsdatum"
+    address: "Addresse"
+    sendtomine: "Bitte senden Sie mir die Unterlagen an meine Meldeadresse!"
+    sendalternative: "Bitte senden Sie mir die Unterlagen an folgende Adresse:"
+    regards: "Mit freundlichen Grüßen"
 faq:
   left:
     title: "FAQ’s"
