@@ -44,9 +44,10 @@ layout: default
                             <span class="fw-bold" id="birthdate"></span><span class="fw-bold"
                                 id="birthmonth"></span><span class="fw-bold" id="birthyear"></span><br />
                             {% t right.letter.address %}:<br />
-                            <span class="fw-bold" id="street"></span><br />
+                            <span class="fw-bold" id="street"></span><br data-br="street" style="display: none;" />
                             <span class="fw-bold" id="zip"></span>
-                            <span class="fw-bold" id="city"></span><br /><br />
+                            <span class="fw-bold" id="city"></span><br data-br="zip" style="display: none;" /><br
+                                data-br="city" style="display: none;" />
                         </p>
 
                         <p id="ogaddress">{% t right.letter.sendtomine %}</p>
@@ -55,11 +56,13 @@ layout: default
 
                             <span class="fw-bold" id="newname"></span>
                             <span class="fw-bold" id="newsurname"></span>
-                            <br />
-                            <span class="fw-bold" id="address"></span><br />
-                            <span class="fw-bold" id="newstreet"></span><br />
+                            <br data-br="newsurname" style="display: none;" />
+                            <span class="fw-bold" id="address"></span><br data-br="address" style="display: none;" />
+                            <span class="fw-bold" id="newstreet"></span><br data-br="newstreet"
+                                style="display: none;" />
                             <span class="fw-bold" id="newzip"></span>
-                            <span class="fw-bold" id="newcity"></span><br /><br />
+                            <span class="fw-bold" id="newcity"></span><br data-br="newzip" style="display: none;" /><br
+                                data-br="newcity" style="display: none;" />
 
                         </p>
 
@@ -619,10 +622,12 @@ layout: default
                                             id="final-birthdate"></span><span class="fw-bold"
                                             id="final-birthmonth"></span><span class="fw-bold"
                                             id="final-birthyear"></span><br />
-                                        {% t right.letter.address %}:<br />
-                                        <span class="fw-bold" id="final-id-street"></span><br />
+                                        {% t right.letter.address %}:<br /><br />
+                                        <span class="fw-bold" id="final-id-street"></span><br data-br="street"
+                                            style="display: none;" />
                                         <span class="fw-bold" id="final-id-zip"></span>
-                                        <span class="fw-bold" id="final-id-city"></span><br /><br />
+                                        <span class="fw-bold" id="final-id-city"></span><br data-br="zip"
+                                            style="display: none;" /><br data-br="city" style="display: none;" />
                                     </p>
 
                                     <p id="finalogaddress">{% t right.letter.sendtomine %}</p>
@@ -631,11 +636,15 @@ layout: default
                                         %}<br />
 
                                         <span class="fw-bold" id="final-newname"></span>
-                                        <span class="fw-bold" id="final-newsurname"></span><br />
-                                        <span class="fw-bold" id="final-address"></span><br />
-                                        <span class="fw-bold" id="final-newstreet"></span><br />
+                                        <span class="fw-bold" id="final-newsurname"></span><br data-br="newsurname"
+                                            style="display: none;" />
+                                        <span class="fw-bold" id="final-address"></span><br data-br="address"
+                                            style="display: none;" />
+                                        <span class="fw-bold" id="final-newstreet"></span><br data-br="street"
+                                            style="display: none;" />
                                         <span class="fw-bold" id="final-newzip"></span>
-                                        <span class="fw-bold" id="final-newcity"></span><br /><br />
+                                        <span class="fw-bold" id="final-newcity"></span><br data-br="newzip"
+                                            style="display: none;" /><br data-br="newcity" style="display: none;" />
                                         <span class="fw-bold ms-2" id="final-street"></span>
                                         <span class="fw-bold ms-2" id="final-zip"></span>
                                         <span class="fw-bold ms-2" id="final-city"></span>

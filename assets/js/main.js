@@ -92,12 +92,21 @@ checks.forEach((check) => {
   const final = document.getElementById(`final-${check}`);
   const identity = document.getElementById(`id-${check}`);
   const finalid = document.getElementById(`final-id-${check}`);
+  const br = Array.from(document.querySelectorAll(`[data-br=${check}]`));
 
   form.addEventListener("input", (e) => {
     spans.textContent = e.target.value;
     identity.textContent = e.target.value;
     finalid.textContent = e.target.value;
     final.textContent = e.target.value;
+
+    if (br.length !== 0) {
+      if (e.target.value) {
+        br.forEach((b) => (b.style.display = "inline"));
+      } else {
+        br.forEach((b) => (b.style.display = "none"));
+      }
+    }
   });
 });
 
@@ -434,71 +443,77 @@ function onEnter() {
   }
 }
 
+let timeoutReference;
+
 searchInput.addEventListener("keyup", (e) => {
-  switch (e.keyCode) {
-    case 40:
-      active++;
-      setFocus();
-      return;
+  timeoutReference && clearTimeout(timeoutReference);
 
-    case 38:
-      active--;
-      setFocus();
-      return;
+  timeoutReference = setTimeout(() => {
+    switch (e.keyCode) {
+      case 40:
+        active++;
+        setFocus();
+        return;
 
-    case 13:
-      onEnter();
-      return;
+      case 38:
+        active--;
+        setFocus();
+        return;
 
-    case 27:
-      e.target.value = "";
+      case 13:
+        onEnter();
+        return;
+
+      case 27:
+        e.target.value = "";
+        suggestions.innerHTML = "";
+        return;
+    }
+
+    active = -1;
+
+    if (!e.target.value) {
       suggestions.innerHTML = "";
       return;
-  }
+    }
 
-  active = -1;
+    // Function to create autocomplete suggestions
 
-  if (!e.target.value) {
-    suggestions.innerHTML = "";
-    return;
-  }
+    const matchArray = findMatches(e.target.value, zips);
+    const divs = matchArray.map((place) => {
+      const div = document.createElement("div");
+      const nameSpan = document.createElement("span");
 
-  // Function to create autocomplete suggestions
+      const val = `${place.PLZ} ${place.ORT}`;
 
-  const matchArray = findMatches(e.target.value, zips);
-  const divs = matchArray.map((place) => {
-    const div = document.createElement("div");
-    const nameSpan = document.createElement("span");
+      nameSpan.innerText = val;
+      div.appendChild(nameSpan);
 
-    const val = `${place.PLZ} ${place.ORT}`;
+      scrollTo.scrollIntoView();
 
-    nameSpan.innerText = val;
-    div.appendChild(nameSpan);
+      div.addEventListener("click", () => {
+        searchInput.value = val;
+        suggestions.innerHTML = "";
+      });
 
-    scrollTo.scrollIntoView();
-
-    div.addEventListener("click", () => {
-      searchInput.value = val;
-      suggestions.innerHTML = "";
+      return div;
     });
 
-    return div;
-  });
+    if (matchArray.length <= 0) {
+      let string = location.href;
+      let convertedString = string.toLowerCase();
 
-  if (matchArray.length <= 0) {
-    let string = location.href;
-    let convertedString = string.toLowerCase();
-
-    if (convertedString.indexOf("en") != -1) {
-      suggestions.innerHTML =
-        "<div class='no-items'><i class='fas fa-times-circle me-2'></i><span>Invalid ZIP code</span></div>";
-    } else {
-      suggestions.innerHTML =
-        "<div class='no-items'><i class='fas fa-times-circle me-2'></i><span>Ungültige Postleitzahl</span></div>";
+      if (convertedString.indexOf("en") != -1) {
+        suggestions.innerHTML =
+          "<div class='no-items'><i class='fas fa-times-circle me-2'></i><span>Invalid ZIP code</span></div>";
+      } else {
+        suggestions.innerHTML =
+          "<div class='no-items'><i class='fas fa-times-circle me-2'></i><span>Ungültige Postleitzahl</span></div>";
+      }
+      return;
     }
-    return;
-  }
 
-  suggestions.innerHTML = "";
-  suggestions.append(...divs);
+    suggestions.innerHTML = "";
+    suggestions.append(...divs);
+  }, 500);
 });
