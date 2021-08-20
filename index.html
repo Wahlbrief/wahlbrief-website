@@ -102,12 +102,24 @@ layout: default
                     <div id="outro" class="col-12 col-xl-8 outro">
                         <h1>{% t left.share %}</h1>
                         <p class="mb-4">{% t left.description %}</p>
-                        <a href="{{ site.facebook }}" target="_blank" rel="noreferrer nopener"><i
-                                class="fab fa-facebook"></i></a>
-                        <a href="{{ site.twitter }}" target="_blank" rel="noreferrer nopener"><i
-                                class="fab fa-twitter"></i></a>
-                        <a href="{{ site.linkedin }}" target="_blank" rel="noreferrer nopener"><i
-                                class="fab fa-linkedin-in"></i></a>
+
+                        <a class="copy" data-clipboard-text="{% t right.sharing.copy %}" href="#"
+                            data-bs-placement="top" data-bs-toggle="tooltip" title="{% t right.message.sharecopy %}"><i
+                                class="far fa-copy"></i></a>
+                        <a
+                            href="mailto:?subject={% t right.sharing.email.subject %}&amp;body={% t right.sharing.email.body %}"><i
+                                class="fas fa-envelope"></i></a>
+                        <a href="https://facebook.com/sharer/sharer.php?u={{ site.url }}" target="_blank"
+                            rel="noreferrer nopener"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/intent/tweet/?text={% t right.sharing.twitter %}" target="_blank"
+                            rel="noreferrer nopener"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ site.url }}&amp;title=Wahlbrief%202021&amp;summary={% t right.sharing.linkedin %}&amp;source={{ site.url }}"
+                            target="_blank" rel="noreferrer nopener"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://t.me/share/url?text={% t right.sharing.telegram %}&amp;url={{ site.url }}"
+                            target="_blank" rel="noreferrer nopener"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="https://wa.me/?text={% t right.sharing.whatsapp %}" target="_blank"
+                            rel="noreferrer nopener"><i class="fab fa-whatsapp"></i></a>
+
                     </div>
 
                     <!-- Mobile view step 3 -->

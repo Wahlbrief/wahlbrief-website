@@ -61,6 +61,7 @@ right:
   copy: "Copy text"
   back: "Back"
   message:
+    sharecopy: "Copied!"
     copied: "Copied!"
     success: "Text copied, paste it in your email client!"
     sent: "Your email client was opened with prefilled content, ready to send!"
@@ -76,10 +77,13 @@ right:
     regards: "Mit freundlichen Grüßen"
   sharing:
     copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    email: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    email:
+      subject: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     facebook: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     twitter: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     linkedin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    telegram: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     whatsapp: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 faq:
   left:
