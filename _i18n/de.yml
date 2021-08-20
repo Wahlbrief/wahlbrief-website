@@ -13,11 +13,11 @@ left:
 right:
   zip: "Zuständiges Wahlamt suchen"
   description: "Wir benötigen zunächst die Postleitzahl der Meldeadresse.<br> Zuständig für den Briefwahl-Antrag ist meist das Bürgeramt am Hauptwohnsitz."
-  tos: "<small>Mit der Nutzung von Wahlbrief stimmen Sie den Nutzungsbedingungen und den Datenschutzhinweisen zu. <br>Wir speichern keine persönlichen Daten.</small>"
+  tos: "<small>Mit der Nutzung von Wahlbrief stimmen Sie den Nutzungsbedingungen und den Datenschutzhinweisen zu. <br>Wir übertragen und speichern keine persönlichen Daten.</small>"
   placeholder: "PLZ (Hauptwohnsitz)"
   button: "Wahlamt suchen"
   residence: "Persönliche Angaben"
-  optional: "Das Wahlamt benötigt zum Abgleich den vollständigen Namen (wie auf dem Ausweis), die vollständige Meldeadresse des Hauptwohnsitzes und das Geburtsdatum.<br /><small>Alternativ kann die Vorlage kopiert und die persönlichen Daten von Hand ergänzt werden.</small>"
+  optional: "Das Wahlamt benötigt zum Abgleich den vollständigen Namen (wie auf dem Ausweis), die vollständige Meldeadresse des Hauptwohnsitzes und das Geburtsdatum.<br /><small>Alternativ kann die Vorlage ohne Angaben generiert und die persönlichen Daten von Hand ergänzt werden.</small>"
   firstname: "Vorname"
   lastname: "Nachname"
   street: "Straße und Hausnummer (Hauptwohnsitz)"
