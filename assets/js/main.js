@@ -347,6 +347,14 @@ clipboard.on("success", function (e) {
   e.clearSelection();
 });
 
+// Function to show tooltips on click
+var tooltipTriggerList = [].slice.call(
+  document.querySelectorAll('[data-bs-toggle="tooltip"]')
+);
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl);
+});
+
 // Function to get items from JSON and build array
 
 (async () => {

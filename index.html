@@ -91,7 +91,8 @@ layout: default
                         <div class="background-white p-4">
                             <h4 id="muniname" class="fw-bold mb-0"></h4>
                             <p id="muniemail" class="mb-0 me-1 d-inline-block"></p>
-                            <button class="btn copy p-0 d-inline-block" data-clipboard-target="#muniemail">
+                            <button class="btn copy p-0 d-inline-block" data-bs-toggle="tooltip"
+                                title="{% t right.message.copied %}" data-clipboard-target="#muniemail">
                                 <i class="far fa-copy"></i>
                             </button>
                         </div>
@@ -251,7 +252,9 @@ layout: default
                                     <div class="background-gray-100 p-4">
                                         <h4 id="munname" class="fw-bold mb-0"></h4>
                                         <p id="munemail" class="mb-0 me-1 d-inline-block"></p>
-                                        <button class="btn copy p-0 d-inline-block" data-clipboard-target="#munemail">
+                                        <button class="btn copy p-0 d-inline-block" data-bs-toggle="tooltip"
+                                            data-bs-trigger="click" title="{% t right.message.copied %}"
+                                            data-clipboard-target="#munemail">
                                             <i class="far fa-copy"></i>
                                         </button>
                                     </div>
@@ -603,7 +606,8 @@ layout: default
                                     <h4 id="final-munname" class="fw-bold mb-0"></h4>
                                     <p id="final-munemail" class="mb-0 me-1 d-inline-block"></p>
                                     <button class="btn copy p-0 d-inline-block" data-bs-toggle="tooltip"
-                                        data-bs-placement="top" title="Copied!" data-clipboard-target="#final-munemail">
+                                        data-bs-trigger="click" title="{% t right.message.copied %}"
+                                        data-clipboard-target="#final-munemail">
                                         <i class="far fa-copy"></i>
                                     </button>
                                 </div>
@@ -670,7 +674,7 @@ layout: default
                                     </div>
                                     <div class="col-12 col-lg-6">
                                         <button id="copy-text" class="btn-copy copy"
-                                            data-clipboard-target="#final-letter">
+                                            data-clipboard-target="#final-letter" title="{% t right.message.copied %}">
                                             <i class="fas fa-clone me-2"></i>{% t right.copy %}
                                         </button>
                                     </div>
