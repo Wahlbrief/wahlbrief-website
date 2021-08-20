@@ -441,7 +441,10 @@ layout: default
                                     <div class="background-gray-100 py-3 px-3 my-3">
                                         <div class="d-flex align-items-center justify-content-lg-start">
                                             <i class="fas fa-info-circle color-cyan-700 me-2"></i>
-                                            <p class="mb-0">{% t right.arrival %}</p>
+                                            <p class="mb-0">{% t right.arrival %} <strong id="arrival-date">{{ "now" |
+                                                    date: "%s" | plus: 345600 | date: "%d.%m." }} - {{ "now" |
+                                                    date: "%s" | plus: 691200 | date: "%d.%m." }}</strong>
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="form-check d-none d-lg-block">

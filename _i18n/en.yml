@@ -31,7 +31,7 @@ right:
   day: "Day"
   month: "Month"
   year: "Year"
-  arrival: "Your mail is expected to arrive on <strong>15 August 2021</strong>"
+  arrival: "Your mail is expected to arrive on"
   same-address: "Use my legal address for the mail"
   different-address: "Use a different address for the mail"
   checkbox-address: "Use a different address for the mail"

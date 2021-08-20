@@ -30,7 +30,7 @@ right:
   day: "Tag"
   month: "Monat"
   year: "Jahr"
-  arrival: "Voraussichtliche Zustellung der Briefwahl-Unterlagen: <strong>24.8. - 28.8.</strong>"
+  arrival: "Voraussichtliche Zustellung der Briefwahl-Unterlagen:"
   same-address: "Unterlagen an die Meldeadresse versenden"
   different-address: "Abweichende Adresse für den Versand angeben"
   checkbox-address: "Abweichende Adresse für den Versand angeben"
