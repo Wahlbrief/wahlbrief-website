@@ -630,6 +630,7 @@ input[type="number"] {
   color: $gray-500;
   padding: 1.25rem 0.75rem 1.25rem 1.25rem !important;
   z-index: 3;
+  transition: transform 0.25s ease-in-out;
 }
 
 .form-floating > .form-control,
