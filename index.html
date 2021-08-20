@@ -385,7 +385,7 @@ layout: default
                                         function checkform() {
                                             re = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
                                             if (!re.test(jQuery("#email").val())) {
-                                                jQuery("#result").empty().append("<p class='mb-0' style='color: #cc3333'>{% t right.invalidemail %}</p>");
+                                                jQuery("#result").empty().append("<div class='error mt-3'><i class='fas fa-times-circle me-2'></i>{% t right.invalidemail %}</div>");
                                                 jQuery("#email").val("");
                                                 jQuery("#emailupdates").prop("checked", false);
                                                 jQuery("#emailupdatesMobile").prop("checked", false);
@@ -396,7 +396,7 @@ layout: default
                                         }
                                         function submitForm() {
                                             successMessage =
-                                                "<p class='mb-0' style='color: green;'>{% t right.successfulregistration %}</p>";
+                                                "<div class='success mt-3'><i class='fas fa-check-circle me-2'></i>{% t right.successfulregistration %}</div>";
                                             data = jQuery("#subscribeform").serialize();
                                             jQuery.ajax({
                                                 type: "POST",
@@ -409,11 +409,11 @@ layout: default
                                                         .append(data != "" ? data : successMessage);
                                                 },
                                                 error: function (request, status, error) {
-                                                    alert("{% t right.noprocess %}");
+                                                    jQuery("#result").empty().append("<div class='error mt-3'><i class='fas fa-times-circle me-2'></i>{% t right.noprocess %}</div>");
                                                     jQuery("#email").val("");
+                                                    jQuery("#email").focus();
                                                     jQuery("#emailupdates").prop("checked", false);
                                                     jQuery("#emailupdatesMobile").prop("checked", false);
-                                                    jQuery("#email").focus();
                                                 },
                                             });
                                         }
@@ -679,28 +679,31 @@ layout: default
                                         </a>
                                     </div>
                                     <div class="col-12 col-lg-6">
-                                        <button id="copy-text" class="btn-copy copy"
-                                            data-clipboard-target="#final-letter">
+                                        <button id="copy-text" class="btn-copy" data-clipboard-target="#final-letter">
                                             <i class="fas fa-clone me-2"></i>{% t right.copy %}
                                         </button>
                                     </div>
                                 </div>
 
                                 <script>
-                                    // Function to show/hide message after clicking on the copy text button
-                                    const copier = document.getElementById("copy-text");
-                                    copier.addEventListener("click", (event) => {
-                                        const displayMessage = document.getElementById("final-message");
-                                        displayMessage.innerHTML = "<i class='fas fa-check-circle me-2'></i>{% t right.message.success %}";
-                                        displayMessage.style.backgroundColor = "#ECFDF5";
-                                        displayMessage.style.color = "#065F46";
-                                    });
-
                                     // Function to show/hide message after clicking on the send email button
                                     const sender = document.getElementById("send-text");
                                     sender.addEventListener("click", (event) => {
                                         const displayMessage = document.getElementById("final-message");
                                         displayMessage.innerHTML = "<i class='fas fa-check-circle me-2'></i>{% t right.message.sent %}";
+                                        displayMessage.style.backgroundColor = "#ECFDF5";
+                                        displayMessage.style.color = "#065F46";
+                                    });
+
+                                    // Function to show/hide message after clicking on the copy text button
+                                    const copier = document.getElementById("copy-text");
+                                    const clip = new ClipboardJS(copier);
+                                    clip.on("success", function (e) {
+                                        e.clearSelection();
+                                    });
+                                    copier.addEventListener("click", (event) => {
+                                        const displayMessage = document.getElementById("final-message");
+                                        displayMessage.innerHTML = "<i class='fas fa-check-circle me-2'></i>{% t right.message.success %}";
                                         displayMessage.style.backgroundColor = "#ECFDF5";
                                         displayMessage.style.color = "#065F46";
                                     });
