@@ -360,7 +360,7 @@ class Mailto_url {
 // Function to get the full text and set subject, to: field
 
 function getContent(link) {
-  const quote = document.getElementById("final-letter");
+  const quote = document.getElementById("letter-content");
   if (quote && quote.innerText) {
     let mailTo = new Mailto_url();
     mailTo.addMain(munemail.textContent);
