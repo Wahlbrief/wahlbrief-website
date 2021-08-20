@@ -169,7 +169,8 @@ function secondpage() {
     : "";
 
   if (x.length < 5) {
-    z.textContent = "You have inserted less than 5 digits!";
+    z.innerHTML =
+      "<div class='no-items'><i class='fas fa-times-circle me-2'></i><span>You have inserted less than 5 digits!</span></div>";
     setTimeout(function () {
       z.textContent = "";
     }, 3500);
@@ -186,7 +187,8 @@ function secondpage() {
     } else el4.style.display = "block";
   } else {
     y.value = "";
-    z.textContent = "You have entered an incorrect ZIP code! Try again.";
+    z.innerHTML =
+      "<div class='no-items'><i class='fas fa-times-circle me-2'></i><span>You have entered an incorrect ZIP code! Try again.</span></div>";
     setTimeout(function () {
       z.textContent = "";
     }, 4000);
