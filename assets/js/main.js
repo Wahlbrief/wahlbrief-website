@@ -245,72 +245,76 @@ function backtosecondpage() {
 
 // Function to grab letter content and add it to the email send button
 
-function Mailto_url() {
-  const encode_mailto_component = function (str) {
-    try {
-      return encodeURIComponent(str);
-    } catch (e) {
-      return escape(str);
-    }
-  };
-  const AddressList = function () {
-    const list = [];
-    this.length = 0;
-    this.add = function (address) {
-      if (address) {
-        list.push(address);
-        this.length = list.length;
+class Mailto_url {
+  constructor() {
+    const encode_mailto_component = function (str) {
+      try {
+        return encodeURIComponent(str);
+      } catch (e) {
+        return escape(str);
       }
     };
-    this.get = function () {
-      return list.join(";");
+    class AddressList {
+      constructor() {
+        const list = [];
+        this.length = 0;
+        this.add = function (address) {
+          if (address) {
+            list.push(address);
+            this.length = list.length;
+          }
+        };
+        this.get = function () {
+          return list.join(";");
+        };
+      }
+    }
+    let subject = "",
+      body = "",
+      mainList = new AddressList(),
+      ccList = new AddressList(),
+      bccList = new AddressList();
+    this.setSubject = function (str) {
+      subject = encode_mailto_component(str);
     };
-  };
-  let subject = "",
-    body = "",
-    mainList = new AddressList(),
-    ccList = new AddressList(),
-    bccList = new AddressList();
-  this.setSubject = function (str) {
-    subject = encode_mailto_component(str);
-  };
-  this.setBody = function (str) {
-    body = encode_mailto_component(str);
-  };
-  this.addMain = function (x) {
-    mainList.add(x);
-  };
-  this.addCC = function (x) {
-    ccList.add(x);
-  };
-  this.addBCC = function (x) {
-    bccList.add(x);
-  };
-  this.getURL = function (allow_empty_mainList) {
-    const out = ["mailto:"];
-    const extras = [];
-    if (mainList.length === 0 && !allow_empty_mainList) {
-      throw "Mailto_url: no main addressees";
-    } else {
-      out.push(mainList.get());
-    }
-    if (subject) {
-      extras.push("subject=" + subject);
-    }
-    if (ccList.length) {
-      extras.push("cc=" + ccList.get());
-    }
-    if (bccList.length) {
-      extras.push("bcc=" + bccList.get());
-    }
-    if (body) {
-      extras.push("body=" + body);
-    }
-    if (extras.length) {
-      out.push("?" + extras.join("&"));
-    }
-    return out.join("");
-  };
+    this.setBody = function (str) {
+      body = encode_mailto_component(str);
+    };
+    this.addMain = function (x) {
+      mainList.add(x);
+    };
+    this.addCC = function (x) {
+      ccList.add(x);
+    };
+    this.addBCC = function (x) {
+      bccList.add(x);
+    };
+    this.getURL = function (allow_empty_mainList) {
+      const out = ["mailto:"];
+      const extras = [];
+      if (mainList.length === 0 && !allow_empty_mainList) {
+        throw "Mailto_url: no main addressees";
+      } else {
+        out.push(mainList.get());
+      }
+      if (subject) {
+        extras.push("subject=" + subject);
+      }
+      if (ccList.length) {
+        extras.push("cc=" + ccList.get());
+      }
+      if (bccList.length) {
+        extras.push("bcc=" + bccList.get());
+      }
+      if (body) {
+        extras.push("body=" + body);
+      }
+      if (extras.length) {
+        out.push("?" + extras.join("&"));
+      }
+      return out.join("");
+    };
+  }
 }
 
 // Function to get the full text and set subject, to: field
