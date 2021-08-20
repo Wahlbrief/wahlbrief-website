@@ -58,6 +58,7 @@ layout: default
                             <span class="fw-bold" id="newname"></span>
                             <span class="fw-bold" id="newsurname"></span>
                             <br />
+                            <span class="fw-bold" id="address"></span>
                             <span class="fw-bold" id="newstreet"></span><br />
                             <span class="fw-bold" id="newzip"></span>
                             <span class="fw-bold" id="newcity"></span><br />
@@ -71,6 +72,7 @@ layout: default
                             <span id="id-newsurname"></span>
                             <span id="id-street"></span>
                             <span id="id-newstreet"></span>
+                            <span id="id-address"></span>
                             <span id="id-zip"></span>
                             <span id="id-newzip"></span>
                             <span id="id-city"></span>
@@ -494,12 +496,12 @@ layout: default
                                     <div class="row mt-3">
                                         <div class="col-12 col-lg-12 mb-0">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control" id="form-newaddress"
+                                                <input type="text" class="form-control" id="form-address"
                                                     pattern="^[a-zA-Z0-9-,.\säöüÄÖÜß\/]{2,}$" maxlength="60"
                                                     placeholder="{% t right.shipping.adresszusatz %}"
                                                     aria-label="{% t right.shipping.adresszusatz %}"
                                                     aria-describedby="{% t right.shipping.adresszusatz %}">
-                                                <label for="form-newaddress">{% t right.shipping.adresszusatz %}</label>
+                                                <label for="form-address">{% t right.shipping.adresszusatz %}</label>
                                             </div>
                                         </div>
                                     </div>
@@ -627,11 +629,10 @@ layout: default
 
                                         <span class="fw-bold" id="final-newsurname"></span>
                                         <span class="fw-bold" id="final-newname"></span><br />
-
                                         <span class="fw-bold" id="final-newstreet"></span><br />
                                         <span class="fw-bold" id="final-newzip"></span>
                                         <span class="fw-bold" id="final-newcity"></span><br />
-
+                                        <span class="fw-bold" id="final-address"></span><br />
                                         <span class="fw-bold ms-2" id="final-street"></span>
                                         <span class="fw-bold ms-2" id="final-zip"></span>
                                         <span class="fw-bold ms-2" id="final-city"></span>
@@ -645,6 +646,7 @@ layout: default
                                         <span id="final-id-city"></span>
                                         <span id="final-id-newname"></span>
                                         <span id="final-id-newsurname"></span>
+                                        <span id="final-id-address"></span>
                                         <span id="final-id-newstreet"></span>
                                         <span id="final-id-newzip"></span>
                                         <span id="final-id-newcity"></span>

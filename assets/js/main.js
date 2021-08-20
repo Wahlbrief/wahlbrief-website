@@ -76,6 +76,7 @@ const checks = [
   "newname",
   "surname",
   "newsurname",
+  "address",
   "street",
   "newstreet",
   "zip",
@@ -486,10 +487,10 @@ searchInput.addEventListener("keyup", (e) => {
 
     if (convertedString.indexOf("en") != -1) {
       suggestions.innerHTML =
-        "<div class='no-items'><i class='fas fa-times-circle me-2'></i><span>No Results</span></div>";
+        "<div class='no-items'><i class='fas fa-times-circle me-2'></i><span>Invalid ZIP code</span></div>";
     } else {
       suggestions.innerHTML =
-        "<div class='no-items'><i class='fas fa-times-circle me-2'></i><span>Keine Resultate</span></div>";
+        "<div class='no-items'><i class='fas fa-times-circle me-2'></i><span>Ungültige Postleitzahl</span></div>";
     }
     return;
   }
