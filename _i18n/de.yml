@@ -65,12 +65,12 @@ right:
     sent: "Der Antrag sollte sich in der Email-App geöffnet haben. Nur noch versenden."
     intro: "Auf einen der Buttons klicken und den fertigen Antrag per E-Mail versenden."
   letter:
-    title: "Sehr geehrte Damen und Herren,<br />hiermit beantrage ich die Zusendung der Briefwahlunterlagen für die Wahl(en) 2021."
+    title: "Sehr geehrte Damen und Herren,<br />hiermit beantrage ich die Zusendung der Briefwahlunterlagen für alle in Betracht kommenden Wahl/en 2021."
     name: "Vorname"
     surname: "Nachname"
     birthday: "Geburtsdatum"
     address: "Addresse"
-    sendtomine: "Bitte senden Sie mir die Unterlagen an meine Meldeadresse!"
+    sendtomine: "Bitte senden Sie mir die Unterlagen an meine Meldeadresse."
     sendalternative: "Bitte senden Sie mir die Unterlagen an folgende Adresse:"
     regards: "Mit freundlichen Grüßen"
 faq:
