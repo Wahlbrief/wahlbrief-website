@@ -73,6 +73,11 @@ right:
     sendtomine: "Bitte senden Sie mir die Unterlagen an meine Meldeadresse."
     sendalternative: "Bitte senden Sie mir die Unterlagen an folgende Adresse:"
     regards: "Mit freundlichen Grüßen"
+  sharing:
+    facebook: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    twitter: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    linkedin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    whatsapp: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 faq:
   left:
     title: "Häufig gestellte Fragen"
