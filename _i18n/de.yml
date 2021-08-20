@@ -17,7 +17,7 @@ right:
   placeholder: "PLZ (Hauptwohnsitz)"
   button: "Wahlamt suchen"
   residence: "Persönliche Angaben"
-  optional: "Das Wahlamt benötigt zum Abgleich den vollständigen Namen (wie auf dem Ausweis), die vollständige Meldeadresse des Hauptwohnsitzes und das Geburtsdatum.<br /><small>Alternativ kann die Vorlage ohne Angaben generiert und die persönlichen Daten von Hand ergänzt werden.</small>"
+  optional: "Das Wahlamt benötigt zum Abgleich den vollständigen Namen (wie auf dem Ausweis), die vollständige Meldeadresse des Hauptwohnsitzes und das Geburtsdatum.<br /><small>Alternativ kann der Antrag ohne Angaben generiert und persönliche Daten von Hand ergänzt werden.</small>"
   firstname: "Vorname"
   lastname: "Nachname"
   street: "Straße und Hausnummer (Hauptwohnsitz)"
