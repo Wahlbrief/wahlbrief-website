@@ -55,8 +55,8 @@ layout: default
 
                         <p id="newaddress">Bitte senden Sie mir die Unterlagen an folgende Adresse:<br /><br />
 
-                            Nachname: <span class="fw-bold" id="newsurname"></span><br />
-                            Vorname: <span class="fw-bold" id="newname"></span><br />
+                            <span class="fw-bold" id="newname"></span>
+                            <span class="fw-bold" id="newsurname"></span>
                             <br />
                             <span class="fw-bold" id="newstreet"></span><br />
                             <span class="fw-bold" id="newzip"></span>
@@ -259,7 +259,7 @@ layout: default
                                         <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                             <div class="form-floating">
                                                 <input type="text" class="form-control" id="form-name"
-                                                    pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
+                                                    pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$" maxlength="60"
                                                     placeholder="{% t right.firstname %}"
                                                     aria-label="{% t right.firstname %}"
                                                     aria-describedby="{% t right.firstname %}">
@@ -269,7 +269,7 @@ layout: default
                                         <div class="col-12 col-lg-6">
                                             <div class="form-floating">
                                                 <input type="text" class="form-control" id="form-surname"
-                                                    pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
+                                                    pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$" maxlength="60"
                                                     placeholder="{% t right.lastname %}"
                                                     aria-label="{% t right.lastname %}"
                                                     aria-describedby="{% t right.lastname %}">
@@ -319,7 +319,7 @@ layout: default
                                         <div class="col-12 col-lg-12 mb-0">
                                             <div class="form-floating">
                                                 <input type="text" class="form-control" id="form-street"
-                                                    pattern="^[a-zA-Z0-9-,.\säöüÄÖÜß\/]{2,}$"
+                                                    pattern="^[a-zA-Z0-9-,.\säöüÄÖÜß\/]{2,}$" maxlength="60"
                                                     placeholder="{% t right.shipping.street %}"
                                                     aria-label="{% t right.shipping.street %}"
                                                     aria-describedby="{% t right.shipping.street %}">
@@ -342,7 +342,7 @@ layout: default
                                         <div class="col-12 col-lg-10">
                                             <div class="form-floating">
                                                 <input type="text" class="form-control" id="form-city"
-                                                    pattern="^[a-zA-Z-,.\säöüÄÖÜß()]{2,}$"
+                                                    pattern="^[a-zA-Z-,.\säöüÄÖÜß()]{2,}$" maxlength="60"
                                                     placeholder="{% t right.shipping.city %}"
                                                     aria-label="{% t right.shipping.city %}"
                                                     aria-describedby="{% t right.shipping.city %}">
@@ -473,7 +473,7 @@ layout: default
                                         <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                                             <div class="form-floating">
                                                 <input type="text" class="form-control" id="form-newname"
-                                                    pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$"
+                                                    pattern="^[a-zA-Z-,.\säöüÄÖÜß]{2,}$" maxlength="60"
                                                     placeholder="{% t right.shipping.name %}"
                                                     aria-label="{% t right.shipping.name %}"
                                                     aria-describedby="{% t right.shipping.name %}">
@@ -483,7 +483,7 @@ layout: default
                                         <div class="col-12 col-lg-6">
                                             <div class="form-floating">
                                                 <input type="text" class="form-control" id="form-newsurname"
-                                                    pattern="^[a-zA-Z-,.\säöüÄÖÜß\/]{2,}$"
+                                                    pattern="^[a-zA-Z-,.\säöüÄÖÜß\/]{2,}$" maxlength="60"
                                                     placeholder="{% t right.shipping.surname %}"
                                                     aria-label="{% t right.shipping.surname %}"
                                                     aria-describedby="{% t right.shipping.surname %}">
@@ -494,8 +494,20 @@ layout: default
                                     <div class="row mt-3">
                                         <div class="col-12 col-lg-12 mb-0">
                                             <div class="form-floating">
+                                                <input type="text" class="form-control" id="form-newaddress"
+                                                    pattern="^[a-zA-Z0-9-,.\säöüÄÖÜß\/]{2,}$" maxlength="60"
+                                                    placeholder="{% t right.shipping.adresszusatz %}"
+                                                    aria-label="{% t right.shipping.adresszusatz %}"
+                                                    aria-describedby="{% t right.shipping.adresszusatz %}">
+                                                <label for="form-newaddress">{% t right.shipping.adresszusatz %}</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-12 col-lg-12 mb-0">
+                                            <div class="form-floating">
                                                 <input type="text" class="form-control" id="form-newstreet"
-                                                    pattern="^[a-zA-Z0-9-,.\säöüÄÖÜß\/]{2,}$"
+                                                    pattern="^[a-zA-Z0-9-,.\säöüÄÖÜß\/]{2,}$" maxlength="60"
                                                     placeholder="{% t right.shipping.street %}"
                                                     aria-label="{% t right.shipping.street %}"
                                                     aria-describedby="{% t right.shipping.street %}">
@@ -520,7 +532,7 @@ layout: default
                                         <div class="col-12 col-lg-10">
                                             <div class="form-floating">
                                                 <input type="text" class="form-control" id="form-newcity"
-                                                    pattern="^[a-zA-Z-,.\säöüÄÖÜß()]{2,}$"
+                                                    pattern="^[a-zA-Z-,.\säöüÄÖÜß()]{2,}$" maxlength="60"
                                                     placeholder="{% t right.shipping.city %}"
                                                     aria-label="{% t right.shipping.city %}"
                                                     aria-describedby="{% t right.shipping.city %}">
@@ -613,8 +625,9 @@ layout: default
                                     <p id="finalnewaddress">Bitte senden Sie mir die Unterlagen an folgende
                                         Adresse:<br /><br />
 
-                                        Nachname: <span class="fw-bold ms-2" id="final-newname"></span><br />
-                                        Vorname: <span class="fw-bold ms-2" id="final-newsurname"></span><br />
+                                        <span class="fw-bold" id="final-newsurname"></span>
+                                        <span class="fw-bold" id="final-newname"></span><br />
+
                                         <span class="fw-bold" id="final-newstreet"></span><br />
                                         <span class="fw-bold" id="final-newzip"></span>
                                         <span class="fw-bold" id="final-newcity"></span><br />
