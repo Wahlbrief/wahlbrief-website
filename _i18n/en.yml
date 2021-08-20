@@ -47,6 +47,7 @@ right:
     street: "Street and house number"
     zipcode: "ZIP code"
     city: "City"
+    adresszusatz: "Adresszusatz"
   subscription:
     title: "Sign up for the email newsletter"
     description: "Sign up if you haven't already and we will let you know all the latest updates on your mail. We won't spam, we promise!"
