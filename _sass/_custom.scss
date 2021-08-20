@@ -540,15 +540,15 @@ input[type="number"] {
 .error {
   padding: 0.75rem 1.375rem;
   pointer-events: none;
-  color: #991b1b;
-  background-color: #fef2f2;
+  color: #991b1b !important;
+  background-color: #fef2f2 !important;
 }
 
 .success {
   padding: 0.75rem 1.375rem;
   pointer-events: none;
-  color: #065f46;
-  background-color: #ecfdf5;
+  color: #065f46 !important;
+  background-color: #ecfdf5 !important;
 }
 
 #subject,

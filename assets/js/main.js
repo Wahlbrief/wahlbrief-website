@@ -141,6 +141,24 @@ YearInput.addEventListener("input", (e) => {
   finalYear.textContent = e.target.value;
 });
 
+// Function to make fieldset change when inputs inside are valid
+
+const BirthdayForm = document.querySelector("fieldset");
+const AllInputs = Array.from(BirthdayForm.querySelectorAll("input"));
+
+AllInputs.forEach((input) => {
+  input.addEventListener("input", (e) => {
+    const allValid = AllInputs.every((input) => {
+      return input && input.validity.valid && input.value.length > 0;
+    });
+    if (!allValid) {
+      BirthdayForm.style.boxShadow = "0 0 0 0.15rem red";
+    } else {
+      BirthdayForm.style.boxShadow = "0 0 0 0.15rem green";
+    }
+  });
+});
+
 // Scroll to top function
 
 function scrollTop() {
@@ -519,10 +537,10 @@ searchInput.addEventListener("keyup", (e) => {
 
       if (convertedString.indexOf("en") != -1) {
         suggestions.innerHTML =
-          "<div class='no-items'><i class='fas fa-times-circle me-2'></i><span>Invalid ZIP code</span></div>";
+          "<div class='error'><i class='fas fa-times-circle me-2'></i><span>Invalid ZIP code</span></div>";
       } else {
         suggestions.innerHTML =
-          "<div class='no-items'><i class='fas fa-times-circle me-2'></i><span>Ungültige Postleitzahl</span></div>";
+          "<div class='error'><i class='fas fa-times-circle me-2'></i><span>Ungültige Postleitzahl</span></div>";
       }
       return;
     }
