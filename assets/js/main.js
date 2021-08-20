@@ -342,19 +342,23 @@ function getContent(link) {
   return false;
 }
 
-// Function to initiate clipboard copy
+// Function to initialize tooltips
 
-const clipboard = new ClipboardJS(".copy");
-clipboard.on("success", function (e) {
-  e.clearSelection();
-});
-
-// Function to show tooltips on click
-const tooltipTriggerList = [].slice.call(
-  document.querySelectorAll('[data-bs-toggle="tooltip"]')
-);
-const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl);
+const copyButtons = Array.from(document.querySelectorAll(".copy"));
+copyButtons.forEach((btn) => {
+  const tooltip = new bootstrap.Tooltip(btn, {
+    parent: btn,
+    trigger: "manual",
+  });
+  const clipboard = new ClipboardJS(btn);
+  clipboard.on("success", function (e) {
+    e.clearSelection();
+    tooltip.update();
+    tooltip.show();
+    setTimeout(() => {
+      tooltip.hide();
+    }, 2000);
+  });
 });
 
 // Function to get items from JSON and build array
@@ -515,5 +519,5 @@ searchInput.addEventListener("keyup", (e) => {
 
     suggestions.innerHTML = "";
     suggestions.append(...divs);
-  }, 500);
+  }, 450);
 });
