@@ -27,6 +27,8 @@ const muniname = document.getElementById("muniname");
 const muniemail = document.getElementById("muniemail");
 const finalmuniname = document.getElementById("final-munname");
 const finalmuniemail = document.getElementById("final-munemail");
+const prefillzip = document.getElementById("form-zip");
+const prefillcity = document.getElementById("form-city");
 const cb = document.getElementById("cb1");
 
 // Function to hide/show items based on radio buttons selected
@@ -154,6 +156,7 @@ function is_valid_datalist_value(inputValue, cityValue) {
   const filteredCity = zips.filter(({ ORT }) => ORT.toString() == cityValue);
 
   if (filtered.length > 0 && filteredCity.length > 0) {
+    const preinput = filtered[0];
     const data = filteredCity[0];
     munname.textContent = data.ORT;
     munemail.textContent = data["E-Mail"];
@@ -161,6 +164,13 @@ function is_valid_datalist_value(inputValue, cityValue) {
     muniemail.textContent = data["E-Mail"];
     finalmuniname.textContent = data.ORT;
     finalmuniemail.textContent = data["E-Mail"];
+    prefillcity.value = "";
+    prefillcity.value = data.ORT;
+    prefillzip.value = "";
+    prefillzip.value = preinput.PLZ;
+    const event = new Event("input", { bubbles: true, cancellable: true });
+    prefillzip.dispatchEvent(event);
+    prefillcity.dispatchEvent(event);
     return true;
   }
   return false;
