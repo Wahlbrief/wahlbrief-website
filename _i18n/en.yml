@@ -75,6 +75,7 @@ right:
     sendalternative: "Bitte senden Sie mir die Unterlagen an folgende Adresse:"
     regards: "Mit freundlichen Grüßen"
   sharing:
+    email: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     facebook: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     twitter: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     linkedin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
