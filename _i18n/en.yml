@@ -44,10 +44,10 @@ right:
     address: "Shipping address"
     name: "First Name"
     surname: "Last Name"
+    adresszusatz: "Adresszusatz"
     street: "Street and house number"
     zipcode: "ZIP code"
     city: "City"
-    adresszusatz: "Adresszusatz"
   subscription:
     title: "Sign up for the email newsletter"
     description: "Sign up if you haven't already and we will let you know all the latest updates on your mail. We won't spam, we promise!"
@@ -56,6 +56,7 @@ right:
   preview-letter: "Preview of your letter"
   preview-description: "Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te."
   preview-address: "Address goes here. Lorem ipsum 65124"
+  subject: "Wahlbrief 2021 - Mail"
   send: "Send e-mail"
   copy: "Copy text"
   back: "Back"
@@ -64,7 +65,6 @@ right:
     success: "Text copied, paste it in your email client!"
     sent: "Your email client was opened with prefilled content, ready to send!"
     intro: "Please use these buttons to copy the text or send it directly via your email client!"
-    nothing: "Nothing found"
 faq:
   left:
     title: "FAQ’s"

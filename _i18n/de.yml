@@ -43,10 +43,10 @@ right:
     address: "Versand-Adresse für die Unterlagen"
     name: "Vorname"
     surname: "Nachname"
+    adresszusatz: "Adresszusatz"
     street: "Straße und Hausnummer"
     zipcode: "PLZ"
     city: "Ort"
-    adresszusatz: "Adresszusatz"
   subscription:
     title: "Sign up for the email newsletter"
     description: "Sign up if you haven't already and we will let you know all the latest updates on your mail. We won't spam, we promise!"
@@ -55,6 +55,7 @@ right:
   preview-letter: "Briefwahl-Antrag versenden"
   preview-description: "Das wars! Der Antrag kann nun per E-Mail an das zuständige Wahlamt übermittelt werden. Alle Angaben sollten vorher noch einmal sorgfältig überprüft werden: Falsche Angaben werden die Bearbeitung verzögern."
   preview-address: "Address goes here. Lorem ipsum 65124"
+  subject: "Wahlbrief 2021 - Mail"
   send: "E-Mail senden"
   copy: "Text kopieren"
   back: "Zurück"
@@ -63,7 +64,6 @@ right:
     success: "Text kopiert. Jetzt in der Email-App einfügen und an die oben genannte Email-Adresse des Wahlamts versenden."
     sent: "Der Antrag sollte sich in der Email-App geöffnet haben. Nur noch versenden."
     intro: "Auf einen der Buttons klicken und den fertigen Antrag per E-Mail versenden."
-    nothing: "No found"
 faq:
   left:
     title: "Häufig gestellte Fragen"
@@ -100,11 +100,7 @@ imprint:
 about:
   left:
     title: "Über das Projekt"
-    subtitle: "wahlbrief ist ein Open Source Projekt von Mehr Demokratie e.V. (LINK) zur Bundestagswahl 2021. Wir setzen uns dafür ein, dass jeder wahlberechtigte Mensch seine Stimme abgibt, damit unsere Demokratie lebendig bleibt. Zu einer starken Demokratie gehört eine hohe Wahlbeteiligung. Mit dem Projekt wollen wir es allen wahlberechtigten Bürgerinnen und Bürgern mithilfe der Briefwahl so leicht wie möglich machen, an der Wahl teilzunehmen. Mehr Demokratie e.V. ist überparteilich und gemeinnützig.
-
-Die Seite funktioniert in drei einfachen Schritten: Zuerst finden wir die E-Mail-Adresse Ihres zuständigen Wahlamts. Dann geben Sie Ihre persönlichen Daten ein, die das Wahlamt zur Zusendung der Unterlagen benötigt. Zum Schluss erstellen wir die fertige E-Mail an das Wahlamt für Sie, so dass Sie nur noch auf 'Senden' klicken müssen.'<br /><small>Wir speichern dabei Ihre persönlichen Daten nicht. [technische Erklärung, was stattdessen passiert]</small>
-
-Open Source bedeutet, dass der Quellcode der Webseite öffentlich einsehbar ist (Link)."
+    subtitle: "wahlbrief ist ein Open Source Projekt von Mehr Demokratie e.V. (LINK) zur Bundestagswahl 2021. Wir setzen uns dafür ein, dass jeder wahlberechtigte Mensch seine Stimme abgibt, damit unsere Demokratie lebendig bleibt. Zu einer starken Demokratie gehört eine hohe Wahlbeteiligung. Mit dem Projekt wollen wir es allen wahlberechtigten Bürgerinnen und Bürgern mithilfe der Briefwahl so leicht wie möglich machen, an der Wahl teilzunehmen. Mehr Demokratie e.V. ist überparteilich und gemeinnützig. Die Seite funktioniert in drei einfachen Schritten: Zuerst finden wir die E-Mail-Adresse Ihres zuständigen Wahlamts. Dann geben Sie Ihre persönlichen Daten ein, die das Wahlamt zur Zusendung der Unterlagen benötigt. Zum Schluss erstellen wir die fertige E-Mail an das Wahlamt für Sie, so dass Sie nur noch auf 'Senden' klicken müssen.'<br /><small>Wir speichern dabei Ihre persönlichen Daten nicht. [technische Erklärung, was stattdessen passiert]</small> Open Source bedeutet, dass der Quellcode der Webseite öffentlich einsehbar ist (Link)."
   right:
     title: "Jede Stimme zählt: Wahlbeteiligung erhöhen, Demokratie stärken"
     text: "Wie stark eine Demokratie ist, zeigt sich daran, wie viele Menschen sich an den Wahlen beteiligen. Auch wenn die Zahlen etwas schwanken, darf man zusammenfassend sagen, dass seit 1990 in Deutschland etwa drei Viertel der Wahlberechtigten bei Bundestagswahlen ihre Stimme abgeben. Viele Nichtwählerinnen und Nichtwähler geben hierfür Gründe an, die mit ihrer Entfremdung oder Enttäuschung von dem politischen System zu tun haben. Wir können diese Entwicklung allein nicht ändern. Aber wir können helfen, das Wählen leichter zu machen, indem wir den Gang in das Wahllokal am Sonntag, 26. September 2021, überflüssig machen. wahlbrief hilft dabei, in dem wir die Beantragung der Unterlagen papierlos und mit wenigen Klicks für alle ermöglichen."

@@ -20,6 +20,7 @@ let newaddress = document.getElementById("newaddress");
 let finaladdress = document.getElementById("finalogaddress");
 let finalnewaddress = document.getElementById("finalnewaddress");
 let newsletter = document.getElementById("subscription");
+const subject = document.getElementById("subject");
 const munname = document.getElementById("munname");
 const munemail = document.getElementById("munemail");
 const muniname = document.getElementById("muniname");
@@ -324,7 +325,7 @@ function getContent(link) {
   if (quote && quote.innerText) {
     let mailTo = new Mailto_url();
     mailTo.addMain(munemail.textContent);
-    mailTo.setSubject("Wahlbrief 2021 - Mail");
+    mailTo.setSubject(subject.textContent);
     mailTo.setBody(quote.innerText);
     link.href = mailTo.getURL(true);
     return true;
