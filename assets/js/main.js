@@ -422,7 +422,7 @@ function onEnter() {
   if (len == 1) {
     active %= len;
     children[active].click();
-    searchInput.addEventListener("keyup", keyUpListener);
+    setTimeout(secondpage(), 2500);
     return;
   }
 
