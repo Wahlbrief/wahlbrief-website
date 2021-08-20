@@ -60,7 +60,7 @@ right:
   copy: "Text kopieren"
   back: "Zurück"
   message:
-    copied: "Kopieren"
+    copied: "Adresse kopiert"
     success: "Text kopiert. Jetzt in der Email-App einfügen und an die oben genannte Email-Adresse des Wahlamts versenden."
     sent: "Der Antrag sollte sich in der Email-App geöffnet haben. Nur noch versenden."
     intro: "Auf einen der Buttons klicken und den fertigen Antrag per E-Mail versenden."
@@ -69,7 +69,7 @@ right:
     name: "Vorname"
     surname: "Nachname"
     birthday: "Geburtsdatum"
-    address: "Addresse"
+    address: "Meldeadresse"
     sendtomine: "Bitte senden Sie mir die Unterlagen an meine Meldeadresse."
     sendalternative: "Bitte senden Sie mir die Unterlagen an folgende Adresse:"
     regards: "Mit freundlichen Grüßen"
