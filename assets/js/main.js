@@ -437,7 +437,7 @@ function onEnter() {
     children[active].click();
     setTimeout(function () {
       secondpage();
-    }, 500);
+    }, 300);
   }
 
   if (active > 1) {
