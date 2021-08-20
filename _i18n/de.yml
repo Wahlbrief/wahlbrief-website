@@ -41,8 +41,8 @@ right:
   noprocess: "Es gab ein Problem bei der Registrierung."
   shipping:
     address: "Versand-Adresse für die Unterlagen"
-    name: "Vorname"
-    surname: "Nachname"
+    name: "Vorname, falls abweichend"
+    surname: "Nachname, falls abweichend"
     adresszusatz: "Adresszusatz"
     street: "Straße und Hausnummer"
     zipcode: "PLZ"
