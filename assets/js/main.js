@@ -246,15 +246,15 @@ function backtosecondpage() {
 // Function to grab letter content and add it to the email send button
 
 function Mailto_url() {
-  var encode_mailto_component = function (str) {
+  const encode_mailto_component = function (str) {
     try {
       return encodeURIComponent(str);
     } catch (e) {
       return escape(str);
     }
   };
-  var AddressList = function () {
-    var list = [];
+  const AddressList = function () {
+    const list = [];
     this.length = 0;
     this.add = function (address) {
       if (address) {
@@ -266,7 +266,7 @@ function Mailto_url() {
       return list.join(";");
     };
   };
-  var subject = "",
+  let subject = "",
     body = "",
     mainList = new AddressList(),
     ccList = new AddressList(),
@@ -287,8 +287,8 @@ function Mailto_url() {
     bccList.add(x);
   };
   this.getURL = function (allow_empty_mainList) {
-    var out = ["mailto:"];
-    var extras = [];
+    const out = ["mailto:"];
+    const extras = [];
     if (mainList.length === 0 && !allow_empty_mainList) {
       throw "Mailto_url: no main addressees";
     } else {
@@ -316,9 +316,9 @@ function Mailto_url() {
 // Function to get the full text and set subject, to: field
 
 function getContent(link) {
-  var quote = document.getElementById("final-letter");
+  const quote = document.getElementById("final-letter");
   if (quote && quote.innerText) {
-    var mailTo = new Mailto_url();
+    let mailTo = new Mailto_url();
     mailTo.addMain(munemail.textContent);
     mailTo.setSubject("Wahlbrief 2021 - Mail");
     mailTo.setBody(quote.innerText);
@@ -330,16 +330,16 @@ function getContent(link) {
 
 // Function to initiate clipboard copy
 
-var clipboard = new ClipboardJS(".copy");
+const clipboard = new ClipboardJS(".copy");
 clipboard.on("success", function (e) {
   e.clearSelection();
 });
 
 // Function to show tooltips on click
-var tooltipTriggerList = [].slice.call(
+const tooltipTriggerList = [].slice.call(
   document.querySelectorAll('[data-bs-toggle="tooltip"]')
 );
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl);
 });
 
