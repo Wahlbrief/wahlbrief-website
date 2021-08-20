@@ -518,17 +518,6 @@ input[type="number"] {
         background-color: $bluegray-200;
       }
     }
-
-    & div.no-items {
-      padding: 0.75rem 1.375rem;
-      pointer-events: none;
-      color: #991b1b;
-      background-color: #fef2f2;
-
-      &:hover {
-        background-color: #fef2f2 !important;
-      }
-    }
   }
 
   &-active {
@@ -540,15 +529,15 @@ input[type="number"] {
 .error {
   padding: 0.75rem 1.375rem;
   pointer-events: none;
-  color: #991b1b !important;
-  background-color: #fef2f2 !important;
+  color: #a62d19 !important;
+  background-color: #fef6f5 !important;
 }
 
 .success {
   padding: 0.75rem 1.375rem;
   pointer-events: none;
-  color: #065f46 !important;
-  background-color: #ecfdf5 !important;
+  color: #314c0a !important;
+  background-color: #eefbde !important;
 }
 
 #subject,
@@ -739,8 +728,8 @@ fieldset {
 
 #final-message {
   padding: 1.25rem;
-  background-color: #eff6ff;
-  color: #1e40af;
+  background-color: $cyan-50;
+  color: $cyan-800;
   border-radius: 0.25rem;
   display: flex;
   align-items: center;

@@ -702,8 +702,7 @@ layout: default
                                     sender.addEventListener("click", (event) => {
                                         const displayMessage = document.getElementById("final-message");
                                         displayMessage.innerHTML = "<i class='fas fa-check-circle me-2'></i>{% t right.message.sent %}";
-                                        displayMessage.style.backgroundColor = "#ECFDF5";
-                                        displayMessage.style.color = "#065F46";
+                                        displayMessage.classList.add("success");
                                     });
 
                                     // Function to show/hide message after clicking on the copy text button
@@ -715,8 +714,7 @@ layout: default
                                     copier.addEventListener("click", (event) => {
                                         const displayMessage = document.getElementById("final-message");
                                         displayMessage.innerHTML = "<i class='fas fa-check-circle me-2'></i>{% t right.message.success %}";
-                                        displayMessage.style.backgroundColor = "#ECFDF5";
-                                        displayMessage.style.color = "#065F46";
+                                        displayMessage.classList.add("success");
                                     });
                                 </script>
 
