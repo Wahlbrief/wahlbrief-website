@@ -422,8 +422,9 @@ function onEnter() {
   if (len == 1) {
     active %= len;
     children[active].click();
-    setTimeout(secondpage(), 2500);
-    return;
+    setTimeout(function () {
+      secondpage();
+    }, 750);
   }
 
   if (active > 1) {
