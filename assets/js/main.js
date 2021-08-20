@@ -169,11 +169,6 @@ function secondpage() {
     : "";
 
   if (x.length < 5) {
-    z.innerHTML =
-      "<div class='no-items'><i class='fas fa-times-circle me-2'></i><span>You have inserted less than 5 digits!</span></div>";
-    setTimeout(function () {
-      z.textContent = "";
-    }, 3500);
     return false;
   } else if (is_valid_datalist_value(x, xi)) {
     tab.show();
@@ -185,13 +180,6 @@ function secondpage() {
     if (mqlr == false) {
       el4.style.display = "none";
     } else el4.style.display = "block";
-  } else {
-    y.value = "";
-    z.innerHTML =
-      "<div class='no-items'><i class='fas fa-times-circle me-2'></i><span>You have entered an incorrect ZIP code! Try again.</span></div>";
-    setTimeout(function () {
-      z.textContent = "";
-    }, 4000);
   }
 }
 
