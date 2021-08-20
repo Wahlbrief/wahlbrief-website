@@ -21,6 +21,7 @@ let finaladdress = document.getElementById("finalogaddress");
 let finalnewaddress = document.getElementById("finalnewaddress");
 let newsletter = document.getElementById("subscription");
 const subject = document.getElementById("subject");
+const instructionemail = document.getElementById("instruction-email");
 const munname = document.getElementById("munname");
 const munemail = document.getElementById("munemail");
 const muniname = document.getElementById("muniname");
@@ -182,6 +183,7 @@ function is_valid_datalist_value(inputValue, cityValue) {
     muniemail.textContent = data["E-Mail"];
     finalmuniname.textContent = data.ORT;
     finalmuniemail.textContent = data["E-Mail"];
+    instructionemail.textContent = data["E-Mail"];
     prefillcity.value = "";
     prefillcity.value = data.ORT;
     prefillzip.value = "";

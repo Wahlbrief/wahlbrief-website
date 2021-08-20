@@ -625,6 +625,16 @@ layout: default
 
                                 <div id="final-letter" class="final-letter py-3 px-4">
                                     <p>{% t right.letter.title %}</p>
+
+                                    <p id="instructions" aria-hidden="true">
+                                        {% t right.instructions.title %}<br /><br />
+                                        <span>{% t right.instructions.first %}<span
+                                                id="instruction-email"></span></span><br />
+                                        <span>{% t right.instructions.second %} {% t right.subject %}</span><br />
+                                        <span>{% t right.instructions.third %}</span><br /><br />
+                                        -----------
+                                    </p>
+
                                     <p class="mb-0">
                                         {% t right.letter.name %}: <span class="fw-bold" id="final-name"></span><br />
                                         {% t right.letter.surname %}: <span class="fw-bold"
@@ -697,7 +707,7 @@ layout: default
                                 </div>
 
                                 <script>
-                                    // Function to show/hide message after clicking on the send email button
+                                    // Function to show message after clicking on the send email button
                                     const sender = document.getElementById("send-text");
                                     sender.addEventListener("click", (event) => {
                                         const displayMessage = document.getElementById("final-message");
@@ -705,7 +715,7 @@ layout: default
                                         displayMessage.classList.add("success");
                                     });
 
-                                    // Function to show/hide message after clicking on the copy text button
+                                    // Function to copy text and show message after clicking on the copy text button
                                     const copier = document.getElementById("copy-text");
                                     const clip = new ClipboardJS(copier);
                                     clip.on("success", function (e) {

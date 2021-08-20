@@ -218,6 +218,12 @@ a {
   border-left: 0.375rem solid $gray-200;
 }
 
+#instructions {
+  position: absolute;
+  left: -999em;
+  opacity: 0;
+}
+
 .outro {
   display: none;
 
