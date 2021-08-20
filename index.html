@@ -37,7 +37,7 @@ layout: default
                     <div id="bigletter" class="col-xl-11 col-12 letter p-5">
                         <h4 class="fw-bold mb-4">{% t left.preview %}</h4>
                         <p>{% t right.letter.title %}</p>
-                        <p>
+                        <p class="mb-0">
                             {% t right.letter.name %}: <span class="fw-bold" id="name"></span><br />
                             {% t right.letter.surname %}: <span class="fw-bold" id="surname"></span><br />
                             {% t right.letter.birthday %}:
@@ -51,7 +51,7 @@ layout: default
 
                         <p id="ogaddress">{% t right.letter.sendtomine %}</p>
 
-                        <p id="newaddress">{% t right.letter.sendalternative %}<br /><br />
+                        <p class="mb-0" id="newaddress">{% t right.letter.sendalternative %}<br />
 
                             <span class="fw-bold" id="newname"></span>
                             <span class="fw-bold" id="newsurname"></span>
@@ -63,7 +63,7 @@ layout: default
 
                         </p>
 
-                        <p>{% t right.letter.regards %}<br />
+                        <p class="mb-0">{% t right.letter.regards %}<br />
                             <span class="fw-bold" id="id-name"></span>
                             <span class="fw-bold" id="id-surname"></span>
                             <span id="id-newname"></span>
@@ -610,7 +610,7 @@ layout: default
 
                                 <div id="final-letter" class="final-letter py-3 px-4">
                                     <p>{% t right.letter.title %}</p>
-                                    <p>
+                                    <p class="mb-0">
                                         {% t right.letter.name %}: <span class="fw-bold" id="final-name"></span><br />
                                         {% t right.letter.surname %}: <span class="fw-bold"
                                             id="final-surname"></span><br />
@@ -627,7 +627,8 @@ layout: default
 
                                     <p id="finalogaddress">{% t right.letter.sendtomine %}</p>
 
-                                    <p id="finalnewaddress">{% t right.letter.sendalternative %}<br /><br />
+                                    <p class="mb-0" id="finalnewaddress">{% t right.letter.sendalternative
+                                        %}<br />
 
                                         <span class="fw-bold" id="final-newsurname"></span>
                                         <span class="fw-bold" id="final-newname"></span><br />
@@ -640,7 +641,7 @@ layout: default
                                         <span class="fw-bold ms-2" id="final-city"></span>
                                     </p>
 
-                                    <p>{% t right.letter.regards %}<br />
+                                    <p class="mb-0">{% t right.letter.regards %}<br />
                                         <span class="fw-bold me-1" id="final-id-name"></span>
                                         <span class="fw-bold" id="final-id-surname"></span>
                                         <span id="final-id-street"></span>
