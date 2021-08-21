@@ -551,3 +551,27 @@ searchInput.addEventListener("keyup", (e) => {
     suggestions.append(...divs);
   }, 450);
 });
+
+// Function to get the query parameter from the URL on load
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const externalZIP = urlParams.get("zip");
+const externalCITY = urlParams.get("city");
+const buttonToClick = document.getElementById("next-click");
+
+window.addEventListener("DOMContentLoaded", () => {
+  if (externalZIP == null && externalCITY == null) {
+    return;
+  } else if (externalZIP != null && externalCITY != null) {
+    console.log("It's alive!");
+    searchInput.value = externalZIP + " " + externalCITY;
+    // const event = new Event("input", { bubbles: true, cancellable: true });
+    // searchInput.dispatchEvent(event);
+    //secondpage();
+    setTimeout(function () {
+      secondpage();
+    }, 300);
+  } else {
+    return;
+  }
+});
