@@ -563,11 +563,13 @@ window.addEventListener("DOMContentLoaded", () => {
   if (externalZIP == null && externalCITY == null) {
     return;
   } else if (externalZIP != null && externalCITY != null) {
-    console.log("It's alive!");
     searchInput.value = externalZIP + " " + externalCITY;
+    document.body.style.opacity = "0";
     setTimeout(function () {
+      document.body.classList.add("faded");
+      document.body.style.opacity = "1";
       secondpage();
-    }, 300);
+    }, 350);
   } else {
     return;
   }
