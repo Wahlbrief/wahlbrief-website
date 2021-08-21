@@ -57,11 +57,15 @@ layout: page
                         <h2 class="mb-5">{% t about.right.title %}</h2>
                         <p>{% t about.right.text %}</p>
                     </div>
-                    <p class="mb-0 mt-4 d-block d-lg-none"><small>Ein <a
-                                href="https://github.com/Wahlbrief/wahlbrief-website" target="_blank"
-                                rel="noreferrer noopener">Open Source Projekt</a> von Mehr
-                            Demokratie. {{ 'now' |
-                            date: "%Y" }}</small></p>
+                    <p class="mb-0 mt-4 d-block d-lg-none">
+                        <small>
+                            {% t left.copyright %} {{ 'now' | date: "%Y" }}
+                        </small>
+                        <br />
+                        <small>
+                            {% t left.built %}
+                        </small>
+                    </p>
                     <div class="d-block d-lg-none mt-4">
                         <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" id="dropdownMenu3"
