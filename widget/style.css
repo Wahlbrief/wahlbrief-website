@@ -14,7 +14,6 @@ body {
   color: #0f172a;
   display: grid;
   place-items: center;
-  text-align: center;
   background-color: #f1f5f9;
   background-image: url("assets/images/pattern.svg");
   background-position: center;
@@ -39,16 +38,10 @@ footer {
 }
 
 h1 {
-  font-size: clamp(3rem, 1.5vw + 2.7rem, 4rem);
-  line-height: clamp(3rem, 1.5vw + 2.7rem, 4rem);
-  color: #155e75;
-  margin: 0;
-}
-
-h2 {
   font-size: clamp(2rem, 1.5vw + 1.7rem, 3rem);
   line-height: clamp(2rem, 1.5vw + 1.7rem, 3rem);
   color: #155e75;
+  margin: 0;
 }
 
 main {
