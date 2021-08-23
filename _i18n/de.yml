@@ -82,7 +82,7 @@ right:
     regards: "Mit freundlichen Grüßen"
   sharing:
     copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    email: 
+    email:
       subject: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     facebook: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -138,4 +138,4 @@ Wahlen finden in Deutschland meist an Sonntagen statt. Wahlberechtigte können i
 
 Es gibt weitere gute Gründe, warum Bürger:innen am Tag der Wahl nicht wählen gehen, obwohl sie das grundsätzlich möchten. Wir glauben, dass die Briefwahl für alle eine gute Möglichkeit ist, unkompliziert und rechtzeitig im Voraus zu wählen - jederzeit, von überall und kostenfrei. Mit der Corona-Pandemie hat die Briefwahl sogar eine systemrelevante Bedeutung bekommen.<br><br>
 
-<b>Viele Menschen wissen nicht, wie einfach es ist, online die Briefwahl zu beantragen.</b> wahlbrief hilft bei der Erstellung des Antrags auf Briefwahl, prüft auf Vollständigkeit und ermittelt die Adresse des zuständigen Amts anhand der Meldeanschrift. Der Antragstext kann dann per E-Mail ans Wahlamt des Hauptwohnsitzes gesendet werden. Wir speichern und übertragen dabei keine persönlichen Daten, die E-Mail wird aus der eigenen Email-App versendet."
+<b>Viele Menschen wissen nicht, wie einfach es ist, online die Briefwahl zu beantragen.</b> <br>wahlbrief hilft bei der Erstellung des Antrags auf Briefwahl, prüft auf Vollständigkeit und ermittelt die Adresse des zuständigen Amts anhand der Meldeanschrift. Der Antragstext kann dann per E-Mail ans Wahlamt des Hauptwohnsitzes gesendet werden. Wir speichern und übertragen dabei keine persönlichen Daten, die E-Mail wird aus der eigenen Email-App versendet."
