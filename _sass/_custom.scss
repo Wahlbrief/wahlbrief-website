@@ -261,6 +261,18 @@ a {
   }
 }
 
+.imprint a[href^="mailto:"] {
+  text-decoration: none;
+  margin-left: 0.25rem;
+
+  &:before {
+    content: "\f0e0";
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    padding-right: 0.25rem;
+  }
+}
+
 .social-links a {
   display: inline-flex;
   align-items: center;
