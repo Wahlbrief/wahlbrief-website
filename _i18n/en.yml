@@ -98,6 +98,12 @@ faq:
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet facilisis at erat tincidunt. Viverra vel ultrices faucibus tempus egestas pellentesque aliquam in diam."
   right:
     title: "Find here the most frequently asked questions"
+terms:
+  left:
+    title: "Terms and Conditions"
+    subtitle: ""
+  right:
+    title: "Table of contents"
 questions:
   - title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     answer: "Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te."

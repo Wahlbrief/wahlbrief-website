@@ -97,6 +97,12 @@ faq:
     subtitle: "Per Briefwahl zu wählen ist einfach, sicher und unkompliziert. Jede wahlberechtigte Person in Deutschland kann vor der Wahl per Brief ihre Stimme abgeben, statt am Tag der Wahl in ein Wahllokal zu gehen. <br><br>Die häufigsten Fragen zur Briefwahl beantworten wir hier."
   right:
     title: "Antworten auf die wichtigsten Fragen"
+terms:
+  left:
+    title: "Terms and Conditions"
+    subtitle: ""
+  right:
+    title: "Table of contents"
 questions:
   - title: "Wer kann Briefwahl beantragen?"
     answer: "Jede Person, die stimmberechtigt ist, kann ohne Angabe von Gründen per Briefwahl statt persönlich im Wahllokal wählen."
