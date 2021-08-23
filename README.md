@@ -1,10 +1,10 @@
 # Wahlbrief
 
-Ein Open Source Projekt von Mehr Demokratie e.V. zur Bundestagswahl 2021
+Ein OpenSource Projekt von Mehr Demokratie e.V. zur Bundestagswahl 2021
 
 ## Über Wahlbrief
 
-Lorem ipsum .....
+Wir möchten, dass so viele Menschen wie möglich an der Wahl teilnehmen. <br><br>Es gibt viele Fälle, in denen die Briefwahl die einfachste und bequemste Art ist, zu wählen. Wir helfen dabei, innerhalb von 2 Minuten die Briefwahl-Unterlagen online beim zuständigen Wahlamt zu beantragen.
 
 ## Technische Informationen
 
@@ -12,7 +12,7 @@ Wahlbrief ist eine browserbasierte Anwendung zur Generierung des Wahlschein-Antr
 
 ## Einbinden von Wahlbrief auf externe Websites
 
-Lorem impsum ......
+Unser [Widget](https://wahlbrief.de/widget) kann eingebunden werden.
 
 ## Lizenz und Weiterverwendung
 
