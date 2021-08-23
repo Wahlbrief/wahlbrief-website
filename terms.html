@@ -1,0 +1,100 @@
+---
+layout: page
+---
+
+<div class="container-fluid h-100">
+    <div class="row h-100">
+        <!-- Left side -->
+        <div class="col-md-12 col-lg-6 background-bluegray-100 pattern">
+            <div class="container d-flex flex-column flex-fill h-100 py-5 px-2 px-lg-4">
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <div class="navbar navbar-expand-xl justify-content-between">
+                            <div>
+                                <a href="{{ site.baseurl }}/">
+                                    <img src="{{ site.baseurl_root }}/assets/images/wahlbrief.svg" alt="Wahlbrief logo"
+                                        width="200px" height="auto">
+                                </a>
+                            </div>
+
+                            <div class="d-lg-none">
+                                <button class="navbar-toggler" onclick="openNav()"><img
+                                        src="{{ site.baseurl_root }}/assets/images/burger.svg"></button>
+                                {% include nav-mobile.html %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <h1>{% t terms.left.title %}</h1>
+                        <p class="subtitle">{% t terms.left.subtitle %}</p>
+                    </div>
+                </div>
+
+                <div class="d-block d-lg-none mt-5 scrollIndicator">
+                    <div class="container">
+                        <div class="text-center">
+                            <button onclick="window.scrollTo(0,document.body.scrollHeight);"><i
+                                    class="fas fa-2x fa-chevron-down"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-auto d-none d-lg-block">
+                    <div class="col-12">
+                        {% include nav.html %}
+                        {% include footer.html %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Right side -->
+        <div class="col-md-12 col-lg-6">
+            <div class="container d-flex flex-column h-100 py-5 px-2 px-lg-4">
+                <div class="row h-100 d-flex justify-content-between">
+                    <div class="col-12">
+                        <h2 class="mb-5">{% t terms.right.title %}</h2>
+                        <p>{% t terms.right.text %}</p>
+                    </div>
+                    <p class="mb-0 mt-4 d-block d-lg-none">
+                        <small>
+                            {% t left.copyright %} {{ 'now' | date: "%Y" }}
+                        </small>
+                        <br />
+                        <small>
+                            {% t left.built %}
+                        </small>
+                    </p>
+                    <div class="d-block d-lg-none mt-4">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenu3"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-globe me-1"></i>
+                                {% for lang in site.languages %}
+                                {% assign lang_name = site.data[lang].l10n.lang_name %}
+                                {% if lang == site.lang %}
+                                {{ lang_name }}
+                                {% endif %}
+                                {% endfor %}
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+                                {% for lang in site.languages %}
+                                {% assign lang_name = site.data[lang].l10n.lang_name %}
+                                {% if lang == site.default_lang %}
+                                <li><a class="dropdown-item" href="{{ page.url | replace:'index.html','' }}">{{
+                                        lang_name }}</a></li>
+                                {% else %}
+                                <li><a class="dropdown-item"
+                                        href="/{{ lang }}{{ page.url | replace:'index.html','' }}">{{ lang_name
+                                        }}</a></li>
+                                {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
