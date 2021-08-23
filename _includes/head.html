@@ -21,7 +21,7 @@
     {% if page.image %}
     <meta property="twitter:image:src" content="{{ page.image }}">
     {% else %}
-    <meta property="twitter:image:src" content="{{ site.baseurl }}/assets/images/share.png">
+    <meta property="twitter:image:src" content="{{ site.baseurl_root }}/assets/images/share.png">
     {% endif %}
 
     <!-- Social: Facebook / Open Graph -->
@@ -31,7 +31,7 @@
     {% if page.image %}
     <meta property="og:image" content="{{ page.image }}">
     {% else %}
-    <meta property="og:image" content="{{ site.baseurl }}/assets/images/share.png">
+    <meta property="og:image" content="{{ site.baseurl_root }}/assets/images/share.png">
     {% endif %}
 
     <meta property="og:image:type" content="image/png">
