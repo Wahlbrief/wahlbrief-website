@@ -178,12 +178,12 @@ function is_valid_datalist_value(inputValue, cityValue) {
     const preinput = filtered[0];
     const data = filteredCity[0];
     munname.textContent = data.ORT;
-    munemail.textContent = data["E-Mail"];
+    munemail.textContent = atob(data["E-Mail"]);
     muniname.textContent = data.ORT;
-    muniemail.textContent = data["E-Mail"];
+    muniemail.textContent = atob(data["E-Mail"]);
     finalmuniname.textContent = data.ORT;
-    finalmuniemail.textContent = data["E-Mail"];
-    instructionemail.textContent = data["E-Mail"];
+    finalmuniemail.textContent = atob(data["E-Mail"]);
+    instructionemail.textContent = atob(data["E-Mail"]);
     prefillcity.value = "";
     prefillcity.value = data.ORT;
     prefillzip.value = "";
