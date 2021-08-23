@@ -394,8 +394,7 @@ copyButtons.forEach((btn) => {
 // Function to get items from JSON and build array
 
 (async () => {
-  const endpoint =
-    "https://raw.githubusercontent.com/Wahlbrief/wahlbrief-website/main/assets/test.json?token=AF6YQ53UUM435YQKHYQLRGDBEO2OE";
+  const endpoint = "/assets/test/json";
   const result = await fetch(endpoint).then((blob) => blob.json());
 
   const sorted = result.sort((a, b) => {
