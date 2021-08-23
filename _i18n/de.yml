@@ -117,11 +117,29 @@ questions:
     answer: "Die Briefwahlunterlagen werden innerhalb weniger Werktage an die angegebene Adresse versandt. Eine Anleitung, wie die Briefwahlunterlagen ausgefüllt werden, gibt es auf der <a href='https://www.bundeswahlleiter.de/bundestagswahlen/2021/informationen-waehler/briefwahl.html#96bee7af-c797-46aa-afee-cab29dd428e4'>Website des Bundeswahlleiters</a>."
 imprint:
   left:
-    title: "Impressum"
-    subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet facilisis at erat tincidunt. Viverra vel ultrices faucibus tempus egestas pellentesque aliquam in diam."
+    title: "Offizielle Angaben"
+    subtitle: "wahlbrief ist ein Projekt von Mehr Demokratie e.V. zur Bundestagswahl 2021."
   right:
-    title: "Responsible for the contents of the website wahlbrief.de"
-    text: "<strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet facilisis at erat tincidunt. Viverra vel ultrices faucibus tempus egestas pellentesque aliquam in diam.<strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet facilisis at erat tincidunt. Viverra vel ultrices faucibus tempus egestas pellentesque aliquam in diam.<strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet facilisis at erat tincidunt. Viverra vel ultrices faucibus tempus egestas pellentesque aliquam in diam.<ul><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li></ul><br /><strong>Contact</strong><br />Aboalarm GmbH<br />Buttermelcherstraße 16<br />80469 München<br />E-Mail: (Keine Kundenanfragen)"
+    title: "Impressum"
+    text: "
+<b>Angaben gemäß § 5 TMG:</b>
+Mehr Demokratie e.V.<br>
+Haus der Demokratie und Menschenrechte<br>
+Greifswalder Str. 4<br>
+10405 Berlin<br>
+<br>
+<b>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</b><br>
+Juris Vetra<br>
+<a href='mailto:juris@wahlbrief.de'>Kontakt aufnehmen</a><br>
+<br>
+<b>Konzept und Realisierung:</b><br>
+Juris Vetra, Johann-Friedrich Salzmann<br>
+<br>
+<b>Kontakt</b><br>
+Support, Technische Probleme: <a href='mailto:support@wahlbrief.de'>Kontakt aufnehmen</a><br>
+Projektbezogene Anfragen: <a href='mailto:wahlbuero@wahlbrief.de'>Kontakt aufnehmen</a><br>
+Presse-Anfragen: <a href='mailto:presse@wahlbrief.de'>Kontakt aufnehmen</a><br>
+"
     button: "Contact us"
 about:
   left:
@@ -129,7 +147,8 @@ about:
     subtitle: "wahlbrief ist ein Projekt von Mehr Demokratie e.V. zur Bundestagswahl 2021. Wir möchten, dass so viele Menschen wie möglich an der Wahl teilnehmen. <br><br>Es gibt viele Fälle, in denen die Briefwahl die einfachste und bequemste Art ist, zu wählen. Wir helfen dabei, innerhalb von 2 Minuten die Briefwahl-Unterlagen online beim zuständigen Wahlamt zu beantragen.<br><br><br>
 <small><i>Mehr Demokratie e.V. ist ein überparteilicher, gemeinnütziger Verein, der sich für mehr direkte Demokratie und Bürgerbeteiligung einsetzt.
 
-<br><br> Konzept und Realisierung: Juris Vetra, Johann-Friedrich Salzmann</small></i>"
+<br><br> Konzept und Realisierung: Juris Vetra, Johann-Friedrich Salzmann<br>
+</small></i>"
   right:
     title: "Jede Stimme zählt."
     text: "Eine starke Demokratie lebt von einer hoher Wahlbeteiligung. In Deutschland liegt diese meist zwischen 60 und 80 Prozent: Das bedeutet, viele Millionen Bürger:innen stimmen nicht mit darüber ab, welche:r Abgeordnete:r sie im Parlament repräsentiert und von welcher Partei sie regiert werden möchten. Wir setzen uns dafür ein, dass mehr wahlberechtigte Menschen wählen und die Hürden dafür möglichst niedrig sind.<br><br>
