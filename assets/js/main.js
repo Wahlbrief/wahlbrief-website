@@ -153,7 +153,7 @@ AllInputs.forEach((input) => {
       return input && input.validity.valid && input.value.length > 0;
     });
     if (!allValid) {
-      return;
+      BirthdayForm.style.boxShadow = "none";
     } else {
       BirthdayForm.style.boxShadow = "0 0 0 0.15rem green";
     }
