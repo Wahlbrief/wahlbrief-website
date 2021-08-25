@@ -422,7 +422,7 @@ function findMatches(keyword, zips) {
 
 const searchInput = document.querySelector("#zipcode");
 const suggestions = document.querySelector("#autocomplete-list");
-const scrollTo = document.querySelector("#dropdownMenu3");
+const scrollTo = document.querySelector("#next-click");
 
 let active = -1;
 
