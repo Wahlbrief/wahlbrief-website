@@ -564,7 +564,7 @@ searchInput.addEventListener("keyup", (e) => {
 
     suggestions.innerHTML = "";
     suggestions.append(...divs);
-  }, 350);
+  }, 200);
 });
 
 // Function to get the query parameter from the URL on load
