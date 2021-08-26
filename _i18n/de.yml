@@ -82,15 +82,40 @@ right:
     sendalternative: "Bitte senden Sie mir die Unterlagen an folgende Adresse:"
     regards: "Mit freundlichen Grüßen"
   sharing:
-    copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    copy: "Ich habe gerade Briefwahlunterlagen zur Bundestagswahl beantragt.
+Bist du auch dabei? Jede Stimme zählt.
+
+https://wahlbrief.de/"
     email:
-      subject: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    facebook: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    twitter: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    linkedin: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    telegram: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    whatsapp: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      subject: "Briefwahl beantragen zur Bundestagswahl: Jede Stimme zählt!"
+      body: "Hallo!
+
+Ich habe gerade online die Briefwahlunterlagen zur Bundestagswahl beantragt.
+
+Das geht total schnell und einfach: https://wahlbrief.de/
+
+Wahlbrief ist ein Angebot von Mehr Demokratie e.V.
+
+Liebe Grüße,"
+    facebook: "Ich habe gerade Briefwahlunterlagen zur Bundestagswahl beantragt.
+Bist du auch dabei? Jede Stimme zählt.
+
+https://wahlbrief.de/"
+    twitter: "Ich habe gerade Briefwahlunterlagen zur Bundestagswahl beantragt.
+Bist du auch dabei? Jede Stimme zählt.
+@wahlbrief https://wahlbrief.de/"
+    linkedin: "Ich habe gerade Briefwahlunterlagen zur Bundestagswahl beantragt.
+Bist du auch dabei? Jede Stimme zählt.
+
+https://wahlbrief.de/"
+    telegram: "Ich habe gerade Briefwahlunterlagen zur Bundestagswahl beantragt.
+Bist du auch dabei? Jede Stimme zählt.
+
+https://wahlbrief.de/"
+    whatsapp: "Ich habe gerade Briefwahlunterlagen zur Bundestagswahl beantragt.
+Bist du auch dabei? Jede Stimme zählt.
+
+https://wahlbrief.de/"
 faq:
   left:
     title: "Häufig gestellte Fragen"
