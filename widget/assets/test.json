@@ -750,6 +750,11 @@
         "E-Mail": "YmdtLXpAdC1vbmxpbmUuZGU="
     },
     {
+        "PLZ": "65529",
+        "ORT": "Waldems",
+        "E-Mail": "QmdtQGdlbWVpbmRlLXdhbGRlbXMuZGU="
+    },
+    {
         "PLZ": "87544",
         "ORT": "Blaichach",
         "E-Mail": "YmxhaWNoYWNoQGJsYWljaGFjaC5kZQ=="
@@ -2330,6 +2335,46 @@
         "E-Mail": "YnJpZWZ3YWhsQGNoYXJsb3R0ZW5idXJnLXdpbG1lcnNkb3JmLmRl"
     },
     {
+        "PLZ": "64283",
+        "ORT": "Darmstadt",
+        "E-Mail": "YnJpZWZ3YWhsQGRhcm1zdGFkdC5kZQ=="
+    },
+    {
+        "PLZ": "64285",
+        "ORT": "Darmstadt",
+        "E-Mail": "YnJpZWZ3YWhsQGRhcm1zdGFkdC5kZQ=="
+    },
+    {
+        "PLZ": "64287",
+        "ORT": "Darmstadt",
+        "E-Mail": "YnJpZWZ3YWhsQGRhcm1zdGFkdC5kZQ=="
+    },
+    {
+        "PLZ": "64289",
+        "ORT": "Darmstadt",
+        "E-Mail": "YnJpZWZ3YWhsQGRhcm1zdGFkdC5kZQ=="
+    },
+    {
+        "PLZ": "64291",
+        "ORT": "Darmstadt",
+        "E-Mail": "YnJpZWZ3YWhsQGRhcm1zdGFkdC5kZQ=="
+    },
+    {
+        "PLZ": "64293",
+        "ORT": "Darmstadt",
+        "E-Mail": "YnJpZWZ3YWhsQGRhcm1zdGFkdC5kZQ=="
+    },
+    {
+        "PLZ": "64295",
+        "ORT": "Darmstadt",
+        "E-Mail": "YnJpZWZ3YWhsQGRhcm1zdGFkdC5kZQ=="
+    },
+    {
+        "PLZ": "64297",
+        "ORT": "Darmstadt",
+        "E-Mail": "YnJpZWZ3YWhsQGRhcm1zdGFkdC5kZQ=="
+    },
+    {
         "PLZ": "52349",
         "ORT": "Düren",
         "E-Mail": "YnJpZWZ3YWhsQGR1ZXJlbi5kZQ=="
@@ -2840,6 +2885,71 @@
         "E-Mail": "YnJpZWZ3YWhsQGluZ29sc3RhZHQuZGU="
     },
     {
+        "PLZ": "34117",
+        "ORT": "Kassel",
+        "E-Mail": "QnJpZWZ3YWhsQGthc3NlbC5kZQ=="
+    },
+    {
+        "PLZ": "34119",
+        "ORT": "Kassel",
+        "E-Mail": "QnJpZWZ3YWhsQGthc3NlbC5kZQ=="
+    },
+    {
+        "PLZ": "34121",
+        "ORT": "Kassel",
+        "E-Mail": "QnJpZWZ3YWhsQGthc3NlbC5kZQ=="
+    },
+    {
+        "PLZ": "34123",
+        "ORT": "Kassel",
+        "E-Mail": "QnJpZWZ3YWhsQGthc3NlbC5kZQ=="
+    },
+    {
+        "PLZ": "34125",
+        "ORT": "Kassel",
+        "E-Mail": "QnJpZWZ3YWhsQGthc3NlbC5kZQ=="
+    },
+    {
+        "PLZ": "34127",
+        "ORT": "Kassel",
+        "E-Mail": "QnJpZWZ3YWhsQGthc3NlbC5kZQ=="
+    },
+    {
+        "PLZ": "34128",
+        "ORT": "Kassel",
+        "E-Mail": "QnJpZWZ3YWhsQGthc3NlbC5kZQ=="
+    },
+    {
+        "PLZ": "34130",
+        "ORT": "Kassel",
+        "E-Mail": "QnJpZWZ3YWhsQGthc3NlbC5kZQ=="
+    },
+    {
+        "PLZ": "34131",
+        "ORT": "Kassel",
+        "E-Mail": "QnJpZWZ3YWhsQGthc3NlbC5kZQ=="
+    },
+    {
+        "PLZ": "34132",
+        "ORT": "Kassel",
+        "E-Mail": "QnJpZWZ3YWhsQGthc3NlbC5kZQ=="
+    },
+    {
+        "PLZ": "34134",
+        "ORT": "Kassel",
+        "E-Mail": "QnJpZWZ3YWhsQGthc3NlbC5kZQ=="
+    },
+    {
+        "PLZ": "34233",
+        "ORT": "Kassel",
+        "E-Mail": "QnJpZWZ3YWhsQGthc3NlbC5kZQ=="
+    },
+    {
+        "PLZ": "34355",
+        "ORT": "Kassel",
+        "E-Mail": "QnJpZWZ3YWhsQGthc3NlbC5kZQ=="
+    },
+    {
         "PLZ": "04103",
         "ORT": "Leipzig",
         "E-Mail": "YnJpZWZ3YWhsQGxlaXB6aWcuZGU="
@@ -3253,221 +3363,6 @@
         "PLZ": "18182",
         "ORT": "Rostock",
         "E-Mail": "YnJpZWZ3YWhsQHJvc3RvY2suZGU="
-    },
-    {
-        "PLZ": "60306",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60308",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60310",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60311",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60312",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60313",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60314",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60315",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60316",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60318",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60320",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60322",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60323",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60325",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60326",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60327",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60329",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60385",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60386",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60388",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60389",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60431",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60433",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60435",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60437",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60438",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60439",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60486",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60487",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60488",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60489",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60528",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60529",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60549",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60594",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60596",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60598",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "60599",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "65929",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "65931",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "65933",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "65934",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
-    },
-    {
-        "PLZ": "65936",
-        "ORT": "Frankfurt am Main",
-        "E-Mail": "YnJpZWZ3YWhsQHN0YWR0LWZyYW5rZnVydC5kZQ=="
     },
     {
         "PLZ": "91052",
@@ -3970,6 +3865,226 @@
         "E-Mail": "YnJpZWZ3YWhsQHN0dXR0Z2FydC5kZQ=="
     },
     {
+        "PLZ": "65760",
+        "ORT": "Eschborn",
+        "E-Mail": "YnJpZWZ3YWhsMjAyMUBlc2NoYm9ybi5kZQ=="
+    },
+    {
+        "PLZ": "60306",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60308",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60310",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60311",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60312",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60313",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60314",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60315",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60316",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60318",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60320",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60322",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60323",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60325",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60326",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60327",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60329",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60385",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60386",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60388",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60389",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60431",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60433",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60435",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60437",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60438",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60439",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60486",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60487",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60488",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60489",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60528",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60529",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60549",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60594",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60596",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60598",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "60599",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "65929",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "65931",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "65933",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "65934",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
+        "PLZ": "65936",
+        "ORT": "Frankfurt am Main",
+        "E-Mail": "YnVlcmdlcmJlcmF0dW5nQHN0YWR0LWZyYW5rZnVydC5kZQ=="
+    },
+    {
         "PLZ": "50189",
         "ORT": "Elsdorf",
         "E-Mail": "YnVlcmdlcmJ1ZXJvQGVsc2RvcmYuZGU="
@@ -3978,6 +4093,31 @@
         "PLZ": "76596",
         "ORT": "Forbach",
         "E-Mail": "YnVlcmdlcmJ1ZXJvQGZvcmJhY2guZGU="
+    },
+    {
+        "PLZ": "36037",
+        "ORT": "Fulda",
+        "E-Mail": "YnVlcmdlcmJ1ZXJvQGZ1bGRhLmRl"
+    },
+    {
+        "PLZ": "36039",
+        "ORT": "Fulda",
+        "E-Mail": "YnVlcmdlcmJ1ZXJvQGZ1bGRhLmRl"
+    },
+    {
+        "PLZ": "36041",
+        "ORT": "Fulda",
+        "E-Mail": "YnVlcmdlcmJ1ZXJvQGZ1bGRhLmRl"
+    },
+    {
+        "PLZ": "36043",
+        "ORT": "Fulda",
+        "E-Mail": "YnVlcmdlcmJ1ZXJvQGZ1bGRhLmRl"
+    },
+    {
+        "PLZ": "65451",
+        "ORT": "Kelsterbach",
+        "E-Mail": "YnVlcmdlcmJ1ZXJvQGtlbHN0ZXJiYWNoLmRl"
     },
     {
         "PLZ": "23946",
@@ -4580,6 +4720,11 @@
         "E-Mail": "Z2VtZWluZGUtcmVpY2hlbmJhY2hAdC1vbmxpbmUuZGU="
     },
     {
+        "PLZ": "65606",
+        "ORT": "Villmar",
+        "E-Mail": "Z2VtZWluZGUtdmlsbG1hckB0LW9ubGluZS5kZQ=="
+    },
+    {
         "PLZ": "79599",
         "ORT": "Wittlingen",
         "E-Mail": "Z2VtZWluZGUtd2l0dGxpbmdlbkB0LW9ubGluZS5kZQ=="
@@ -4720,6 +4865,11 @@
         "E-Mail": "Z2VtZWluZGVAYWFjaC5kZQ=="
     },
     {
+        "PLZ": "69518",
+        "ORT": "Abtsteinach",
+        "E-Mail": "Z2VtZWluZGVAYWJ0c3RlaW5hY2guZGU="
+    },
+    {
         "PLZ": "73099",
         "ORT": "Adelberg",
         "E-Mail": "Z2VtZWluZGVAYWRlbGJlcmcuZGU="
@@ -4805,6 +4955,11 @@
         "E-Mail": "Z2VtZWluZGVAYWxnZXJtaXNzZW4uZGU="
     },
     {
+        "PLZ": "36211",
+        "ORT": "Alheim",
+        "E-Mail": "Z2VtZWluZGVAYWxoZWltLmRl"
+    },
+    {
         "PLZ": "78476",
         "ORT": "Allensbach",
         "E-Mail": "Z2VtZWluZGVAYWxsZW5zYmFjaC5kZQ=="
@@ -4843,6 +4998,11 @@
         "PLZ": "92260",
         "ORT": "Ammerthal",
         "E-Mail": "Z2VtZWluZGVAYW1tZXJ0aGFsLmRl"
+    },
+    {
+        "PLZ": "35719",
+        "ORT": "Angelburg",
+        "E-Mail": "Z2VtZWluZGVAYW5nZWxidXJnLmRl"
     },
     {
         "PLZ": "82387",
@@ -4898,6 +5058,16 @@
         "PLZ": "85107",
         "ORT": "Baar-Ebenhausen",
         "E-Mail": "Z2VtZWluZGVAYmFhci1lYmVuaGF1c2VuLmRl"
+    },
+    {
+        "PLZ": "34308",
+        "ORT": "Bad Emstal",
+        "E-Mail": "Z2VtZWluZGVAYmFkLWVtc3RhbC5kZQ=="
+    },
+    {
+        "PLZ": "35080",
+        "ORT": "Bad Endbach",
+        "E-Mail": "Z2VtZWluZGVAYmFkLWVuZGJhY2guaW5mbw=="
     },
     {
         "PLZ": "82433",
@@ -4995,6 +5165,11 @@
         "E-Mail": "Z2VtZWluZGVAYmVyZ2xlbi5kZQ=="
     },
     {
+        "PLZ": "37297",
+        "ORT": "Berkatal",
+        "E-Mail": "Z2VtZWluZGVAYmVya2F0YWwuZGU="
+    },
+    {
         "PLZ": "86975",
         "ORT": "Bernbeuren",
         "E-Mail": "Z2VtZWluZGVAYmVybmJldXJlbi5kZQ=="
@@ -5003,6 +5178,11 @@
         "PLZ": "82347",
         "ORT": "Bernried am Starnberger See",
         "E-Mail": "Z2VtZWluZGVAYmVybnJpZWQuZGU="
+    },
+    {
+        "PLZ": "65614",
+        "ORT": "Beselich",
+        "E-Mail": "Z2VtZWluZGVAYmVzZWxpY2guZGU="
     },
     {
         "PLZ": "59909",
@@ -5155,6 +5335,11 @@
         "E-Mail": "Z2VtZWluZGVAYnJlaXRuYXUuZGU="
     },
     {
+        "PLZ": "34479",
+        "ORT": "Breuna",
+        "E-Mail": "Z2VtZWluZGVAYnJldW5hLmRl"
+    },
+    {
         "PLZ": "91590",
         "ORT": "Bruckberg",
         "E-Mail": "Z2VtZWluZGVAYnJ1Y2tiZXJnLmRl"
@@ -5205,9 +5390,19 @@
         "E-Mail": "Z2VtZWluZGVAYnV0dGVud2llc2VuLmRl"
     },
     {
+        "PLZ": "34379",
+        "ORT": "Calden",
+        "E-Mail": "Z2VtZWluZGVAY2FsZGVuLmRl"
+    },
+    {
         "PLZ": "49692",
         "ORT": "Cappeln (Oldenburg)",
         "E-Mail": "Z2VtZWluZGVAY2FwcGVsbi5kZQ=="
+    },
+    {
+        "PLZ": "35091",
+        "ORT": "Cölbe",
+        "E-Mail": "Z2VtZWluZGVAY29lbGJlLmRl"
     },
     {
         "PLZ": "97896",
@@ -5295,6 +5490,11 @@
         "E-Mail": "Z2VtZWluZGVAZGllYmFjaC5kZQ=="
     },
     {
+        "PLZ": "34519",
+        "ORT": "Diemelsee",
+        "E-Mail": "Z2VtZWluZGVAZGllbWVsc2VlLmRl"
+    },
+    {
         "PLZ": "91456",
         "ORT": "Diespeck",
         "E-Mail": "Z2VtZWluZGVAZGllc3BlY2suZGU="
@@ -5380,9 +5580,19 @@
         "E-Mail": "Z2VtZWluZGVAZWJlcm1hbm5zZG9yZi5kZQ=="
     },
     {
+        "PLZ": "36157",
+        "ORT": "Ebersburg",
+        "E-Mail": "Z2VtZWluZGVAZWJlcnNidXJnLmRl"
+    },
+    {
         "PLZ": "79285",
         "ORT": "Ebringen",
         "E-Mail": "Z2VtZWluZGVAZWJyaW5nZW4uZGU="
+    },
+    {
+        "PLZ": "35085",
+        "ORT": "Ebsdorfergrund",
+        "E-Mail": "Z2VtZWluZGVAZWJzZG9yZmVyZ3J1bmQuZGU="
     },
     {
         "PLZ": "82279",
@@ -5400,6 +5610,16 @@
         "E-Mail": "Z2VtZWluZGVAZWNoaW5nLmRl"
     },
     {
+        "PLZ": "61200",
+        "ORT": "Echzell",
+        "E-Mail": "Z2VtZWluZGVAZWNoemVsbC5kZQ=="
+    },
+    {
+        "PLZ": "61209",
+        "ORT": "Echzell",
+        "E-Mail": "Z2VtZWluZGVAZWNoemVsbC5kZQ=="
+    },
+    {
         "PLZ": "92265",
         "ORT": "Edelsfeld",
         "E-Mail": "Z2VtZWluZGVAZWRlbHNmZWxkLmRl"
@@ -5410,9 +5630,19 @@
         "E-Mail": "Z2VtZWluZGVAZWRlcmhlaW0uZGU="
     },
     {
+        "PLZ": "34549",
+        "ORT": "Edertal",
+        "E-Mail": "Z2VtZWluZGVAZWRlcnRhbC5kZQ=="
+    },
+    {
         "PLZ": "26188",
         "ORT": "Edewecht",
         "E-Mail": "Z2VtZWluZGVAZWRld2VjaHQuZGU="
+    },
+    {
+        "PLZ": "63329",
+        "ORT": "Egelsbach",
+        "E-Mail": "Z2VtZWluZGVAZWdlbHNiYWNoLmRl"
     },
     {
         "PLZ": "87653",
@@ -5473,6 +5703,11 @@
         "PLZ": "82223",
         "ORT": "Eichenau",
         "E-Mail": "Z2VtZWluZGVAZWljaGVuYXUuZGU="
+    },
+    {
+        "PLZ": "36124",
+        "ORT": "Eichenzell",
+        "E-Mail": "Z2VtZWluZGVAZWljaGVuemVsbC5kZQ=="
     },
     {
         "PLZ": "79356",
@@ -5540,6 +5775,11 @@
         "E-Mail": "Z2VtZWluZGVAZW5zZG9yZi5kZQ=="
     },
     {
+        "PLZ": "64859",
+        "ORT": "Eppertshausen",
+        "E-Mail": "Z2VtZWluZGVAZXBwZXJ0c2hhdXNlbi5kZQ=="
+    },
+    {
         "PLZ": "91465",
         "ORT": "Ergersheim",
         "E-Mail": "Z2VtZWluZGVAZXJnZXJzaGVpbS5kZQ=="
@@ -5558,6 +5798,11 @@
         "PLZ": "74927",
         "ORT": "Eschelbronn",
         "E-Mail": "Z2VtZWluZGVAZXNjaGVsYnJvbm4uZGU="
+    },
+    {
+        "PLZ": "34314",
+        "ORT": "Espenau",
+        "E-Mail": "Z2VtZWluZGVAZXNwZW5hdS5kZQ=="
     },
     {
         "PLZ": "49632",
@@ -5620,6 +5865,11 @@
         "E-Mail": "Z2VtZWluZGVAZmVsZGtpcmNoZW4td2VzdGVyaGFtLmRl"
     },
     {
+        "PLZ": "64405",
+        "ORT": "Fischbachtal",
+        "E-Mail": "Z2VtZWluZGVAZmlzY2hiYWNodGFsLmRl"
+    },
+    {
         "PLZ": "87538",
         "ORT": "Fischen i.Allgäu",
         "E-Mail": "Z2VtZWluZGVAZmlzY2hlbi5kZQ=="
@@ -5633,6 +5883,11 @@
         "PLZ": "79592",
         "ORT": "Fischingen",
         "E-Mail": "Z2VtZWluZGVAZmlzY2hpbmdlbi5kZQ=="
+    },
+    {
+        "PLZ": "36103",
+        "ORT": "Flieden",
+        "E-Mail": "Z2VtZWluZGVAZmxpZWRlbi5kZQ=="
     },
     {
         "PLZ": "83126",
@@ -5650,6 +5905,11 @@
         "E-Mail": "Z2VtZWluZGVAZm9yaGVpbS5kZQ=="
     },
     {
+        "PLZ": "64407",
+        "ORT": "Fränkisch-Crumbach",
+        "E-Mail": "Z2VtZWluZGVAZnJhZW5raXNjaC1jcnVtYmFjaC5kZQ=="
+    },
+    {
         "PLZ": "97447",
         "ORT": "Frankenwinheim",
         "E-Mail": "Z2VtZWluZGVAZnJhbmtlbndpbmhlaW0uZGU="
@@ -5658,6 +5918,16 @@
         "PLZ": "79348",
         "ORT": "Freiamt",
         "E-Mail": "Z2VtZWluZGVAZnJlaWFtdC5kZQ=="
+    },
+    {
+        "PLZ": "63579",
+        "ORT": "Freigericht",
+        "E-Mail": "Z2VtZWluZGVAZnJlaWdlcmljaHQuZGU="
+    },
+    {
+        "PLZ": "63776",
+        "ORT": "Freigericht",
+        "E-Mail": "Z2VtZWluZGVAZnJlaWdlcmljaHQuZGU="
     },
     {
         "PLZ": "96158",
@@ -5695,6 +5965,11 @@
         "E-Mail": "Z2VtZWluZGVAZnJpZWRsYW5kLmRl"
     },
     {
+        "PLZ": "34621",
+        "ORT": "Frielendorf",
+        "E-Mail": "Z2VtZWluZGVAZnJpZWxlbmRvcmYuZGU="
+    },
+    {
         "PLZ": "87654",
         "ORT": "Friesenried",
         "E-Mail": "Z2VtZWluZGVAZnJpZXNlbnJpZWQuZGU="
@@ -5708,6 +5983,11 @@
         "PLZ": "78665",
         "ORT": "Frittlingen",
         "E-Mail": "Z2VtZWluZGVAZnJpdHRsaW5nZW4uZGU="
+    },
+    {
+        "PLZ": "35112",
+        "ORT": "Fronhausen",
+        "E-Mail": "Z2VtZWluZGVAZnJvbmhhdXNlbi5kZQ=="
     },
     {
         "PLZ": "86681",
@@ -5780,6 +6060,11 @@
         "E-Mail": "Z2VtZWluZGVAZ2VzbGF1LmRl"
     },
     {
+        "PLZ": "34630",
+        "ORT": "Gilserberg",
+        "E-Mail": "Z2VtZWluZGVAZ2lsc2VyYmVyZy5kZQ=="
+    },
+    {
         "PLZ": "49219",
         "ORT": "Glandorf",
         "E-Mail": "Z2VtZWluZGVAZ2xhbmRvcmYuZGU="
@@ -5823,6 +6108,11 @@
         "PLZ": "83355",
         "ORT": "Grabenstätt",
         "E-Mail": "Z2VtZWluZGVAZ3JhYmVuc3RhZXR0LmRl"
+    },
+    {
+        "PLZ": "61279",
+        "ORT": "Grävenwiesbach",
+        "E-Mail": "Z2VtZWluZGVAZ3JhZXZlbndpZXNiYWNoLmRl"
     },
     {
         "PLZ": "97506",
@@ -5883,6 +6173,11 @@
         "PLZ": "83109",
         "ORT": "Großkarolinenfeld",
         "E-Mail": "Z2VtZWluZGVAZ3Jvc3NrYXJvbGluZW5mZWxkLmRl"
+    },
+    {
+        "PLZ": "63584",
+        "ORT": "Gründau",
+        "E-Mail": "Z2VtZWluZGVAZ3J1ZW5kYXUuZGU="
     },
     {
         "PLZ": "78148",
@@ -5950,6 +6245,11 @@
         "E-Mail": "Z2VtZWluZGVAaGFpbWluZy5kZQ=="
     },
     {
+        "PLZ": "63512",
+        "ORT": "Hainburg",
+        "E-Mail": "Z2VtZWluZGVAaGFpbmJ1cmcuZGU="
+    },
+    {
         "PLZ": "89356",
         "ORT": "Haldenwang",
         "E-Mail": "Z2VtZWluZGVAaGFsZGVud2FuZy1ob2x6d2lua2VsLmRl"
@@ -5968,6 +6268,11 @@
         "PLZ": "79258",
         "ORT": "Hartheim am Rhein",
         "E-Mail": "Z2VtZWluZGVAaGFydGhlaW0uZGU="
+    },
+    {
+        "PLZ": "36282",
+        "ORT": "Hauneck",
+        "E-Mail": "Z2VtZWluZGVAaGF1bmVjay5kZQ=="
     },
     {
         "PLZ": "79688",
@@ -6035,6 +6340,11 @@
         "E-Mail": "Z2VtZWluZGVAaGVyZ2Vuc3dlaWxlci5kZQ=="
     },
     {
+        "PLZ": "37293",
+        "ORT": "Herleshausen",
+        "E-Mail": "Z2VtZWluZGVAaGVybGVzaGF1c2VuLmRl"
+    },
+    {
         "PLZ": "91336",
         "ORT": "Heroldsbach",
         "E-Mail": "Z2VtZWluZGVAaGVyb2xkc2JhY2guZGU="
@@ -6058,6 +6368,11 @@
         "PLZ": "85307",
         "ORT": "Hettenshausen",
         "E-Mail": "Z2VtZWluZGVAaGV0dGVuc2hhdXNlbi5kZQ=="
+    },
+    {
+        "PLZ": "36115",
+        "ORT": "Hilders",
+        "E-Mail": "Z2VtZWluZGVAaGlsZGVycy5kZQ=="
     },
     {
         "PLZ": "78247",
@@ -6148,6 +6463,11 @@
         "PLZ": "79289",
         "ORT": "Horben",
         "E-Mail": "Z2VtZWluZGVAaG9yYmVuLmRl"
+    },
+    {
+        "PLZ": "65597",
+        "ORT": "Hünfelden",
+        "E-Mail": "Z2VtZWluZGVAaHVlbmZlbGRlbi5kZQ=="
     },
     {
         "PLZ": "73434",
@@ -6470,6 +6790,11 @@
         "E-Mail": "Z2VtZWluZGVAbGFiZXJ3ZWludGluZy5kZQ=="
     },
     {
+        "PLZ": "35633",
+        "ORT": "Lahnau",
+        "E-Mail": "Z2VtZWluZGVAbGFobmF1LmRl"
+    },
+    {
         "PLZ": "89361",
         "ORT": "Landensberg",
         "E-Mail": "Z2VtZWluZGVAbGFuZGVuc2JlcmcuZGU="
@@ -6493,6 +6818,11 @@
         "PLZ": "52379",
         "ORT": "Langerwehe",
         "E-Mail": "Z2VtZWluZGVAbGFuZ2Vyd2VoZS5kZQ=="
+    },
+    {
+        "PLZ": "35428",
+        "ORT": "Langgöns",
+        "E-Mail": "Z2VtZWluZGVAbGFuZ2dvZW5zLmRl"
     },
     {
         "PLZ": "86462",
@@ -6570,6 +6900,11 @@
         "E-Mail": "Z2VtZWluZGVAbG9iYmFjaC5kZQ=="
     },
     {
+        "PLZ": "34253",
+        "ORT": "Lohfelden",
+        "E-Mail": "Z2VtZWluZGVAbG9oZmVsZGVuLmRl"
+    },
+    {
         "PLZ": "79807",
         "ORT": "Lottstetten",
         "E-Mail": "Z2VtZWluZGVAbG90dHN0ZXR0ZW4uZGU="
@@ -6578,6 +6913,11 @@
         "PLZ": "27612",
         "ORT": "Loxstedt",
         "E-Mail": "Z2VtZWluZGVAbG94c3RlZHQuZGU="
+    },
+    {
+        "PLZ": "64750",
+        "ORT": "Lützelbach",
+        "E-Mail": "Z2VtZWluZGVAbHVldHplbGJhY2guZGU="
     },
     {
         "PLZ": "79232",
@@ -6690,6 +7030,11 @@
         "E-Mail": "Z2VtZWluZGVAbXVlaGxoYXVzZW4tdGFlbGUuZGU="
     },
     {
+        "PLZ": "64367",
+        "ORT": "Mühltal",
+        "E-Mail": "Z2VtZWluZGVAbXVlaGx0YWwuZGU="
+    },
+    {
         "PLZ": "85126",
         "ORT": "Münchsmünster",
         "E-Mail": "Z2VtZWluZGVAbXVlbmNoc211ZW5zdGVyLmJheWVybi5kZQ=="
@@ -6728,6 +7073,21 @@
         "PLZ": "73272",
         "ORT": "Neidlingen",
         "E-Mail": "Z2VtZWluZGVAbmVpZGxpbmdlbi5kZQ=="
+    },
+    {
+        "PLZ": "36208",
+        "ORT": "Nentershausen",
+        "E-Mail": "Z2VtZWluZGVAbmVudGVyc2hhdXNlbi5kZQ=="
+    },
+    {
+        "PLZ": "36214",
+        "ORT": "Nentershausen",
+        "E-Mail": "Z2VtZWluZGVAbmVudGVyc2hhdXNlbi5kZQ=="
+    },
+    {
+        "PLZ": "36219",
+        "ORT": "Nentershausen",
+        "E-Mail": "Z2VtZWluZGVAbmVudGVyc2hhdXNlbi5kZQ=="
     },
     {
         "PLZ": "85579",
@@ -6785,6 +7145,11 @@
         "E-Mail": "Z2VtZWluZGVAbmV1d2VpbGVyLmRl"
     },
     {
+        "PLZ": "61138",
+        "ORT": "Niederdorfelden",
+        "E-Mail": "Z2VtZWluZGVAbmllZGVyZG9yZmVsZGVuLmRl"
+    },
+    {
         "PLZ": "97464",
         "ORT": "Niederwerrn",
         "E-Mail": "Z2VtZWluZGVAbmllZGVyd2Vycm4uZGU="
@@ -6793,6 +7158,11 @@
         "PLZ": "75223",
         "ORT": "Niefern-Öschelbronn",
         "E-Mail": "Z2VtZWluZGVAbmllZmVybi1vZXNjaGVsYnJvbm4uZGU="
+    },
+    {
+        "PLZ": "34329",
+        "ORT": "Nieste",
+        "E-Mail": "Z2VtZWluZGVAbmllc3RlLmRl"
     },
     {
         "PLZ": "59394",
@@ -6820,9 +7190,19 @@
         "E-Mail": "Z2VtZWluZGVAbm90emluZ2VuLmRl"
     },
     {
+        "PLZ": "36167",
+        "ORT": "Nüsttal",
+        "E-Mail": "Z2VtZWluZGVAbnVlc3R0YWwuZGU="
+    },
+    {
         "PLZ": "71154",
         "ORT": "Nufringen",
         "E-Mail": "Z2VtZWluZGVAbnVmcmluZ2VuLmRl"
+    },
+    {
+        "PLZ": "36280",
+        "ORT": "Oberaula",
+        "E-Mail": "Z2VtZWluZGVAb2JlcmF1bGEuZGU="
     },
     {
         "PLZ": "97514",
@@ -7010,6 +7390,11 @@
         "E-Mail": "Z2VtZWluZGVAcGF1bnpoYXVzZW4uZGU="
     },
     {
+        "PLZ": "36100",
+        "ORT": "Petersberg",
+        "E-Mail": "Z2VtZWluZGVAcGV0ZXJzYmVyZy5kZQ=="
+    },
+    {
         "PLZ": "93152",
         "ORT": "Pettendorf",
         "E-Mail": "Z2VtZWluZGVAcGV0dGVuZG9yZi5kZQ=="
@@ -7065,6 +7450,11 @@
         "E-Mail": "Z2VtZWluZGVAcmFuZGVyc2Fja2VyLmJheWVybi5kZQ=="
     },
     {
+        "PLZ": "63691",
+        "ORT": "Ranstadt",
+        "E-Mail": "Z2VtZWluZGVAcmFuc3RhZHQuZGU="
+    },
+    {
         "PLZ": "26180",
         "ORT": "Rastede",
         "E-Mail": "Z2VtZWluZGVAcmFzdGVkZS5kZQ=="
@@ -7095,6 +7485,16 @@
         "E-Mail": "Z2VtZWluZGVAcmVnbml0emxvc2F1LmRl"
     },
     {
+        "PLZ": "64385",
+        "ORT": "Reichelsheim (Odenwald)",
+        "E-Mail": "Z2VtZWluZGVAcmVpY2hlbHNoZWltLmRl"
+    },
+    {
+        "PLZ": "64753",
+        "ORT": "Reichelsheim (Odenwald)",
+        "E-Mail": "Z2VtZWluZGVAcmVpY2hlbHNoZWltLmRl"
+    },
+    {
         "PLZ": "91244",
         "ORT": "Reichenschwand",
         "E-Mail": "Z2VtZWluZGVAcmVpY2hlbnNjaHdhbmQuZGU="
@@ -7103,6 +7503,11 @@
         "PLZ": "86756",
         "ORT": "Reimlingen",
         "E-Mail": "Z2VtZWluZGVAcmVpbWxpbmdlbi5kZQ=="
+    },
+    {
+        "PLZ": "34359",
+        "ORT": "Reinhardshagen",
+        "E-Mail": "Z2VtZWluZGVAcmVpbmhhcmRzaGFnZW4uZGU="
     },
     {
         "PLZ": "93167",
@@ -7170,14 +7575,29 @@
         "E-Mail": "Z2VtZWluZGVAcmluZ2VsYWkuYmF5ZXJuLmRl"
     },
     {
+        "PLZ": "37296",
+        "ORT": "Ringgau",
+        "E-Mail": "Z2VtZWluZGVAcmluZ2dhdS5kZQ=="
+    },
+    {
         "PLZ": "77975",
         "ORT": "Ringsheim",
         "E-Mail": "Z2VtZWluZGVAcmluZ3NoZWltLmRl"
     },
     {
+        "PLZ": "35519",
+        "ORT": "Rockenberg",
+        "E-Mail": "Z2VtZWluZGVAcm9ja2VuYmVyZy5kZQ=="
+    },
+    {
         "PLZ": "97849",
         "ORT": "Roden",
         "E-Mail": "Z2VtZWluZGVAcm9kZW4uZGU="
+    },
+    {
+        "PLZ": "63517",
+        "ORT": "Rodenbach",
+        "E-Mail": "Z2VtZWluZGVAcm9kZW5iYWNoLmRl"
     },
     {
         "PLZ": "89365",
@@ -7210,6 +7630,16 @@
         "E-Mail": "Z2VtZWluZGVAcm9ocmRvcmYuZGU="
     },
     {
+        "PLZ": "63549",
+        "ORT": "Ronneburg",
+        "E-Mail": "Z2VtZWluZGVAcm9ubmVidXJnLmV1"
+    },
+    {
+        "PLZ": "36217",
+        "ORT": "Ronshausen",
+        "E-Mail": "Z2VtZWluZGVAcm9uc2hhdXNlbi5kZQ=="
+    },
+    {
         "PLZ": "37124",
         "ORT": "Rosdorf",
         "E-Mail": "Z2VtZWluZGVAcm9zZG9yZi5kZQ=="
@@ -7223,6 +7653,11 @@
         "PLZ": "74538",
         "ORT": "Rosengarten",
         "E-Mail": "Z2VtZWluZGVAcm9zZW5nYXJ0ZW4uZGU="
+    },
+    {
+        "PLZ": "64380",
+        "ORT": "Roßdorf",
+        "E-Mail": "Z2VtZWluZGVAcm9zc2RvcmYuZGU="
     },
     {
         "PLZ": "82401",
@@ -7285,6 +7720,11 @@
         "E-Mail": "Z2VtZWluZGVAc2NoaWZmZG9yZi5kZQ=="
     },
     {
+        "PLZ": "65388",
+        "ORT": "Schlangenbad",
+        "E-Mail": "Z2VtZWluZGVAc2NobGFuZ2VuYmFkLmRl"
+    },
+    {
         "PLZ": "83259",
         "ORT": "Schleching",
         "E-Mail": "Z2VtZWluZGVAc2NobGVjaGluZy5kZQ=="
@@ -7308,6 +7748,11 @@
         "PLZ": "73278",
         "ORT": "Schlierbach",
         "E-Mail": "Z2VtZWluZGVAc2NobGllcmJhY2guZGU="
+    },
+    {
+        "PLZ": "61389",
+        "ORT": "Schmitten",
+        "E-Mail": "Z2VtZWluZGVAc2NobWl0dGVuLmRl"
     },
     {
         "PLZ": "63936",
@@ -7348,6 +7793,11 @@
         "PLZ": "97526",
         "ORT": "Schonungen",
         "E-Mail": "Z2VtZWluZGVAc2Nob251bmdlbi5kZQ=="
+    },
+    {
+        "PLZ": "34637",
+        "ORT": "Schrecksbach",
+        "E-Mail": "Z2VtZWluZGVAc2NocmVja3NiYWNoLmRl"
     },
     {
         "PLZ": "77746",
@@ -7625,6 +8075,11 @@
         "E-Mail": "Z2VtZWluZGVAdG9lcGVuLmRl"
     },
     {
+        "PLZ": "65468",
+        "ORT": "Trebur",
+        "E-Mail": "Z2VtZWluZGVAdHJlYnVyLmRl"
+    },
+    {
         "PLZ": "95183",
         "ORT": "Trogen",
         "E-Mail": "Z2VtZWluZGVAdHJvZ2VuLmRl"
@@ -7633,6 +8088,11 @@
         "PLZ": "82299",
         "ORT": "Türkenfeld",
         "E-Mail": "Z2VtZWluZGVAdHVlcmtlbmZlbGQuZGU="
+    },
+    {
+        "PLZ": "34477",
+        "ORT": "Twistetal",
+        "E-Mail": "Z2VtZWluZGVAdHdpc3RldGFsLmRl"
     },
     {
         "PLZ": "76698",
@@ -7775,6 +8235,11 @@
         "E-Mail": "Z2VtZWluZGVAd2FsZGZldWNodC5kZQ=="
     },
     {
+        "PLZ": "35647",
+        "ORT": "Waldsolms",
+        "E-Mail": "Z2VtZWluZGVAd2FsZHNvbG1zLmRl"
+    },
+    {
         "PLZ": "87448",
         "ORT": "Waltenhofen",
         "E-Mail": "Z2VtZWluZGVAd2FsdGVuaG9mZW4uZGU="
@@ -7885,6 +8350,11 @@
         "E-Mail": "Z2VtZWluZGVAd2VzdG92ZXJsZWRpbmdlbi5kZQ=="
     },
     {
+        "PLZ": "35435",
+        "ORT": "Wettenberg",
+        "E-Mail": "Z2VtZWluZGVAd2V0dGVuYmVyZy5kZQ=="
+    },
+    {
         "PLZ": "91631",
         "ORT": "Wettringen",
         "E-Mail": "Z2VtZWluZGVAd2V0dHJpbmdlbi1tZnIuZGU="
@@ -7913,6 +8383,11 @@
         "PLZ": "29649",
         "ORT": "Wietzendorf",
         "E-Mail": "Z2VtZWluZGVAd2lldHplbmRvcmYuZGU="
+    },
+    {
+        "PLZ": "36208",
+        "ORT": "Wildeck",
+        "E-Mail": "Z2VtZWluZGVAd2lsZGVjay5kZQ=="
     },
     {
         "PLZ": "87499",
@@ -8070,6 +8545,11 @@
         "E-Mail": "Z2VtZWluZGV2ZXJ3YWx0dW5nQGFpY2hoYWxkZW4uZGU="
     },
     {
+        "PLZ": "34596",
+        "ORT": "Bad Zwesten",
+        "E-Mail": "Z2VtZWluZGV2ZXJ3YWx0dW5nQGJhZHp3ZXN0ZW4uZGU="
+    },
+    {
         "PLZ": "97493",
         "ORT": "Bergrheinfeld",
         "E-Mail": "Z2VtZWluZGV2ZXJ3YWx0dW5nQGJlcmdyaGVpbmZlbGQuZGU="
@@ -8078,6 +8558,11 @@
         "PLZ": "95493",
         "ORT": "Bischofsgrün",
         "E-Mail": "Z2VtZWluZGV2ZXJ3YWx0dW5nQGJpc2Nob2ZzZ3J1ZW4uYmF5ZXJuLmRl"
+    },
+    {
+        "PLZ": "65474",
+        "ORT": "Bischofsheim",
+        "E-Mail": "Z2VtZWluZGV2ZXJ3YWx0dW5nQGJpc2Nob2ZzaGVpbS5kZQ=="
     },
     {
         "PLZ": "88285",
@@ -8090,6 +8575,11 @@
         "E-Mail": "Z2VtZWluZGV2ZXJ3YWx0dW5nQGJ1ZWhsZXJ0YWwuZGU="
     },
     {
+        "PLZ": "35232",
+        "ORT": "Dautphetal",
+        "E-Mail": "Z2VtZWluZGV2ZXJ3YWx0dW5nQGRhdXRwaGV0YWwuZGU="
+    },
+    {
         "PLZ": "79802",
         "ORT": "Dettighofen",
         "E-Mail": "Z2VtZWluZGV2ZXJ3YWx0dW5nQGRldHRpZ2hvZmVuLmRl"
@@ -8098,6 +8588,11 @@
         "PLZ": "74391",
         "ORT": "Erligheim",
         "E-Mail": "Z2VtZWluZGV2ZXJ3YWx0dW5nQGVybGlnaGVpbS5kZQ=="
+    },
+    {
+        "PLZ": "34632",
+        "ORT": "Jesberg",
+        "E-Mail": "Z2VtZWluZGV2ZXJ3YWx0dW5nQGdlbWVpbmRlLWplc2JlcmcuZGU="
     },
     {
         "PLZ": "76676",
@@ -8120,6 +8615,26 @@
         "E-Mail": "Z2VtZWluZGV2ZXJ3YWx0dW5nQGtyZXNzYmVyZy5kZQ=="
     },
     {
+        "PLZ": "65830",
+        "ORT": "Kriftel",
+        "E-Mail": "Z2VtZWluZGV2ZXJ3YWx0dW5nQGtyaWZ0ZWwuZGU="
+    },
+    {
+        "PLZ": "35799",
+        "ORT": "Merenberg",
+        "E-Mail": "Z2VtZWluZGV2ZXJ3YWx0dW5nQG1lcmVuYmVyZy5kZQ=="
+    },
+    {
+        "PLZ": "34326",
+        "ORT": "Morschen",
+        "E-Mail": "Z2VtZWluZGV2ZXJ3YWx0dW5nQG1vcnNjaGVuLmRl"
+    },
+    {
+        "PLZ": "34599",
+        "ORT": "Neuental",
+        "E-Mail": "Z2VtZWluZGV2ZXJ3YWx0dW5nQG5ldWVudGFsLmRl"
+    },
+    {
         "PLZ": "75038",
         "ORT": "Oberderdingen",
         "E-Mail": "Z2VtZWluZGV2ZXJ3YWx0dW5nQG9iZXJkZXJkaW5nZW4ubmV0"
@@ -8138,6 +8653,11 @@
         "PLZ": "77799",
         "ORT": "Ortenberg",
         "E-Mail": "Z2VtZWluZGV2ZXJ3YWx0dW5nQG9ydGVuYmVyZy5kZQ=="
+    },
+    {
+        "PLZ": "64853",
+        "ORT": "Otzberg",
+        "E-Mail": "Z2VtZWluZGV2ZXJ3YWx0dW5nQG90emJlcmcuZGU="
     },
     {
         "PLZ": "82380",
@@ -8170,9 +8690,19 @@
         "E-Mail": "Z2VtZWluZGV2ZXJ3YWx0dW5nQHNjaGxpZXIuZGU="
     },
     {
+        "PLZ": "64342",
+        "ORT": "Seeheim-Jugenheim",
+        "E-Mail": "Z2VtZWluZGV2ZXJ3YWx0dW5nQHNlZWhlaW0tanVnZW5oZWltLmRl"
+    },
+    {
         "PLZ": "72517",
         "ORT": "Sigmaringendorf",
         "E-Mail": "Z2VtZWluZGV2ZXJ3YWx0dW5nQHNpZ21hcmluZ2VuZG9yZi5kZQ=="
+    },
+    {
+        "PLZ": "35239",
+        "ORT": "Steffenberg",
+        "E-Mail": "Z2VtZWluZGV2ZXJ3YWx0dW5nQHN0ZWZmZW5iZXJnLmRl"
     },
     {
         "PLZ": "75233",
@@ -8183,6 +8713,11 @@
         "PLZ": "91247",
         "ORT": "Vorra",
         "E-Mail": "Z2VtZWluZGV2b3JyYUB2b3JyYS1tZnIuZGU="
+    },
+    {
+        "PLZ": "35108",
+        "ORT": "Allendorf (Eder)",
+        "E-Mail": "Z2VtZWluZGV2b3JzdGFuZEBhbGxlbmRvcmYtZWRlci5kZQ=="
     },
     {
         "PLZ": "91466",
@@ -8310,6 +8845,11 @@
         "E-Mail": "aGF1cHRhbXRAZ2FkZWJ1c2NoLmluZm8="
     },
     {
+        "PLZ": "36284",
+        "ORT": "Hohenroda",
+        "E-Mail": "aGF1cHRhbXRAaG9oZW5yb2RhLmRl"
+    },
+    {
         "PLZ": "79364",
         "ORT": "Malterdingen",
         "E-Mail": "aGF1cHRhbXRAbWFsdGVyZGluZ2VuLmRl"
@@ -8330,14 +8870,44 @@
         "E-Mail": "aGF1cHRhbXRAcmVnZW4uZGU="
     },
     {
+        "PLZ": "36277",
+        "ORT": "Schenklengsfeld",
+        "E-Mail": "aGF1cHRhbXRAc2NoZW5rbGVuZ3NmZWxkLmRl"
+    },
+    {
         "PLZ": "48455",
         "ORT": "Bad Bentheim",
         "E-Mail": "aGF1cHRhbXRAc3RhZHQtYmFkYmVudGhlaW0uZGU="
     },
     {
+        "PLZ": "34639",
+        "ORT": "Schwarzenborn",
+        "E-Mail": "aGF1cHRhbXRAc3RhZHQtc2Nod2FyemVuYm9ybi5kZQ=="
+    },
+    {
         "PLZ": "75399",
         "ORT": "Unterreichenbach",
         "E-Mail": "aGF1cHRhbXRAdW50ZXJyZWljaGVuYmFjaC5kZQ=="
+    },
+    {
+        "PLZ": "34513",
+        "ORT": "Waldeck",
+        "E-Mail": "aGF1cHRhbXRAd2FsZGVjay5kZQ=="
+    },
+    {
+        "PLZ": "34516",
+        "ORT": "Waldeck",
+        "E-Mail": "aGF1cHRhbXRAd2FsZGVjay5kZQ=="
+    },
+    {
+        "PLZ": "36179",
+        "ORT": "Bebra",
+        "E-Mail": "aGF1cHR1bmRwZXJzb25hbGFtdEBiZWJyYS5kZQ=="
+    },
+    {
+        "PLZ": "64390",
+        "ORT": "Erzhausen",
+        "E-Mail": "aGF1cHR2ZXJ3YWx0dW5nQGVyemhhdXNlbi5kZQ=="
     },
     {
         "PLZ": "87561",
@@ -8425,6 +8995,11 @@
         "E-Mail": "aW5mby5yYXRoYXVzQGVkZW1pc3Nlbi5kZQ=="
     },
     {
+        "PLZ": "65326",
+        "ORT": "Aarbergen",
+        "E-Mail": "aW5mb0BhYXJiZXJnZW4uZGU="
+    },
+    {
         "PLZ": "74232",
         "ORT": "Abstatt",
         "E-Mail": "aW5mb0BhYnN0YXR0LmRl"
@@ -8470,6 +9045,16 @@
         "E-Mail": "aW5mb0BhaGF1cy5kZQ=="
     },
     {
+        "PLZ": "34246",
+        "ORT": "Ahnatal",
+        "E-Mail": "aW5mb0BhaG5hdGFsLmRl"
+    },
+    {
+        "PLZ": "34292",
+        "ORT": "Ahnatal",
+        "E-Mail": "aW5mb0BhaG5hdGFsLmRl"
+    },
+    {
         "PLZ": "96482",
         "ORT": "Ahorn",
         "E-Mail": "aW5mb0BhaG9ybi5kZQ=="
@@ -8503,6 +9088,11 @@
         "PLZ": "91236",
         "ORT": "Alfeld",
         "E-Mail": "aW5mb0BhbGZlbGQtbWZyLmRl"
+    },
+    {
+        "PLZ": "35469",
+        "ORT": "Allendorf (Lumda)",
+        "E-Mail": "aW5mb0BhbGxlbmRvcmYtbGRhLmRl"
     },
     {
         "PLZ": "90584",
@@ -8545,9 +9135,19 @@
         "E-Mail": "aW5mb0BhbHBlbi5kZQ=="
     },
     {
+        "PLZ": "64665",
+        "ORT": "Alsbach-Hähnlein",
+        "E-Mail": "aW5mb0BhbHNiYWNoLWhhZWhubGVpbi5kZQ=="
+    },
+    {
         "PLZ": "52477",
         "ORT": "Alsdorf",
         "E-Mail": "aW5mb0BhbHNkb3JmLmRl"
+    },
+    {
+        "PLZ": "36304",
+        "ORT": "Alsfeld",
+        "E-Mail": "aW5mb0BhbHNmZWxkLmRl"
     },
     {
         "PLZ": "72655",
@@ -8598,6 +9198,11 @@
         "PLZ": "18445",
         "ORT": "Prohn",
         "E-Mail": "aW5mb0BhbHRlbnBsZWVuLmRl"
+    },
+    {
+        "PLZ": "63674",
+        "ORT": "Altenstadt",
+        "E-Mail": "aW5mb0BhbHRlbnN0YWR0LmRl"
     },
     {
         "PLZ": "72213",
@@ -10475,6 +11080,16 @@
         "E-Mail": "aW5mb0Bhc3NlbGZpbmdlbi5kZQ=="
     },
     {
+        "PLZ": "35614",
+        "ORT": "Aßlar",
+        "E-Mail": "aW5mb0Bhc3NsYXIuZGU="
+    },
+    {
+        "PLZ": "35630",
+        "ORT": "Aßlar",
+        "E-Mail": "aW5mb0Bhc3NsYXIuZGU="
+    },
+    {
         "PLZ": "71549",
         "ORT": "Auenwald",
         "E-Mail": "aW5mb0BhdWVud2FsZC5kZQ=="
@@ -10505,9 +11120,19 @@
         "E-Mail": "aW5mb0BhdXJhY2guZGU="
     },
     {
+        "PLZ": "64832",
+        "ORT": "Babenhausen",
+        "E-Mail": "aW5mb0BiYWJlbmhhdXNlbi5kZQ=="
+    },
+    {
         "PLZ": "83547",
         "ORT": "Babensham",
         "E-Mail": "aW5mb0BiYWJlbnNoYW0uZGU="
+    },
+    {
+        "PLZ": "34454",
+        "ORT": "Bad Arolsen",
+        "E-Mail": "aW5mb0BiYWQtYXJvbHNlbi5kZQ=="
     },
     {
         "PLZ": "57319",
@@ -10518,6 +11143,26 @@
         "PLZ": "33014",
         "ORT": "Bad Driburg",
         "E-Mail": "aW5mb0BiYWQtZHJpYnVyZy5kZQ=="
+    },
+    {
+        "PLZ": "36251",
+        "ORT": "Bad Hersfeld",
+        "E-Mail": "aW5mb0BiYWQtaGVyc2ZlbGQuZGU="
+    },
+    {
+        "PLZ": "61348",
+        "ORT": "Bad Homburg v. d. Höhe",
+        "E-Mail": "aW5mb0BiYWQtaG9tYnVyZy5kZQ=="
+    },
+    {
+        "PLZ": "61350",
+        "ORT": "Bad Homburg v. d. Höhe",
+        "E-Mail": "aW5mb0BiYWQtaG9tYnVyZy5kZQ=="
+    },
+    {
+        "PLZ": "61352",
+        "ORT": "Bad Homburg v. d. Höhe",
+        "E-Mail": "aW5mb0BiYWQtaG9tYnVyZy5kZQ=="
     },
     {
         "PLZ": "53604",
@@ -10630,6 +11275,11 @@
         "E-Mail": "aW5mb0BiYWQtc2Nob2VuYm9ybi5kZQ=="
     },
     {
+        "PLZ": "37242",
+        "ORT": "Bad Sooden-Allendorf",
+        "E-Mail": "aW5mb0BiYWQtc29vZGVuLWFsbGVuZG9yZi5kZQ=="
+    },
+    {
         "PLZ": "96231",
         "ORT": "Bad Staffelstein",
         "E-Mail": "aW5mb0BiYWQtc3RhZmZlbHN0ZWluLmRl"
@@ -10648,6 +11298,11 @@
         "PLZ": "88339",
         "ORT": "Bad Waldsee",
         "E-Mail": "aW5mb0BiYWQtd2FsZHNlZS5kZQ=="
+    },
+    {
+        "PLZ": "34537",
+        "ORT": "Bad Wildungen",
+        "E-Mail": "aW5mb0BiYWQtd2lsZHVuZ2VuLmRl"
     },
     {
         "PLZ": "91438",
@@ -10733,6 +11388,11 @@
         "PLZ": "32549",
         "ORT": "Bad Oeynhausen",
         "E-Mail": "aW5mb0BiYWRvZXluaGF1c2VuLmRl"
+    },
+    {
+        "PLZ": "63628",
+        "ORT": "Bad Soden-Salmünster",
+        "E-Mail": "aW5mb0BiYWRzb2Rlbi1zYWxtdWVuc3Rlci5kZQ=="
     },
     {
         "PLZ": "78580",
@@ -10825,6 +11485,11 @@
         "E-Mail": "aW5mb0BiYXJ0aG9sb21hZS5kZQ=="
     },
     {
+        "PLZ": "35088",
+        "ORT": "Battenberg (Eder)",
+        "E-Mail": "aW5mb0BiYXR0ZW5iZXJnLWVkZXIuZGU="
+    },
+    {
         "PLZ": "48361",
         "ORT": "Beelen",
         "E-Mail": "aW5mb0BiZWVsZW4uZGU="
@@ -10843,6 +11508,11 @@
         "PLZ": "83671",
         "ORT": "Benediktbeuern",
         "E-Mail": "aW5mb0BiZW5lZGlrdGJldWVybi5kZQ=="
+    },
+    {
+        "PLZ": "64625",
+        "ORT": "Bensheim",
+        "E-Mail": "aW5mb0BiZW5zaGVpbS5kZQ=="
     },
     {
         "PLZ": "88368",
@@ -11000,9 +11670,34 @@
         "E-Mail": "aW5mb0BiaWJlcmFjaC1yaXNzLmRl"
     },
     {
+        "PLZ": "64404",
+        "ORT": "Bickenbach",
+        "E-Mail": "aW5mb0BiaWNrZW5iYWNoLWJlcmdzdHJhc3NlLmRl"
+    },
+    {
         "PLZ": "87651",
         "ORT": "Bidingen",
         "E-Mail": "aW5mb0BiaWRpbmdlbi5iYXllcm4uZGU="
+    },
+    {
+        "PLZ": "63599",
+        "ORT": "Biebergemünd",
+        "E-Mail": "aW5mb0BiaWViZXJnZW11ZW5kLmRl"
+    },
+    {
+        "PLZ": "35444",
+        "ORT": "Biebertal",
+        "E-Mail": "aW5mb0BiaWViZXJ0YWwuZGU="
+    },
+    {
+        "PLZ": "64584",
+        "ORT": "Biebesheim am Rhein",
+        "E-Mail": "aW5mb0BiaWViZXNoZWltLmRl"
+    },
+    {
+        "PLZ": "35216",
+        "ORT": "Biedenkopf",
+        "E-Mail": "aW5mb0BiaWVkZW5rb3BmLmRl"
     },
     {
         "PLZ": "87640",
@@ -11013,6 +11708,16 @@
         "PLZ": "74862",
         "ORT": "Binau",
         "E-Mail": "aW5mb0BiaW5hdS5kZQ=="
+    },
+    {
+        "PLZ": "63633",
+        "ORT": "Birstein",
+        "E-Mail": "aW5mb0BiaXJzdGVpbi5kZQ=="
+    },
+    {
+        "PLZ": "63699",
+        "ORT": "Birstein",
+        "E-Mail": "aW5mb0BiaXJzdGVpbi5kZQ=="
     },
     {
         "PLZ": "97836",
@@ -11280,6 +11985,11 @@
         "E-Mail": "aW5mb0BicmFtc2NoZS5kZQ=="
     },
     {
+        "PLZ": "35619",
+        "ORT": "Braunfels",
+        "E-Mail": "aW5mb0BicmF1bmZlbHMuZGU="
+    },
+    {
         "PLZ": "74523",
         "ORT": "Braunsbach",
         "E-Mail": "aW5mb0BicmF1bnNiYWNoLmRl"
@@ -11290,9 +12000,19 @@
         "E-Mail": "aW5mb0BicmF1bnNiYWNoLmRl"
     },
     {
+        "PLZ": "65611",
+        "ORT": "Brechen",
+        "E-Mail": "aW5mb0BicmVjaGVuLmRl"
+    },
+    {
         "PLZ": "58339",
         "ORT": "Breckerfeld",
         "E-Mail": "aW5mb0BicmVja2VyZmVsZC5kZQ=="
+    },
+    {
+        "PLZ": "35236",
+        "ORT": "Breidenbach",
+        "E-Mail": "aW5mb0BicmVpZGVuYmFjaC5kZQ=="
     },
     {
         "PLZ": "79206",
@@ -11303,6 +12023,11 @@
         "PLZ": "96151",
         "ORT": "Breitbrunn",
         "E-Mail": "aW5mb0BicmVpdGJydW5uLmRl"
+    },
+    {
+        "PLZ": "36287",
+        "ORT": "Breitenbach a. Herzberg",
+        "E-Mail": "aW5mb0BicmVpdGVuYmFjaC1hbS1oZXJ6YmVyZy5kZQ=="
     },
     {
         "PLZ": "94139",
@@ -11325,6 +12050,16 @@
         "E-Mail": "aW5mb0BicmVtZXJ2b2VyZGUuZGU="
     },
     {
+        "PLZ": "64395",
+        "ORT": "Brensbach",
+        "E-Mail": "aW5mb0BicmVuc2JhY2guZGU="
+    },
+    {
+        "PLZ": "64747",
+        "ORT": "Breuberg",
+        "E-Mail": "aW5mb0BicmV1YmVyZy5kZQ=="
+    },
+    {
         "PLZ": "78086",
         "ORT": "Brigachtal",
         "E-Mail": "aW5mb0BicmlnYWNodGFsLmRl"
@@ -11333,6 +12068,16 @@
         "PLZ": "59929",
         "ORT": "Brilon",
         "E-Mail": "aW5mb0Bicmlsb24uZGU="
+    },
+    {
+        "PLZ": "64753",
+        "ORT": "Brombachtal",
+        "E-Mail": "aW5mb0Bicm9tYmFjaHRhbC5kZQ=="
+    },
+    {
+        "PLZ": "59969",
+        "ORT": "Bromskirchen",
+        "E-Mail": "aW5mb0Bicm9tc2tpcmNoZW4uZGU="
     },
     {
         "PLZ": "27330",
@@ -11353,6 +12098,11 @@
         "PLZ": "27305",
         "ORT": "Bruchhausen-Vilsen",
         "E-Mail": "aW5mb0BicnVjaGhhdXNlbi12aWxzZW4uZGU="
+    },
+    {
+        "PLZ": "63486",
+        "ORT": "Bruchköbel",
+        "E-Mail": "aW5mb0BicnVjaGtvZWJlbC5kZQ=="
     },
     {
         "PLZ": "76646",
@@ -11420,6 +12170,11 @@
         "E-Mail": "aW5mb0BidWVyZW4uZGU="
     },
     {
+        "PLZ": "64572",
+        "ORT": "Büttelborn",
+        "E-Mail": "aW5mb0BidWV0dGVsYm9ybi5kZQ=="
+    },
+    {
         "PLZ": "97244",
         "ORT": "Bütthard",
         "E-Mail": "aW5mb0BidWV0dGhhcmQuZGU="
@@ -11445,9 +12200,24 @@
         "E-Mail": "aW5mb0BidXJnZG9yZi5kZQ=="
     },
     {
+        "PLZ": "36151",
+        "ORT": "Burghaun",
+        "E-Mail": "aW5mb0BidXJnaGF1bi5kZQ=="
+    },
+    {
+        "PLZ": "36166",
+        "ORT": "Burghaun",
+        "E-Mail": "aW5mb0BidXJnaGF1bi5kZQ=="
+    },
+    {
         "PLZ": "90559",
         "ORT": "Burgthann",
         "E-Mail": "aW5mb0BidXJndGhhbm4uZGU="
+    },
+    {
+        "PLZ": "35099",
+        "ORT": "Burgwald",
+        "E-Mail": "aW5mb0BidXJnd2FsZC5kZQ=="
     },
     {
         "PLZ": "30938",
@@ -11463,6 +12233,11 @@
         "PLZ": "72393",
         "ORT": "Burladingen",
         "E-Mail": "aW5mb0BidXJsYWRpbmdlbi5kZQ=="
+    },
+    {
+        "PLZ": "35418",
+        "ORT": "Buseck",
+        "E-Mail": "aW5mb0BidXNlY2suZGU="
     },
     {
         "PLZ": "96155",
@@ -11488,6 +12263,11 @@
         "PLZ": "91598",
         "ORT": "Colmberg",
         "E-Mail": "aW5mb0Bjb2xtYmVyZy5kZQ=="
+    },
+    {
+        "PLZ": "36219",
+        "ORT": "Cornberg",
+        "E-Mail": "aW5mb0Bjb3JuYmVyZy5kZQ=="
     },
     {
         "PLZ": "74564",
@@ -11635,9 +12415,19 @@
         "E-Mail": "aW5mb0BkZXR0aW5nZW4taWxsZXIuZGU="
     },
     {
+        "PLZ": "64807",
+        "ORT": "Dieburg",
+        "E-Mail": "aW5mb0BkaWVidXJnLmRl"
+    },
+    {
         "PLZ": "31199",
         "ORT": "Diekholzen",
         "E-Mail": "aW5mb0BkaWVraG9semVuLmRl"
+    },
+    {
+        "PLZ": "34474",
+        "ORT": "Diemelstadt",
+        "E-Mail": "aW5mb0BkaWVtZWxzdGFkdC5kZQ=="
     },
     {
         "PLZ": "86911",
@@ -11660,6 +12450,11 @@
         "E-Mail": "aW5mb0BkaWV0bWFubnNyaWVkLmRl"
     },
     {
+        "PLZ": "35716",
+        "ORT": "Dietzhölztal",
+        "E-Mail": "aW5mb0BkaWV0emhvZWx6dGFsLmRl"
+    },
+    {
         "PLZ": "97497",
         "ORT": "Dingolshausen",
         "E-Mail": "aW5mb0BkaW5nb2xzaGF1c2VuLmRl"
@@ -11668,6 +12463,11 @@
         "PLZ": "91550",
         "ORT": "Dinkelsbühl",
         "E-Mail": "aW5mb0BkaW5rZWxzYnVlaGwuZGU="
+    },
+    {
+        "PLZ": "36160",
+        "ORT": "Dipperz",
+        "E-Mail": "aW5mb0BkaXBwZXJ6LmRl"
     },
     {
         "PLZ": "73450",
@@ -11760,6 +12560,11 @@
         "E-Mail": "aW5mb0Bkb3JmcHJvemVsdGVuLmRl"
     },
     {
+        "PLZ": "65599",
+        "ORT": "Dornburg",
+        "E-Mail": "SW5mb0Bkb3JuYnVyZy5kZQ=="
+    },
+    {
         "PLZ": "72175",
         "ORT": "Dornhan",
         "E-Mail": "aW5mb0Bkb3JuaGFuLmRl"
@@ -11783,6 +12588,11 @@
         "PLZ": "73349",
         "ORT": "Drackenstein",
         "E-Mail": "aW5mb0BkcmFja2Vuc3RlaW4uZGU="
+    },
+    {
+        "PLZ": "35759",
+        "ORT": "Driedorf",
+        "E-Mail": "aW5mb0BkcmllZG9yZi5kZQ=="
     },
     {
         "PLZ": "78589",
@@ -11930,6 +12740,16 @@
         "E-Mail": "aW5mb0BlaGluZ2VuLmRl"
     },
     {
+        "PLZ": "36115",
+        "ORT": "Ehrenberg (Rhön)",
+        "E-Mail": "aW5mb0BlaHJlbmJlcmctcmhvZW4uZGU="
+    },
+    {
+        "PLZ": "35630",
+        "ORT": "Ehringshausen",
+        "E-Mail": "aW5mb0BlaHJpbmdzaGF1c2VuLmRl"
+    },
+    {
         "PLZ": "97246",
         "ORT": "Eibelstadt",
         "E-Mail": "aW5mb0BlaWJlbHN0YWR0LmRl"
@@ -11953,6 +12773,11 @@
         "PLZ": "79871",
         "ORT": "Eisenbach (Hochschwarzwald)",
         "E-Mail": "aW5mb0BlaXNlbmJhY2guZGU="
+    },
+    {
+        "PLZ": "65627",
+        "ORT": "Elbtal",
+        "E-Mail": "aW5mb0BlbGJ0YWwuZXU="
     },
     {
         "PLZ": "29472",
@@ -12018,6 +12843,36 @@
         "PLZ": "97483",
         "ORT": "Eltmann",
         "E-Mail": "aW5mb0BlbHRtYW5uLmRl"
+    },
+    {
+        "PLZ": "65343",
+        "ORT": "Eltville am Rhein",
+        "E-Mail": "aW5mb0BlbHR2aWxsZS5kZQ=="
+    },
+    {
+        "PLZ": "65344",
+        "ORT": "Eltville am Rhein",
+        "E-Mail": "aW5mb0BlbHR2aWxsZS5kZQ=="
+    },
+    {
+        "PLZ": "65345",
+        "ORT": "Eltville am Rhein",
+        "E-Mail": "aW5mb0BlbHR2aWxsZS5kZQ=="
+    },
+    {
+        "PLZ": "65346",
+        "ORT": "Eltville am Rhein",
+        "E-Mail": "aW5mb0BlbHR2aWxsZS5kZQ=="
+    },
+    {
+        "PLZ": "65347",
+        "ORT": "Eltville am Rhein",
+        "E-Mail": "aW5mb0BlbHR2aWxsZS5kZQ=="
+    },
+    {
+        "PLZ": "65604",
+        "ORT": "Elz",
+        "E-Mail": "aW5mb0BlbHotd3cuZGU="
     },
     {
         "PLZ": "74834",
@@ -12120,6 +12975,11 @@
         "E-Mail": "aW5mb0BlcHBlbnNjaGxhZy5kZQ=="
     },
     {
+        "PLZ": "65817",
+        "ORT": "Eppstein",
+        "E-Mail": "aW5mb0BlcHBzdGVpbi5kZQ=="
+    },
+    {
         "PLZ": "89155",
         "ORT": "Erbach",
         "E-Mail": "aW5mb0BlcmJhY2gtZG9uYXUuZGU="
@@ -12183,6 +13043,11 @@
         "PLZ": "29361",
         "ORT": "Eschede",
         "E-Mail": "aW5mb0Blc2NoZWRlLmRl"
+    },
+    {
+        "PLZ": "35713",
+        "ORT": "Eschenburg",
+        "E-Mail": "aW5mb0Blc2NoZW5idXJnLmRl"
     },
     {
         "PLZ": "37627",
@@ -12270,6 +13135,11 @@
         "E-Mail": "aW5mb0BleHRlcnRhbC5kZQ=="
     },
     {
+        "PLZ": "36325",
+        "ORT": "Feldatal",
+        "E-Mail": "aW5mb0BmZWxkYXRhbC5kZQ=="
+    },
+    {
         "PLZ": "17258",
         "ORT": "Feldberger Seenlandschaft",
         "E-Mail": "aW5mb0BmZWxkYmVyZy5kZQ=="
@@ -12283,6 +13153,11 @@
         "PLZ": "92269",
         "ORT": "Fensterbach",
         "E-Mail": "aW5mb0BmZW5zdGVyYmFjaC5kZQ=="
+    },
+    {
+        "PLZ": "35463",
+        "ORT": "Fernwald",
+        "E-Mail": "aW5mb0BmZXJud2FsZC5kZQ=="
     },
     {
         "PLZ": "90537",
@@ -12315,6 +13190,16 @@
         "E-Mail": "aW5mb0BmbGVpbi5kZQ=="
     },
     {
+        "PLZ": "63639",
+        "ORT": "Flörsbachtal",
+        "E-Mail": "aW5mb0BmbG9lcnNiYWNodGFsLm5ldA=="
+    },
+    {
+        "PLZ": "61197",
+        "ORT": "Florstadt",
+        "E-Mail": "aW5mb0BmbG9yc3RhZHQuZGU="
+    },
+    {
         "PLZ": "29356",
         "ORT": "Bröckel",
         "E-Mail": "aW5mb0BmbG90d2VkZWwuZGU="
@@ -12338,6 +13223,16 @@
         "PLZ": "78737",
         "ORT": "Fluorn-Winzeln",
         "E-Mail": "aW5mb0BmbHVvcm4td2luemVsbi5kZQ=="
+    },
+    {
+        "PLZ": "35110",
+        "ORT": "Frankenau",
+        "E-Mail": "aW5mb0BmcmFua2VuYXUuZGU="
+    },
+    {
+        "PLZ": "35066",
+        "ORT": "Frankenberg (Eder)",
+        "E-Mail": "aW5mb0BmcmFua2VuYmVyZy5kZQ=="
     },
     {
         "PLZ": "74586",
@@ -12370,6 +13265,11 @@
         "E-Mail": "aW5mb0BmcmVkZW5iZWNrLmRl"
     },
     {
+        "PLZ": "36399",
+        "ORT": "Freiensteinau",
+        "E-Mail": "aW5mb0BmcmVpZW5zdGVpbmF1LmRl"
+    },
+    {
         "PLZ": "86742",
         "ORT": "Fremdingen",
         "E-Mail": "aW5mb0BmcmVtZGluZ2VuLmRl"
@@ -12398,6 +13298,11 @@
         "PLZ": "78567",
         "ORT": "Fridingen an der Donau",
         "E-Mail": "aW5mb0BmcmlkaW5nZW4uZGU="
+    },
+    {
+        "PLZ": "36289",
+        "ORT": "Friedewald",
+        "E-Mail": "aW5mb0BmcmllZGV3YWxkLWhlc3Nlbi5kZQ=="
     },
     {
         "PLZ": "74177",
@@ -12448,6 +13353,16 @@
         "PLZ": "94081",
         "ORT": "Fürstenzell",
         "E-Mail": "aW5mb0BmdWVyc3RlbnplbGwuZGU="
+    },
+    {
+        "PLZ": "34127",
+        "ORT": "Fuldatal",
+        "E-Mail": "aW5mb0BmdWxkYXRhbC5kZQ=="
+    },
+    {
+        "PLZ": "34233",
+        "ORT": "Fuldatal",
+        "E-Mail": "aW5mb0BmdWxkYXRhbC5kZQ=="
     },
     {
         "PLZ": "71116",
@@ -12535,6 +13450,11 @@
         "E-Mail": "aW5mb0BnZWNoaW5nZW4uZGU="
     },
     {
+        "PLZ": "63688",
+        "ORT": "Gedern",
+        "E-Mail": "aW5mb0BnZWRlcm4uZGU="
+    },
+    {
         "PLZ": "49744",
         "ORT": "Geeste",
         "E-Mail": "aW5mb0BnZWVzdGUuZGU="
@@ -12558,6 +13478,16 @@
         "PLZ": "47608",
         "ORT": "Geldern",
         "E-Mail": "aW5mb0BnZWxkZXJuLmRl"
+    },
+    {
+        "PLZ": "63571",
+        "ORT": "Gelnhausen",
+        "E-Mail": "aW5mb0BnZWxuaGF1c2VuLmRl"
+    },
+    {
+        "PLZ": "63589",
+        "ORT": "Gelnhausen",
+        "E-Mail": "aW5mb0BnZWxuaGF1c2VuLmRl"
     },
     {
         "PLZ": "26474",
@@ -12595,6 +13525,11 @@
         "E-Mail": "aW5mb0BnZW1laW5kZS1iZXZlcnN0ZWR0LmRl"
     },
     {
+        "PLZ": "69488",
+        "ORT": "Birkenau",
+        "E-Mail": "aW5mb0BnZW1laW5kZS1iaXJrZW5hdS5kZQ=="
+    },
+    {
         "PLZ": "84155",
         "ORT": "Bodenkirchen",
         "E-Mail": "aW5mb0BnZW1laW5kZS1ib2RlbmtpcmNoZW4uZGU="
@@ -12603,6 +13538,16 @@
         "PLZ": "87736",
         "ORT": "Böhen",
         "E-Mail": "aW5mb0BnZW1laW5kZS1ib2VoZW4uZGU="
+    },
+    {
+        "PLZ": "63636",
+        "ORT": "Brachttal",
+        "E-Mail": "aW5mb0BnZW1laW5kZS1icmFjaHR0YWwuZGU="
+    },
+    {
+        "PLZ": "35767",
+        "ORT": "Breitscheid",
+        "E-Mail": "aW5mb0BnZW1laW5kZS1icmVpdHNjaGVpZC5kZQ=="
     },
     {
         "PLZ": "85567",
@@ -12645,6 +13590,26 @@
         "E-Mail": "aW5mb0BnZW1laW5kZS1ldXJhc2J1cmcuZGU="
     },
     {
+        "PLZ": "64385",
+        "ORT": "Fürth",
+        "E-Mail": "aW5mb0BnZW1laW5kZS1mdWVydGguZGU="
+    },
+    {
+        "PLZ": "64658",
+        "ORT": "Fürth",
+        "E-Mail": "aW5mb0BnZW1laW5kZS1mdWVydGguZGU="
+    },
+    {
+        "PLZ": "61479",
+        "ORT": "Glashütten",
+        "E-Mail": "aW5mb0BnZW1laW5kZS1nbGFzaHVldHRlbi5kZQ=="
+    },
+    {
+        "PLZ": "65510",
+        "ORT": "Glashütten",
+        "E-Mail": "aW5mb0BnZW1laW5kZS1nbGFzaHVldHRlbi5kZQ=="
+    },
+    {
         "PLZ": "73571",
         "ORT": "Göggingen",
         "E-Mail": "aW5mb0BnZW1laW5kZS1nb2VnZ2luZ2VuLmRl"
@@ -12653,6 +13618,11 @@
         "PLZ": "73574",
         "ORT": "Göggingen",
         "E-Mail": "aW5mb0BnZW1laW5kZS1nb2VnZ2luZ2VuLmRl"
+    },
+    {
+        "PLZ": "36355",
+        "ORT": "Grebenhain",
+        "E-Mail": "aW5mb0BnZW1laW5kZS1ncmViZW5oYWluLmRl"
     },
     {
         "PLZ": "82031",
@@ -12673,6 +13643,11 @@
         "PLZ": "79686",
         "ORT": "Hasel",
         "E-Mail": "aW5mb0BnZW1laW5kZS1oYXNlbC5kZQ=="
+    },
+    {
+        "PLZ": "34298",
+        "ORT": "Helsa",
+        "E-Mail": "aW5mb0BnZW1laW5kZS1oZWxzYS5kZQ=="
     },
     {
         "PLZ": "88436",
@@ -12718,6 +13693,11 @@
         "PLZ": "88422",
         "ORT": "Kanzach",
         "E-Mail": "aW5mb0BnZW1laW5kZS1rYW56YWNoLmRl"
+    },
+    {
+        "PLZ": "63699",
+        "ORT": "Kefenrod",
+        "E-Mail": "aW5mb0BnZW1laW5kZS1rZWZlbnJvZC5kZQ=="
     },
     {
         "PLZ": "82549",
@@ -12780,9 +13760,29 @@
         "E-Mail": "aW5mb0BnZW1laW5kZS1tZWVkZXIuZGU="
     },
     {
+        "PLZ": "37276",
+        "ORT": "Meinhard",
+        "E-Mail": "aW5mb0BnZW1laW5kZS1tZWluaGFyZC5kZQ=="
+    },
+    {
+        "PLZ": "37290",
+        "ORT": "Meißner",
+        "E-Mail": "aW5mb0BnZW1laW5kZS1tZWlzc25lci5kZQ=="
+    },
+    {
         "PLZ": "84562",
         "ORT": "Mettenheim",
         "E-Mail": "aW5mb0BnZW1laW5kZS1tZXR0ZW5oZWltLmRl"
+    },
+    {
+        "PLZ": "35325",
+        "ORT": "Mücke",
+        "E-Mail": "aW5mb0BnZW1laW5kZS1tdWVja2UuZGU="
+    },
+    {
+        "PLZ": "35117",
+        "ORT": "Münchhausen",
+        "E-Mail": "aW5mb0BnZW1laW5kZS1tdWVuY2hoYXVzZW4uZGU="
     },
     {
         "PLZ": "86692",
@@ -12815,6 +13815,11 @@
         "E-Mail": "aW5mb0BnZW1laW5kZS1yZWhsaW5nLmRl"
     },
     {
+        "PLZ": "35447",
+        "ORT": "Reiskirchen",
+        "E-Mail": "aW5mb0BnZW1laW5kZS1yZWlza2lyY2hlbi5kZQ=="
+    },
+    {
         "PLZ": "86510",
         "ORT": "Ried",
         "E-Mail": "aW5mb0BnZW1laW5kZS1yaWVkLmRl"
@@ -12838,6 +13843,11 @@
         "PLZ": "18190",
         "ORT": "Sanitz",
         "E-Mail": "aW5mb0BnZW1laW5kZS1zYW5pdHouZGU="
+    },
+    {
+        "PLZ": "34270",
+        "ORT": "Schauenburg",
+        "E-Mail": "aW5mb0BnZW1laW5kZS1zY2hhdWVuYnVyZy5kZQ=="
     },
     {
         "PLZ": "33189",
@@ -12970,9 +13980,24 @@
         "E-Mail": "aW5mb0BnZW1laW5kZS13YW5ud2VpbC5kZQ=="
     },
     {
+        "PLZ": "36367",
+        "ORT": "Wartenberg",
+        "E-Mail": "aW5mb0BnZW1laW5kZS13YXJ0ZW5iZXJnLmRl"
+    },
+    {
+        "PLZ": "35796",
+        "ORT": "Weinbach",
+        "E-Mail": "aW5mb0BnZW1laW5kZS13ZWluYmFjaC5kZQ=="
+    },
+    {
         "PLZ": "74679",
         "ORT": "Weißbach",
         "E-Mail": "aW5mb0BnZW1laW5kZS13ZWlzc2JhY2guZGU="
+    },
+    {
+        "PLZ": "37299",
+        "ORT": "Weißenborn",
+        "E-Mail": "aW5mb0BnZW1laW5kZS13ZWlzc2VuYm9ybi5kZQ=="
     },
     {
         "PLZ": "87679",
@@ -13013,6 +14038,16 @@
         "PLZ": "83471",
         "ORT": "Berchtesgaden",
         "E-Mail": "aW5mb0BnZW1laW5kZS5iZXJjaHRlc2dhZGVuLmRl"
+    },
+    {
+        "PLZ": "34225",
+        "ORT": "Edermünde",
+        "E-Mail": "aW5mb0BnZW1laW5kZS5lZGVybXVlbmRlLmRl"
+    },
+    {
+        "PLZ": "34295",
+        "ORT": "Edermünde",
+        "E-Mail": "aW5mb0BnZW1laW5kZS5lZGVybXVlbmRlLmRl"
     },
     {
         "PLZ": "86833",
@@ -13080,9 +14115,24 @@
         "E-Mail": "aW5mb0BnZW1laW5kZWxhdXRlcnRhbC5kZQ=="
     },
     {
+        "PLZ": "35764",
+        "ORT": "Sinn",
+        "E-Mail": "aW5mb0BnZW1laW5kZXNpbm4uZGU="
+    },
+    {
         "PLZ": "74376",
         "ORT": "Gemmrigheim",
         "E-Mail": "aW5mb0BnZW1tcmlnaGVpbS5kZQ=="
+    },
+    {
+        "PLZ": "35329",
+        "ORT": "Gemünden (Felda)",
+        "E-Mail": "aW5mb0BnZW11ZW5kZW4tZmVsZGEuZGU="
+    },
+    {
+        "PLZ": "35285",
+        "ORT": "Gemünden (Wohra)",
+        "E-Mail": "aW5mb0BnZW11ZW5kZW4td29ocmEuZGU="
     },
     {
         "PLZ": "86682",
@@ -13148,6 +14198,36 @@
         "PLZ": "31180",
         "ORT": "Giesen",
         "E-Mail": "aW5mb0BnaWVzZW4uZGU="
+    },
+    {
+        "PLZ": "35390",
+        "ORT": "Gießen",
+        "E-Mail": "aW5mb0BnaWVzc2VuLmRl"
+    },
+    {
+        "PLZ": "35392",
+        "ORT": "Gießen",
+        "E-Mail": "aW5mb0BnaWVzc2VuLmRl"
+    },
+    {
+        "PLZ": "35394",
+        "ORT": "Gießen",
+        "E-Mail": "aW5mb0BnaWVzc2VuLmRl"
+    },
+    {
+        "PLZ": "35396",
+        "ORT": "Gießen",
+        "E-Mail": "aW5mb0BnaWVzc2VuLmRl"
+    },
+    {
+        "PLZ": "35398",
+        "ORT": "Gießen",
+        "E-Mail": "aW5mb0BnaWVzc2VuLmRl"
+    },
+    {
+        "PLZ": "65462",
+        "ORT": "Ginsheim-Gustavsburg",
+        "E-Mail": "aW5mb0BnaWd1LmRl"
     },
     {
         "PLZ": "73333",
@@ -13345,6 +14425,11 @@
         "E-Mail": "aW5mb0BncmF0dGVyc2RvcmYuZGU="
     },
     {
+        "PLZ": "36323",
+        "ORT": "Grebenau",
+        "E-Mail": "aW5mb0BncmViZW5hdS5kZQ=="
+    },
+    {
         "PLZ": "91171",
         "ORT": "Greding",
         "E-Mail": "aW5mb0BncmVkaW5nLmRl"
@@ -13433,6 +14518,26 @@
         "PLZ": "48599",
         "ORT": "Gronau (Westf.)",
         "E-Mail": "aW5mb0Bncm9uYXUuZGU="
+    },
+    {
+        "PLZ": "68649",
+        "ORT": "Groß-Rohrheim",
+        "E-Mail": "aW5mb0Bncm9zcy1yb2hyaGVpbS5kZQ=="
+    },
+    {
+        "PLZ": "64823",
+        "ORT": "Groß-Umstadt",
+        "E-Mail": "aW5mb0Bncm9zcy11bXN0YWR0LmRl"
+    },
+    {
+        "PLZ": "64846",
+        "ORT": "Groß-Zimmern",
+        "E-Mail": "aW5mb0Bncm9zcy16aW1tZXJuLmNvbQ=="
+    },
+    {
+        "PLZ": "37247",
+        "ORT": "Großalmerode",
+        "E-Mail": "aW5mb0Bncm9zc2FsbWVyb2RlLmRl"
     },
     {
         "PLZ": "72415",
@@ -13525,6 +14630,16 @@
         "E-Mail": "aW5mb0BndXRlbnplbGwtaHVlcmJlbC5kZQ=="
     },
     {
+        "PLZ": "34302",
+        "ORT": "Guxhagen",
+        "E-Mail": "aW5mb0BndXhoYWdlbi5kZQ=="
+    },
+    {
+        "PLZ": "34317",
+        "ORT": "Habichtswald",
+        "E-Mail": "aW5mb0BoYWJpY2h0c3dhbGQuZGU="
+    },
+    {
         "PLZ": "97840",
         "ORT": "Hafenlohr",
         "E-Mail": "aW5mb0BoYWZlbmxvaHIuZGU="
@@ -13563,6 +14678,11 @@
         "PLZ": "91747",
         "ORT": "Westheim",
         "E-Mail": "aW5mb0BoYWhuZW5rYW1tLmRl"
+    },
+    {
+        "PLZ": "35708",
+        "ORT": "Haiger",
+        "E-Mail": "aW5mb0BoYWlnZXIuZGU="
     },
     {
         "PLZ": "72401",
@@ -13675,6 +14795,11 @@
         "E-Mail": "aW5mb0BoYXR0aW5nZW4uZGU="
     },
     {
+        "PLZ": "35116",
+        "ORT": "Hatzfeld (Eder)",
+        "E-Mail": "aW5mb0BoYXR6ZmVsZC1lZGVyLmRl"
+    },
+    {
         "PLZ": "89597",
         "ORT": "Hausen am Bussen",
         "E-Mail": "aW5mb0BoYXVzZW4tYW0tYnVzc2VuLmRl"
@@ -13735,6 +14860,11 @@
         "E-Mail": "aW5mb0BoZWlkZW4uZGU="
     },
     {
+        "PLZ": "65321",
+        "ORT": "Heidenrod",
+        "E-Mail": "aW5mb0BoZWlkZW5yb2QuZGU="
+    },
+    {
         "PLZ": "42579",
         "ORT": "Heiligenhaus",
         "E-Mail": "aW5mb0BoZWlsaWdlbmhhdXMuZGU="
@@ -13758,6 +14888,11 @@
         "PLZ": "88518",
         "ORT": "Herbertingen",
         "E-Mail": "aW5mb0BoZXJiZXJ0aW5nZW4uZGU="
+    },
+    {
+        "PLZ": "35745",
+        "ORT": "Herborn",
+        "E-Mail": "aW5mb0BoZXJib3JuLmRl"
     },
     {
         "PLZ": "89522",
@@ -13900,6 +15035,11 @@
         "E-Mail": "aW5mb0BoZXNzaWdoZWltLmRl"
     },
     {
+        "PLZ": "37235",
+        "ORT": "Hessisch Lichtenau",
+        "E-Mail": "aW5mb0BoZXNzaXNjaC1saWNodGVuYXUuZGU="
+    },
+    {
         "PLZ": "72419",
         "ORT": "Hettingen",
         "E-Mail": "aW5mb0BoZXR0aW5nZW4uZGU="
@@ -13918,6 +15058,11 @@
         "PLZ": "73540",
         "ORT": "Heubach",
         "E-Mail": "aW5mb0BoZXViYWNoLmRl"
+    },
+    {
+        "PLZ": "35452",
+        "ORT": "Heuchelheim a. d. Lahn",
+        "E-Mail": "aW5mb0BoZXVjaGVsaGVpbS5kZQ=="
     },
     {
         "PLZ": "73572",
@@ -13965,14 +15110,44 @@
         "E-Mail": "aW5mb0BoaW50ZS5kZQ=="
     },
     {
+        "PLZ": "64757",
+        "ORT": "Hirschhorn (Neckar)",
+        "E-Mail": "aW5mb0BoaXJzY2hob3JuLmRl"
+    },
+    {
+        "PLZ": "69412",
+        "ORT": "Hirschhorn (Neckar)",
+        "E-Mail": "aW5mb0BoaXJzY2hob3JuLmRl"
+    },
+    {
+        "PLZ": "69434",
+        "ORT": "Hirschhorn (Neckar)",
+        "E-Mail": "aW5mb0BoaXJzY2hob3JuLmRl"
+    },
+    {
+        "PLZ": "63697",
+        "ORT": "Hirzenhain",
+        "E-Mail": "aW5mb0BoaXJ6ZW5oYWluLmRl"
+    },
+    {
         "PLZ": "73269",
         "ORT": "Hochdorf",
         "E-Mail": "aW5mb0Bob2NoZG9yZi5kZQ=="
     },
     {
+        "PLZ": "65239",
+        "ORT": "Hochheim am Main",
+        "E-Mail": "aW5mb0Bob2NoaGVpbS5kZQ=="
+    },
+    {
         "PLZ": "68766",
         "ORT": "Hockenheim",
         "E-Mail": "aW5mb0Bob2NrZW5oZWltLmRl"
+    },
+    {
+        "PLZ": "64739",
+        "ORT": "Höchst i. Odw.",
+        "E-Mail": "aW5mb0Bob2VjaHN0LWktb2R3LmRl"
     },
     {
         "PLZ": "89434",
@@ -14005,6 +15180,11 @@
         "E-Mail": "aW5mb0Bob2V2ZWxob2YuZGU="
     },
     {
+        "PLZ": "36145",
+        "ORT": "Hofbieber",
+        "E-Mail": "aW5mb0Bob2ZiaWViZXIuZGU="
+    },
+    {
         "PLZ": "94544",
         "ORT": "Hofkirchen",
         "E-Mail": "aW5mb0Bob2ZraXJjaGVuLmRl"
@@ -14013,6 +15193,11 @@
         "PLZ": "86928",
         "ORT": "Hofstetten",
         "E-Mail": "aW5mb0Bob2ZzdGV0dGVuLWhhZ2VuaGVpbS5kZQ=="
+    },
+    {
+        "PLZ": "35644",
+        "ORT": "Hohenahr",
+        "E-Mail": "aW5mb0Bob2hlbmFoci5kZQ=="
     },
     {
         "PLZ": "85521",
@@ -14028,6 +15213,11 @@
         "PLZ": "31249",
         "ORT": "Hohenhameln",
         "E-Mail": "aW5mb0Bob2hlbmhhbWVsbi5kZQ=="
+    },
+    {
+        "PLZ": "65329",
+        "ORT": "Hohenstein",
+        "E-Mail": "aW5mb0Bob2hlbnN0ZWluLWhlc3Nlbi5kZQ=="
     },
     {
         "PLZ": "79801",
@@ -14100,6 +15290,11 @@
         "E-Mail": "aW5mb0Bob2x6d2lja2VkZS5kZQ=="
     },
     {
+        "PLZ": "34576",
+        "ORT": "Homberg (Efze)",
+        "E-Mail": "aW5mb0Bob21iZXJnLWVmemUuZGU="
+    },
+    {
         "PLZ": "48496",
         "ORT": "Hopsten",
         "E-Mail": "aW5mb0Bob3BzdGVuLmRl"
@@ -14170,9 +15365,19 @@
         "E-Mail": "aW5mb0BodWVueGUuZGU="
     },
     {
+        "PLZ": "35625",
+        "ORT": "Hüttenberg",
+        "E-Mail": "aW5mb0BodWV0dGVuYmVyZy5kZQ=="
+    },
+    {
         "PLZ": "89185",
         "ORT": "Hüttisheim",
         "E-Mail": "aW5mb0BodWV0dGlzaGVpbS5kZQ=="
+    },
+    {
+        "PLZ": "35410",
+        "ORT": "Hungen",
+        "E-Mail": "aW5mb0BodW5nZW4uZGU="
     },
     {
         "PLZ": "49477",
@@ -14188,6 +15393,11 @@
         "PLZ": "82057",
         "ORT": "Icking",
         "E-Mail": "aW5mb0BpY2tpbmcuZGU="
+    },
+    {
+        "PLZ": "65510",
+        "ORT": "Idstein",
+        "E-Mail": "aW5mb0BpZHN0ZWluLmRl"
     },
     {
         "PLZ": "97957",
@@ -14440,6 +15650,11 @@
         "E-Mail": "aW5mb0BrYWlzZXJzYmFjaC5kZQ=="
     },
     {
+        "PLZ": "36148",
+        "ORT": "Kalbach",
+        "E-Mail": "aW5mb0BrYWxiYWNoLmRl"
+    },
+    {
         "PLZ": "37589",
         "ORT": "Kalefeld",
         "E-Mail": "aW5mb0BrYWxlZmVsZC5kZQ=="
@@ -14470,6 +15685,11 @@
         "E-Mail": "aW5mb0BrYXJiYWNoLmRl"
     },
     {
+        "PLZ": "61184",
+        "ORT": "Karben",
+        "E-Mail": "aW5mb0BrYXJiZW4uZGU="
+    },
+    {
         "PLZ": "84556",
         "ORT": "Kastl",
         "E-Mail": "aW5mb0BrYXN0bC1vYmIuZGU="
@@ -14488,6 +15708,11 @@
         "PLZ": "87600",
         "ORT": "Kaufbeuren",
         "E-Mail": "aW5mb0BrYXVmYmV1cmVuLmRl"
+    },
+    {
+        "PLZ": "34260",
+        "ORT": "Kaufungen",
+        "E-Mail": "aW5mb0BrYXVmdW5nZW4uZGU="
     },
     {
         "PLZ": "93309",
@@ -14528,6 +15753,11 @@
         "PLZ": "47627",
         "ORT": "Kevelaer",
         "E-Mail": "aW5mb0BrZXZlbGFlci5kZQ=="
+    },
+    {
+        "PLZ": "65399",
+        "ORT": "Kiedrich",
+        "E-Mail": "aW5mb0BraWVkcmljaC5kZQ=="
     },
     {
         "PLZ": "75249",
@@ -14690,6 +15920,11 @@
         "E-Mail": "aW5mb0BrbGVpbnJpbmRlcmZlbGQuYmF5ZXJuLmRl"
     },
     {
+        "PLZ": "34593",
+        "ORT": "Knüllwald",
+        "E-Mail": "aW5mb0BrbnVlbGx3YWxkLmRl"
+    },
+    {
         "PLZ": "73257",
         "ORT": "Köngen",
         "E-Mail": "aW5mb0Brb2VuZ2VuLmRl"
@@ -14735,6 +15970,16 @@
         "E-Mail": "aW5mb0Brb2xsbmJ1cmcuZGU="
     },
     {
+        "PLZ": "34497",
+        "ORT": "Korbach",
+        "E-Mail": "aW5mb0Brb3JiYWNoLmRl"
+    },
+    {
+        "PLZ": "34513",
+        "ORT": "Korbach",
+        "E-Mail": "aW5mb0Brb3JiYWNoLmRl"
+    },
+    {
         "PLZ": "76703",
         "ORT": "Kraichtal",
         "E-Mail": "aW5mb0BrcmFpY2h0YWwuZGU="
@@ -14748,6 +15993,11 @@
         "PLZ": "72505",
         "ORT": "Krauchenwies",
         "E-Mail": "aW5mb0BrcmF1Y2hlbndpZXMuZGU="
+    },
+    {
+        "PLZ": "36093",
+        "ORT": "Künzell",
+        "E-Mail": "aW5mb0BrdWVuemVsbC5kZQ=="
     },
     {
         "PLZ": "74653",
@@ -14768,6 +16018,11 @@
         "PLZ": "49549",
         "ORT": "Ladbergen",
         "E-Mail": "aW5mb0BsYWRiZXJnZW4uZGU="
+    },
+    {
+        "PLZ": "35094",
+        "ORT": "Lahntal",
+        "E-Mail": "aW5mb0BsYWhudGFsLmRl"
     },
     {
         "PLZ": "89150",
@@ -14805,6 +16060,11 @@
         "E-Mail": "aW5mb0BsYW5nZW5wcmVpc2luZy5kZQ=="
     },
     {
+        "PLZ": "63505",
+        "ORT": "Langenselbold",
+        "E-Mail": "aW5mb0BsYW5nZW5zZWxib2xkLmRl"
+    },
+    {
         "PLZ": "49762",
         "ORT": "Fresenburg",
         "E-Mail": "aW5mb0BsYXRoZW4uZGU="
@@ -14835,6 +16095,11 @@
         "E-Mail": "aW5mb0BsYXRoZW4uZGU="
     },
     {
+        "PLZ": "35321",
+        "ORT": "Laubach",
+        "E-Mail": "aW5mb0BsYXViYWNoLW9ubGluZS5kZQ=="
+    },
+    {
         "PLZ": "73466",
         "ORT": "Lauchheim",
         "E-Mail": "aW5mb0BsYXVjaGhlaW0uZGU="
@@ -14858,6 +16123,16 @@
         "PLZ": "92283",
         "ORT": "Lauterhofen",
         "E-Mail": "aW5mb0BsYXV0ZXJob2Zlbi5kZQ=="
+    },
+    {
+        "PLZ": "36369",
+        "ORT": "Lautertal (Vogelsberg)",
+        "E-Mail": "aW5mb0BsYXV0ZXJ0YWwtdm9nZWxzYmVyZy5kZQ=="
+    },
+    {
+        "PLZ": "64686",
+        "ORT": "Lautertal (Odenwald)",
+        "E-Mail": "aW5mb0BsYXV0ZXJ0YWwuZGU="
     },
     {
         "PLZ": "70771",
@@ -14995,9 +16270,24 @@
         "E-Mail": "aW5mb0BsZXV0a2lyY2guZGU="
     },
     {
+        "PLZ": "35423",
+        "ORT": "Lich",
+        "E-Mail": "aW5mb0BsaWNoLmRl"
+    },
+    {
+        "PLZ": "65835",
+        "ORT": "Liederbach am Taunus",
+        "E-Mail": "aW5mb0BsaWVkZXJiYWNoLXRhdW51cy5kZQ=="
+    },
+    {
         "PLZ": "49536",
         "ORT": "Lienen",
         "E-Mail": "aW5mb0BsaWVuZW4uZGU="
+    },
+    {
+        "PLZ": "35440",
+        "ORT": "Linden",
+        "E-Mail": "aW5mb0BsaW5kZW4uZGU="
     },
     {
         "PLZ": "51789",
@@ -15025,9 +16315,19 @@
         "E-Mail": "aW5mb0BsaW5rZW5oZWltLWhvY2hzdGV0dGVuLmRl"
     },
     {
+        "PLZ": "63589",
+        "ORT": "Linsengericht",
+        "E-Mail": "aW5mb0BsaW5zZW5nZXJpY2h0LmRl"
+    },
+    {
         "PLZ": "79843",
         "ORT": "Löffingen",
         "E-Mail": "aW5mb0Bsb2VmZmluZ2VuLmRl"
+    },
+    {
+        "PLZ": "35792",
+        "ORT": "Löhnberg",
+        "E-Mail": "SW5mb0Bsb2VobmJlcmcuZGU="
     },
     {
         "PLZ": "32584",
@@ -15035,9 +16335,29 @@
         "E-Mail": "aW5mb0Bsb2VobmUuZGU="
     },
     {
+        "PLZ": "35102",
+        "ORT": "Lohra",
+        "E-Mail": "aW5mb0Bsb2hyYS5kZQ=="
+    },
+    {
+        "PLZ": "65391",
+        "ORT": "Lorch",
+        "E-Mail": "aW5mb0Bsb3JjaC1yaGVpbi5kZQ=="
+    },
+    {
+        "PLZ": "64653",
+        "ORT": "Lorsch",
+        "E-Mail": "aW5mb0Bsb3JzY2guZGU="
+    },
+    {
         "PLZ": "49504",
         "ORT": "Lotte",
         "E-Mail": "aW5mb0Bsb3R0ZS5kZQ=="
+    },
+    {
+        "PLZ": "36251",
+        "ORT": "Ludwigsau",
+        "E-Mail": "aW5mb0BsdWR3aWdzYXUuZGU="
     },
     {
         "PLZ": "96337",
@@ -15125,6 +16445,11 @@
         "E-Mail": "aW5mb0BtYWluYnVyZy5kZQ=="
     },
     {
+        "PLZ": "63477",
+        "ORT": "Maintal",
+        "E-Mail": "aW5mb0BtYWludGFsLmRl"
+    },
+    {
         "PLZ": "82216",
         "ORT": "Maisach",
         "E-Mail": "aW5mb0BtYWlzYWNoLmRl"
@@ -15133,6 +16458,11 @@
         "PLZ": "76316",
         "ORT": "Malsch",
         "E-Mail": "aW5mb0BtYWxzY2guZGU="
+    },
+    {
+        "PLZ": "34323",
+        "ORT": "Malsfeld",
+        "E-Mail": "aW5mb0BtYWxzZmVsZC5ldQ=="
     },
     {
         "PLZ": "37696",
@@ -15360,6 +16690,11 @@
         "E-Mail": "aW5mb0BtZW5nZW4uZGU="
     },
     {
+        "PLZ": "35794",
+        "ORT": "Mengerskirchen",
+        "E-Mail": "aW5mb0BtZW5nZXJza2lyY2hlbi5kZQ=="
+    },
+    {
         "PLZ": "49716",
         "ORT": "Meppen",
         "E-Mail": "aW5mb0BtZXBwZW4uZGU="
@@ -15378,6 +16713,11 @@
         "PLZ": "89188",
         "ORT": "Merklingen",
         "E-Mail": "aW5mb0BtZXJrbGluZ2VuLmRl"
+    },
+    {
+        "PLZ": "64409",
+        "ORT": "Messel",
+        "E-Mail": "aW5mb0BtZXNzZWwuZGU="
     },
     {
         "PLZ": "88605",
@@ -15450,6 +16790,11 @@
         "E-Mail": "aW5mb0BtaXR0ZWxiaWJlcmFjaC5kZQ=="
     },
     {
+        "PLZ": "64397",
+        "ORT": "Modautal",
+        "E-Mail": "aW5mb0Btb2RhdXRhbC5kZQ=="
+    },
+    {
         "PLZ": "74219",
         "ORT": "Möckmühl",
         "E-Mail": "aW5mb0Btb2Vja211ZWhsLmRl"
@@ -15468,6 +16813,16 @@
         "PLZ": "63933",
         "ORT": "Mönchberg",
         "E-Mail": "aW5mb0Btb2VuY2hiZXJnLmRl"
+    },
+    {
+        "PLZ": "64546",
+        "ORT": "Mörfelden-Walldorf",
+        "E-Mail": "aW5mb0Btb2VyZmVsZGVuLXdhbGxkb3JmLmRl"
+    },
+    {
+        "PLZ": "69509",
+        "ORT": "Mörlenbach",
+        "E-Mail": "aW5mb0Btb2VybGVuYmFjaC5kZQ=="
     },
     {
         "PLZ": "47441",
@@ -15595,6 +16950,11 @@
         "E-Mail": "aW5mb0BtdWVuc2luZy5kZQ=="
     },
     {
+        "PLZ": "35516",
+        "ORT": "Münzenberg",
+        "E-Mail": "aW5mb0BtdWVuemVuYmVyZy5kZQ=="
+    },
+    {
         "PLZ": "74673",
         "ORT": "Mulfingen",
         "E-Mail": "aW5mb0BtdWxmaW5nZW4uZGU="
@@ -15618,6 +16978,16 @@
         "PLZ": "89564",
         "ORT": "Nattheim",
         "E-Mail": "aW5mb0BuYXR0aGVpbS5kZQ=="
+    },
+    {
+        "PLZ": "64569",
+        "ORT": "Nauheim",
+        "E-Mail": "aW5mb0BuYXVoZWltLmRl"
+    },
+    {
+        "PLZ": "69239",
+        "ORT": "Neckarsteinach",
+        "E-Mail": "aW5mb0BuZWNrYXJzdGVpbmFjaC5kZQ=="
     },
     {
         "PLZ": "74360",
@@ -15663,6 +17033,16 @@
         "PLZ": "73450",
         "ORT": "Neresheim",
         "E-Mail": "aW5mb0BuZXJlc2hlaW0uZGU="
+    },
+    {
+        "PLZ": "61267",
+        "ORT": "Neu-Anspach",
+        "E-Mail": "aW5mb0BuZXUtYW5zcGFjaC5kZQ=="
+    },
+    {
+        "PLZ": "37249",
+        "ORT": "Neu-Eichenberg",
+        "E-Mail": "aW5mb0BuZXUtZWljaGVuYmVyZy5kZQ=="
     },
     {
         "PLZ": "89231",
@@ -15713,6 +17093,11 @@
         "PLZ": "49434",
         "ORT": "Neuenkirchen-Vörden",
         "E-Mail": "aW5mb0BuZXVlbmtpcmNoZW4tdm9lcmRlbi5kZQ=="
+    },
+    {
+        "PLZ": "36286",
+        "ORT": "Neuenstein",
+        "E-Mail": "aW5mb0BuZXVlbnN0ZWluLm5ldA=="
     },
     {
         "PLZ": "85375",
@@ -15825,9 +17210,49 @@
         "E-Mail": "aW5mb0BuZXVzdGFkdC1nbGV3ZS5kZQ=="
     },
     {
+        "PLZ": "36119",
+        "ORT": "Neuhof",
+        "E-Mail": "aW5mb0BuaGYuZGU="
+    },
+    {
+        "PLZ": "36154",
+        "ORT": "Neuhof",
+        "E-Mail": "aW5mb0BuaGYuZGU="
+    },
+    {
+        "PLZ": "63667",
+        "ORT": "Nidda",
+        "E-Mail": "aW5mb0BuaWRkYS5kZQ=="
+    },
+    {
+        "PLZ": "61130",
+        "ORT": "Niddatal",
+        "E-Mail": "aW5mb0BuaWRkYXRhbC5kZQ=="
+    },
+    {
+        "PLZ": "61194",
+        "ORT": "Niddatal",
+        "E-Mail": "aW5mb0BuaWRkYXRhbC5kZQ=="
+    },
+    {
+        "PLZ": "61130",
+        "ORT": "Nidderau",
+        "E-Mail": "aW5mb0BuaWRkZXJhdS5kZQ=="
+    },
+    {
+        "PLZ": "34305",
+        "ORT": "Niedenstein",
+        "E-Mail": "aW5mb0BuaWVkZW5zdGVpbi5kZQ=="
+    },
+    {
         "PLZ": "84100",
         "ORT": "Niederaichbach",
         "E-Mail": "aW5mb0BuaWVkZXJhaWNoYmFjaC5kZQ=="
+    },
+    {
+        "PLZ": "36272",
+        "ORT": "Niederaula",
+        "E-Mail": "aW5mb0BuaWVkZXJhdWxhLmRl"
     },
     {
         "PLZ": "78078",
@@ -15848,6 +17273,11 @@
         "PLZ": "74676",
         "ORT": "Niedernhall",
         "E-Mail": "aW5mb0BuaWVkZXJuaGFsbC5kZQ=="
+    },
+    {
+        "PLZ": "65527",
+        "ORT": "Niedernhausen",
+        "E-Mail": "aW5mb0BuaWVkZXJuaGF1c2VuLmRl"
     },
     {
         "PLZ": "86694",
@@ -15878,6 +17308,11 @@
         "PLZ": "33039",
         "ORT": "Nieheim",
         "E-Mail": "aW5mb0BuaWVoZWltLmRl"
+    },
+    {
+        "PLZ": "34266",
+        "ORT": "Niestetal",
+        "E-Mail": "aW5mb0BuaWVzdGV0YWwuZGU="
     },
     {
         "PLZ": "37176",
@@ -16085,6 +17520,16 @@
         "E-Mail": "aW5mb0BvYmVyc3RlbmZlbGQuZGU="
     },
     {
+        "PLZ": "63179",
+        "ORT": "Obertshausen",
+        "E-Mail": "aW5mb0BvYmVydHNoYXVzZW4uZGU="
+    },
+    {
+        "PLZ": "61440",
+        "ORT": "Oberursel (Taunus)",
+        "E-Mail": "aW5mb0BvYmVydXJzZWwuZGU="
+    },
+    {
         "PLZ": "74847",
         "ORT": "Obrigheim",
         "E-Mail": "aW5mb0BvYnJpZ2hlaW0uZGU="
@@ -16128,6 +17573,11 @@
         "PLZ": "33813",
         "ORT": "Oerlinghausen",
         "E-Mail": "aW5mb0BvZXJsaW5naGF1c2VuLmRl"
+    },
+    {
+        "PLZ": "65375",
+        "ORT": "Oestrich-Winkel",
+        "E-Mail": "aW5mb0BvZXN0cmljaC13aW5rZWwuZGU="
     },
     {
         "PLZ": "88400",
@@ -16258,6 +17708,11 @@
         "PLZ": "73529",
         "ORT": "Ottenbach",
         "E-Mail": "aW5mb0BvdHRlbmJhY2guZGU="
+    },
+    {
+        "PLZ": "34633",
+        "ORT": "Ottrau",
+        "E-Mail": "aW5mb0BvdHRyYXUuZGU="
     },
     {
         "PLZ": "26939",
@@ -16415,9 +17870,19 @@
         "E-Mail": "aW5mb0BwZnVsbGluZ2VuLmRl"
     },
     {
+        "PLZ": "64319",
+        "ORT": "Pfungstadt",
+        "E-Mail": "aW5mb0BwZnVuZ3N0YWR0LmRl"
+    },
+    {
         "PLZ": "76661",
         "ORT": "Philippsburg",
         "E-Mail": "aW5mb0BwaGlsaXBwc2J1cmcuZGU="
+    },
+    {
+        "PLZ": "36269",
+        "ORT": "Philippsthal (Werra)",
+        "E-Mail": "aW5mb0BwaGlsaXBwc3RoYWwuZGU="
     },
     {
         "PLZ": "94431",
@@ -16455,6 +17920,11 @@
         "E-Mail": "aW5mb0Bwb2VybmJhY2guZGU="
     },
     {
+        "PLZ": "35415",
+        "ORT": "Pohlheim",
+        "E-Mail": "aW5mb0Bwb2hsaGVpbS5kZQ=="
+    },
+    {
         "PLZ": "91805",
         "ORT": "Polsingen",
         "E-Mail": "aW5mb0Bwb2xzaW5nZW4uZGU="
@@ -16468,6 +17938,11 @@
         "PLZ": "96178",
         "ORT": "Pommersfelden",
         "E-Mail": "aW5mb0Bwb21tZXJzZmVsZGVuLmRl"
+    },
+    {
+        "PLZ": "36163",
+        "ORT": "Poppenhausen (Wasserkuppe)",
+        "E-Mail": "aW5mb0Bwb3BwZW5oYXVzZW4td2Fzc2Vya3VwcGUuZGU="
     },
     {
         "PLZ": "97490",
@@ -16520,6 +17995,11 @@
         "E-Mail": "aW5mb0BweXJiYXVtLmRl"
     },
     {
+        "PLZ": "35466",
+        "ORT": "Rabenau",
+        "E-Mail": "aW5mb0ByYWJlbmF1LmRl"
+    },
+    {
         "PLZ": "32369",
         "ORT": "Rahden",
         "E-Mail": "aW5mb0ByYWhkZW4uZGU="
@@ -16538,6 +18018,11 @@
         "PLZ": "89192",
         "ORT": "Rammingen",
         "E-Mail": "aW5mb0ByYW1taW5nZW4tYncuZGU="
+    },
+    {
+        "PLZ": "36169",
+        "ORT": "Rasdorf",
+        "E-Mail": "aW5mb0ByYXNkb3JmLmRl"
     },
     {
         "PLZ": "88677",
@@ -16588,6 +18073,11 @@
         "PLZ": "83064",
         "ORT": "Raubling",
         "E-Mail": "aW5mb0ByYXVibGluZy5kZQ=="
+    },
+    {
+        "PLZ": "65479",
+        "ORT": "Raunheim",
+        "E-Mail": "aW5mb0ByYXVuaGVpbS5kZQ=="
     },
     {
         "PLZ": "49509",
@@ -16755,6 +18245,11 @@
         "E-Mail": "aW5mb0ByaWVkbGluZ2VuLmRl"
     },
     {
+        "PLZ": "64560",
+        "ORT": "Riedstadt",
+        "E-Mail": "aW5mb0ByaWVkc3RhZHQuZGU="
+    },
+    {
         "PLZ": "78239",
         "ORT": "Rielasingen-Worblingen",
         "E-Mail": "aW5mb0ByaWVsYXNpbmdlbi13b3JibGluZ2VuLmRl"
@@ -16763,6 +18258,11 @@
         "PLZ": "78604",
         "ORT": "Rietheim-Weilheim",
         "E-Mail": "aW5mb0ByaWV0aGVpbS13ZWlsaGVpbS5kZQ=="
+    },
+    {
+        "PLZ": "64668",
+        "ORT": "Rimbach",
+        "E-Mail": "aW5mb0ByaW1iYWNoLW9kdy5kZQ=="
     },
     {
         "PLZ": "83253",
@@ -16810,6 +18310,11 @@
         "E-Mail": "aW5mb0Byb2VkZW50YWwuZGU="
     },
     {
+        "PLZ": "63322",
+        "ORT": "Rödermark",
+        "E-Mail": "aW5mb0Byb2VkZXJtYXJrLmRl"
+    },
+    {
         "PLZ": "32289",
         "ORT": "Rödinghausen",
         "E-Mail": "aW5mb0Byb2VkaW5naGF1c2VuLmRl"
@@ -16845,9 +18350,19 @@
         "E-Mail": "aW5mb0Byb21tZXJza2lyY2hlbi5kZQ=="
     },
     {
+        "PLZ": "36329",
+        "ORT": "Romrod",
+        "E-Mail": "aW5mb0Byb21yb2QuZGU="
+    },
+    {
         "PLZ": "30952",
         "ORT": "Ronnenberg",
         "E-Mail": "aW5mb0Byb25uZW5iZXJnLmRl"
+    },
+    {
+        "PLZ": "61191",
+        "ORT": "Rosbach v. d. Höhe",
+        "E-Mail": "aW5mb0Byb3NiYWNoLWhlc3Nlbi5kZQ=="
     },
     {
         "PLZ": "48720",
@@ -17185,6 +18700,11 @@
         "E-Mail": "aW5mb0BzY2hsYXQuZGU="
     },
     {
+        "PLZ": "36110",
+        "ORT": "Schlitz",
+        "E-Mail": "aW5mb0BzY2hsaXR6LmRl"
+    },
+    {
         "PLZ": "79859",
         "ORT": "Schluchsee",
         "E-Mail": "aW5mb0BzY2hsdWNoc2VlLmRl"
@@ -17208,6 +18728,11 @@
         "PLZ": "89194",
         "ORT": "Schnürpflingen",
         "E-Mail": "aW5mb0BzY2hudWVycGZsaW5nZW4uZGU="
+    },
+    {
+        "PLZ": "35641",
+        "ORT": "Schöffengrund",
+        "E-Mail": "aW5mb0BzY2hvZWZmZW5ncnVuZC5kZQ=="
     },
     {
         "PLZ": "71101",
@@ -17265,6 +18790,11 @@
         "E-Mail": "aW5mb0BzY2hvZW5iZXJnZXItbGFuZC5kZQ=="
     },
     {
+        "PLZ": "61137",
+        "ORT": "Schöneck",
+        "E-Mail": "aW5mb0BzY2hvZW5lY2suZGU="
+    },
+    {
         "PLZ": "74214",
         "ORT": "Schöntal",
         "E-Mail": "aW5mb0BzY2hvZW50YWwuZGU="
@@ -17273,6 +18803,11 @@
         "PLZ": "79650",
         "ORT": "Schopfheim",
         "E-Mail": "aW5mb0BzY2hvcGZoZWltLmRl"
+    },
+    {
+        "PLZ": "63679",
+        "ORT": "Schotten",
+        "E-Mail": "aW5mb0BzY2hvdHRlbi5kZQ=="
     },
     {
         "PLZ": "74575",
@@ -17358,6 +18893,16 @@
         "PLZ": "74193",
         "ORT": "Schwaigern",
         "E-Mail": "aW5mb0BzY2h3YWlnZXJuLmRl"
+    },
+    {
+        "PLZ": "65824",
+        "ORT": "Schwalbach am Taunus",
+        "E-Mail": "aW5mb0BzY2h3YWxiYWNoLmRl"
+    },
+    {
+        "PLZ": "34613",
+        "ORT": "Schwalmstadt",
+        "E-Mail": "aW5mb0BzY2h3YWxtc3RhZHQuZGU="
     },
     {
         "PLZ": "92421",
@@ -17473,6 +19018,11 @@
         "PLZ": "52538",
         "ORT": "Selfkant",
         "E-Mail": "aW5mb0BzZWxma2FudC5kZQ=="
+    },
+    {
+        "PLZ": "65618",
+        "ORT": "Selters (Taunus)",
+        "E-Mail": "aW5mb0BzZWx0ZXJzLXRhdW51cy5kZQ=="
     },
     {
         "PLZ": "48308",
@@ -17785,6 +19335,11 @@
         "E-Mail": "aW5mb0BzaWNrdGUuZGU="
     },
     {
+        "PLZ": "35768",
+        "ORT": "Siegbach",
+        "E-Mail": "aW5mb0BzaWVnYmFjaC5kZQ=="
+    },
+    {
         "PLZ": "57072",
         "ORT": "Siegen",
         "E-Mail": "aW5mb0BzaWVnZW4uZGU="
@@ -17835,9 +19390,19 @@
         "E-Mail": "aW5mb0BzaW5nZW4uZGU="
     },
     {
+        "PLZ": "36391",
+        "ORT": "Sinntal",
+        "E-Mail": "aW5mb0BzaW5udGFsLmRl"
+    },
+    {
         "PLZ": "83139",
         "ORT": "Söchtenau",
         "E-Mail": "aW5mb0Bzb2VjaHRlbmF1LmRl"
+    },
+    {
+        "PLZ": "34320",
+        "ORT": "Söhrewald",
+        "E-Mail": "aW5mb0Bzb2VocmV3YWxkLmRl"
     },
     {
         "PLZ": "96242",
@@ -17945,6 +19510,11 @@
         "E-Mail": "aW5mb0BzdGFkdC1iYWQtcmVpY2hlbmhhbGwuZGU="
     },
     {
+        "PLZ": "65812",
+        "ORT": "Bad Soden am Taunus",
+        "E-Mail": "aW5mb0BzdGFkdC1iYWQtc29kZW4uZGU="
+    },
+    {
         "PLZ": "30890",
         "ORT": "Barsinghausen",
         "E-Mail": "aW5mb0BzdGFkdC1iYXJzaW5naGF1c2VuLmRl"
@@ -18018,6 +19588,11 @@
         "PLZ": "53332",
         "ORT": "Bornheim",
         "E-Mail": "aW5mb0BzdGFkdC1ib3JuaGVpbS5kZQ=="
+    },
+    {
+        "PLZ": "63654",
+        "ORT": "Büdingen",
+        "E-Mail": "aW5mb0BzdGFkdC1idWVkaW5nZW4uZGU="
     },
     {
         "PLZ": "47051",
@@ -18170,6 +19745,16 @@
         "E-Mail": "aW5mb0BzdGFkdC1ncmV2ZW4uZGU="
     },
     {
+        "PLZ": "34281",
+        "ORT": "Gudensberg",
+        "E-Mail": "aW5mb0BzdGFkdC1ndWRlbnNiZXJnLmRl"
+    },
+    {
+        "PLZ": "34305",
+        "ORT": "Gudensberg",
+        "E-Mail": "aW5mb0BzdGFkdC1ndWRlbnNiZXJnLmRl"
+    },
+    {
         "PLZ": "95233",
         "ORT": "Helmbrechts",
         "E-Mail": "aW5mb0BzdGFkdC1oZWxtYnJlY2h0cy5kZQ=="
@@ -18178,6 +19763,16 @@
         "PLZ": "79336",
         "ORT": "Herbolzheim",
         "E-Mail": "aW5mb0BzdGFkdC1oZXJib2x6aGVpbS5kZQ=="
+    },
+    {
+        "PLZ": "36358",
+        "ORT": "Herbstein",
+        "E-Mail": "aW5mb0BzdGFkdC1oZXJic3RlaW4uZGU="
+    },
+    {
+        "PLZ": "34369",
+        "ORT": "Hofgeismar",
+        "E-Mail": "aW5mb0BzdGFkdC1ob2ZnZWlzbWFyLmRl"
     },
     {
         "PLZ": "95691",
@@ -18260,6 +19855,11 @@
         "E-Mail": "aW5mb0BzdGFkdC1tZWxsZS5kZQ=="
     },
     {
+        "PLZ": "63263",
+        "ORT": "Neu-Isenburg",
+        "E-Mail": "aW5mb0BzdGFkdC1uZXUtaXNlbmJ1cmcuZGU="
+    },
+    {
         "PLZ": "93073",
         "ORT": "Neutraubling",
         "E-Mail": "aW5mb0BzdGFkdC1uZXV0cmF1YmxpbmcuZGU="
@@ -18283,6 +19883,11 @@
         "PLZ": "33397",
         "ORT": "Rietberg",
         "E-Mail": "aW5mb0BzdGFkdC1yaWV0YmVyZy5kZQ=="
+    },
+    {
+        "PLZ": "35119",
+        "ORT": "Rosenthal",
+        "E-Mail": "aW5mb0BzdGFkdC1yb3NlbnRoYWwuZGU="
     },
     {
         "PLZ": "91154",
@@ -18340,6 +19945,11 @@
         "E-Mail": "aW5mb0BzdGFkdC1zdGVpbi5kZQ=="
     },
     {
+        "PLZ": "61449",
+        "ORT": "Steinbach (Taunus)",
+        "E-Mail": "aW5mb0BzdGFkdC1zdGVpbmJhY2guZGU="
+    },
+    {
         "PLZ": "48565",
         "ORT": "Steinfurt",
         "E-Mail": "aW5mb0BzdGFkdC1zdGVpbmZ1cnQuZGU="
@@ -18370,6 +19980,11 @@
         "E-Mail": "aW5mb0BzdGFkdC11bm5hLmRl"
     },
     {
+        "PLZ": "63607",
+        "ORT": "Wächtersbach",
+        "E-Mail": "aW5mb0BzdGFkdC13YWVjaHRlcnNiYWNoLmRl"
+    },
+    {
         "PLZ": "33824",
         "ORT": "Werther (Westf.)",
         "E-Mail": "aW5mb0BzdGFkdC13ZXJ0aGVyLmRl"
@@ -18398,6 +20013,11 @@
         "PLZ": "79669",
         "ORT": "Zell im Wiesental",
         "E-Mail": "aW5mb0BzdGFkdC16ZWxsLmRl"
+    },
+    {
+        "PLZ": "34289",
+        "ORT": "Zierenberg",
+        "E-Mail": "aW5mb0BzdGFkdC16aWVyZW5iZXJnLmRl"
     },
     {
         "PLZ": "26603",
@@ -18468,6 +20088,46 @@
         "PLZ": "91207",
         "ORT": "Lauf a.d.Pegnitz",
         "E-Mail": "aW5mb0BzdGFkdC5sYXVmLmRl"
+    },
+    {
+        "PLZ": "65549",
+        "ORT": "Limburg a. d. Lahn",
+        "E-Mail": "aW5mb0BzdGFkdC5saW1idXJnLmRl"
+    },
+    {
+        "PLZ": "65550",
+        "ORT": "Limburg a. d. Lahn",
+        "E-Mail": "aW5mb0BzdGFkdC5saW1idXJnLmRl"
+    },
+    {
+        "PLZ": "65551",
+        "ORT": "Limburg a. d. Lahn",
+        "E-Mail": "aW5mb0BzdGFkdC5saW1idXJnLmRl"
+    },
+    {
+        "PLZ": "65552",
+        "ORT": "Limburg a. d. Lahn",
+        "E-Mail": "aW5mb0BzdGFkdC5saW1idXJnLmRl"
+    },
+    {
+        "PLZ": "65553",
+        "ORT": "Limburg a. d. Lahn",
+        "E-Mail": "aW5mb0BzdGFkdC5saW1idXJnLmRl"
+    },
+    {
+        "PLZ": "65554",
+        "ORT": "Limburg a. d. Lahn",
+        "E-Mail": "aW5mb0BzdGFkdC5saW1idXJnLmRl"
+    },
+    {
+        "PLZ": "65555",
+        "ORT": "Limburg a. d. Lahn",
+        "E-Mail": "aW5mb0BzdGFkdC5saW1idXJnLmRl"
+    },
+    {
+        "PLZ": "65556",
+        "ORT": "Limburg a. d. Lahn",
+        "E-Mail": "aW5mb0BzdGFkdC5saW1idXJnLmRl"
     },
     {
         "PLZ": "38226",
@@ -18548,6 +20208,11 @@
         "PLZ": "79219",
         "ORT": "Staufen im Breisgau",
         "E-Mail": "aW5mb0BzdGF1ZmVuLmRl"
+    },
+    {
+        "PLZ": "35460",
+        "ORT": "Staufenberg",
+        "E-Mail": "aW5mb0BzdGF1ZmVuYmVyZy5kZQ=="
     },
     {
         "PLZ": "17153",
@@ -18775,6 +20440,11 @@
         "E-Mail": "aW5mb0BzdWx6YmFjaC1sYXVmZW4uZGU="
     },
     {
+        "PLZ": "65843",
+        "ORT": "Sulzbach (Taunus)",
+        "E-Mail": "aW5mb0BzdWx6YmFjaC10YXVudXMuZGU="
+    },
+    {
         "PLZ": "87477",
         "ORT": "Sulzberg",
         "E-Mail": "aW5mb0BzdWx6YmVyZy5kZQ=="
@@ -18825,6 +20495,11 @@
         "E-Mail": "aW5mb0B0YW1tLm9yZw=="
     },
     {
+        "PLZ": "36142",
+        "ORT": "Tann (Rhön)",
+        "E-Mail": "aW5mb0B0YW5uLXJob2VuLmRl"
+    },
+    {
         "PLZ": "27412",
         "ORT": "Breddorf",
         "E-Mail": "aW5mb0B0YXJtc3RlZHQuZGU="
@@ -18873,6 +20548,11 @@
         "PLZ": "97941",
         "ORT": "Tauberbischofsheim",
         "E-Mail": "aW5mb0B0YXViZXJiaXNjaG9mc2hlaW0uZGU="
+    },
+    {
+        "PLZ": "65232",
+        "ORT": "Taunusstein",
+        "E-Mail": "aW5mb0B0YXVudXNzdGVpbi5kZQ=="
     },
     {
         "PLZ": "49545",
@@ -19240,6 +20920,11 @@
         "E-Mail": "aW5mb0B1bG0uZGU="
     },
     {
+        "PLZ": "35327",
+        "ORT": "Ulrichstein",
+        "E-Mail": "aW5mb0B1bHJpY2hzdGVpbi5kZQ=="
+    },
+    {
         "PLZ": "88444",
         "ORT": "Ummendorf",
         "E-Mail": "aW5mb0B1bW1lbmRvcmYuZGU="
@@ -19363,6 +21048,11 @@
         "PLZ": "46342",
         "ORT": "Velen",
         "E-Mail": "aW5mb0B2ZWxlbi5kZQ=="
+    },
+    {
+        "PLZ": "34246",
+        "ORT": "Vellmar",
+        "E-Mail": "aW5mb0B2ZWxsbWFyLmRl"
     },
     {
         "PLZ": "86447",
@@ -19985,6 +21675,11 @@
         "E-Mail": "aW5mb0B2bG90aG8uZGU="
     },
     {
+        "PLZ": "34516",
+        "ORT": "Vöhl",
+        "E-Mail": "aW5mb0B2b2VobC5kZQ=="
+    },
+    {
         "PLZ": "78147",
         "ORT": "Vöhrenbach",
         "E-Mail": "aW5mb0B2b2VocmVuYmFjaC5kZQ=="
@@ -20095,6 +21790,11 @@
         "E-Mail": "aW5mb0B3YWxrZW5yaWVkLmRl"
     },
     {
+        "PLZ": "65396",
+        "ORT": "Walluf",
+        "E-Mail": "aW5mb0B3YWxsdWYuZGU="
+    },
+    {
         "PLZ": "96194",
         "ORT": "Walsdorf",
         "E-Mail": "aW5mb0B3YWxzZG9yZi5kZQ=="
@@ -20165,6 +21865,11 @@
         "E-Mail": "aW5mb0B3ZWhpbmdlbi5kZQ=="
     },
     {
+        "PLZ": "61273",
+        "ORT": "Wehrheim",
+        "E-Mail": "aW5mb0B3ZWhyaGVpbS5kZQ=="
+    },
+    {
         "PLZ": "86706",
         "ORT": "Weichering",
         "E-Mail": "aW5mb0B3ZWljaGVyaW5nLmRl"
@@ -20223,6 +21928,11 @@
         "PLZ": "91744",
         "ORT": "Weiltingen",
         "E-Mail": "aW5mb0B3ZWlsdGluZ2VuLmRl"
+    },
+    {
+        "PLZ": "35096",
+        "ORT": "Weimar (Lahn)",
+        "E-Mail": "aW5mb0B3ZWltYXItbGFobi5pbmZv"
     },
     {
         "PLZ": "88250",
@@ -20330,6 +22040,11 @@
         "E-Mail": "aW5mb0B3ZXN0aGF1c2VuLmRl"
     },
     {
+        "PLZ": "35083",
+        "ORT": "Wetter (Hessen)",
+        "E-Mail": "aW5mb0B3ZXR0ZXItaGVzc2VuLmRl"
+    },
+    {
         "PLZ": "48493",
         "ORT": "Wettringen",
         "E-Mail": "aW5mb0B3ZXR0cmluZ2VuLmRl"
@@ -20410,6 +22125,11 @@
         "E-Mail": "aW5mb0B3aWxsZWJhZGVzc2VuLmRl"
     },
     {
+        "PLZ": "34628",
+        "ORT": "Willingshausen",
+        "E-Mail": "aW5mb0B3aWxsaW5nc2hhdXNlbi5kZQ=="
+    },
+    {
         "PLZ": "57234",
         "ORT": "Wilnsdorf",
         "E-Mail": "aW5mb0B3aWxuc2RvcmYuZGU="
@@ -20435,9 +22155,19 @@
         "E-Mail": "aW5mb0B3aXR0aWdoYXVzZW4uZGU="
     },
     {
+        "PLZ": "61206",
+        "ORT": "Wöllstadt",
+        "E-Mail": "aW5mb0B3b2VsbHN0YWR0LmRl"
+    },
+    {
         "PLZ": "82237",
         "ORT": "Wörthsee",
         "E-Mail": "aW5mb0B3b2VydGhzZWUuZGU="
+    },
+    {
+        "PLZ": "35288",
+        "ORT": "Wohratal",
+        "E-Mail": "aW5mb0B3b2hyYXRhbC5kZQ=="
     },
     {
         "PLZ": "82515",
@@ -20618,6 +22348,11 @@
         "PLZ": "76694",
         "ORT": "Forst",
         "E-Mail": "a29udGFrdEBmb3JzdC1iYWRlbi5kZQ=="
+    },
+    {
+        "PLZ": "36154",
+        "ORT": "Hosenfeld",
+        "E-Mail": "a29udGFrdEBnZW1laW5kZS1ob3NlbmZlbGQuZGU="
     },
     {
         "PLZ": "71543",
@@ -20820,6 +22555,11 @@
         "E-Mail": "a29udGFrdEBzaWVkZW5idXJnLW9ubGluZS5kZQ=="
     },
     {
+        "PLZ": "64589",
+        "ORT": "Stockstadt am Rhein",
+        "E-Mail": "a29udGFrdEBzdG9ja3N0YWR0LmRl"
+    },
+    {
         "PLZ": "33415",
         "ORT": "Verl",
         "E-Mail": "a29udGFrdEB2ZXJsLmRl"
@@ -20860,6 +22600,16 @@
         "E-Mail": "a29udGFrdEB2Zy1zY2hvZWxsa3JpcHBlbi5kZQ=="
     },
     {
+        "PLZ": "64673",
+        "ORT": "Zwingenberg",
+        "E-Mail": "a29udGFrdEB6d2luZ2VuYmVyZy5kZQ=="
+    },
+    {
+        "PLZ": "64521",
+        "ORT": "Groß-Gerau",
+        "E-Mail": "a3JlaXNzdGFkdEBncm9zcy1nZXJhdS5kZQ=="
+    },
+    {
         "PLZ": "86862",
         "ORT": "Lamerdingen",
         "E-Mail": "bGFtZXJkaW5nZW5AYnVjaGxvZS5kZQ=="
@@ -20875,9 +22625,79 @@
         "E-Mail": "bGF1Y2hyaW5nZW5AbGF1Y2hyaW5nZW4uZGU="
     },
     {
+        "PLZ": "63694",
+        "ORT": "Limeshain",
+        "E-Mail": "bGltZXNoYWluQGxpbWVzaGFpbi5kZQ=="
+    },
+    {
         "PLZ": "47918",
         "ORT": "Tönisvorst",
         "E-Mail": "THV0ei5PZWxsZXJzQHRvZW5pc3ZvcnN0LmRl"
+    },
+    {
+        "PLZ": "65520",
+        "ORT": "Bad Camberg",
+        "E-Mail": "bWFnaXN0cmF0QGJhZC1jYW1iZXJnLmRl"
+    },
+    {
+        "PLZ": "35075",
+        "ORT": "Gladenbach",
+        "E-Mail": "bWFnaXN0cmF0QGdsYWRlbmJhY2guZGU="
+    },
+    {
+        "PLZ": "35305",
+        "ORT": "Grünberg",
+        "E-Mail": "bWFnaXN0cmF0QGdydWVuYmVyZy5kZQ=="
+    },
+    {
+        "PLZ": "35274",
+        "ORT": "Kirchhain",
+        "E-Mail": "bWFnaXN0cmF0QGtpcmNoaGFpbi5kZQ=="
+    },
+    {
+        "PLZ": "61462",
+        "ORT": "Königstein im Taunus",
+        "E-Mail": "bWFnaXN0cmF0QGtvZW5pZ3N0ZWluLmRl"
+    },
+    {
+        "PLZ": "64372",
+        "ORT": "Ober-Ramstadt",
+        "E-Mail": "bWFnaXN0cmF0QG9iZXItcmFtc3RhZHQuZGU="
+    },
+    {
+        "PLZ": "35282",
+        "ORT": "Rauschenberg",
+        "E-Mail": "bWFnaXN0cmF0QHJhdXNjaGVuYmVyZy5kZQ=="
+    },
+    {
+        "PLZ": "36199",
+        "ORT": "Rotenburg a. d. Fulda",
+        "E-Mail": "bWFnaXN0cmF0QHJvdGVuYnVyZy5kZQ=="
+    },
+    {
+        "PLZ": "34225",
+        "ORT": "Baunatal",
+        "E-Mail": "bWFnaXN0cmF0QHN0YWR0LWJhdW5hdGFsLmRl"
+    },
+    {
+        "PLZ": "35510",
+        "ORT": "Butzbach",
+        "E-Mail": "bWFnaXN0cmF0QHN0YWR0LWJ1dHpiYWNoLmRl"
+    },
+    {
+        "PLZ": "35279",
+        "ORT": "Neustadt (Hessen)",
+        "E-Mail": "bWFnaXN0cmF0QHN0YWR0LW5ldXN0YWR0LWhlc3Nlbi5kZQ=="
+    },
+    {
+        "PLZ": "35260",
+        "ORT": "Stadtallendorf",
+        "E-Mail": "bWFnaXN0cmF0QHN0YWR0YWxsZW5kb3JmLmRl"
+    },
+    {
+        "PLZ": "36396",
+        "ORT": "Steinau an der Straße",
+        "E-Mail": "bWFnaXN0cmF0QHN0ZWluYXUuZGU="
     },
     {
         "PLZ": "49214",
@@ -20950,6 +22770,11 @@
         "E-Mail": "bWFpbEBmbGFkdW5nZW4uZGU="
     },
     {
+        "PLZ": "35753",
+        "ORT": "Greifenstein",
+        "E-Mail": "bWFpbEBncmVpZmVuc3RlaW4uZGU="
+    },
+    {
         "PLZ": "97647",
         "ORT": "Hausen",
         "E-Mail": "bWFpbEBoYXVzZW4tcmhvZW4uZGU="
@@ -20963,6 +22788,11 @@
         "PLZ": "97618",
         "ORT": "Hohenroth",
         "E-Mail": "bWFpbEBob2hlbnJvdGguZGU="
+    },
+    {
+        "PLZ": "34327",
+        "ORT": "Körle",
+        "E-Mail": "bWFpbEBrb2VybGUuZGU="
     },
     {
         "PLZ": "52441",
@@ -21245,6 +23075,16 @@
         "E-Mail": "bWFya3RAd2Vpc2VuZG9yZi5kZQ=="
     },
     {
+        "PLZ": "36132",
+        "ORT": "Eiterfeld",
+        "E-Mail": "bWFya3RnZW1laW5kZUBlaXRlcmZlbGQuZGU="
+    },
+    {
+        "PLZ": "36166",
+        "ORT": "Haunetal",
+        "E-Mail": "bWFya3RnZW1laW5kZUBoYXVuZXRhbC5kZQ=="
+    },
+    {
         "PLZ": "83093",
         "ORT": "Bad Endorf",
         "E-Mail": "bWFya3R2ZXJ3YWx0dW5nQGJhZC1lbmRvcmYuZGU="
@@ -21258,6 +23098,11 @@
         "PLZ": "63785",
         "ORT": "Obernburg a.Main",
         "E-Mail": "bWVsZGVhbXRAb2Jlcm5idXJnLmRl"
+    },
+    {
+        "PLZ": "34399",
+        "ORT": "Wesertal",
+        "E-Mail": "bWVsZGVhbXRAb2Jlcndlc2VyLmRl"
     },
     {
         "PLZ": "86866",
@@ -21640,6 +23485,11 @@
         "E-Mail": "cG9zdEBkaWVsaGVpbS5kZQ=="
     },
     {
+        "PLZ": "64683",
+        "ORT": "Einhausen",
+        "E-Mail": "cG9zdEBlaW5oYXVzZW4uZGU="
+    },
+    {
         "PLZ": "59889",
         "ORT": "Eslohe (Sauerland)",
         "E-Mail": "cG9zdEBlc2xvaGUuZGU="
@@ -21668,6 +23518,11 @@
         "PLZ": "79730",
         "ORT": "Murg",
         "E-Mail": "cG9zdEBnZW1laW5kZS1tdXJnLmRl"
+    },
+    {
+        "PLZ": "34508",
+        "ORT": "Willingen (Upland)",
+        "E-Mail": "cG9zdEBnZW1laW5kZS13aWxsaW5nZW4uZGU="
     },
     {
         "PLZ": "21435",
@@ -21733,6 +23588,11 @@
         "PLZ": "32805",
         "ORT": "Horn-Bad Meinberg",
         "E-Mail": "cG9zdEBob3JuLWJhZG1laW5iZXJnLmRl"
+    },
+    {
+        "PLZ": "34376",
+        "ORT": "Immenhausen",
+        "E-Mail": "cG9zdEBpbW1lbmhhdXNlbi5kZQ=="
     },
     {
         "PLZ": "72514",
@@ -22178,6 +24038,11 @@
         "PLZ": "97225",
         "ORT": "Zellingen",
         "E-Mail": "cG9zdEB2Z2VtLXplbGxpbmdlbi5kZQ=="
+    },
+    {
+        "PLZ": "37281",
+        "ORT": "Wanfried",
+        "E-Mail": "cG9zdEB3YW5mcmllZC5kZQ=="
     },
     {
         "PLZ": "59581",
@@ -26115,6 +27980,11 @@
         "E-Mail": "cmF0aGF1cy1qZXN0ZWJ1cmdAbGtoYXJidXJnLmRl"
     },
     {
+        "PLZ": "68623",
+        "ORT": "Lampertheim",
+        "E-Mail": "cmF0aGF1cy1zZXJ2aWNlQGxhbXBlcnRoZWltLmRl"
+    },
+    {
         "PLZ": "88477",
         "ORT": "Schwendi",
         "E-Mail": "cmF0aGF1cy5pbmZvQHNjaHdlbmRpLmRl"
@@ -26250,6 +28120,11 @@
         "E-Mail": "cmF0aGF1c0BiYWRsYXV0ZXJiZXJnLmRl"
     },
     {
+        "PLZ": "36364",
+        "ORT": "Bad Salzschlirf",
+        "E-Mail": "cmF0aGF1c0BiYWRzYWx6c2NobGlyZi5kZQ=="
+    },
+    {
         "PLZ": "95138",
         "ORT": "Bad Steben",
         "E-Mail": "cmF0aGF1c0BiYWRzdGViZW4uZGU="
@@ -26358,6 +28233,11 @@
         "PLZ": "29553",
         "ORT": "Bienenbüttel",
         "E-Mail": "cmF0aGF1c0BiaWVuZW5idWV0dGVsLmRl"
+    },
+    {
+        "PLZ": "35649",
+        "ORT": "Bischoffen",
+        "E-Mail": "cmF0aGF1c0BiaXNjaG9mZmVuLmRl"
     },
     {
         "PLZ": "29646",
@@ -26660,6 +28540,16 @@
         "E-Mail": "cmF0aGF1c0BlcHBpbmdlbi5kZQ=="
     },
     {
+        "PLZ": "64711",
+        "ORT": "Erbach",
+        "E-Mail": "cmF0aGF1c0BlcmJhY2guZGU="
+    },
+    {
+        "PLZ": "64743",
+        "ORT": "Erbach",
+        "E-Mail": "cmF0aGF1c0BlcmJhY2guZGU="
+    },
+    {
         "PLZ": "71729",
         "ORT": "Erdmannhausen",
         "E-Mail": "cmF0aGF1c0BlcmRtYW5uaGF1c2VuLmRl"
@@ -26668,6 +28558,16 @@
         "PLZ": "87746",
         "ORT": "Erkheim",
         "E-Mail": "cmF0aGF1c0BlcmtoZWltLmRl"
+    },
+    {
+        "PLZ": "63526",
+        "ORT": "Erlensee",
+        "E-Mail": "cmF0aGF1c0BlcmxlbnNlZS5kZQ=="
+    },
+    {
+        "PLZ": "63543",
+        "ORT": "Erlensee",
+        "E-Mail": "cmF0aGF1c0BlcmxlbnNlZS5kZQ=="
     },
     {
         "PLZ": "73569",
@@ -26775,6 +28675,11 @@
         "E-Mail": "cmF0aGF1c0BmbGVpc2Nod2FuZ2VuLmRl"
     },
     {
+        "PLZ": "65439",
+        "ORT": "Flörsheim am Main",
+        "E-Mail": "cmF0aGF1c0BmbG9lcnNoZWltLW1haW4uZGU="
+    },
+    {
         "PLZ": "79362",
         "ORT": "Forchheim",
         "E-Mail": "cmF0aGF1c0Bmb3JjaGhlaW0tYW0ta2Fpc2Vyc3R1aGwuZGU="
@@ -26798,6 +28703,11 @@
         "PLZ": "26169",
         "ORT": "Friesoythe",
         "E-Mail": "cmF0aGF1c0Bmcmllc295dGhlLmRl"
+    },
+    {
+        "PLZ": "34277",
+        "ORT": "Fuldabrück",
+        "E-Mail": "cmF0aGF1c0BmdWxkYWJydWVjay5kZQ=="
     },
     {
         "PLZ": "86456",
@@ -26885,6 +28795,11 @@
         "E-Mail": "cmF0aGF1c0BnZW1laW5kZS1lc2NoZW5iYWNoLmRl"
     },
     {
+        "PLZ": "63695",
+        "ORT": "Glauburg",
+        "E-Mail": "cmF0aGF1c0BnZW1laW5kZS1nbGF1YnVyZy5kZQ=="
+    },
+    {
         "PLZ": "94501",
         "ORT": "Haarbach",
         "E-Mail": "cmF0aGF1c0BnZW1laW5kZS1oYWFyYmFjaC5kZQ=="
@@ -26960,6 +28875,11 @@
         "E-Mail": "cmF0aGF1c0BnZW1laW5kZS1zdGV0dGVuLmRl"
     },
     {
+        "PLZ": "69483",
+        "ORT": "Wald-Michelbach",
+        "E-Mail": "cmF0aGF1c0BnZW1laW5kZS13YWxkLW1pY2hlbGJhY2guZGU="
+    },
+    {
         "PLZ": "88639",
         "ORT": "Wald",
         "E-Mail": "cmF0aGF1c0BnZW1laW5kZS13YWxkLmV1"
@@ -27020,6 +28940,11 @@
         "E-Mail": "cmF0aGF1c0Bnb25kZWxzaGVpbS5kZQ=="
     },
     {
+        "PLZ": "69517",
+        "ORT": "Gorxheimertal",
+        "E-Mail": "cmF0aGF1c0Bnb3J4aGVpbWVydGFsLmRl"
+    },
+    {
         "PLZ": "82166",
         "ORT": "Gräfelfing",
         "E-Mail": "cmF0aGF1c0BncmFlZmVsZmluZy5iYXllcm4uZGU="
@@ -27040,6 +28965,11 @@
         "E-Mail": "cmF0aGF1c0BncmV1c3NlbmhlaW0uZGU="
     },
     {
+        "PLZ": "36137",
+        "ORT": "Großenlüder",
+        "E-Mail": "cmF0aGF1c0Bncm9zc2VubHVlZGVyLmRl"
+    },
+    {
         "PLZ": "71560",
         "ORT": "Großerlach",
         "E-Mail": "cmF0aGF1c0Bncm9zc2VybGFjaC5kZQ=="
@@ -27048,6 +28978,11 @@
         "PLZ": "71577",
         "ORT": "Großerlach",
         "E-Mail": "cmF0aGF1c0Bncm9zc2VybGFjaC5kZQ=="
+    },
+    {
+        "PLZ": "63538",
+        "ORT": "Großkrotzenburg",
+        "E-Mail": "cmF0aGF1c0Bncm9zc2tyb3R6ZW5idXJnLmRl"
     },
     {
         "PLZ": "97950",
@@ -27068,6 +29003,11 @@
         "PLZ": "88709",
         "ORT": "Hagnau am Bodensee",
         "E-Mail": "cmF0aGF1c0BoYWduYXUuZGU="
+    },
+    {
+        "PLZ": "35114",
+        "ORT": "Haina (Kloster)",
+        "E-Mail": "cmF0aGF1c0BoYWluYS5kZQ=="
     },
     {
         "PLZ": "87642",
@@ -27123,6 +29063,11 @@
         "PLZ": "91235",
         "ORT": "Hartenstein",
         "E-Mail": "cmF0aGF1c0BoYXJ0ZW5zdGVpbi1tZnIuZGU="
+    },
+    {
+        "PLZ": "63594",
+        "ORT": "Hasselroth",
+        "E-Mail": "cmF0aGF1c0BoYXNzZWxyb3RoLmRl"
     },
     {
         "PLZ": "73110",
@@ -27200,6 +29145,11 @@
         "E-Mail": "cmF0aGF1c0Bob2V4dGVyLmRl"
     },
     {
+        "PLZ": "65719",
+        "ORT": "Hofheim am Taunus",
+        "E-Mail": "cmF0aGF1c0Bob2ZoZWltLmRl"
+    },
+    {
         "PLZ": "77749",
         "ORT": "Hohberg",
         "E-Mail": "cmF0aGF1c0Bob2hiZXJnLmRl"
@@ -27270,6 +29220,11 @@
         "E-Mail": "cmF0aGF1c0BodWVnZWxzaGVpbS5kZQ=="
     },
     {
+        "PLZ": "65510",
+        "ORT": "Hünstetten",
+        "E-Mail": "cmF0aGF1c0BodWVuc3RldHRlbi1nZW1laW5kZS5kZQ=="
+    },
+    {
         "PLZ": "50354",
         "ORT": "Hürth",
         "E-Mail": "cmF0aGF1c0BodWVydGguZGU="
@@ -27333,6 +29288,11 @@
         "PLZ": "76359",
         "ORT": "Karlsbad",
         "E-Mail": "cmF0aGF1c0BrYXJsc2JhZC5kZQ=="
+    },
+    {
+        "PLZ": "65779",
+        "ORT": "Kelkheim (Taunus)",
+        "E-Mail": "cmF0aGF1c0BrZWxraGVpbS5kZQ=="
     },
     {
         "PLZ": "47906",
@@ -27550,6 +29510,16 @@
         "E-Mail": "cmF0aGF1c0BsaW5kZW5iZXJnLmRl"
     },
     {
+        "PLZ": "64658",
+        "ORT": "Lindenfels",
+        "E-Mail": "cmF0aGF1c0BsaW5kZW5mZWxzLmRl"
+    },
+    {
+        "PLZ": "64678",
+        "ORT": "Lindenfels",
+        "E-Mail": "cmF0aGF1c0BsaW5kZW5mZWxzLmRl"
+    },
+    {
         "PLZ": "74369",
         "ORT": "Löchgau",
         "E-Mail": "cmF0aGF1c0Bsb2VjaGdhdS5kZQ=="
@@ -27563,6 +29533,11 @@
         "PLZ": "49393",
         "ORT": "Lohne (Oldenburg)",
         "E-Mail": "cmF0aGF1c0Bsb2huZS5kZQ=="
+    },
+    {
+        "PLZ": "35457",
+        "ORT": "Lollar",
+        "E-Mail": "cmF0aGF1c0Bsb2xsYXIuaW5mbw=="
     },
     {
         "PLZ": "89173",
@@ -27628,6 +29603,11 @@
         "PLZ": "74535",
         "ORT": "Mainhardt",
         "E-Mail": "cmF0aGF1c0BtYWluaGFyZHQuZGU="
+    },
+    {
+        "PLZ": "63533",
+        "ORT": "Mainhausen",
+        "E-Mail": "cmF0aGF1c0BtYWluaGF1c2VuLmRl"
     },
     {
         "PLZ": "79429",
@@ -27765,6 +29745,11 @@
         "E-Mail": "cmF0aGF1c0Btb2xiZXJnZW4uZGU="
     },
     {
+        "PLZ": "64756",
+        "ORT": "Mossautal",
+        "E-Mail": "cmF0aGF1c0Btb3NzYXV0YWwuZGU="
+    },
+    {
         "PLZ": "69427",
         "ORT": "Mudau",
         "E-Mail": "cmF0aGF1c0BtdWRhdS5kZQ=="
@@ -27773,6 +29758,11 @@
         "PLZ": "78357",
         "ORT": "Mühlingen",
         "E-Mail": "cmF0aGF1c0BtdWVobGluZ2VuLmRl"
+    },
+    {
+        "PLZ": "64839",
+        "ORT": "Münster (Hessen)",
+        "E-Mail": "cmF0aGF1c0BtdWVuc3Rlci1oZXNzZW4uZGU="
     },
     {
         "PLZ": "89597",
@@ -27798,6 +29788,11 @@
         "PLZ": "87484",
         "ORT": "Nesselwang",
         "E-Mail": "cmF0aGF1c0BuZXNzZWx3YW5nLmJheWVybi5kZQ=="
+    },
+    {
+        "PLZ": "63543",
+        "ORT": "Neuberg",
+        "E-Mail": "cmF0aGF1c0BuZXViZXJnLmV1"
     },
     {
         "PLZ": "83115",
@@ -27848,6 +29843,11 @@
         "PLZ": "88149",
         "ORT": "Nonnenhorn",
         "E-Mail": "cmF0aGF1c0Bub25uZW5ob3JuLmV1"
+    },
+    {
+        "PLZ": "61239",
+        "ORT": "Ober-Mörlen",
+        "E-Mail": "cmF0aGF1c0BvYmVyLW1vZXJsZW4uaW5mbw=="
     },
     {
         "PLZ": "83080",
@@ -28260,6 +30260,11 @@
         "E-Mail": "cmF0aGF1c0BzYXRlcmxhbmQuZGU="
     },
     {
+        "PLZ": "64850",
+        "ORT": "Schaafheim",
+        "E-Mail": "cmF0aGF1c0BzY2hhYWZoZWltLmRl"
+    },
+    {
         "PLZ": "79227",
         "ORT": "Schallstadt",
         "E-Mail": "cmF0aGF1c0BzY2hhbGxzdGFkdC5kZQ=="
@@ -28348,6 +30353,16 @@
         "PLZ": "86830",
         "ORT": "Schwabmünchen",
         "E-Mail": "cmF0aGF1c0BzY2h3YWJtdWVuY2hlbi5kZQ=="
+    },
+    {
+        "PLZ": "36304",
+        "ORT": "Schwalmtal",
+        "E-Mail": "cmF0aGF1c0BzY2h3YWxtdGFsLWhlc3Nlbi5kZQ=="
+    },
+    {
+        "PLZ": "36318",
+        "ORT": "Schwalmtal",
+        "E-Mail": "cmF0aGF1c0BzY2h3YWxtdGFsLWhlc3Nlbi5kZQ=="
     },
     {
         "PLZ": "77963",
@@ -28520,6 +30535,11 @@
         "E-Mail": "cmF0aGF1c0Bzb21tZXJoYXVzZW4uZGU="
     },
     {
+        "PLZ": "34286",
+        "ORT": "Spangenberg",
+        "E-Mail": "cmF0aGF1c0BzcGFuZ2VuYmVyZy5kZQ=="
+    },
+    {
         "PLZ": "79274",
         "ORT": "St. Märgen",
         "E-Mail": "cmF0aGF1c0BzdC1tYWVyZ2VuLmRl"
@@ -28543,6 +30563,11 @@
         "PLZ": "45968",
         "ORT": "Gladbeck",
         "E-Mail": "cmF0aGF1c0BzdGFkdC1nbGFkYmVjay5kZQ=="
+    },
+    {
+        "PLZ": "34393",
+        "ORT": "Grebenstein",
+        "E-Mail": "cmF0aGF1c0BzdGFkdC1ncmViZW5zdGVpbi5kZQ=="
     },
     {
         "PLZ": "51643",
@@ -28575,9 +30600,19 @@
         "E-Mail": "cmF0aGF1c0BzdGFkdC1rYW1lbi5kZS1tYWlsLmRl"
     },
     {
+        "PLZ": "35104",
+        "ORT": "Lichtenfels",
+        "E-Mail": "cmF0aGF1c0BzdGFkdC1saWNodGVuZmVscy5kZQ=="
+    },
+    {
         "PLZ": "31812",
         "ORT": "Bad Pyrmont",
         "E-Mail": "cmF0aGF1c0BzdGFkdC1weXJtb250LmRl"
+    },
+    {
+        "PLZ": "61203",
+        "ORT": "Reichelsheim (Wetterau)",
+        "E-Mail": "cmF0aGF1c0BzdGFkdC1yZWljaGVsc2hlaW0uZGU="
     },
     {
         "PLZ": "77871",
@@ -28623,6 +30658,11 @@
         "PLZ": "30966",
         "ORT": "Hemmingen",
         "E-Mail": "cmF0aGF1c0BzdGFkdGhlbW1pbmdlbi5kZQ=="
+    },
+    {
+        "PLZ": "65594",
+        "ORT": "Runkel",
+        "E-Mail": "cmF0aGF1c0BzdGFkdHJ1bmtlbC5kZQ=="
     },
     {
         "PLZ": "95236",
@@ -29005,6 +31045,11 @@
         "E-Mail": "cmF0aGF1c0B3YWxkYnVldHRlbGJydW5uLmRl"
     },
     {
+        "PLZ": "37284",
+        "ORT": "Waldkappel",
+        "E-Mail": "cmF0aGF1c0B3YWxka2FwcGVsLmRl"
+    },
+    {
         "PLZ": "75045",
         "ORT": "Walzbachtal",
         "E-Mail": "cmF0aGF1c0B3YWx6YmFjaHRhbC5kZQ=="
@@ -29023,6 +31068,16 @@
         "PLZ": "86517",
         "ORT": "Wehringen",
         "E-Mail": "cmF0aGF1c0B3ZWhyaW5nZW4uZGU="
+    },
+    {
+        "PLZ": "35789",
+        "ORT": "Weilmünster",
+        "E-Mail": "cmF0aGF1c0B3ZWlsbXVlbnN0ZXIuZGU="
+    },
+    {
+        "PLZ": "61276",
+        "ORT": "Weilrod",
+        "E-Mail": "cmF0aGF1c0B3ZWlscm9kLmRl"
     },
     {
         "PLZ": "69469",
@@ -29093,6 +31148,16 @@
         "PLZ": "72474",
         "ORT": "Winterlingen",
         "E-Mail": "cmF0aGF1c0B3aW50ZXJsaW5nZW4uZGU="
+    },
+    {
+        "PLZ": "61200",
+        "ORT": "Wölfersheim",
+        "E-Mail": "cmF0aGF1c0B3b2VsZmVyc2hlaW0uZGU="
+    },
+    {
+        "PLZ": "61209",
+        "ORT": "Wölfersheim",
+        "E-Mail": "cmF0aGF1c0B3b2VsZmVyc2hlaW0uZGU="
     },
     {
         "PLZ": "87787",
@@ -29985,6 +32050,11 @@
         "E-Mail": "c2VrcmV0YXJpYXRAYXVnZ2VuLmRl"
     },
     {
+        "PLZ": "64689",
+        "ORT": "Grasellenbach",
+        "E-Mail": "c2VrcmV0YXJpYXRAZ2VtZWluZGUtZ3Jhc2VsbGVuYmFjaC5kZQ=="
+    },
+    {
         "PLZ": "89608",
         "ORT": "Griesingen",
         "E-Mail": "c2VrcmV0YXJpYXRAZ3JpZXNpbmdlbi5kZQ=="
@@ -30025,6 +32095,16 @@
         "E-Mail": "c2VrcmV0YXJpYXRAdG9kdG1vb3MubmV0"
     },
     {
+        "PLZ": "34576",
+        "ORT": "Wabern",
+        "E-Mail": "c2VrcmV0YXJpYXRAd2FiZXJuLmRl"
+    },
+    {
+        "PLZ": "34590",
+        "ORT": "Wabern",
+        "E-Mail": "c2VrcmV0YXJpYXRAd2FiZXJuLmRl"
+    },
+    {
         "PLZ": "91634",
         "ORT": "Wilburgstetten",
         "E-Mail": "c2VrcmV0YXJpYXRAd2lsYnVyZ3N0ZXR0ZW4uZGU="
@@ -30033,6 +32113,11 @@
         "PLZ": "89198",
         "ORT": "Westerstetten",
         "E-Mail": "c2VuZmxlQHdlc3RlcnN0ZXR0ZW4uZGU="
+    },
+    {
+        "PLZ": "68647",
+        "ORT": "Biblis",
+        "E-Mail": "c2VydmljZUBiaWJsaXMuZXU="
     },
     {
         "PLZ": "69251",
@@ -30360,6 +32445,11 @@
         "E-Mail": "c3RhZHRAYmFkLW11ZW5kZXIuZGU="
     },
     {
+        "PLZ": "63619",
+        "ORT": "Bad Orb",
+        "E-Mail": "c3RhZHRAYmFkLW9yYi5kZQ=="
+    },
+    {
         "PLZ": "32105",
         "ORT": "Bad Salzuflen",
         "E-Mail": "c3RhZHRAYmFkLXNhbHp1Zmxlbi5kZQ=="
@@ -30373,6 +32463,16 @@
         "PLZ": "32108",
         "ORT": "Bad Salzuflen",
         "E-Mail": "c3RhZHRAYmFkLXNhbHp1Zmxlbi5kZQ=="
+    },
+    {
+        "PLZ": "65307",
+        "ORT": "Bad Schwalbach",
+        "E-Mail": "c3RhZHRAYmFkLXNjaHdhbGJhY2guZGU="
+    },
+    {
+        "PLZ": "61118",
+        "ORT": "Bad Vilbel",
+        "E-Mail": "c3RhZHRAYmFkLXZpbGJlbC5kZQ=="
     },
     {
         "PLZ": "33181",
@@ -30545,6 +32645,51 @@
         "E-Mail": "U3RhZHRAZGVsbWVuaG9yc3QuZGU="
     },
     {
+        "PLZ": "63128",
+        "ORT": "Dietzenbach",
+        "E-Mail": "c3RhZHRAZGlldHplbmJhY2guZGU="
+    },
+    {
+        "PLZ": "35683",
+        "ORT": "Dillenburg",
+        "E-Mail": "c3RhZHRAZGlsbGVuYnVyZy5kZQ=="
+    },
+    {
+        "PLZ": "35684",
+        "ORT": "Dillenburg",
+        "E-Mail": "c3RhZHRAZGlsbGVuYnVyZy5kZQ=="
+    },
+    {
+        "PLZ": "35685",
+        "ORT": "Dillenburg",
+        "E-Mail": "c3RhZHRAZGlsbGVuYnVyZy5kZQ=="
+    },
+    {
+        "PLZ": "35686",
+        "ORT": "Dillenburg",
+        "E-Mail": "c3RhZHRAZGlsbGVuYnVyZy5kZQ=="
+    },
+    {
+        "PLZ": "35687",
+        "ORT": "Dillenburg",
+        "E-Mail": "c3RhZHRAZGlsbGVuYnVyZy5kZQ=="
+    },
+    {
+        "PLZ": "35688",
+        "ORT": "Dillenburg",
+        "E-Mail": "c3RhZHRAZGlsbGVuYnVyZy5kZQ=="
+    },
+    {
+        "PLZ": "35689",
+        "ORT": "Dillenburg",
+        "E-Mail": "c3RhZHRAZGlsbGVuYnVyZy5kZQ=="
+    },
+    {
+        "PLZ": "35690",
+        "ORT": "Dillenburg",
+        "E-Mail": "c3RhZHRAZGlsbGVuYnVyZy5kZQ=="
+    },
+    {
         "PLZ": "84130",
         "ORT": "Dingolfing",
         "E-Mail": "c3RhZHRAZGluZ29sZmluZy5kZQ=="
@@ -30568,6 +32713,11 @@
         "PLZ": "73072",
         "ORT": "Donzdorf",
         "E-Mail": "c3RhZHRAZG9uemRvcmYuZGU="
+    },
+    {
+        "PLZ": "63303",
+        "ORT": "Dreieich",
+        "E-Mail": "c3RhZHRAZHJlaWVpY2guZGU="
     },
     {
         "PLZ": "48317",
@@ -30710,6 +32860,11 @@
         "E-Mail": "c3RhZHRAZm9yY2h0ZW5iZXJnLmRl"
     },
     {
+        "PLZ": "61169",
+        "ORT": "Friedberg (Hessen)",
+        "E-Mail": "c3RhZHRAZnJpZWRiZXJnLWhlc3Nlbi5kZQ=="
+    },
+    {
         "PLZ": "17099",
         "ORT": "Datzetal",
         "E-Mail": "c3RhZHRAZnJpZWRsYW5kLW1lY2tsZW5idXJnLmRl"
@@ -30723,6 +32878,11 @@
         "PLZ": "17099",
         "ORT": "Galenbeck",
         "E-Mail": "c3RhZHRAZnJpZWRsYW5kLW1lY2tsZW5idXJnLmRl"
+    },
+    {
+        "PLZ": "34560",
+        "ORT": "Fritzlar",
+        "E-Mail": "c3RhZHRAZnJpdHpsYXIuZGU="
     },
     {
         "PLZ": "58730",
@@ -30900,6 +33060,11 @@
         "E-Mail": "c3RhZHRAaGFzbGFjaC5kZQ=="
     },
     {
+        "PLZ": "65795",
+        "ORT": "Hattersheim am Main",
+        "E-Mail": "c3RhZHRAaGF0dGVyc2hlaW0uZGU="
+    },
+    {
         "PLZ": "69115",
         "ORT": "Heidelberg",
         "E-Mail": "c3RhZHRAaGVpZGVsYmVyZy5kZQ=="
@@ -30970,6 +33135,11 @@
         "E-Mail": "c3RhZHRAaGVtbW9vci5kZQ=="
     },
     {
+        "PLZ": "36266",
+        "ORT": "Heringen (Werra)",
+        "E-Mail": "c3RhZHRAaGVyaW5nZW4uZGU="
+    },
+    {
         "PLZ": "71083",
         "ORT": "Herrenberg",
         "E-Mail": "c3RhZHRAaGVycmVuYmVyZy5kZQ=="
@@ -31020,9 +33190,19 @@
         "E-Mail": "U3RhZHRAaG9sem1pbmRlbi5kZQ=="
     },
     {
+        "PLZ": "35315",
+        "ORT": "Homberg (Ohm)",
+        "E-Mail": "c3RhZHRAaG9tYmVyZy5kZQ=="
+    },
+    {
         "PLZ": "48612",
         "ORT": "Horstmar der Burgmannshöfe",
         "E-Mail": "c3RhZHRAaG9yc3RtYXIuZGU="
+    },
+    {
+        "PLZ": "36088",
+        "ORT": "Hünfeld",
+        "E-Mail": "c3RhZHRAaHVlbmZlbGQuZGU="
     },
     {
         "PLZ": "46419",
@@ -31135,6 +33315,11 @@
         "E-Mail": "c3RhZHRAa3JhdXRoZWltLmRl"
     },
     {
+        "PLZ": "61476",
+        "ORT": "Kronberg im Taunus",
+        "E-Mail": "c3RhZHRAa3JvbmJlcmcuZGU="
+    },
+    {
         "PLZ": "76456",
         "ORT": "Kuppenheim",
         "E-Mail": "c3RhZHRAa3VwcGVuaGVpbS5kZQ=="
@@ -31158,6 +33343,11 @@
         "PLZ": "69181",
         "ORT": "Leimen",
         "E-Mail": "c3RhZHRAbGVpbWVuLmRl"
+    },
+    {
+        "PLZ": "35638",
+        "ORT": "Leun",
+        "E-Mail": "c3RhZHRAbGV1bi5kZQ=="
     },
     {
         "PLZ": "91578",
@@ -31340,6 +33530,11 @@
         "E-Mail": "c3RhZHRAb2V0dGluZ2VuLmRl"
     },
     {
+        "PLZ": "63683",
+        "ORT": "Ortenberg",
+        "E-Mail": "c3RhZHRAb3J0ZW5iZXJnLm5ldA=="
+    },
+    {
         "PLZ": "73760",
         "ORT": "Ostfildern",
         "E-Mail": "c3RhZHRAb3N0ZmlsZGVybi5kZQ=="
@@ -31440,6 +33635,11 @@
         "E-Mail": "c3RhZHRAcmlibml0ei1kYW1nYXJ0ZW4uZGU="
     },
     {
+        "PLZ": "63110",
+        "ORT": "Rodgau",
+        "E-Mail": "c3RhZHRAcm9kZ2F1LmRl"
+    },
+    {
         "PLZ": "27356",
         "ORT": "Rotenburg (Wümme)",
         "E-Mail": "c3RhZHRAcm90ZW5idXJnLXd1ZW1tZS5kZQ=="
@@ -31513,6 +33713,11 @@
         "PLZ": "38723",
         "ORT": "Seesen",
         "E-Mail": "c3RhZHRAc2Vlc2VuLmRl"
+    },
+    {
+        "PLZ": "63500",
+        "ORT": "Seligenstadt",
+        "E-Mail": "c3RhZHRAc2VsaWdlbnN0YWR0LmRl"
     },
     {
         "PLZ": "71063",
@@ -31605,6 +33810,11 @@
         "E-Mail": "c3RhZHRAdGl0aXNlZS5kZQ=="
     },
     {
+        "PLZ": "34388",
+        "ORT": "Trendelburg",
+        "E-Mail": "c3RhZHRAdHJlbmRlbGJ1cmcuZGU="
+    },
+    {
         "PLZ": "78647",
         "ORT": "Trossingen",
         "E-Mail": "c3RhZHRAdHJvc3Npbmdlbi5kZQ=="
@@ -31633,6 +33843,11 @@
         "PLZ": "85716",
         "ORT": "Unterschleißheim",
         "E-Mail": "c3RhZHRAdXNoLmJheWVybi5kZQ=="
+    },
+    {
+        "PLZ": "61250",
+        "ORT": "Usingen",
+        "E-Mail": "c3RhZHRAdXNpbmdlbi5kZQ=="
     },
     {
         "PLZ": "37170",
@@ -31725,6 +33940,11 @@
         "E-Mail": "c3RhZHRAdmlzc2VsaG9ldmVkZS5kZQ=="
     },
     {
+        "PLZ": "34471",
+        "ORT": "Volkmarsen",
+        "E-Mail": "c3RhZHRAdm9sa21hcnNlbi5kZQ=="
+    },
+    {
         "PLZ": "74915",
         "ORT": "Waibstadt",
         "E-Mail": "c3RhZHRAd2FpYnN0YWR0LmRl"
@@ -31813,6 +34033,11 @@
         "PLZ": "91781",
         "ORT": "Weißenburg i.Bay.",
         "E-Mail": "c3RhZHRAd2Vpc3NlbmJ1cmcuZGU="
+    },
+    {
+        "PLZ": "64331",
+        "ORT": "Weiterstadt",
+        "E-Mail": "c3RhZHRAd2VpdGVyc3RhZHQuZGU="
     },
     {
         "PLZ": "73553",
@@ -32035,9 +34260,24 @@
         "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQGFsYnN0YWR0LmRl"
     },
     {
+        "PLZ": "35287",
+        "ORT": "Amöneburg",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQGFtb2VuZWJ1cmcuZGU="
+    },
+    {
         "PLZ": "17389",
         "ORT": "Anklam",
         "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQGFua2xhbS5kZQ=="
+    },
+    {
+        "PLZ": "34385",
+        "ORT": "Bad Karlshafen",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQGJhZC1rYXJsc2hhZmVuLmRl"
+    },
+    {
+        "PLZ": "61231",
+        "ORT": "Bad Nauheim",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQGJhZC1uYXVoZWltLmRl"
     },
     {
         "PLZ": "75385",
@@ -32048,6 +34288,11 @@
         "PLZ": "83646",
         "ORT": "Bad Tölz",
         "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQGJhZC10b2Vsei5kZQ=="
+    },
+    {
+        "PLZ": "64732",
+        "ORT": "Bad König",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQGJhZGtvZW5pZy5kZQ=="
     },
     {
         "PLZ": "74206",
@@ -32063,6 +34308,11 @@
         "PLZ": "74354",
         "ORT": "Besigheim",
         "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQGJlc2lnaGVpbS5kZQ=="
+    },
+    {
+        "PLZ": "34582",
+        "ORT": "Borken (Hessen)",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQGJvcmtlbi1oZXNzZW4uZGU="
     },
     {
         "PLZ": "46236",
@@ -32098,6 +34348,11 @@
         "PLZ": "21244",
         "ORT": "Buchholz in der Nordheide",
         "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQGJ1Y2hob2x6LmRl"
+    },
+    {
+        "PLZ": "68642",
+        "ORT": "Bürstadt",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQGJ1ZXJzdGFkdC5kZQ=="
     },
     {
         "PLZ": "44575",
@@ -32170,9 +34425,19 @@
         "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQGVyZGluZy5kZQ=="
     },
     {
+        "PLZ": "37269",
+        "ORT": "Eschwege",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQGVzY2h3ZWdlLXJhdGhhdXMuZGU="
+    },
+    {
         "PLZ": "77955",
         "ORT": "Ettenheim",
         "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQGV0dGVuaGVpbS5kZQ=="
+    },
+    {
+        "PLZ": "34587",
+        "ORT": "Felsberg",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQGZlbHNiZXJnLmRl"
     },
     {
         "PLZ": "85354",
@@ -32183,6 +34448,11 @@
         "PLZ": "85356",
         "ORT": "Freising",
         "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQGZyZWlzaW5nLmRl"
+    },
+    {
+        "PLZ": "61381",
+        "ORT": "Friedrichsdorf",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQGZyaWVkcmljaHNkb3JmLmRl"
     },
     {
         "PLZ": "88045",
@@ -32198,6 +34468,26 @@
         "PLZ": "88048",
         "ORT": "Friedrichshafen",
         "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQGZyaWVkcmljaHNoYWZlbi5kZQ=="
+    },
+    {
+        "PLZ": "65366",
+        "ORT": "Geisenheim",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQGdlaXNlbmhlaW0uZGU="
+    },
+    {
+        "PLZ": "65385",
+        "ORT": "Geisenheim",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQGdlaXNlbmhlaW0uZGU="
+    },
+    {
+        "PLZ": "64579",
+        "ORT": "Gernsheim",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQGdlcm5zaGVpbS5kZQ=="
+    },
+    {
+        "PLZ": "36129",
+        "ORT": "Gersfeld (Rhön)",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQGdlcnNmZWxkLmRl"
     },
     {
         "PLZ": "89522",
@@ -32228,6 +34518,21 @@
         "PLZ": "73116",
         "ORT": "Göppingen",
         "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQGdvZXBwaW5nZW4uZGU="
+    },
+    {
+        "PLZ": "64395",
+        "ORT": "Groß-Bieberau",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQGdyb3NzLWJpZWJlcmF1LmRl"
+    },
+    {
+        "PLZ": "64401",
+        "ORT": "Groß-Bieberau",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQGdyb3NzLWJpZWJlcmF1LmRl"
+    },
+    {
+        "PLZ": "65589",
+        "ORT": "Hadamar",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQGhhZGFtYXIuZGU="
     },
     {
         "PLZ": "45721",
@@ -32268,6 +34573,11 @@
         "PLZ": "30855",
         "ORT": "Langenhagen",
         "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQGxhbmdlbmhhZ2VuLmRl"
+    },
+    {
+        "PLZ": "36341",
+        "ORT": "Lauterbach (Hessen)",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQGxhdXRlcmJhY2gtaGVzc2VuLmRl"
     },
     {
         "PLZ": "73111",
@@ -32365,6 +34675,46 @@
         "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQG1hbm5oZWltLmRl"
     },
     {
+        "PLZ": "35037",
+        "ORT": "Marburg",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQG1hcmJ1cmctc3RhZHQuZGU="
+    },
+    {
+        "PLZ": "35039",
+        "ORT": "Marburg",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQG1hcmJ1cmctc3RhZHQuZGU="
+    },
+    {
+        "PLZ": "35041",
+        "ORT": "Marburg",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQG1hcmJ1cmctc3RhZHQuZGU="
+    },
+    {
+        "PLZ": "35043",
+        "ORT": "Marburg",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQG1hcmJ1cmctc3RhZHQuZGU="
+    },
+    {
+        "PLZ": "35094",
+        "ORT": "Marburg",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQG1hcmJ1cmctc3RhZHQuZGU="
+    },
+    {
+        "PLZ": "34212",
+        "ORT": "Melsungen",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQG1lbHN1bmdlbi5kZQ=="
+    },
+    {
+        "PLZ": "63925",
+        "ORT": "Michelstadt",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQG1pY2hlbHN0YWR0LmRl"
+    },
+    {
+        "PLZ": "64720",
+        "ORT": "Michelstadt",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQG1pY2hlbHN0YWR0LmRl"
+    },
+    {
         "PLZ": "84453",
         "ORT": "Mühldorf a.Inn",
         "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQG11ZWhsZG9yZi5kZQ=="
@@ -32410,6 +34760,11 @@
         "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQG5ldWVuc3RlaW4uZGU="
     },
     {
+        "PLZ": "34626",
+        "ORT": "Neukirchen",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQG5ldWtpcmNoZW4uZGU="
+    },
+    {
         "PLZ": "31535",
         "ORT": "Neustadt am Rübenberge",
         "E-Mail": "U3RhZHR2ZXJ3YWx0dW5nQG5ldXN0YWR0LWEtcmJnZS5kZQ=="
@@ -32425,6 +34780,16 @@
         "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQG5vZXJkbGluZ2VuLmRl"
     },
     {
+        "PLZ": "64354",
+        "ORT": "Reinheim",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHJlaW5oZWltLmRl"
+    },
+    {
+        "PLZ": "64395",
+        "ORT": "Reinheim",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHJlaW5oZWltLmRl"
+    },
+    {
         "PLZ": "47495",
         "ORT": "Rheinberg",
         "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHJoZWluYmVyZy5kZQ=="
@@ -32435,9 +34800,19 @@
         "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHJpbnRlbG4uZGU="
     },
     {
+        "PLZ": "65428",
+        "ORT": "Rüsselsheim am Main",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHJ1ZXNzZWxzaGVpbS5kZQ=="
+    },
+    {
         "PLZ": "33154",
         "ORT": "Salzkotten",
         "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHNhbHprb3R0ZW4uZGU="
+    },
+    {
+        "PLZ": "36381",
+        "ORT": "Schlüchtern",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHNjaGx1ZWNodGVybi5kZQ=="
     },
     {
         "PLZ": "73072",
@@ -32478,6 +34853,16 @@
         "PLZ": "95158",
         "ORT": "Schwarzenbach a.d.Saale",
         "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHNjaHdhcnplbmJhY2gtc2FhbGUuZGU="
+    },
+    {
+        "PLZ": "35606",
+        "ORT": "Solms",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHNvbG1zLmRl"
+    },
+    {
+        "PLZ": "36205",
+        "ORT": "Sontra",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHNvbnRyYS5kZQ=="
     },
     {
         "PLZ": "41539",
@@ -32608,6 +34993,16 @@
         "PLZ": "48167",
         "ORT": "Münster",
         "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHN0YWR0LW11ZW5zdGVyLmRl"
+    },
+    {
+        "PLZ": "64760",
+        "ORT": "Oberzent",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHN0YWR0LW9iZXJ6ZW50LmRl"
+    },
+    {
+        "PLZ": "65385",
+        "ORT": "Rüdesheim am Rhein",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHN0YWR0LXJ1ZWRlc2hlaW0uZGU="
     },
     {
         "PLZ": "58300",
@@ -32815,6 +35210,11 @@
         "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHRyaWJlcmcuZGU="
     },
     {
+        "PLZ": "68519",
+        "ORT": "Viernheim",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHZpZXJuaGVpbS5kZQ=="
+    },
+    {
         "PLZ": "85088",
         "ORT": "Vohburg a.d.Donau",
         "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHZvaGJ1cmcuZGU="
@@ -32840,6 +35240,91 @@
         "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHdlcnRoZWltLmRl"
     },
     {
+        "PLZ": "35576",
+        "ORT": "Wetzlar",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHdldHpsYXIuZGU="
+    },
+    {
+        "PLZ": "35578",
+        "ORT": "Wetzlar",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHdldHpsYXIuZGU="
+    },
+    {
+        "PLZ": "35579",
+        "ORT": "Wetzlar",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHdldHpsYXIuZGU="
+    },
+    {
+        "PLZ": "35580",
+        "ORT": "Wetzlar",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHdldHpsYXIuZGU="
+    },
+    {
+        "PLZ": "35581",
+        "ORT": "Wetzlar",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHdldHpsYXIuZGU="
+    },
+    {
+        "PLZ": "35582",
+        "ORT": "Wetzlar",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHdldHpsYXIuZGU="
+    },
+    {
+        "PLZ": "35583",
+        "ORT": "Wetzlar",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHdldHpsYXIuZGU="
+    },
+    {
+        "PLZ": "35584",
+        "ORT": "Wetzlar",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHdldHpsYXIuZGU="
+    },
+    {
+        "PLZ": "35585",
+        "ORT": "Wetzlar",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHdldHpsYXIuZGU="
+    },
+    {
+        "PLZ": "35586",
+        "ORT": "Wetzlar",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHdldHpsYXIuZGU="
+    },
+    {
+        "PLZ": "37213",
+        "ORT": "Witzenhausen",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHdpdHplbmhhdXNlbi5kZQ=="
+    },
+    {
+        "PLZ": "37214",
+        "ORT": "Witzenhausen",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHdpdHplbmhhdXNlbi5kZQ=="
+    },
+    {
+        "PLZ": "37215",
+        "ORT": "Witzenhausen",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHdpdHplbmhhdXNlbi5kZQ=="
+    },
+    {
+        "PLZ": "37216",
+        "ORT": "Witzenhausen",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHdpdHplbmhhdXNlbi5kZQ=="
+    },
+    {
+        "PLZ": "37217",
+        "ORT": "Witzenhausen",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHdpdHplbmhhdXNlbi5kZQ=="
+    },
+    {
+        "PLZ": "37218",
+        "ORT": "Witzenhausen",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHdpdHplbmhhdXNlbi5kZQ=="
+    },
+    {
+        "PLZ": "34466",
+        "ORT": "Wolfhagen",
+        "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHdvbGZoYWdlbi5kZQ=="
+    },
+    {
         "PLZ": "77736",
         "ORT": "Zell am Harmersbach",
         "E-Mail": "c3RhZHR2ZXJ3YWx0dW5nQHplbGwuZGU="
@@ -32863,6 +35348,36 @@
         "PLZ": "38690",
         "ORT": "Goslar",
         "E-Mail": "c3RhdGR0dmVyd2FsdHVuZ0Bnb3NsYXIuZGU="
+    },
+    {
+        "PLZ": "63065",
+        "ORT": "Offenbach am Main",
+        "E-Mail": "c3RhdGlzdGlrd2FobGVuQG9mZmVuYmFjaC5kZQ=="
+    },
+    {
+        "PLZ": "63067",
+        "ORT": "Offenbach am Main",
+        "E-Mail": "c3RhdGlzdGlrd2FobGVuQG9mZmVuYmFjaC5kZQ=="
+    },
+    {
+        "PLZ": "63069",
+        "ORT": "Offenbach am Main",
+        "E-Mail": "c3RhdGlzdGlrd2FobGVuQG9mZmVuYmFjaC5kZQ=="
+    },
+    {
+        "PLZ": "63071",
+        "ORT": "Offenbach am Main",
+        "E-Mail": "c3RhdGlzdGlrd2FobGVuQG9mZmVuYmFjaC5kZQ=="
+    },
+    {
+        "PLZ": "63073",
+        "ORT": "Offenbach am Main",
+        "E-Mail": "c3RhdGlzdGlrd2FobGVuQG9mZmVuYmFjaC5kZQ=="
+    },
+    {
+        "PLZ": "63075",
+        "ORT": "Offenbach am Main",
+        "E-Mail": "c3RhdGlzdGlrd2FobGVuQG9mZmVuYmFjaC5kZQ=="
     },
     {
         "PLZ": "87778",
@@ -32928,6 +35443,11 @@
         "PLZ": "88379",
         "ORT": "Unterwaldhausen",
         "E-Mail": "dW50ZXJ3YWxkaGF1c2VuQHQtb25saW5lLmRl"
+    },
+    {
+        "PLZ": "36326",
+        "ORT": "Antrifttal",
+        "E-Mail": "dmVyd2FsdHVuZ0BhbnRyaWZ0dGFsLmRl"
     },
     {
         "PLZ": "82435",
@@ -33040,9 +35560,19 @@
         "E-Mail": "dmVyd2FsdHVuZ0BnZW1laW5kZS1lbW1lcnRpbmcuZGU="
     },
     {
+        "PLZ": "36275",
+        "ORT": "Kirchheim",
+        "E-Mail": "dmVyd2FsdHVuZ0BnZW1laW5kZS1raXJjaGhlaW0uZGU="
+    },
+    {
         "PLZ": "84561",
         "ORT": "Mehring",
         "E-Mail": "dmVyd2FsdHVuZ0BnZW1laW5kZS1tZWhyaW5nLmRl"
+    },
+    {
+        "PLZ": "63637",
+        "ORT": "Jossgrund",
+        "E-Mail": "dmVyd2FsdHVuZ0Bqb3NzZ3J1bmQuZGU="
     },
     {
         "PLZ": "82431",
@@ -33063,6 +35593,11 @@
         "PLZ": "63776",
         "ORT": "Mömbris",
         "E-Mail": "dmVyd2FsdHVuZ0Btb2VtYnJpcy5iYXllcm4uZGU="
+    },
+    {
+        "PLZ": "34311",
+        "ORT": "Naumburg",
+        "E-Mail": "dmVyd2FsdHVuZ0BuYXVtYnVyZy5ldQ=="
     },
     {
         "PLZ": "92331",
@@ -33115,6 +35650,11 @@
         "E-Mail": "dmVyd2FsdHVuZ0BzdGFkdC1kYXR0ZWxuLmRl"
     },
     {
+        "PLZ": "34396",
+        "ORT": "Liebenau",
+        "E-Mail": "dmVyd2FsdHVuZ0BzdGFkdC1saWViZW5hdS5kZQ=="
+    },
+    {
         "PLZ": "42489",
         "ORT": "Wülfrath",
         "E-Mail": "dmVyd2FsdHVuZ0BzdGFkdC53dWVsZnJhdGguZGU="
@@ -33163,6 +35703,11 @@
         "PLZ": "86701",
         "ORT": "Rohrenfels",
         "E-Mail": "dmVyd2FsdHVuZ0B2Zy1uZXVidXJnLmRl"
+    },
+    {
+        "PLZ": "37287",
+        "ORT": "Wehretal",
+        "E-Mail": "dmVyd2FsdHVuZ0B3ZWhyZXRhbC5kZQ=="
     },
     {
         "PLZ": "91746",
@@ -33413,6 +35958,11 @@
         "PLZ": "92245",
         "ORT": "Kümmersbruck",
         "E-Mail": "dm9yemltbWVyQGt1ZW1tZXJzYnJ1Y2suZGU="
+    },
+    {
+        "PLZ": "35756",
+        "ORT": "Mittenaar",
+        "E-Mail": "dm9yemltbWVyQG1pdHRlbmFhci5kZQ=="
     },
     {
         "PLZ": "87549",
@@ -34080,6 +36630,31 @@
         "E-Mail": "d2FobGJ1ZXJvLXdlZ2JlcmdAc3RhZHQud2VnYmVyZy5kZQ=="
     },
     {
+        "PLZ": "63450",
+        "ORT": "Hanau",
+        "E-Mail": "V2FobGJ1ZXJvQGhhbmF1LmRl"
+    },
+    {
+        "PLZ": "63452",
+        "ORT": "Hanau",
+        "E-Mail": "V2FobGJ1ZXJvQGhhbmF1LmRl"
+    },
+    {
+        "PLZ": "63454",
+        "ORT": "Hanau",
+        "E-Mail": "V2FobGJ1ZXJvQGhhbmF1LmRl"
+    },
+    {
+        "PLZ": "63456",
+        "ORT": "Hanau",
+        "E-Mail": "V2FobGJ1ZXJvQGhhbmF1LmRl"
+    },
+    {
+        "PLZ": "63457",
+        "ORT": "Hanau",
+        "E-Mail": "V2FobGJ1ZXJvQGhhbmF1LmRl"
+    },
+    {
         "PLZ": "51427",
         "ORT": "Bergisch Gladbach",
         "E-Mail": "d2FobGJ1ZXJvQHN0YWR0LWdsLmRl"
@@ -34450,9 +37025,19 @@
         "E-Mail": "d2FobGVuQGhlaW1iYWNoLWVpZmVsLmRl"
     },
     {
+        "PLZ": "63150",
+        "ORT": "Heusenstamm",
+        "E-Mail": "d2FobGVuQGhldXNlbnN0YW1tLmRl"
+    },
+    {
         "PLZ": "52372",
         "ORT": "Kreuzau",
         "E-Mail": "d2FobGVuQGtyZXV6YXUuZGU="
+    },
+    {
+        "PLZ": "63225",
+        "ORT": "Langen (Hessen)",
+        "E-Mail": "d2FobGVuQGxhbmdlbi5kZQ=="
     },
     {
         "PLZ": "19288",
@@ -34633,6 +37218,16 @@
         "PLZ": "52159",
         "ORT": "Roetgen",
         "E-Mail": "d2FobGVuQHJvZXRnZW4uZGU="
+    },
+    {
+        "PLZ": "63165",
+        "ORT": "Mühlheim am Main",
+        "E-Mail": "d2FobGVuQHN0YWR0LW11ZWhsaGVpbS5kZQ=="
+    },
+    {
+        "PLZ": "64646",
+        "ORT": "Heppenheim (Bergstraße)",
+        "E-Mail": "d2FobGVuQHN0YWR0LmhlcHBlbmhlaW0uZGU="
     },
     {
         "PLZ": "97070",
@@ -34855,9 +37450,89 @@
         "E-Mail": "d2FobGVuQHRlc3Npbi5kZQ=="
     },
     {
+        "PLZ": "55246",
+        "ORT": "Wiesbaden",
+        "E-Mail": "V2FobGVuQHdpZXNiYWRlbi5kZQ=="
+    },
+    {
+        "PLZ": "55252",
+        "ORT": "Wiesbaden",
+        "E-Mail": "V2FobGVuQHdpZXNiYWRlbi5kZQ=="
+    },
+    {
+        "PLZ": "65183",
+        "ORT": "Wiesbaden",
+        "E-Mail": "V2FobGVuQHdpZXNiYWRlbi5kZQ=="
+    },
+    {
+        "PLZ": "65185",
+        "ORT": "Wiesbaden",
+        "E-Mail": "V2FobGVuQHdpZXNiYWRlbi5kZQ=="
+    },
+    {
+        "PLZ": "65187",
+        "ORT": "Wiesbaden",
+        "E-Mail": "V2FobGVuQHdpZXNiYWRlbi5kZQ=="
+    },
+    {
+        "PLZ": "65189",
+        "ORT": "Wiesbaden",
+        "E-Mail": "V2FobGVuQHdpZXNiYWRlbi5kZQ=="
+    },
+    {
+        "PLZ": "65191",
+        "ORT": "Wiesbaden",
+        "E-Mail": "V2FobGVuQHdpZXNiYWRlbi5kZQ=="
+    },
+    {
+        "PLZ": "65193",
+        "ORT": "Wiesbaden",
+        "E-Mail": "V2FobGVuQHdpZXNiYWRlbi5kZQ=="
+    },
+    {
+        "PLZ": "65195",
+        "ORT": "Wiesbaden",
+        "E-Mail": "V2FobGVuQHdpZXNiYWRlbi5kZQ=="
+    },
+    {
+        "PLZ": "65197",
+        "ORT": "Wiesbaden",
+        "E-Mail": "V2FobGVuQHdpZXNiYWRlbi5kZQ=="
+    },
+    {
+        "PLZ": "65199",
+        "ORT": "Wiesbaden",
+        "E-Mail": "V2FobGVuQHdpZXNiYWRlbi5kZQ=="
+    },
+    {
+        "PLZ": "65201",
+        "ORT": "Wiesbaden",
+        "E-Mail": "V2FobGVuQHdpZXNiYWRlbi5kZQ=="
+    },
+    {
+        "PLZ": "65203",
+        "ORT": "Wiesbaden",
+        "E-Mail": "V2FobGVuQHdpZXNiYWRlbi5kZQ=="
+    },
+    {
+        "PLZ": "65205",
+        "ORT": "Wiesbaden",
+        "E-Mail": "V2FobGVuQHdpZXNiYWRlbi5kZQ=="
+    },
+    {
+        "PLZ": "65207",
+        "ORT": "Wiesbaden",
+        "E-Mail": "V2FobGVuQHdpZXNiYWRlbi5kZQ=="
+    },
+    {
         "PLZ": "53757",
         "ORT": "Sankt Augustin",
         "E-Mail": "d2FobHNjaGVpbmFudHJhZ0BzYW5rdC1hdWd1c3Rpbi5kZQ=="
+    },
+    {
+        "PLZ": "65620",
+        "ORT": "Waldbrunn (Westerwald)",
+        "E-Mail": "d2FsZGJydW5uQHdhbGRicnVubi5kZQ=="
     },
     {
         "PLZ": "86877",
@@ -34865,9 +37540,29 @@
         "E-Mail": "d2Fsa2VydHNob2ZlbkB2Z3N0YXVkZW4uZGU="
     },
     {
+        "PLZ": "64347",
+        "ORT": "Griesheim",
+        "E-Mail": "d2VibWFzdGVyQGdyaWVzaGVpbS5kZQ=="
+    },
+    {
         "PLZ": "49356",
         "ORT": "Diepholz",
         "E-Mail": "V2VibWFzdGVyQFN0YWR0LURpZXBob2x6LmRl"
+    },
+    {
+        "PLZ": "36320",
+        "ORT": "Kirtorf",
+        "E-Mail": "d2VibWFzdGVyQHN0YWR0LWtpcnRvcmYuZGU="
+    },
+    {
+        "PLZ": "36326",
+        "ORT": "Kirtorf",
+        "E-Mail": "d2VibWFzdGVyQHN0YWR0LWtpcnRvcmYuZGU="
+    },
+    {
+        "PLZ": "35781",
+        "ORT": "Weilburg",
+        "E-Mail": "d2VpbGJ1cmdAd2VpbGJ1cmcuZGU="
     },
     {
         "PLZ": "88267",
@@ -34988,6 +37683,11 @@
         "PLZ": "97947",
         "ORT": "Grünsfeld",
         "E-Mail": "emVudHJhbGVAZ3J1ZW5zZmVsZC5kZQ=="
+    },
+    {
+        "PLZ": "63546",
+        "ORT": "Hammersbach",
+        "E-Mail": "emVudHJhbGVAaGFtbWVyc2JhY2guZGU="
     },
     {
         "PLZ": "21785",
