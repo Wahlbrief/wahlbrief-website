@@ -501,12 +501,10 @@ searchInput.addEventListener("keyup", (e) => {
       case 40:
         active++;
         setFocus();
-        return;
 
       case 38:
         active--;
         setFocus();
-        return;
 
       case 13:
         onEnter();
@@ -564,7 +562,7 @@ searchInput.addEventListener("keyup", (e) => {
 
     suggestions.innerHTML = "";
     suggestions.append(...divs);
-  }, 200);
+  }, 50);
 });
 
 // Function to get the query parameter from the URL on load
