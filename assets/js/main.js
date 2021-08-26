@@ -492,11 +492,13 @@ function onEnter() {
 }
 
 let timeoutReference;
+let timeoutNew;
 
 searchInput.addEventListener("keyup", (e) => {
   timeoutReference && clearTimeout(timeoutReference);
+  timeoutNew && clearTimeout(timeoutNew);
 
-  timeoutReference = setTimeout(() => {
+  timeoutNew = setTimeout(() => {
     switch (e.keyCode) {
       case 40:
         active++;
@@ -524,7 +526,9 @@ searchInput.addEventListener("keyup", (e) => {
       suggestions.innerHTML = "";
       return;
     }
+  }, 50);
 
+  timeoutReference = setTimeout(() => {
     // Function to create autocomplete suggestions
 
     const matchArray = findMatches(e.target.value, zips);
