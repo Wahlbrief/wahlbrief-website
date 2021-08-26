@@ -17,3 +17,8 @@ exclude_from_localizations: ["assets"]
 default_locale_in_subfolder: false
 
 markdown: kramdown
+
+facebook: "https://www.facebook.com/wahlbrief"
+twitter: "https://twitter.com/wahlbrief"
+linkedin: "https://www.linkedin.com/company/wahlbrief"
+instagram: "https://www.instagram.com/wahlbrief"
