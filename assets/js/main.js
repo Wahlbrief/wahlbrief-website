@@ -169,14 +169,19 @@ function scrollTop() {
 }
 
 // Validation for ZIP code input
+let lastEmail = null;
 
 function is_valid_datalist_value(inputValue, cityValue) {
-  const filtered = zips.filter(({ PLZ }) => PLZ.toString() == inputValue);
-  const filteredCity = zips.filter(({ ORT }) => ORT.toString() == cityValue);
+  const filtered = zips.filter(
+    (item) =>
+      item.PLZ.toString() == inputValue &&
+      item.ORT.toString() === cityValue &&
+      (lastEmail ? item["E-Mail"].toString() == lastEmail : true)
+  );
 
-  if (filtered.length > 0 && filteredCity.length > 0) {
+  if (filtered.length > 0) {
     const preinput = filtered[0];
-    const data = filteredCity[0];
+    const data = preinput; // try?
     munname.textContent = data.ORT;
     munemail.textContent = atob(data["E-Mail"]);
     muniname.textContent = data.ORT;
@@ -409,7 +414,16 @@ copyButtons.forEach((btn) => {
     }
   });
 
-  zips.push(...sorted);
+  const properties = ["PLZ", "ORT", "E-Mail"];
+  const unique = sorted.filter(
+    (item, index, arr) =>
+      index ===
+      arr.findIndex((someItem) =>
+        properties.every((prop) => item[prop] === someItem[prop])
+      )
+  );
+
+  zips.push(...unique);
 })();
 
 // Function to find matches
@@ -527,6 +541,7 @@ searchInput.addEventListener("keyup", (e) => {
 
       div.addEventListener("click", () => {
         searchInput.value = val;
+        lastEmail = place["E-Mail"];
         suggestions.innerHTML = "";
       });
 
