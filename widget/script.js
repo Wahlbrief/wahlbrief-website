@@ -4,12 +4,17 @@ const zips = [];
 const footer = document.getElementById("footer");
 
 // Validation for ZIP code input
+let lastEmail = null;
 
 function is_valid_datalist_value(inputValue, cityValue) {
-  const filtered = zips.filter(({ PLZ }) => PLZ.toString() == inputValue);
-  const filteredCity = zips.filter(({ ORT }) => ORT.toString() == cityValue);
+  const filtered = zips.filter(
+    (item) =>
+      item.PLZ.toString() == inputValue &&
+      item.ORT.toString() === cityValue &&
+      (lastEmail ? item["E-Mail"].toString() == lastEmail : true)
+  );
 
-  if (filtered.length > 0 && filteredCity.length > 0) {
+  if (filtered.length > 0) {
     return true;
   }
   return false;
@@ -27,7 +32,9 @@ function progress() {
   if (x.length < 5) {
     return false;
   } else if (is_valid_datalist_value(x, xi)) {
-    console.log("Ok we can go now");
+    console.log(
+      "Redirecting to the main site, with ZIP of " + x + " and city " + xi
+    );
     window.location = "https://staging.wahlbrief.de/?zip=" + x + "&city=" + xi;
   }
 }
@@ -181,5 +188,5 @@ searchInput.addEventListener("keyup", (e) => {
 
     suggestions.innerHTML = "";
     suggestions.append(...divs);
-  }, 450);
+  }, 50);
 });
