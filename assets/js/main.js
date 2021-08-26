@@ -424,8 +424,6 @@ copyButtons.forEach((btn) => {
   );
 
   zips.push(...unique);
-  const loader = document.querySelector(".loading");
-  loader.style.display = "none";
 })();
 
 // Function to find matches
