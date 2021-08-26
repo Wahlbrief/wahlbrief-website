@@ -1,11 +1,11 @@
-title: Wahlbrief
+title: Wahlbrief - Briefwahl zur Bundestagswahl beantragen
 email: contact@wahlbrief.de
 description: >-
-  Write an awesome description for your new site here.
+  Jetzt die Unterlagen zur Briefwahl beantragen: Schnell, bequem und online. Wahlbrief erstellt in 2 Minuten den Online-Antrag.
 baseurl: ""
 url: "https://staging.wahlbrief.de/"
-twitter_username:
-github_username:
+twitter_username: wahlbrief
+github_username: Wahlbrief
 
 # Build settings
 plugins:
