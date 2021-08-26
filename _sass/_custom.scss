@@ -419,6 +419,47 @@ a {
   }
 }
 
+// Loading spinner
+.loading {
+  position: fixed;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  &-content {
+    margin-left: auto;
+    margin-top: auto;
+    left: 50%;
+    display: block;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-text {
+    height: 50%;
+
+    & h2 {
+      color: $white !important;
+    }
+  }
+}
+
+.loading:before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(14, 116, 144);
+}
+
 // Scrolling indicator arrow
 
 .scrollIndicator {
@@ -519,10 +560,6 @@ input[type="number"] {
 
 .form-control:invalid {
   box-shadow: inset 0 0 0 0.15rem #cc3333;
-}
-
-#validation {
-  color: #cc3333;
 }
 
 .autocomplete {
