@@ -501,10 +501,12 @@ searchInput.addEventListener("keyup", (e) => {
       case 40:
         active++;
         setFocus();
+        return;
 
       case 38:
         active--;
         setFocus();
+        return;
 
       case 13:
         onEnter();
