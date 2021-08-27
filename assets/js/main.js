@@ -414,16 +414,16 @@ copyButtons.forEach((btn) => {
     }
   });
 
-  const properties = ["PLZ", "ORT", "E-Mail"];
-  const unique = sorted.filter(
-    (item, index, arr) =>
-      index ===
-      arr.findIndex((someItem) =>
-        properties.every((prop) => item[prop] === someItem[prop])
-      )
-  );
+  // const properties = ["PLZ", "ORT", "E-Mail"];
+  // const unique = sorted.filter(
+  //   (item, index, arr) =>
+  //     index ===
+  //     arr.findIndex((someItem) =>
+  //       properties.every((prop) => item[prop] === someItem[prop])
+  //     )
+  // );
 
-  zips.push(...unique);
+  zips.push(...sorted);
 })();
 
 // Function to find matches
