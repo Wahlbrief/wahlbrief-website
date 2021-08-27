@@ -22,6 +22,20 @@
     url("assets/fonts/barlow/barlow-v5-latin-700.woff") format("woff");
 }
 
+/* barlow-semi-condensed-300 - latin */
+@font-face {
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local(""),
+    url("assets/fonts/barlow-semi-condensed/barlow-semi-condensed-v6-latin-300.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("assets/fonts/barlow-semi-condensed/barlow-semi-condensed-v6-latin-300.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -62,6 +76,8 @@ h1 {
   line-height: clamp(2rem, 1.5vw + 1.7rem, 3rem);
   color: #155e75;
   margin: 0;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 300;
 }
 
 main {
