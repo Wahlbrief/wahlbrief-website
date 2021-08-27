@@ -414,6 +414,7 @@ copyButtons.forEach((btn) => {
     }
   });
 
+  // DO NOT USE, 2000+ ms processing time required for duplicate removal
   // const properties = ["PLZ", "ORT", "E-Mail"];
   // const unique = sorted.filter(
   //   (item, index, arr) =>
