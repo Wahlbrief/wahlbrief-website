@@ -406,8 +406,6 @@ layout: default
                                             fetch("https://list.wahlbrief.de/?p=subscribe&id=1", {
                                                 method: "POST",
                                                 mode: "cors",
-                                                redirect: "follow",
-                                                referrerPolicy: "no-referrer",
                                                 body: data,
                                             }).then(res => {
                                                 if (res.status >= 200 && res.status < 300) {
