@@ -391,70 +391,52 @@ layout: default
 
                                         <div id="result"></div>
                                     </form>
-                                </div>
 
-                                <!-- Newsletter subscription -->
-                                <script>
-                                    function checkform() {
-                                        re = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
-                                        if (!re.test(document.querySelector("#email").textContent)) {
+                                    <!-- Newsletter subscription -->
+                                    <script>
+                                        function submitForm() {
+                                            successMessage =
+                                                "<div class='success mt-3'><i class='fas fa-check-circle me-2'></i>{% t right.successfulregistration %}</div>";
                                             const result = document.querySelector("#result");
                                             const emailfield = document.querySelector("#email");
                                             const emailcb1 = document.querySelector("#emailupdates");
                                             const emailcb2 = document.querySelector("#emailupdatesMobile");
 
-                                            result.innerHTML = "<div class='error mt-3'><i class='fas fa-times-circle me-2'></i>{% t right.invalidemail %}</div>";
-                                            emailfield.value = "";
-                                            emailcb1.checked = false;
-                                            emailcb2.checked = false;
-                                            emailfield.focus();
-                                            return false;
+                                            const data = new URLSearchParams(new FormData(document.querySelector("#subscribeform"))).toString();
+                                            fetch("https://list.walhbrief.de/lists/?p=subscribe&id=1", {
+                                                method: "POST",
+                                                mode: "cors",
+                                                headers: {
+                                                    "Content-Type": "application/x-www-form-urlencoded"
+                                                },
+                                                redirect: "follow",
+                                                referrerPolicy: "no-referrer",
+                                                body: data,
+                                            }).then(res => {
+                                                if (res.status >= 200 && res.status < 300) {
+                                                    return res.text();
+                                                } else {
+                                                    result.innerHTML = "<div class='error mt-3'><i class='fas fa-times-circle me-2'></i>{% t right.noprocess %}</div>";
+                                                    emailfield.value = "";
+                                                    emailfield.focus();
+                                                    emailcb1.checked = false;
+                                                    emailcb2.checked = false;
+                                                }
+                                            }).then(text => {
+                                                result.removeChild();
+                                                result.append(data != "" ? data : text);
+                                            }).catch(_ => {
+                                                console.error("Failed to send data.")
+                                            })
                                         }
-                                        return true;
-                                    }
-                                    function submitForm() {
-                                        successMessage =
-                                            "<div class='success mt-3'><i class='fas fa-check-circle me-2'></i>{% t right.successfulregistration %}</div>";
-                                        const result = document.querySelector("#result");
-                                        const emailfield = document.querySelector("#email");
-                                        const emailcb1 = document.querySelector("#emailupdates");
-                                        const emailcb2 = document.querySelector("#emailupdatesMobile");
-
-                                        const data = new URLSearchParams(new FormData(document.querySelector("#subscribeform"))).toString()
-                                        fetch("https://list.walhbrief.de/lists/?p=subscribe&id=1", {
-                                            method: "POST",
-                                            mode: "cors",
-                                            headers: {
-                                                "Content-Type": "application/x-www-form-urlencoded"
-                                            },
-                                            redirect: "follow",
-                                            referrerPolicy: "no-referrer",
-                                            body: data,
-                                        }).then(res => {
-                                            if (res.status >= 200 && res.status < 300) {
-                                                return res.text();
-                                            } else {
-                                                result.innerHTML = "<div class='error mt-3'><i class='fas fa-times-circle me-2'></i>{% t right.noprocess %}</div>";
-                                                emailfield.value = "";
-                                                emailfield.focus();
-                                                emailcb1.checked = false;
-                                                emailcb2.checked = false;
-                                            }
-                                        }).then(text => {
-                                            result.removeChild();
-                                            result.append(data != "" ? data : text);
-                                        }).catch(_ => {
-                                            console.error("Failed to send data.")
-                                        })
-                                    }
-                                </script>
-                                <!-- Newsletter subscription -->
+                                    </script>
+                                    <!-- Newsletter subscription -->
+                                </div>
 
                                 <form>
                                     <div class="form-check mt-2 d-none d-lg-flex align-items-center">
-                                        <input class="form-check-input me-2" type="checkbox"
-                                            onchange="if (checkform()) {submitForm();} return false;" value=""
-                                            id="emailupdates">
+                                        <input class="form-check-input me-2" type="checkbox" onchange="submitForm()"
+                                            value="" id="emailupdates">
                                         <label class="form-check-label" for="emailupdates">
                                             {% t right.email-updates %}
                                         </label>
@@ -465,7 +447,7 @@ layout: default
                                         <p class="mb-0">{% t right.email-updates %}</p>
                                         <div>
                                             <input class="tgl tgl-light" id="emailupdatesMobile" type="checkbox"
-                                                value="" onchange="if (checkform()) {submitForm();} return false;" />
+                                                value="" onchange="submitForm()" />
                                             <label class="tgl-btn" for="emailupdatesMobile"></label>
                                         </div>
                                     </div>
