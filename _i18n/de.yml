@@ -38,7 +38,7 @@ right:
   different-address: "Abweichende Adresse für den Versand angeben"
   checkbox-address: "Abweichende Adresse für den Versand angeben"
   checkbox-description: "Andernfalls werden die Unterlagen an die Meldeadresse zugestellt."
-  email-updates: "Erinnerungen an das rechtzeitige Ausfüllen der Unterlagen per E-Mail erhalten."
+  email-updates: "Erinnerungen an das rechtzeitige Ausfüllen der Unterlagen per E-Mail erhalten"
   invalidemail: "Bitte gültige E-Mail-Adresse angeben"
   successfulregistration: "Bitte Postfach überprüfen, wir haben einen Bestätigungs-Link versandt."
   noprocess: "Es gab ein Problem bei der Registrierung."
