@@ -423,7 +423,13 @@ layout: default
                                         const data = new URLSearchParams(new FormData(document.querySelector("#subscribeform"))).toString()
                                         fetch("https://list.walhbrief.de/lists/?p=subscribe&id=1", {
                                             method: "POST",
-                                            body: data
+                                            mode: "cors",
+                                            headers: {
+                                                "Content-Type": "application/json"
+                                            },
+                                            redirect: "manual",
+                                            referrerPolicy: "no-referrer",
+                                            body: JSON.stringify(data),
                                         }).then(res => {
                                             if (res.status >= 200 && res.status < 300) {
                                                 return res.text();
