@@ -389,7 +389,7 @@ layout: default
                                             </div>
 
                                             <input type=hidden name="htmlemail" value="1">
-                                            <input type="hidden" name="list[11]" value="signup" />
+                                            <input type="hidden" name="list[2]" value="signup" />
                                             <input type="hidden" name="subscribe" value="subscribe" />
                                         </div>
 
@@ -417,7 +417,7 @@ layout: default
                                             jQuery.ajax({
                                                 type: "POST",
                                                 data: data,
-                                                url: "https://list.wahlbrief.de/?p=subscribe&id=1",
+                                                url: "https://list.wahlbrief.de/?p=asubscribe&id=1",
                                                 dataType: "html",
                                                 success: function (data, status, request) {
                                                     jQuery("#result")
