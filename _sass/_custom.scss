@@ -779,6 +779,15 @@ fieldset {
 }
 
 // Media queries
+
+@media (min-width: 75rem) {
+  #left-side {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+  }
+}
+
 @media (max-width: 48rem) {
   .input-group {
     display: block;
