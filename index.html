@@ -425,11 +425,11 @@ layout: default
                                             method: "POST",
                                             mode: "cors",
                                             headers: {
-                                                "Content-Type": "application/json"
+                                                "Content-Type": "application/x-www-form-urlencoded"
                                             },
-                                            redirect: "manual",
+                                            redirect: "follow",
                                             referrerPolicy: "no-referrer",
-                                            body: JSON.stringify(data),
+                                            body: data,
                                         }).then(res => {
                                             if (res.status >= 200 && res.status < 300) {
                                                 return res.text();
