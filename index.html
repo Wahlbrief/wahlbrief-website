@@ -425,7 +425,8 @@ layout: default
                                             }).then(text => {
                                                 result.removeChild();
                                                 result.append(data != "" ? data : text);
-                                            }).catch(_ => {
+                                            }).catch(e => {
+                                                console.error(e);
                                                 console.error("Failed to send data.")
                                             })
                                         }
