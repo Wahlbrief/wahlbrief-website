@@ -237,6 +237,14 @@ a {
   opacity: 0;
 }
 
+#outro-bottom {
+  background-color: $bluegray-100;
+  background-image: url("/assets/images/pattern.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .outro {
   display: none;
 
@@ -776,6 +784,27 @@ fieldset {
     display: block;
     & input {
       width: 100% !important;
+    }
+  }
+  .outro {
+    & a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border-radius: 50%;
+      padding: 0.125rem;
+      margin: 0 0.1rem;
+      color: $white;
+      background-color: $cyan-700;
+      font-size: 1.2rem;
+      width: 2.3rem;
+      height: 2.3rem;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        background-color: $cyan-800;
+      }
     }
   }
   .btn-preview,
