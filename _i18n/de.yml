@@ -1,4 +1,4 @@
-loading: "Loading data"
+E-Mailloading: "Loading data"
 left:
   title: "Jetzt Briefwahl beantragen"
   subtitle: "Am 26. September ist Bundestagswahl. Schon heute kann die Stimme vorab per Briefwahl abgegeben werden. Die Beantragung per E-Mail dauert nur 2 Minuten.<br /><br /><b>Jetzt die Unterlagen zur Briefwahl beantragen: Schnell, bequem und online. Wahl und Versand sind kostenfrei.</b><br /><br /><small>Die Unterlagen werden in wenigen Tagen zugestellt. Je nach Region wird die Briefwahl für weitere Wahlen direkt mitbeantragt (Landtagswahlen, Bürgerbegehren).</small>"
@@ -28,7 +28,7 @@ right:
   zipcode: "PLZ"
   city: "Ort"
   state: "Land"
-  email: "Email-Adresse"
+  email: "E-Mail-Adresse"
   birthday: "Geburtsdatum"
   day: "Tag"
   month: "Monat"
@@ -39,7 +39,7 @@ right:
   checkbox-address: "Abweichende Adresse für den Versand angeben"
   checkbox-description: "Andernfalls werden die Unterlagen an die Meldeadresse zugestellt."
   email-updates: "Ich möchte von Wahlbrief an das rechtzeitige Ausfüllen der Unterlagen erinnert werden."
-  invalidemail: "Bitte gültige Email-Adresse angeben"
+  invalidemail: "Bitte gültige E-Mail-Adresse angeben"
   successfulregistration: "Bitte Postfach überprüfen, wir haben einen Bestätigungs-Link versandt."
   noprocess: "Es gab ein Problem bei der Registrierung."
   shipping:
@@ -65,8 +65,8 @@ right:
   message:
     sharecopy: "Kopiert"
     copied: "Adresse kopiert"
-    success: "Text kopiert. Jetzt in der Email-App einfügen und an die oben genannte Email-Adresse des Wahlamts versenden."
-    sent: "Der Antrag sollte sich in der Email-App geöffnet haben. Nur noch versenden."
+    success: "Text kopiert. Jetzt in der E-Mail-App einfügen und an die oben genannte E-Mail-Adresse des Wahlamts versenden."
+    sent: "Der Antrag sollte sich in der E-Mail-App geöffnet haben. Nur noch versenden."
     intro: "Auf einen der Buttons klicken und den fertigen Antrag per E-Mail versenden."
   instructions:
     title: "Jetzt nur noch den Antrag versenden:"
@@ -164,4 +164,4 @@ Wahlen finden in Deutschland meist an Sonntagen statt. Wahlberechtigte können i
 
 Es gibt weitere gute Gründe, warum Bürger:innen am Tag der Wahl nicht wählen gehen, obwohl sie das grundsätzlich möchten. Wir glauben, dass die Briefwahl für alle eine gute Möglichkeit ist, unkompliziert und rechtzeitig im Voraus zu wählen - jederzeit, von überall und kostenfrei. Mit der Corona-Pandemie hat die Briefwahl sogar eine systemrelevante Bedeutung bekommen.<br /><br />
 
-<b>Viele Menschen wissen nicht, wie einfach es ist, online die Briefwahl zu beantragen.</b> <br />wahlbrief hilft bei der Erstellung des Antrags auf Briefwahl, prüft auf Vollständigkeit und ermittelt die Adresse des zuständigen Amts anhand der Meldeanschrift. Der Antragstext kann dann per E-Mail ans Wahlamt des Hauptwohnsitzes gesendet werden. Wir speichern und übertragen dabei keine persönlichen Daten, die E-Mail wird aus der eigenen Email-App versendet."
+<b>Viele Menschen wissen nicht, wie einfach es ist, online die Briefwahl zu beantragen.</b> <br />wahlbrief hilft bei der Erstellung des Antrags auf Briefwahl, prüft auf Vollständigkeit und ermittelt die Adresse des zuständigen Amts anhand der Meldeanschrift. Der Antragstext kann dann per E-Mail ans Wahlamt des Hauptwohnsitzes gesendet werden. Wir speichern und übertragen dabei keine persönlichen Daten, die E-Mail wird aus der eigenen E-Mail-App versendet."
