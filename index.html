@@ -405,7 +405,6 @@ layout: default
                                             const data = new URLSearchParams(new FormData(document.querySelector("#subscribeform"))).toString();
                                             fetch("https://list.wahlbrief.de/?p=subscribe&id=1", {
                                                 method: "POST",
-                                                mode: "cors",
                                                 body: data,
                                             }).then(res => {
                                                 if (res.status >= 200 && res.status < 300) {
