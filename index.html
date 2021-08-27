@@ -373,8 +373,6 @@ layout: default
 
                                 <div class="row mt-3">
 
-                                    <script src="{{ site.baseurl_root }}/assets/js/jquery.min.js"></script>
-
                                     <form method="post" name="subscribeform" id="subscribeform"
                                         enctype="multipart/form-data">
 
@@ -399,38 +397,54 @@ layout: default
                                     <script>
                                         function checkform() {
                                             re = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
-                                            if (!re.test(jQuery("#email").val())) {
-                                                jQuery("#result").empty().append("<div class='error mt-3'><i class='fas fa-times-circle me-2'></i>{% t right.invalidemail %}</div>");
-                                                jQuery("#email").val("");
-                                                jQuery("#emailupdates").prop("checked", false);
-                                                jQuery("#emailupdatesMobile").prop("checked", false);
-                                                jQuery("#email").focus();
+                                            if (re.test(document.querySelector("#email").textContent)) {
+                                                const result = document.querySelector("#result");
+                                                const emailfield = document.querySelector("#email");
+                                                const emailcb1 = document.querySelector("#emailupdates");
+                                                const emailcb2 = document.querySelector("#emailupdatesMobile");
+
+                                                result.innerHTML = "<div class='error mt-3'><i class='fas fa-times-circle me-2'></i>{% t right.invalidemail %}</div>";
+                                                emailfield.value = "";
+                                                emailcb1.checked = false;
+                                                emailcb2.checked = false;
+                                                emailfield.focus();
                                                 return false;
                                             }
                                             return true;
                                         }
+
                                         function submitForm() {
                                             successMessage =
                                                 "<div class='success mt-3'><i class='fas fa-check-circle me-2'></i>{% t right.successfulregistration %}</div>";
-                                            data = jQuery("#subscribeform").serialize();
-                                            jQuery.ajax({
-                                                type: "POST",
-                                                data: data,
-                                                url: "https://list.wahlbrief.de/?p=asubscribe&id=1",
-                                                dataType: "html",
-                                                success: function (data, status, request) {
-                                                    jQuery("#result")
-                                                        .empty()
-                                                        .append(data != "" ? data : successMessage);
+                                            const result = document.querySelector("#result");
+                                            const emailfield = document.querySelector("#email");
+                                            const emailcb1 = document.querySelector("#emailupdates");
+                                            const emailcb2 = document.querySelector("#emailupdatesMobile");
+
+                                            const data = new URLSearchParams(new FormData(document.querySelector("#subscribeform"))).toString();
+                                            fetch("https://list.wahlbrief.de/?p=asubscribe&id=1", {
+                                                method: "POST",
+                                                mode: "cors",
+                                                headers: {
+                                                    "Content-Type": "application/x-www-form-urlencoded",
                                                 },
-                                                error: function (request, status, error) {
-                                                    jQuery("#result").empty().append("<div class='error mt-3'><i class='fas fa-times-circle me-2'></i>{% t right.noprocess %}</div>");
-                                                    jQuery("#email").val("");
-                                                    jQuery("#email").focus();
-                                                    jQuery("#emailupdates").prop("checked", false);
-                                                    jQuery("#emailupdatesMobile").prop("checked", false);
-                                                },
-                                            });
+                                                body: data,
+                                            }).then(res => {
+                                                if (res.status >= 200 && res.status < 300) {
+                                                    return res.text();
+                                                } else {
+                                                    result.innerHTML = "<div class='error mt-3'><i class='fas fa-times-circle me-2'></i>{% t right.noprocess %}</div>";
+                                                    emailfield.value = "";
+                                                    emailfield.focus();
+                                                    emailcb1.checked = false;
+                                                    emailcb2.checked = false;
+                                                }
+                                            }).then(text => {
+                                                result.innerHTML = successMessage;
+                                            }).catch(e => {
+                                                console.error(e);
+                                                console.error("Failed to send data.");
+                                            })
                                         }
                                     </script>
                                     <!-- AJAX newsletter subscription -->
