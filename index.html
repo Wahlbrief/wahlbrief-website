@@ -438,8 +438,9 @@ layout: default
 
                                 <form>
                                     <div class="form-check mt-2 d-none d-lg-flex align-items-center">
-                                        <input class="form-check-input me-2" type="checkbox" onchange="submitForm()"
-                                            value="" id="emailupdates">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            onchange="if (checkform()) {submitForm();} return false;" value=""
+                                            id="emailupdates">
                                         <label class="form-check-label" for="emailupdates">
                                             {% t right.email-updates %}
                                         </label>
@@ -450,7 +451,7 @@ layout: default
                                         <p class="mb-0">{% t right.email-updates %}</p>
                                         <div>
                                             <input class="tgl tgl-light" id="emailupdatesMobile" type="checkbox"
-                                                value="" onchange="submitForm()" />
+                                                value="" onchange="if (checkform()) {submitForm();} return false;" />
                                             <label class="tgl-btn" for="emailupdatesMobile"></label>
                                         </div>
                                     </div>
