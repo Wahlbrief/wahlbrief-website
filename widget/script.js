@@ -35,14 +35,14 @@ function progress() {
     console.log(
       "Redirecting to the main site, with ZIP of " + x + " and city " + xi
     );
-    window.location = "https://staging.wahlbrief.de/?zip=" + x + "&city=" + xi;
+    window.location = "https://wahlbrief.de/?zip=" + x + "&city=" + xi;
   }
 }
 
 // Function to get items from JSON and build array
 
 (async () => {
-  const endpoint = "assets/test.json";
+  const endpoint = "https://raw.githubusercontent.com/Wahlbrief/wahlbrief-website/main/assets/test.json";
   const result = await fetch(endpoint).then((blob) => blob.json());
 
   const sorted = result.sort((a, b) => {
