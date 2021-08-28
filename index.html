@@ -397,7 +397,7 @@ layout: default
                                     <script>
                                         function checkform() {
                                             re = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
-                                            if (!re.test(document.querySelector("#email").textContent)) {
+                                            if (!re.test(document.querySelector("#email").value)) {
                                                 const result = document.querySelector("#result");
                                                 const emailfield = document.querySelector("#email");
                                                 const emailcb1 = document.querySelector("#emailupdates");
