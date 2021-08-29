@@ -455,7 +455,6 @@ function setFocus() {
 
     children.forEach((child) => child.classList.remove("autocomplete-active"));
     children[active].classList.add("autocomplete-active");
-    children[active].scrollIntoView();
   }
 }
 
@@ -538,7 +537,7 @@ searchInput.addEventListener("keyup", (e) => {
       nameSpan.innerText = val;
       div.appendChild(nameSpan);
 
-      scrollTo.scrollIntoView();
+      searchInput.scrollIntoView();
 
       div.addEventListener("click", () => {
         searchInput.value = val;
