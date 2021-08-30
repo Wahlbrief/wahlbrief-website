@@ -17,7 +17,7 @@ left:
 right:
   zip: "Zuständiges Wahlamt suchen"
   description: "Wir benötigen zunächst die Postleitzahl der Meldeadresse.<br /> Zuständig für den Briefwahl-Antrag ist meist das Bürgeramt am Hauptwohnsitz."
-  tos: "<small>Die Nutzung von Wahlbrief setzt die Zustimmung zu den <a href='/terms.html' target='_blank'>Datenschutzbestimmungen</a> voraus. <br />Wir übertragen und speichern keine persönlichen Daten.</small>"
+  tos: "<small>Hier finden Sie unsere Hinweise zum <a href='/terms.html' target='_blank'>Datenschutz</a>. <br />Wir übertragen und speichern keine persönlichen Daten.</small>"
   placeholder: "PLZ (Hauptwohnsitz)"
   button: "Wahlamt suchen"
   residence: "Persönliche Angaben"
@@ -66,8 +66,8 @@ right:
   message:
     sharecopy: "Kopiert"
     copied: "Adresse kopiert"
-    success: "Text kopiert. Jetzt in der E-Mail-App einfügen und an die oben genannte E-Mail-Adresse des Wahlamts versenden."
-    sent: "Der Antrag sollte sich in der E-Mail-App geöffnet haben. Nur noch versenden."
+    success: "Text kopiert. Jetzt im E-Mail-Programm einfügen und an die oben genannte E-Mail-Adresse des Wahlamts versenden."
+    sent: "Der Antrag sollte sich im E-Mail-Programm geöffnet haben. Nur noch versenden."
     intro: "Auf einen der Buttons klicken und den fertigen Antrag per E-Mail versenden."
   instructions:
     title: "Jetzt nur noch den Antrag versenden:"
