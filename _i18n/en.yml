@@ -124,8 +124,28 @@ imprint:
     title: "Imprint"
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet facilisis at erat tincidunt. Viverra vel ultrices faucibus tempus egestas pellentesque aliquam in diam."
   right:
-    title: "Responsible for the contents of the website wahlbrief.de"
-    text: "<strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet facilisis at erat tincidunt. Viverra vel ultrices faucibus tempus egestas pellentesque aliquam in diam.<strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet facilisis at erat tincidunt. Viverra vel ultrices faucibus tempus egestas pellentesque aliquam in diam.<strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet facilisis at erat tincidunt. Viverra vel ultrices faucibus tempus egestas pellentesque aliquam in diam.<ul><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li></ul><br /><strong>Contact</strong><br />Aboalarm GmbH<br />Buttermelcherstraße 16<br />80469 München<br />E-Mail: (Keine Kundenanfragen)"
+    title: "Imprint"
+    text: "
+    <b>Angaben gemäß § 5 TMG:</b><br />
+Mehr Demokratie e.V.<br />
+Haus der Demokratie und Menschenrechte<br />
+Greifswalder Str. 4<br />
+10405 Berlin<br />
+<br />
+<b>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</b><br />
+Juris Vetra. <a href='mailto:juris@wahlbrief.de'>Kontakt aufnehmen</a><br />
+<br />
+<b>Konzept und Realisierung:</b><br />
+Juris Vetra, Johann-Friedrich Salzmann<br />
+<br />
+<b>Kontakt</b><br />
+Support, Technische Probleme: <a href='mailto:contact@wahlbrief.de'>Kontakt aufnehmen</a><br />
+Projektbezogene Anfragen: <a href='mailto:wahlbuero@wahlbrief.de'>Kontakt aufnehmen</a><br />
+Presse-Anfragen: <a href='mailto:presse@mehr-demokratie.de'>Kontakt aufnehmen</a><br />
+<br />
+<b>Datenschutz</b><br />
+Unsere Hinweise zum Datenschutz finden Sie hier: <a href='terms.html'>Datenschutzbestimmungen</a>
+"
     button: "Contact us"
 about:
   left:
