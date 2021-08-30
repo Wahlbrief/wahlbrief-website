@@ -42,7 +42,7 @@ function progress() {
 // Function to get items from JSON and build array
 
 (async () => {
-  const endpoint = "https://raw.githubusercontent.com/Wahlbrief/wahlbrief-website/main/assets/test.json";
+  const endpoint = "https://raw.githubusercontent.com/Wahlbrief/wahlbrief-website/main/assets/plz.json";
   const result = await fetch(endpoint).then((blob) => blob.json());
 
   const sorted = result.sort((a, b) => {

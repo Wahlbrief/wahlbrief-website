@@ -399,7 +399,7 @@ copyButtons.forEach((btn) => {
 // Function to get items from JSON and build array
 
 (async () => {
-  const endpoint = "assets/test.json";
+  const endpoint = "assets/plz.json";
   const result = await fetch(endpoint).then((blob) => blob.json());
 
   const sorted = result.sort((a, b) => {
