@@ -172,6 +172,7 @@ function scrollTop() {
 let lastEmail = null;
 
 function is_valid_datalist_value(inputValue, cityValue) {
+  onEnter(); // Selects the item even if suggestion is not selected
   const filtered = zips.filter(
     (item) =>
       item.PLZ.toString() == inputValue &&
