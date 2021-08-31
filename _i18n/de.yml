@@ -84,7 +84,7 @@ right:
     sendalternative: "Bitte senden Sie mir die Unterlagen an folgende Adresse:"
     regards: "Mit freundlichen Grüßen"
   sharing:
-    copy: "Ich habe gerade Briefwahlunterlagen zur Bundestagswahl beantragt.<br />Bist du auch dabei? Jede Stimme zählt.<br />https://wahlbrief.de/"
+    copy: "Ich habe gerade Briefwahlunterlagen zur Bundestagswahl beantragt.%0D%0ABist du auch dabei? Jede Stimme zählt.%0D%0Ahttps://wahlbrief.de/"
     email:
       subject: "Briefwahl beantragen zur Bundestagswahl: Jede Stimme zählt!"
       body: "Hallo!%0D%0A%0D%0AIch habe gerade online die Briefwahlunterlagen zur Bundestagswahl beantragt.%0D%0ADas geht total schnell und einfach: https://wahlbrief.de/%0D%0AWahlbrief ist ein Angebot von Mehr Demokratie e.V.%0D%0A%0D%0ALiebe Grüße,%0D%0A"
@@ -143,12 +143,12 @@ Juris Vetra. <a href='mailto:juris@wahlbrief.de'>Kontakt aufnehmen</a><br />
 <b>Konzept und Realisierung:</b><br />
 Juris Vetra, Johann-Friedrich Salzmann<br />
 <br />
-<b>Kontakt</b><br />
+<b>Kontakt:</b><br />
 Support, Technische Probleme: <a href='mailto:contact@wahlbrief.de'>Kontakt aufnehmen</a><br />
 Projektbezogene Anfragen: <a href='mailto:wahlbuero@wahlbrief.de'>Kontakt aufnehmen</a><br />
 Presse-Anfragen: <a href='mailto:presse@mehr-demokratie.de'>Kontakt aufnehmen</a><br />
 <br />
-<b>Datenschutz</b><br />
+<b>Datenschutz:</b><br />
 Hinweise zum Datenschutz: <a href='/terms.html'>Datenschutzbestimmungen</a>
 "
     button: "Kontakt aufnehmen"
