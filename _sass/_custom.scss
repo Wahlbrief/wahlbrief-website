@@ -102,6 +102,12 @@ a {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.top-item {
+  color: $cyan-700;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
 .overlay {
   height: 0%;
   width: 100%;
@@ -243,6 +249,18 @@ a {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+
+  &:before,
+  :after {
+    display: table;
+    content: " ";
+  }
+
+  &:after {
+    clear: both;
+  }
 }
 
 .outro {

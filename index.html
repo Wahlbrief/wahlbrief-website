@@ -9,12 +9,38 @@ layout: default
             <div class="container d-flex flex-column flex-fill h-100 py-5 px-2 px-lg-5">
                 <div class="row mb-4 mb-lg-5">
                     <div class="col-12">
-                        <div class="navbar navbar-expand-xl justify-content-between">
+                        <div class="navbar navbar-expand-xl justify-content-between align-items-center">
                             <div>
-                                <a href="{{ site.url }}">
+                                <a href="{{ site.baseurl }}">
                                     <img src="{{ site.baseurl_root }}/assets/images/wahlbrief.svg" alt="Wahlbrief logo"
                                         width="200px" height="35px">
                                 </a>
+                            </div>
+
+                            <div class="d-flex d-lg-none align-items-center justify-content-between">
+                                <div class="dropdown">
+                                    <button class="dropdown-toggle top-item" type="button" id="dropdownMenu3"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-globe me-1"></i>
+                                        {% for lang in site.languages %}
+                                        {% assign lang_short = site.data[lang].l10n.lang_short %}
+                                        {% if lang == site.lang %}
+                                        {{ lang_short }}
+                                        {% endif %}
+                                        {% endfor %}
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+                                        {% for lang in site.languages %}
+                                        {% assign lang_name = site.data[lang].l10n.lang_name %}
+                                        {% if lang == site.default_lang %}
+                                        <li><a class="dropdown-item" href="{{ page.url }}">{{ lang_name }}</a></li>
+                                        {% else %}
+                                        <li><a class="dropdown-item" href="/{{ lang }}{{ page.url }}">{{ lang_name
+                                                }}</a></li>
+                                        {% endif %}
+                                        {% endfor %}
+                                    </ul>
+                                </div>
                             </div>
 
                             <div class="d-lg-none">
@@ -227,31 +253,6 @@ layout: default
                                     {% t left.built %}
                                 </small>
                             </p>
-                            <div class="d-flex d-lg-none align-items-center justify-content-between mt-4">
-                                <div class="dropdown">
-                                    <button class="dropdown-toggle" type="button" id="dropdownMenu3"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fas fa-globe me-1"></i>
-                                        {% for lang in site.languages %}
-                                        {% assign lang_name = site.data[lang].l10n.lang_name %}
-                                        {% if lang == site.lang %}
-                                        {{ lang_name }}
-                                        {% endif %}
-                                        {% endfor %}
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
-                                        {% for lang in site.languages %}
-                                        {% assign lang_name = site.data[lang].l10n.lang_name %}
-                                        {% if lang == site.default_lang %}
-                                        <li><a class="dropdown-item" href="{{ page.url }}">{{ lang_name }}</a></li>
-                                        {% else %}
-                                        <li><a class="dropdown-item" href="/{{ lang }}{{ page.url }}">{{ lang_name
-                                                }}</a></li>
-                                        {% endif %}
-                                        {% endfor %}
-                                    </ul>
-                                </div>
-                            </div>
                         </div>
 
                         <!-- Step 2 -->
@@ -596,31 +597,6 @@ layout: default
                                         {% t left.built %}
                                     </small>
                                 </p>
-                                <div class="d-block d-lg-none mt-4">
-                                    <div class="dropdown">
-                                        <button class="dropdown-toggle" type="button" id="dropdownMenu4"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            <i class="fas fa-globe me-1"></i>
-                                            {% for lang in site.languages %}
-                                            {% assign lang_name = site.data[lang].l10n.lang_name %}
-                                            {% if lang == site.lang %}
-                                            {{ lang_name }}
-                                            {% endif %}
-                                            {% endfor %}
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
-                                            {% for lang in site.languages %}
-                                            {% assign lang_name = site.data[lang].l10n.lang_name %}
-                                            {% if lang == site.default_lang %}
-                                            <li><a class="dropdown-item" href="{{ page.url }}">{{ lang_name }}</a></li>
-                                            {% else %}
-                                            <li><a class="dropdown-item" href="/{{ lang }}{{ page.url }}">{{ lang_name
-                                                    }}</a></li>
-                                            {% endif %}
-                                            {% endfor %}
-                                        </ul>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
@@ -757,7 +733,7 @@ layout: default
                                     });
                                 </script>
 
-                                <div id="outro-bottom" class="col-12 col-xl-8 mt-0 mb-4 p-4 outro">
+                                <div id="outro-bottom" class="col-12 col-xl-8 my-4 p-4 outro">
                                     <h1>{% t left.share %}</h1>
                                     <p class="mb-4">{% t left.description %}</p>
                                     <div>
@@ -791,31 +767,6 @@ layout: default
                                         {% t left.built %}
                                     </small>
                                 </p>
-                                <div class="d-block d-lg-none mt-4">
-                                    <div class="dropdown">
-                                        <button class="dropdown-toggle" type="button" id="dropdownMenu5"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            <i class="fas fa-globe me-1"></i>
-                                            {% for lang in site.languages %}
-                                            {% assign lang_name = site.data[lang].l10n.lang_name %}
-                                            {% if lang == site.lang %}
-                                            {{ lang_name }}
-                                            {% endif %}
-                                            {% endfor %}
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu5">
-                                            {% for lang in site.languages %}
-                                            {% assign lang_name = site.data[lang].l10n.lang_name %}
-                                            {% if lang == site.default_lang %}
-                                            <li><a class="dropdown-item" href="{{ page.url }}">{{ lang_name }}</a></li>
-                                            {% else %}
-                                            <li><a class="dropdown-item" href="/{{ lang }}{{ page.url }}">{{ lang_name
-                                                    }}</a></li>
-                                            {% endif %}
-                                            {% endfor %}
-                                        </ul>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
