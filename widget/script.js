@@ -35,7 +35,7 @@ function progress() {
     console.log(
       "Redirecting to the main site, with ZIP of " + x + " and city " + xi
     );
-    const newURL = "https://wahlbrief.de/?zip" + x + "&city=" + xi;
+    const newURL = "https://wahlbrief.de/?zip=" + x + "&city=" + xi;
     window.open(newURL);
   }
 }
