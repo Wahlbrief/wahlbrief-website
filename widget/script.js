@@ -7,6 +7,7 @@ const footer = document.getElementById("footer");
 let lastEmail = null;
 
 function is_valid_datalist_value(inputValue, cityValue) {
+  onEnter();
   const filtered = zips.filter(
     (item) =>
       item.PLZ.toString() == inputValue &&
