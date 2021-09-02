@@ -14,6 +14,8 @@ Wahlbrief ist eine browserbasierte Anwendung zur Generierung des Wahlschein-Antr
 
 Unser [Widget](https://wahlbrief.de/widget) kann eingebunden werden.
 
+```<iframe src="https://wahlbrief.de/widget" style="border: none;" name="wahlbrief" scrolling="yes" frameborder="0" height="620px" width="600px" allowfullscreen></iframe>```
+
 ## Lizenz und Weiterverwendung
 
 Lizenzbestimmungen siehe [MIT.](https://github.com/Wahlbrief/wahlbrief-website/blob/main/MIT-Lizenz.md)
