@@ -16,4 +16,4 @@ Unser [Widget](https://wahlbrief.de/widget) kann eingebunden werden.
 
 ## Lizenz und Weiterverwendung
 
-Lorem ipsum ......
+Lizenzbestimmungen siehe [MIT.](https://github.com/Wahlbrief/wahlbrief-website/blob/main/MIT-Lizenz.md)
