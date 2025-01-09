@@ -2,7 +2,7 @@ listid: "2"
 listsub: "1"
 left:
   title: "Jetzt Briefwahl beantragen"
-  subtitle: "Am 26. September ist Bundestagswahl. Schon heute kann die Stimme vorab per Briefwahl abgegeben werden. Die Beantragung per E-Mail dauert nur 2 Minuten.<br /><br /><b>WICHTIG: Der Wahlbrief sollte spätestens am 23.09. in den Briefkasten geworfen werden. Danach bitte direkt im Wahlamt bis Sonntag um 18 Uhr abgeben.</b><br /><br /><small>Die Unterlagen werden in wenigen Tagen zugestellt. Je nach Region wird die Briefwahl für weitere Wahlen direkt mitbeantragt (Landtagswahlen, Bürgerbegehren).</small>"
+  subtitle: "Am 23. Februar ist Bundestagswahl. Schon heute kann die Stimme vorab per Briefwahl abgegeben werden. Die Beantragung per E-Mail dauert nur 2 Minuten.<br /><br /><b>WICHTIG: Der Wahlbrief sollte spätestens am 20.02. in den Briefkasten geworfen werden. Danach besser direkt im Wahlamt bis Sonntag, 18 Uhr einwerfen oder abgeben.</b><br /><br /><small>Die Unterlagen werden ab Ende Januar innerhalb weniger Tage zugestellt. Wegen der kurzen Vorbereitungszeit sollte der Antrag so früh wie möglich gestellt werden.</small>"
   preview: "Vorschau: Briefwahl-Antrag"
   home: "Home"
   about: "Projekt"
@@ -75,7 +75,7 @@ right:
     second: "2) Betreff übernehmen:"
     third: "3) Diese Hinweise löschen und unten stehenden Text beibehalten"
   letter:
-    title: "Sehr geehrte Damen und Herren,<br /><br />hiermit beantrage ich die Zusendung der Briefwahlunterlagen für alle in Betracht kommenden Wahlen 2021."
+    title: "Sehr geehrte Damen und Herren,<br /><br />hiermit beantrage ich die Zusendung der Briefwahlunterlagen für die Bundestagswahl 2025."
     name: "Vorname"
     surname: "Nachname"
     birthday: "Geburtsdatum"
@@ -109,7 +109,7 @@ questions:
   - title: "Wer kann Briefwahl beantragen?"
     answer: "Jede Person, die stimmberechtigt ist, kann ohne Angabe von Gründen per Briefwahl statt persönlich im Wahllokal wählen."
   - title: "Welche Fristen gibt es zu beachten?"
-    answer: "Die Briefwahlunterlagen können ab sofort beantragt werden. Der Bundeswahlleiter empfiehlt sogar, die Briefwahl so frühzeitig wie möglich zu beantragen und nicht abzuwarten, bis die Wahlbenachrichtigung eingetroffen ist. Solange der Wahlbrief mit der abgegebenen Stimme rechtzeitig zum Wahltag eingeht, wird die Stimme mitgezählt. Spätestens sollte der Wahlbrief am dritten Werktag vor der Wahl in die Post gegeben werden - also am Donnerstag, 23. September 2021."
+    answer: "Die Briefwahlunterlagen können ab sofort beantragt werden. Der Bundeswahlleiter empfiehlt sogar, die Briefwahl so frühzeitig wie möglich zu beantragen und nicht abzuwarten, bis die Wahlbenachrichtigung eingetroffen ist. Solange der Wahlbrief mit der abgegebenen Stimme rechtzeitig zum Wahltag eingeht, wird die Stimme mitgezählt. Spätestens sollte der Wahlbrief am dritten Werktag vor der Wahl in die Post gegeben werden - also am Donnerstag, 20. Februar 2025."
   - title: "Wann kann ich mit den Unterlagen rechnen?"
     answer: "Die Unterlagen werden meistens wenige Werktage nach Eingang deines Antrags beim Wahlamt versandt."
   - title: "Muss ich für den Wahlbrief Porto zahlen?"
@@ -123,11 +123,11 @@ questions:
   - title: "Kann ich den Wahlbrief auch direkt beim Wahlamt einwerfen?"
     answer: "Das ist möglich und dann sinnvoll, wenn die Briefwahlunterlagen erst am Tag vor oder am Tag der Wahl ausgefüllt werden. Der Brief muss bis zur Schließung der Wahllokale beim Wahlamt eingegangen sein."
   - title: "Wie geht es nach meinem Antrag auf Briefwahl weiter?"
-    answer: "Die Briefwahlunterlagen werden innerhalb weniger Werktage an die angegebene Adresse versandt. Eine Anleitung, wie die Briefwahlunterlagen ausgefüllt werden, gibt es auf der <a href='https://www.bundeswahlleiter.de/bundestagswahlen/2021/informationen-waehler/briefwahl.html#96bee7af-c797-46aa-afee-cab29dd428e4'>Website des Bundeswahlleiters</a>."
+    answer: "Die Briefwahlunterlagen werden innerhalb weniger Werktage an die angegebene Adresse versandt. Eine Anleitung, wie die Briefwahlunterlagen ausgefüllt werden, gibt es auf der <a href='https://www.bundeswahlleiterin.de/bundestagswahlen/2025/informationen-waehler/briefwahl.html#2308ae86-bd0f-44e6-ac5e-4116ece45785'>Website des Bundeswahlleiters</a>."
 imprint:
   left:
     title: "Offizielle Angaben"
-    subtitle: "wahlbrief ist ein Projekt von Mehr Demokratie e.V. zur Bundestagswahl 2021."
+    subtitle: "wahlbrief ist ein Projekt von Mehr Demokratie e.V. zur Bundestagswahl 2025."
   right:
     title: "Impressum"
     text: "
@@ -155,7 +155,7 @@ Hinweise zum Datenschutz: <a href='/terms.html'>Datenschutzbestimmungen</a>
 about:
   left:
     title: "Über das Projekt"
-    subtitle: "wahlbrief ist ein Projekt von Mehr Demokratie e.V. zur Bundestagswahl 2021. Wir möchten, dass so viele Menschen wie möglich an der Wahl teilnehmen. <br /><br />Es gibt viele Fälle, in denen die Briefwahl die einfachste und bequemste Art ist, zu wählen. Wir helfen dabei, innerhalb von 2 Minuten die Briefwahl-Unterlagen online beim zuständigen Wahlamt zu beantragen.<br /><br /><br />
+    subtitle: "wahlbrief ist ein Projekt von Mehr Demokratie e.V. zur Bundestagswahl 2025. Wir möchten, dass so viele Menschen wie möglich an der Wahl teilnehmen. <br /><br />Es gibt viele Fälle, in denen die Briefwahl die einfachste und bequemste Art ist, zu wählen. Wir helfen dabei, innerhalb von 2 Minuten die Briefwahl-Unterlagen online beim zuständigen Wahlamt zu beantragen.<br /><br /><br />
 <small><i>Mehr Demokratie e.V. ist ein überparteilicher, gemeinnütziger Verein, der sich für mehr direkte Demokratie und Bürgerbeteiligung einsetzt.
 
 <br /><br /> Konzept und Realisierung: Juris Vetra, Johann-Friedrich Salzmann<br />

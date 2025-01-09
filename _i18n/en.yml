@@ -3,7 +3,7 @@ listsub: "2"
 left:
   title: "Apply for postal vote now"
   subtitle:
-    "The German federal parliament elections are on 26 September. You can already cast your vote in advance by postal vote. It only takes 2 minutes to apply by email.<br /><br /><b>Mail your voted ballot until September 23 or drop off your ballot at the election office until Sunday 6pm.</b><br /><br /><small>The documents will be delivered in a few days. Depending on the region, documents for other elections will be delivered, too (state elections, citizens' referendums).</small>"
+    "The German federal parliament elections take place on 23 February. You can already cast your vote in advance by postal vote. It only takes 2 minutes to apply by email.<br /><br /><b>Mail your voted ballot before 20 Feburary or drop off your ballot at the election office until Sunday 6pm.</b><br /><br /><small>The documents are delivered within few days. Please note that due to the election's short notice, it is crucial to apply for postal election as soon as possible.</small>"
   preview: "Preview: Postal vote application"
   home: "Home"
   about: "About"
@@ -75,7 +75,7 @@ right:
     second: "2) Set the following as subject:"
     third: "3) Delete these instructions and keep the text below."
   letter:
-    title: "Sehr geehrte Damen und Herren,<br /><br />hiermit beantrage ich die Zusendung der Briefwahlunterlagen für alle in Betracht kommenden Wahlen 2021. Bitte senden Sie mir, falls möglich, englische Unterlagen zu."
+    title: "Sehr geehrte Damen und Herren,<br /><br />hiermit beantrage ich die Zusendung der Briefwahlunterlagen für die Bundestagswahl 2025. Bitte senden Sie mir, falls möglich, englische Unterlagen zu."
     name: "Vorname"
     surname: "Nachname"
     birthday: "Geburtsdatum"
@@ -109,7 +109,7 @@ questions:
   - title: "Who can apply for a postal vote?"
     answer: "Any person who is eligible to vote may vote by postal ballot instead of in person at the polling station without giving a reason."
   - title: "What are the deadlines?"
-    answer: "Postal voting documents can be applied for as of now. The Federal Election Commissioner even recommends applying for the postal vote as early as possible and not waiting until the election notification has arrived. As long as the election letter with the vote cast is received in time for election day, the vote will be counted. At the latest, the election letter should be posted on the third working day before the election - i.e. Thursday, 23 September 2021."
+    answer: "Postal voting documents can be applied for as of now. The Federal Election Commissioner even recommends applying for the postal vote as early as possible and not waiting until the election notification has arrived. As long as the election letter with the vote cast is received in time for election day, the vote will be counted. At the latest, the election letter should be posted on the third working day before the election - i.e. Thursday, 20 February 2025."
   - title: "When can I expect the documents?"
     answer: "The documents are usually sent a few working days after your application has been received by the electoral office."
   - title: "Do I have to pay postage for the election letter?"
@@ -123,11 +123,11 @@ questions:
   - title: "Can I also post the ballot paper directly at the electoral office?"
     answer: "This is possible and makes sense if the absentee ballot papers are only filled in the day before or on the day of the election. The letter must be received by the electoral office by the time the polling stations close."
   - title: "What happens after I apply for an absentee ballot?"
-    answer: "The postal voting documents will be sent to the address provided within a few working days. Instructions on how to fill in the postal voting documents are available on the <a href='https://www.bundeswahlleiter.de/bundestagswahlen/2021/informationen-waehler/briefwahl.html#96bee7af-c797-46aa-afee-cab29dd428e4'>website of the Federal Election Commissioner</a>."
+    answer: "The postal voting documents will be sent to the address provided within a few working days. Instructions on how to fill in the postal voting documents are available on the <a href='https://www.bundeswahlleiterin.de/bundestagswahlen/2025/informationen-waehler/briefwahl.html#2308ae86-bd0f-44e6-ac5e-4116ece45785'>website of the Federal Election Commissioner</a>."
 imprint:
   left:
     title: "Imprint"
-    subtitle: "wahlbrief is a project run by Mehr Demokratie e.V. for the German federal election 2021."
+    subtitle: "wahlbrief is a project run by Mehr Demokratie e.V. for the German federal election 2025."
   right:
     title: "Imprint"
     text: "
@@ -155,7 +155,7 @@ Data protection and privacy: <a href='/terms.html'>Privacy Policy</a>
 about:
   left:
     title: "About the project"
-    subtitle: "wahlbrief is a project run by Mehr Demokratie e.V. for the 2021 federal election. We want as many people as possible to take part in the election. <br /><br />There are many cases where postal voting is the easiest and most convenient way to vote. We help to apply for postal voting documents online from the relevant election office within 2 minutes.<br /><br /><br />
+    subtitle: "wahlbrief is a project run by Mehr Demokratie e.V. for the 2025 federal election. We want as many people as possible to take part in the election. <br /><br />There are many cases where postal voting is the easiest and most convenient way to vote. We help to apply for postal voting documents online from the relevant election office within 2 minutes.<br /><br /><br />
 <small><i>Mehr Demokratie e.V. is a non-partisan, non-profit association that campaigns for more direct democracy and citizen participation.
 
 <br /><br />Concept and realisation: Juris Vetra, Johann-Friedrich Salzmann<br />
