@@ -27,7 +27,7 @@
     <link rel="canonical" href="">
 
     <meta itemprop="name" content="Wahlbrief">
-    <meta itemprop="description" content="ist ein Projekt von Mehr Demokratie e.V. zur Bundestagswahl 2021">
+    <meta itemprop="description" content="ist ein Projekt von Mehr Demokratie e.V. zur Bundestagswahl 2025">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="assets/images/favicons/favicon.svg">
 
@@ -36,43 +36,48 @@
 </head>
 
 <body>
-
     <header>
-        <img src="assets/images/logo.svg" title="Wahlbrief" alt="Wahlbrief logo" width="300px">
+        <img src="assets/images/wahlbrief.svg" alt="Wahlbrief Logo - Ein Projekt von Mehr Demokratie" width="300">
     </header>
 
     <main>
         <h1>Zuständiges Wahlamt suchen</h1>
-        <p>Wir benötigen zunächst die Postleitzahl der Meldeadresse.
+
+        <p class="description">Wir benötigen zunächst die Postleitzahl der Meldeadresse.
             Zuständig für den Briefwahl-Antrag ist meist das Bürgeramt am Hauptwohnsitz.</p>
 
-        <small>Detaillierte Hinweise zum Datenschutz: <a href="/terms.html" target="_blank">Datenschutzbestimmungen.</a> <br>Wir übertragen und speichern keine persönlichen Daten.</small>
+        <div class="form-container">
+            <div class="form-floating">
+                <input type="text" id="zipcode" class="form-control" autocomplete="off" placeholder=" "
+                    inputmode="numeric" aria-labelledby="zipcode-label" aria-autocomplete="list"
+                    aria-controls="autocomplete-list">
+                <label id="zipcode-label" for="zipcode">PLZ (Hauptwohnsitz)</label>
+                <div class="autocomplete-items" id="autocomplete-list" role="listbox" aria-label="PLZ Vorschläge">
+                </div>
+            </div>
 
-        <div class="form-floating autocomplete">
-            <input id="zipcode" type="text" name="zipcode" autocomplete="off" inputmode="numeric"
-                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
-                class="form-control" minlength="8" maxlength="70" placeholder="PLZ (Hauptwohnsitz)"
-                aria-label="PLZ (Hauptwohnsitz)" aria-describedby="PLZ (Hauptwohnsitz)">
-            <label for="zipcode">PLZ (Hauptwohnsitz)</label>
+            <button type="button" id="submit-btn" class="btn">Wahlamt suchen</button>
         </div>
 
-        <div class="autocomplete-items" id="autocomplete-list">
-        </div>
-
-        <button onclick="progress();" class="btn">Wahlamt suchen</button>
+        <p class="disclaimer">
+            <small>
+                Detaillierte Hinweise zum Datenschutz:
+                <a href="/terms.html" target="_blank" rel="noopener">Datenschutzbestimmungen</a>.
+                <br>Wir übertragen und speichern keine persönlichen Daten.
+            </small>
+        </p>
     </main>
 
     <footer id="footer">
         <p>
             <small>
                 Ein <a href="https://github.com/Wahlbrief/wahlbrief-website" target="_blank"
-                    rel="noreferrer noopener">OpenSource Projekt</a> von Mehr Demokratie. 2021
+                    rel="noreferrer noopener">OpenSource Projekt</a> von Mehr Demokratie. 2025
             </small>
         </p>
     </footer>
 
     <script src="script.js"></script>
-
 </body>
 
 </html>

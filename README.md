@@ -1,6 +1,6 @@
 # Wahlbrief
 
-Ein OpenSource Projekt von Mehr Demokratie e.V. zur Bundestagswahl 2021
+Ein OpenSource Projekt von Mehr Demokratie e.V. zur Bundestagswahl 2025
 
 ## Über Wahlbrief
 

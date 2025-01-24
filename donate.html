@@ -51,10 +51,9 @@ layout: page
                     </div>
                 </div>
                 <div class="row">
-                    <!-- Intro section -->
                     <div class="col-12 col-lg-8">
-                        <h1>{% t faq.left.title %}</h1>
-                        <p class="subtitle">{% t faq.left.subtitle %}</p>
+                        <h1>{% t donate.left.title %}</h1>
+                        <p class="subtitle">{% t donate.left.subtitle %}</p>
                     </div>
                 </div>
 
@@ -79,14 +78,13 @@ layout: page
         <div class="col-md-12 col-lg-6 offset-xl-6 offset-0">
             <div class="container d-flex flex-column h-100 py-5 px-2 px-lg-4">
                 <div class="row h-100 d-flex justify-content-between">
-                    <div class="col-12">
-                        <h2 class="mb-5">{% t faq.right.title %}</h2>
-                        {% for item in site.translations[site.lang]["questions"] %}
-                        <details>
-                            <summary>{{ item["title"] }}</summary>
-                            {{ item["answer"] }}
-                        </details>
-                        {% endfor %}
+                    <div class="col-12 imprint">
+                        <script type="text/javascript" src="https://secure.fundraisingbox.com/app/paymentJS?hash=pe2iop8p6w6f9o4d"></script>
+                        <noscript>Bitte Javascript aktivieren</noscript>
+                        <a target="_blank" href="https://www.fundraisingbox.com/?utm_source=donation_form">
+                            <img border="0" style="border: 0 !important" src="https://secure.fundraisingbox.com/images/FundraisingBox-Logo-Widget.png" alt="FundraisingBox Logo" />
+                        </a>
+                        <!--<a class="btn btn-contact" href="mailto:contact@walhbrief.de">{% t imprint.right.button %}</a>-->
                     </div>
                     <p class="mb-0 mt-4 d-block d-lg-none">
                         <small>

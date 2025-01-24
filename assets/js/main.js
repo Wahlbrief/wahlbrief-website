@@ -1,81 +1,333 @@
-// Declaration of most const and lets
+/**
+ * Safely parses an integer from a string. Returns the integer or undefined if parsing fails.
+ * @param {string} value - The string to parse.
+ * @returns {number|undefined} The parsed integer or undefined.
+ */
+function safeParseInt(value) {
+  const parsed = parseInt(value);
+  return isNaN(parsed) ? undefined : parsed;
+}
 
-const zips = [];
-
-const mql = window.matchMedia("(max-width: 768px)");
-const mqlr = mql.matches;
-
-const el1 = document.getElementById("intro");
-const el2 = document.getElementById("bigletter");
-const el3 = document.getElementById("outro");
-const el4 = document.getElementById("address-mobile");
-const el5 = document.getElementById("preview-mobile");
-const el6 = document.getElementById("preview");
-const el7 = document.getElementById("outro-bottom");
-
-let rad = document.getElementsByName("flexRadioDefault");
-let newform = document.getElementById("newform");
-let address = document.getElementById("ogaddress");
-let newaddress = document.getElementById("newaddress");
-let finaladdress = document.getElementById("finalogaddress");
-let finalnewaddress = document.getElementById("finalnewaddress");
-let newsletter = document.getElementById("subscription");
-const subject = document.getElementById("subject");
-const instructionemail = document.getElementById("instruction-email");
-const munname = document.getElementById("munname");
-const munemail = document.getElementById("munemail");
-const muniname = document.getElementById("muniname");
-const muniemail = document.getElementById("muniemail");
-const finalmuniname = document.getElementById("final-munname");
-const finalmuniemail = document.getElementById("final-munemail");
-const prefillzip = document.getElementById("form-zip");
-const prefillcity = document.getElementById("form-city");
-const cb = document.getElementById("cb1");
-
-// Function to hide/show items based on radio buttons selected
-
-for (var i = 0; i < rad.length; i++) {
-  rad[i].onclick = function () {
-    if (this.value == "different") {
-      newform.style.display = "block";
-      newform.scrollIntoView();
-      address.style.display = "none";
-      finaladdress.style.display = "none";
-      newaddress.style.display = "inline-block";
-      finalnewaddress.style.display = "inline-block";
-    } else if (this.value == "normal") {
-      newform.style.display = "none";
-      address.style.display = "inline-block";
-      finaladdress.style.display = "inline-block";
-      newaddress.style.display = "none";
-      finalnewaddress.style.display = "none";
-    }
+/**
+ * Gets the values from the form inputs.
+ * @returns {Object} An object containing the form values.
+ */
+function getFormValues() {
+  return {
+    name: document.getElementById("form-name")?.value,
+    surname: document.getElementById("form-surname")?.value,
+    day: safeParseInt(document.getElementById("form-day")?.value),
+    month: safeParseInt(document.getElementById("form-month")?.value),
+    year: safeParseInt(document.getElementById("form-year")?.value),
+    street: document.getElementById("form-street")?.value,
+    zip: document.getElementById("form-zip")?.value,
+    city: document.getElementById("form-city")?.value,
+    newname: document.getElementById("form-newname")?.value,
+    newsurname: document.getElementById("form-newsurname")?.value,
+    address: document.getElementById("form-address")?.value,
+    newstreet: document.getElementById("form-newstreet")?.value,
+    newzip: document.getElementById("form-newzip")?.value,
+    newcity: document.getElementById("form-newcity")?.value,
   };
 }
 
-// Function to show/hide items based on the mobile toggle
+/**
+ * Validates if the given date is at least 18 years before February 23, 2025.
+ *
+ * @param {number} day - The day of the birthdate.
+ * @param {number} month - The month of the birthdate.
+ * @param {number} year - The year of the birthdate.
+ * @returns {boolean} True if the date is valid and at least 18 years before the election day, false otherwise.
+ */
+function isValidBirthday(day, month, year) {
+  const today = new Date();
+  const electionDay = new Date(2025, 1, 23); // Note: Month is 0-indexed (0 = January)
+  const birthDate = new Date(year, month - 1, day); // Note: Month is 0-indexed
 
-cb.addEventListener("change", (event) => {
-  const result = cb.checked;
-  if (result == true) {
-    newform.style.display = "block";
-    newform.scrollIntoView();
-    address.style.display = "none";
-    finaladdress.style.display = "none";
-    newaddress.style.display = "inline-block";
-    finalnewaddress.style.display = "inline-block";
-  } else if (result == false) {
-    newform.style.display = "none";
-    address.style.display = "inline-block";
-    finaladdress.style.display = "inline-block";
-    newaddress.style.display = "none";
-    finalnewaddress.style.display = "none";
+  if (isNaN(birthDate)) {
+    // The date is invalid.
+    return false;
+  }
+
+  // Calculate the difference between the birth date and the election day
+  const differenceInTime = electionDay.getTime() - birthDate.getTime();
+  const differenceInDays = differenceInTime / (1000 * 3600 * 24);
+
+  // Check if the person is at least 18 years old
+  return differenceInDays >= 365.25 * 18; // Account for leap years
+}
+
+/**
+ * Updates the text content of multiple elements.
+ * @param {Object} updates - An object where keys are element IDs and values are the new text content.
+ */
+function updateTextContent(updates) {
+  for (const id in updates) {
+    const element = document.getElementById(id);
+    const finalElement = document.getElementById("final-" + id);
+    if (element) {
+      element.textContent = updates[id];
+    }
+    if (finalElement) {
+      finalElement.textContent = updates[id];
+    }
+  }
+}
+
+/**
+ * Sets the display style of an element.
+ * @param {HTMLElement} element - The element to modify.
+ * @param {string} displayValue - The CSS display value (e.g., "block", "none", "inline-block").
+ */
+function setDisplayStyle(element, displayValue) {
+  if (element) {
+    element.style.display = displayValue;
+  }
+}
+
+/**
+ * Validates an input element's value against a given regular expression.
+ * Adds or removes the 'is-invalid' class to the input element based on validity.
+ *
+ * @param {HTMLElement} inputElement - The input element to validate.
+ * @param {RegExp} regex - The regular expression to use for validation.
+ */
+function validateInput(inputElement, regex) {
+  if (inputElement) {
+    const isValid = regex.test(inputElement.value);
+    inputElement.classList.toggle("is-invalid", !isValid);
+  }
+}
+
+/**
+ * Generates a mailto URL with the specified recipient, subject, and body.
+ *
+ * @returns {string} The generated mailto URL.
+ */
+function generateMailtoUrl() {
+  const quote = document.getElementById("letter-content");
+  if (quote && quote.innerText) {
+    const mailTo = new Mailto_url();
+    mailTo.addMain(elements.munemail.textContent);
+    mailTo.setSubject(elements.subject.textContent);
+    mailTo.setBody(quote.innerText);
+    return mailTo.getURL(true);
+  }
+  return "#";
+}
+
+/**
+ * Sets the href attribute of the send email button to a mailto URL generated by generateMailtoUrl().
+ *
+ * @param {HTMLElement} link - The link element (send email button).
+ * @returns {boolean} Always returns false to prevent default link behavior.
+ */
+function getContent(link) {
+  event.preventDefault();
+  link.href = generateMailtoUrl();
+  const displayMessage = document.getElementById("final-message");
+  displayMessage.innerHTML =
+    "<i class='fas fa-check-circle me-2'></i>{% t right.message.sent %}";
+  displayMessage.classList.add("success");
+  return false;
+}
+
+// --- Data ---
+
+const zips = []; // Array to store ZIP code data
+
+// --- DOM Elements ---
+
+const elements = {
+  intro: document.getElementById("intro"),
+  bigletter: document.getElementById("bigletter"),
+  outro: document.getElementById("outro"),
+  addressMobile: document.getElementById("address-mobile"),
+  previewMobile: document.getElementById("preview-mobile"),
+  preview: document.getElementById("preview"),
+  outroBottom: document.getElementById("outro-bottom"),
+  newform: document.getElementById("newform"),
+  ogaddress: document.getElementById("ogaddress"),
+  newaddress: document.getElementById("newaddress"),
+  finalogaddress: document.getElementById("finalogaddress"),
+  finalnewaddress: document.getElementById("finalnewaddress"),
+  subject: document.getElementById("subject"),
+  instructionemail: document.getElementById("instruction-email"),
+  munname: document.getElementById("munname"),
+  munemail: document.getElementById("munemail"),
+  muniname: document.getElementById("muniname"),
+  muniemail: document.getElementById("muniemail"),
+  finalmuniname: document.getElementById("final-munname"),
+  finalmuniemail: document.getElementById("final-munemail"),
+  prefillzip: document.getElementById("form-zip"),
+  prefillcity: document.getElementById("form-city"),
+  cb1: document.getElementById("cb1"),
+  searchInput: document.getElementById("zipcode"),
+  suggestions: document.getElementById("autocomplete-list"),
+  scrollTo: document.getElementById("next-click"),
+  birthdayForm: document.querySelector("fieldset"),
+  allBirthdayInputs: Array.from(document.querySelectorAll("fieldset input")),
+  copyButtons: Array.from(document.querySelectorAll(".copy")),
+  sender: document.getElementById("send-text"),
+  copier: document.getElementById("copy-text"),
+};
+
+const formElements = {
+  name: document.getElementById("form-name"),
+  surname: document.getElementById("form-surname"),
+  day: document.getElementById("form-day"),
+  month: document.getElementById("form-month"),
+  year: document.getElementById("form-year"),
+  street: document.getElementById("form-street"),
+  zip: document.getElementById("form-zip"),
+  city: document.getElementById("form-city"),
+  newname: document.getElementById("form-newname"),
+  newsurname: document.getElementById("form-newsurname"),
+  address: document.getElementById("form-address"),
+  newstreet: document.getElementById("form-newstreet"),
+  newzip: document.getElementById("form-newzip"),
+  newcity: document.getElementById("form-newcity"),
+};
+
+const previewElements = {
+  name: document.getElementById("name"),
+  surname: document.getElementById("surname"),
+  birthdate: document.getElementById("birthdate"),
+  birthmonth: document.getElementById("birthmonth"),
+  birthyear: document.getElementById("birthyear"),
+  street: document.getElementById("street"),
+  zip: document.getElementById("zip"),
+  city: document.getElementById("city"),
+  newname: document.getElementById("newname"),
+  newsurname: document.getElementById("newsurname"),
+  address: document.getElementById("address"),
+  newstreet: document.getElementById("newstreet"),
+  newzip: document.getElementById("newzip"),
+  newcity: document.getElementById("newcity"),
+};
+
+const finalPreviewElements = {
+  name: document.getElementById("final-name"),
+  surname: document.getElementById("final-surname"),
+  birthdate: document.getElementById("final-birthdate"),
+  birthmonth: document.getElementById("final-birthmonth"),
+  birthyear: document.getElementById("final-birthyear"),
+  "id-street": document.getElementById("final-id-street"),
+  "id-zip": document.getElementById("final-id-zip"),
+  "id-city": document.getElementById("final-id-city"),
+  street: document.getElementById("final-street"),
+  zip: document.getElementById("final-zip"),
+  city: document.getElementById("final-city"),
+  newname: document.getElementById("final-newname"),
+  newsurname: document.getElementById("final-newsurname"),
+  address: document.getElementById("final-address"),
+  newstreet: document.getElementById("final-newstreet"),
+  newzip: document.getElementById("final-newzip"),
+  newcity: document.getElementById("final-newcity"),
+};
+
+const identityElements = {
+  name: document.getElementById("id-name"),
+  surname: document.getElementById("id-surname"),
+  street: document.getElementById("id-street"),
+  zip: document.getElementById("id-zip"),
+  city: document.getElementById("id-city"),
+  newname: document.getElementById("id-newname"),
+  newsurname: document.getElementById("id-newsurname"),
+  address: document.getElementById("id-address"),
+  newstreet: document.getElementById("id-newstreet"),
+  newzip: document.getElementById("id-newzip"),
+  newcity: document.getElementById("id-newcity"),
+};
+
+// --- Mailto URL Generation ---
+document.addEventListener("click", (event) => {
+  if (event.target.id === "send-email") {
+    event.preventDefault();
+    event.target.href = generateMailtoUrl();
+    const displayMessage = document.getElementById("final-message");
+    displayMessage.innerHTML = "<i class='fas fa-check-circle me-2'></i>Sent!";
+    displayMessage.classList.add("success");
+    window.location.href = event.target.href;
   }
 });
 
-// Declaration of form inputs and plugging their data into the letter previews
+// --- Clipboard Functionality ---
+elements.copyButtons.forEach((btn) => {
+  const tooltip = new bootstrap.Tooltip(btn, {
+    parent: btn,
+    trigger: "manual",
+  });
+  const clipboard = new ClipboardJS(btn);
+  clipboard.on("success", function (e) {
+    e.clearSelection();
+    tooltip.update();
+    tooltip.show();
+    setTimeout(() => {
+      tooltip.hide();
+    }, 2000);
+  });
+});
 
-const checks = [
+elements.copier.addEventListener("click", (event) => {
+  const displayMessage = document.getElementById("final-message");
+  displayMessage.innerHTML = "<i class='fas fa-check-circle me-2'></i>Copied!";
+  displayMessage.classList.add("success");
+});
+
+// --- Event Listeners ---
+
+// Handle radio button changes for address type
+const rad = document.getElementsByName("flexRadioDefault");
+for (let i = 0; i < rad.length; i++) {
+  rad[i].addEventListener("click", function () {
+    setDisplayStyle(
+      elements.newform,
+      this.value === "different" ? "block" : "none"
+    );
+    if (this.value === "different") {
+      elements.newform.scrollIntoView();
+    }
+    setDisplayStyle(
+      elements.ogaddress,
+      this.value === "normal" ? "inline-block" : "none"
+    );
+    setDisplayStyle(
+      elements.finalogaddress,
+      this.value === "normal" ? "inline-block" : "none"
+    );
+    setDisplayStyle(
+      elements.newaddress,
+      this.value === "different" ? "inline-block" : "none"
+    );
+    setDisplayStyle(
+      elements.finalnewaddress,
+      this.value === "different" ? "inline-block" : "none"
+    );
+  });
+}
+
+// Handle mobile toggle changes for address type
+elements.cb1?.addEventListener("change", () => {
+  const isChecked = elements.cb1.checked;
+  setDisplayStyle(elements.newform, isChecked ? "block" : "none");
+  if (isChecked) {
+    elements.newform.scrollIntoView();
+  }
+  setDisplayStyle(elements.ogaddress, !isChecked ? "inline-block" : "none");
+  setDisplayStyle(
+    elements.finalogaddress,
+    !isChecked ? "inline-block" : "none"
+  );
+  setDisplayStyle(elements.newaddress, isChecked ? "inline-block" : "none");
+  setDisplayStyle(
+    elements.finalnewaddress,
+    isChecked ? "inline-block" : "none"
+  );
+});
+
+// Update letter preview based on form input
+const formInputFields = [
   "name",
   "newname",
   "surname",
@@ -89,78 +341,94 @@ const checks = [
   "newcity",
 ];
 
-checks.forEach((check) => {
-  const spans = document.getElementById(`${check}`);
-  const form = document.getElementById(`form-${check}`);
-  const final = document.getElementById(`final-${check}`);
-  const identity = document.getElementById(`id-${check}`);
-  const finalid = document.getElementById(`final-id-${check}`);
-  const br = Array.from(document.querySelectorAll(`[data-br=${check}]`));
+formInputFields.forEach((field) => {
+  formElements[field]?.addEventListener("input", (e) => {
+    const value = e.target.value;
+    const updates = {
+      [field]: value,
+      [`id-${field}`]: value,
+      [`final-id-${field}`]: value,
+      [`final-${field}`]: value,
+    };
+    updateTextContent(updates);
 
-  form.addEventListener("input", (e) => {
-    spans.textContent = e.target.value;
-    identity.textContent = e.target.value;
-    finalid.textContent = e.target.value;
-    final.textContent = e.target.value;
+    // Handle <br> elements for specific fields
+    const brElements = Array.from(
+      document.querySelectorAll(`[data-br=${field}]`)
+    );
+    brElements.forEach((br) => setDisplayStyle(br, value ? "inline" : "none"));
+  });
+});
 
-    if (br.length !== 0) {
-      if (e.target.value) {
-        br.forEach((b) => (b.style.display = "inline"));
-      } else {
-        br.forEach((b) => (b.style.display = "none"));
+// Handle birthday input updates
+const birthdayInputs = {
+  day: {
+    span: previewElements.birthdate,
+    final: finalPreviewElements.birthdate,
+  },
+  month: {
+    span: previewElements.birthmonth,
+    final: finalPreviewElements.birthmonth,
+  },
+  year: {
+    span: previewElements.birthyear,
+    final: finalPreviewElements.birthyear,
+  },
+};
+
+for (const field in birthdayInputs) {
+  formElements[field]?.addEventListener("input", (e) => {
+    const value = e.target.value;
+    const suffix = field === "day" || field === "month" ? "." : "";
+    if (birthdayInputs[field].span) {
+      birthdayInputs[field].span.textContent = value + suffix;
+    }
+    if (birthdayInputs[field].final) {
+      birthdayInputs[field].final.textContent = value + suffix;
+    }
+  });
+}
+
+// Validate form inputs
+const formInputValidationFields = [
+  "name",
+  "newname",
+  "surname",
+  "newsurname",
+  "address",
+  "street",
+  "newstreet",
+  "city",
+  "newcity",
+];
+
+// Validate birthday input fields
+elements.allBirthdayInputs.forEach((input) => {
+  input.addEventListener("input", () => {
+    const formValues = getFormValues();
+    const allValid = elements.allBirthdayInputs.every(
+      (inp) => inp && inp.validity.valid && inp.value.length > 0
+    );
+
+    // Add the custom validation for the election date
+    if (allValid) {
+      const day = parseInt(formValues.day, 10);
+      const month = parseInt(formValues.month, 10);
+      const year = parseInt(formValues.year, 10);
+
+      if (!isValidBirthday(day, month, year)) {
+        elements.birthdayForm.style.boxShadow = "0 0 0 0.15rem red";
+        return;
       }
     }
+
+    elements.birthdayForm.style.boxShadow = allValid
+      ? "0 0 0 0.15rem green"
+      : "none";
   });
 });
 
-// Birthday inputs
-
-const spanDay = document.getElementById("birthdate");
-const spanMonth = document.getElementById("birthmonth");
-const spanYear = document.getElementById("birthyear");
-
-const finalDay = document.getElementById("final-birthdate");
-const finalMonth = document.getElementById("final-birthmonth");
-const finalYear = document.getElementById("final-birthyear");
-
-const DayInput = document.getElementById("form-day");
-const MonthInput = document.getElementById("form-month");
-const YearInput = document.getElementById("form-year");
-
-DayInput.addEventListener("input", (e) => {
-  spanDay.textContent = e.target.value + ".";
-  finalDay.textContent = e.target.value + ".";
-});
-
-MonthInput.addEventListener("input", (e) => {
-  spanMonth.textContent = e.target.value + ".";
-  finalMonth.textContent = e.target.value + ".";
-});
-
-YearInput.addEventListener("input", (e) => {
-  spanYear.textContent = e.target.value;
-  finalYear.textContent = e.target.value;
-});
-
-// Function to make fieldset change when inputs inside are valid
-
-const BirthdayForm = document.querySelector("fieldset");
-const AllInputs = Array.from(BirthdayForm.querySelectorAll("input"));
-
-AllInputs.forEach((input) => {
-  input.addEventListener("input", (e) => {
-    const allValid = AllInputs.every((input) => {
-      return input && input.validity.valid && input.value.length > 0;
-    });
-    if (!allValid) {
-      BirthdayForm.style.boxShadow = "none";
-    } else {
-      BirthdayForm.style.boxShadow = "0 0 0 0.15rem green";
-    }
-  });
-});
-
-// Scroll to top function
+// --- Navigation Functions ---
 
 function scrollTop() {
   setTimeout(() => {
@@ -168,7 +436,72 @@ function scrollTop() {
   }, 100);
 }
 
-// Validation for ZIP code input
+function navigateTo(step) {
+  const tab = new bootstrap.Tab(document.querySelector(`#step-${step}-tab`));
+  tab.show();
+  scrollTop();
+
+  // Update element visibility based on step and screen size
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+  switch (step) {
+    case 1:
+      setDisplayStyle(elements.intro, "block");
+      setDisplayStyle(elements.bigletter, "none");
+      setDisplayStyle(elements.addressMobile, "none");
+      setDisplayStyle(elements.preview, "none");
+      setDisplayStyle(elements.previewMobile, "none");
+      setDisplayStyle(elements.outro, "none");
+      setDisplayStyle(elements.outroBottom, "none");
+      break;
+    case 2:
+      setDisplayStyle(elements.intro, "none");
+      setDisplayStyle(elements.bigletter, "block");
+      setDisplayStyle(elements.addressMobile, isMobile ? "block" : "none");
+      setDisplayStyle(elements.preview, "none");
+      setDisplayStyle(elements.previewMobile, "none");
+      setDisplayStyle(elements.outro, "none");
+      setDisplayStyle(elements.outroBottom, "none");
+      break;
+    case 3:
+      setDisplayStyle(elements.intro, "none");
+      setDisplayStyle(elements.bigletter, "none");
+      setDisplayStyle(elements.addressMobile, "none");
+      setDisplayStyle(elements.preview, "block");
+      setDisplayStyle(elements.preview, isMobile ? "none" : "block");
+      setDisplayStyle(elements.previewMobile, isMobile ? "block" : "none");
+      setDisplayStyle(elements.outro, isMobile ? "none" : "block");
+      setDisplayStyle(elements.outroBottom, isMobile ? "block" : "none");
+      break;
+  }
+}
+
+function secondpage() {
+  const zipValue = elements.searchInput.value.split(" ")[0].trim();
+  const cityValue = elements.searchInput.value.split(" ")[1]
+    ? elements.searchInput.value.substr(
+        elements.searchInput.value.indexOf(" ") + 1
+      )
+    : "";
+
+  if (zipValue.length >= 5 && is_valid_datalist_value(zipValue, cityValue)) {
+    navigateTo(2);
+  }
+}
+
+function thirdpage() {
+  navigateTo(3);
+}
+
+function backtofirstpage() {
+  navigateTo(1);
+}
+
+function backtosecondpage() {
+  navigateTo(2);
+}
+
+// --- ZIP Code Validation and Autocomplete ---
+
 let lastEmail = null;
 
 function is_valid_datalist_value(inputValue, cityValue) {
@@ -181,115 +514,227 @@ function is_valid_datalist_value(inputValue, cityValue) {
   );
 
   if (filtered.length > 0) {
-    const preinput = filtered[0];
-    const data = preinput; // try?
-    munname.textContent = data.ORT;
-    munemail.textContent = atob(data["E-Mail"]);
-    muniname.textContent = data.ORT;
-    muniemail.textContent = atob(data["E-Mail"]);
-    finalmuniname.textContent = data.ORT;
-    finalmuniemail.textContent = atob(data["E-Mail"]);
-    instructionemail.textContent = atob(data["E-Mail"]);
-    prefillcity.value = "";
-    prefillcity.value = data.ORT;
-    prefillzip.value = "";
-    prefillzip.value = preinput.PLZ;
-    const event = new Event("input", { bubbles: true, cancellable: true });
-    prefillzip.dispatchEvent(event);
-    prefillcity.dispatchEvent(event);
+    const data = filtered[0];
+    updateTextContent({
+      munname: data.ORT,
+      munemail: atob(data["E-Mail"]),
+      muniname: data.ORT,
+      muniemail: atob(data["E-Mail"]),
+      instructionemail: atob(data["E-Mail"]),
+    });
+
+    formElements.city.value = data.ORT;
+    formElements.zip.value = data.PLZ;
+
+    formElements.zip.dispatchEvent(
+      new Event("input", { bubbles: true, cancellable: true })
+    );
+    formElements.city.dispatchEvent(
+      new Event("input", { bubbles: true, cancellable: true })
+    );
     return true;
   }
   return false;
 }
 
-// Function to go to step 2
+let activeSuggestionIndex = -1;
 
-function secondpage() {
-  let SecondTab = document.querySelector("#step-2-tab");
-  let tab = new bootstrap.Tab(SecondTab);
-  let y = document.getElementById("zipcode");
-  let z = document.getElementById("validation");
-  let x = document.getElementById("zipcode").value.split(" ")[0].trim();
-  let xi = document.getElementById("zipcode").value.split(" ")[1]
-    ? y.value.substr(y.value.indexOf(" ") + 1)
-    : "";
+function setFocusOnSuggestion() {
+  const suggestionItems = Array.from(elements.suggestions.children);
+  const numSuggestions = suggestionItems.length;
 
-  if (x.length < 5) {
-    return false;
-  } else if (is_valid_datalist_value(x, xi)) {
-    tab.show();
-    scrollTop();
+  if (numSuggestions === 0) return;
 
-    el1.style.display = "none";
-    el2.style.display = "block";
-
-    if (mqlr == false) {
-      el4.style.display = "none";
-    } else el4.style.display = "block";
+  if (activeSuggestionIndex >= 0) {
+    activeSuggestionIndex %= numSuggestions;
+    suggestionItems.forEach((child) =>
+      child.classList.remove("autocomplete-active")
+    );
+    suggestionItems[activeSuggestionIndex].classList.add("autocomplete-active");
   }
 }
 
-// Function to go to step 3
+function onEnter() {
+  const suggestionItems = Array.from(elements.suggestions.children);
+  const numSuggestions = suggestionItems.length;
 
-function thirdpage() {
-  let ThirdTab = document.querySelector("#step-3-tab");
-  let tab = new bootstrap.Tab(ThirdTab);
+  if (numSuggestions === 0) return;
 
-  tab.show();
-  scrollTop();
+  if (numSuggestions === 1) {
+    activeSuggestionIndex %= numSuggestions;
+    suggestionItems[activeSuggestionIndex].click();
+    setTimeout(secondpage, 300);
+  }
 
-  el2.style.display = "none";
-
-  if (mqlr == false) {
-    el3.style.display = "block";
-    el4.style.display = "none";
-    el5.style.display = "none";
-    el6.style.display = "block";
-    el7.style.display = "none";
-  } else {
-    el3.style.display = "none";
-    el4.style.display = "none";
-    el5.style.display = "block";
-    el6.style.display = "none";
-    el7.style.display = "block";
+  if (activeSuggestionIndex > 1) {
+    activeSuggestionIndex %= numSuggestions;
+    suggestionItems[activeSuggestionIndex].click();
+    elements.searchInput.addEventListener("keyup", (e) => {
+      if (e.keyCode === 13) {
+        e.target.removeEventListener("keyup", arguments.callee);
+        secondpage();
+        activeSuggestionIndex = -1;
+      }
+    });
   }
 }
 
-// Function to go back to step 1 from step 2
+let suggestionTimeout;
 
-function backtofirstpage() {
-  let FirstTab = document.querySelector("#step-1-tab");
-  let tab = new bootstrap.Tab(FirstTab);
+elements.searchInput?.addEventListener("keyup", (e) => {
+  suggestionTimeout && clearTimeout(suggestionTimeout);
 
-  tab.show();
-  scrollTop();
-  el1.style.display = "block";
-  el2.style.display = "none";
-  el4.style.display = "none";
-}
+  suggestionTimeout = setTimeout(() => {
+    switch (e.keyCode) {
+      case 40: // Down arrow
+        activeSuggestionIndex++;
+        setFocusOnSuggestion();
+        return;
+      case 38: // Up arrow
+        activeSuggestionIndex--;
+        setFocusOnSuggestion();
+        return;
+      case 13: // Enter
+        onEnter();
+        return;
+      case 27: // Escape
+        e.target.value = "";
+        elements.suggestions.innerHTML = "";
+        return;
+    }
 
-// Function to go back to step 2 from step 3
+    activeSuggestionIndex = -1;
 
-function backtosecondpage() {
-  let SecondTab = document.querySelector("#step-2-tab");
-  let tab = new bootstrap.Tab(SecondTab);
+    if (!e.target.value) {
+      elements.suggestions.innerHTML = "";
+      return;
+    }
 
-  tab.show();
-  scrollTop();
+    const matchArray = findMatches(e.target.value, zips);
+    const suggestionDivs = matchArray.map((place) => {
+      const div = document.createElement("div");
+      const nameSpan = document.createElement("span");
+      const value = `${place.PLZ} ${place.ORT}`;
 
-  el2.style.display = "block";
-  el3.style.display = "none";
+      nameSpan.innerText = value;
+      div.appendChild(nameSpan);
 
-  if (mqlr == false) {
-    el4.style.display = "none";
-    el5.style.display = "none";
-  } else {
-    el4.style.display = "block";
-    el5.style.display = "none";
+      elements.searchInput.scrollIntoView();
+
+      div.addEventListener("click", () => {
+        elements.searchInput.value = value;
+        lastEmail = place["E-Mail"];
+        elements.suggestions.innerHTML = "";
+      });
+
+      return div;
+    });
+
+    if (matchArray.length <= 0) {
+      let string = location.href;
+      let convertedString = string.toLowerCase();
+
+      if (convertedString.indexOf("en") != -1) {
+        elements.suggestions.innerHTML =
+          "<div class='error'><i class='fas fa-times-circle me-2'></i><span>Invalid ZIP code</span></div>";
+      } else {
+        elements.suggestions.innerHTML =
+          "<div class='error'><i class='fas fa-times-circle me-2'></i><span>Ungültige Postleitzahl</span></div>";
+      }
+      return;
+    }
+
+    elements.suggestions.innerHTML = "";
+    elements.suggestions.append(...suggestionDivs);
+  }, 50);
+});
+
+// --- Event Delegation for Mailto Link ---
+document.addEventListener("click", (event) => {
+  if (event.target.id === "send-email") {
+    event.preventDefault();
+    event.target.href = generateMailtoUrl();
+    const displayMessage = document.getElementById("final-message");
+
+    // Get translated text from the hidden element:
+    const translatedText =
+      document.getElementById("translation-sent").textContent;
+
+    displayMessage.innerHTML =
+      "<i class='fas fa-check-circle me-2'></i>" + translatedText;
+    displayMessage.classList.add("success");
   }
+});
+
+// --- Clipboard Functionality ---
+elements.copyButtons.forEach((btn) => {
+  const tooltip = new bootstrap.Tooltip(btn, {
+    parent: btn,
+    trigger: "manual",
+  });
+  const clipboard = new ClipboardJS(btn);
+  clipboard.on("success", function (e) {
+    e.clearSelection();
+    tooltip.update();
+    tooltip.show();
+    setTimeout(() => {
+      tooltip.hide();
+    }, 2000);
+  });
+});
+
+elements.copier.addEventListener("click", (event) => {
+  const displayMessage = document.getElementById("final-message");
+
+  // Get translated text from the hidden element:
+  const translatedText =
+    document.getElementById("translation-copied").textContent;
+
+  displayMessage.innerHTML =
+    "<i class='fas fa-check-circle me-2'></i>" + translatedText;
+  displayMessage.classList.add("success");
+});
+
+// --- Data Loading and Filtering ---
+
+(async () => {
+  const endpoint = "/assets/plz.json";
+  const result = await fetch(endpoint).then((blob) => blob.json());
+
+  const sorted = result.sort((a, b) => {
+    if (a.PLZ !== b.PLZ) {
+      return a.PLZ - b.PLZ;
+    }
+    return a.ORT.localeCompare(b.ORT);
+  });
+
+  zips.push(...sorted);
+})();
+
+function findMatches(keyword, zips) {
+  return zips.filter((place) =>
+    place.PLZ.toLowerCase().startsWith(keyword.toLowerCase())
+  );
 }
 
-// Function to grab letter content and add it to the email send button
+// --- Initial Setup ---
+
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const externalZIP = urlParams.get("zip");
+const externalCITY = urlParams.get("city");
+
+window.addEventListener("DOMContentLoaded", () => {
+  if (externalZIP && externalCITY) {
+    elements.searchInput.value = externalZIP + " " + externalCITY;
+    document.body.style.opacity = "0";
+    setTimeout(() => {
+      document.body.classList.add("faded");
+      document.body.style.opacity = "1";
+      secondpage();
+    }, 350);
+  }
+});
 
 class Mailto_url {
   constructor() {
@@ -362,231 +807,3 @@ class Mailto_url {
     };
   }
 }
-
-// Function to get the full text and set subject, to: field
-
-function getContent(link) {
-  const quote = document.getElementById("letter-content");
-  if (quote && quote.innerText) {
-    let mailTo = new Mailto_url();
-    mailTo.addMain(munemail.textContent);
-    mailTo.setSubject(subject.textContent);
-    mailTo.setBody(quote.innerText);
-    link.href = mailTo.getURL(true);
-    return true;
-  }
-  return false;
-}
-
-// Function to initialize tooltips
-
-const copyButtons = Array.from(document.querySelectorAll(".copy"));
-copyButtons.forEach((btn) => {
-  const tooltip = new bootstrap.Tooltip(btn, {
-    parent: btn,
-    trigger: "manual",
-  });
-  const clipboard = new ClipboardJS(btn);
-  clipboard.on("success", function (e) {
-    e.clearSelection();
-    tooltip.update();
-    tooltip.show();
-    setTimeout(() => {
-      tooltip.hide();
-    }, 2000);
-  });
-});
-
-// Function to get items from JSON and build array
-
-(async () => {
-  const endpoint = "/assets/plz.json";
-  const result = await fetch(endpoint).then((blob) => blob.json());
-
-  const sorted = result.sort((a, b) => {
-    if (a.PLZ !== b.PLZ) {
-      return a.PLZ - b.PLZ;
-    }
-
-    if (a.ORT > b.ORT) {
-      return 1;
-    } else {
-      return -1;
-    }
-  });
-
-  // DO NOT USE, 2000+ ms processing time required for duplicate removal
-  // const properties = ["PLZ", "ORT", "E-Mail"];
-  // const unique = sorted.filter(
-  //   (item, index, arr) =>
-  //     index ===
-  //     arr.findIndex((someItem) =>
-  //       properties.every((prop) => item[prop] === someItem[prop])
-  //     )
-  // );
-
-  zips.push(...sorted);
-})();
-
-// Function to find matches
-
-function findMatches(keyword, zips) {
-  return zips.filter((place) => {
-    return place.PLZ.toLowerCase().startsWith(keyword.toLowerCase());
-  });
-}
-
-const searchInput = document.querySelector("#zipcode");
-const suggestions = document.querySelector("#autocomplete-list");
-const scrollTo = document.querySelector("#next-click");
-
-let active = -1;
-
-// Function to set the focus on elements on keypress
-
-function setFocus() {
-  const children = Array.from(suggestions.children);
-  const len = children.length;
-  if (len == 0) {
-    return;
-  }
-
-  if (active >= 0) {
-    active %= len;
-
-    children.forEach((child) => child.classList.remove("autocomplete-active"));
-    children[active].classList.add("autocomplete-active");
-  }
-}
-
-const keyUpListener = (e) => {
-  if (e.keyCode == "13") {
-    e.target.removeEventListener("keyup", keyUpListener);
-    secondpage();
-    active = -1;
-  }
-};
-
-// Function to set input box content on enter button on suggestion
-
-function onEnter() {
-  const children = Array.from(suggestions.children);
-  const len = children.length;
-
-  if (len == 0) {
-    return;
-  }
-
-  if (len == 1) {
-    active %= len;
-    children[active].click();
-    setTimeout(function () {
-      secondpage();
-    }, 300);
-  }
-
-  if (active > 1) {
-    active %= len;
-    children[active].click();
-    searchInput.addEventListener("keyup", keyUpListener);
-  }
-}
-
-let timeoutReference;
-
-searchInput.addEventListener("keyup", (e) => {
-  timeoutReference && clearTimeout(timeoutReference);
-
-  timeoutReference = setTimeout(() => {
-    switch (e.keyCode) {
-      case 40:
-        active++;
-        setFocus();
-        return;
-
-      case 38:
-        active--;
-        setFocus();
-        return;
-
-      case 13:
-        onEnter();
-        return;
-
-      case 27:
-        e.target.value = "";
-        suggestions.innerHTML = "";
-        return;
-    }
-
-    active = -1;
-
-    if (!e.target.value) {
-      suggestions.innerHTML = "";
-      return;
-    }
-
-    // Function to create autocomplete suggestions
-
-    const matchArray = findMatches(e.target.value, zips);
-    const divs = matchArray.map((place) => {
-      const div = document.createElement("div");
-      const nameSpan = document.createElement("span");
-
-      const val = `${place.PLZ} ${place.ORT}`;
-
-      nameSpan.innerText = val;
-      div.appendChild(nameSpan);
-
-      searchInput.scrollIntoView();
-
-      div.addEventListener("click", () => {
-        searchInput.value = val;
-        lastEmail = place["E-Mail"];
-        suggestions.innerHTML = "";
-      });
-
-      return div;
-    });
-
-    if (matchArray.length <= 0) {
-      let string = location.href;
-      let convertedString = string.toLowerCase();
-
-      if (convertedString.indexOf("en") != -1) {
-        suggestions.innerHTML =
-          "<div class='error'><i class='fas fa-times-circle me-2'></i><span>Invalid ZIP code</span></div>";
-      } else {
-        suggestions.innerHTML =
-          "<div class='error'><i class='fas fa-times-circle me-2'></i><span>Ungültige Postleitzahl</span></div>";
-      }
-      return;
-    }
-
-    suggestions.innerHTML = "";
-    suggestions.append(...divs);
-  }, 50);
-});
-
-// Function to get the query parameter from the URL on load
-
-const queryString = window.location.search;
-const urlParams = new URLSearchParams(queryString);
-const externalZIP = urlParams.get("zip");
-const externalCITY = urlParams.get("city");
-
-window.addEventListener("DOMContentLoaded", () => {
-  if (externalZIP == null && externalCITY == null) {
-    return;
-  } else if (externalZIP != null && externalCITY != null) {
-    searchInput.value = externalZIP + " " + externalCITY;
-    document.body.style.opacity = "0";
-    setTimeout(function () {
-      document.body.classList.add("faded");
-      document.body.style.opacity = "1";
-      secondpage();
-    }, 350);
-  } else {
-    return;
-  }
-});

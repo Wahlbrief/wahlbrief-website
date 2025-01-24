@@ -3,11 +3,12 @@ listsub: "2"
 left:
   title: "Apply for postal vote now"
   subtitle:
-    "The German federal parliament elections takes place on 23 February. Votes can be cast in advance by postal vote. It only takes 2 minutes to apply for the required documents by email.<br /><br /><b>Mail your voted ballot before 20 Feburary or drop off your ballot at the election office until Sunday 6pm.</b><br /><br /><small>The documents are delivered within few days. Please note that due to the election's short notice, it is crucial to apply for postal election as soon as possible.</small>"
+    "The German federal parliament elections takes place on 23 February. Votes can be cast in advance by postal vote. It only takes 2 minutes to apply for the required documents by email.<br /><br /><b>Mail your voted ballot before 20 February or drop off your ballot at the election office until Sunday 6pm.</b><br /><br /><small>The documents are delivered within few days. Please note that due to the election's short notice, it is crucial to apply for postal election as soon as possible.</small>"
   preview: "Preview: Postal vote application"
   home: "Home"
   about: "About"
   faq: "FAQ"
+  donate: "Donate"
   imprint: "Imprint"
   terms: "Terms"
   copyright: "An <a href='https://github.com/Wahlbrief/wahlbrief-website' target='_blank' rel='noreferrer noopener'>open source project</a> by Mehr Demokratie."
@@ -15,6 +16,8 @@ left:
   find: ""
   share: "Voting has never been so important."
   description: "Many people don't know how uncomplicated, simple and fast postal voting is. <b>Every vote counts:</b> Share and spread the word about postal voting now!"
+  donateTitle: "This project is sponsored by Mehr Demokratie, please support it with a donation."
+  donateButton: "Donate now"
 right:
   zip: "Find your local electoral office"
   description: "Please enter the post code of your registered address first.<br /> Your local citizens' registration office is usually responsible for your postal vote application."
@@ -169,3 +172,8 @@ Elections in Germany usually take place on Sundays. Eligible voters can cast the
 There are other good reasons why citizens do not vote on the day of the election, even though they would like to do so in principle. We believe that postal voting is a good way for everyone to vote easily and in good time in advance - at any time, from anywhere and free of charge. With the Corona pandemic, postal voting has become even more systemically important.<br /><br />
 
 <b>Many people do not know how easy it is to apply online for an absentee ballot.</b> <br />wahlbrief helps to prepare the application for an absentee ballot, checks for completeness and determines the address of the responsible office based on the registration address. The application text can then be sent by e-mail to the electoral office of the main place of residence. We do not store or transmit any personal data in the process; the e-mail is sent from your own e-mail programme."
+donate:
+  left:
+    title: "Donate"
+    subtitle: "Wahlbrief.de is a service provided by Mehr Demokratie. Your donation forms the foundation of our work. Please support us so that we can continue to stand up for democratic participation and a strong democracy."
+    text: ""

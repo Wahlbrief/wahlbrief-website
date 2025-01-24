@@ -5,15 +5,14 @@ layout: default
 <div class="container-fluid h-100">
     <div class="row h-100">
         <!-- Left side -->
-        <div id="left-side" class="col-lg-12 col-xl-6 background-bluegray-100 pattern">
-            <div class="container d-flex flex-column flex-fill h-100 py-5 px-2 px-lg-5">
+        <div id="left-side" class="col-lg-12 col-xl-6 background-primary pattern">
+            <div class="container d-flex flex-column h-100 py-5 px-2 px-lg-5 overflow-auto">
                 <div class="row mb-4 mb-lg-5">
                     <div class="col-12">
                         <div class="navbar navbar-expand-xl justify-content-between align-items-center">
                             <div>
                                 <a href="{{ site.url }}{{ site.baseurl | replace:'/','' }}">
-                                    <img src="{{ site.baseurl_root }}/assets/images/wahlbrief.svg" alt="Wahlbrief logo"
-                                        width="200px" height="35px">
+                                    <img src="{{ site.baseurl_root }}/assets/images/wahlbrief.svg" alt="Mehr Demokratie logo" width="200px">
                                 </a>
                             </div>
 
@@ -54,13 +53,13 @@ layout: default
                 <div class="row">
 
                     <!-- Intro section -->
-                    <div id="intro" class="col-12 col-xxl-9 col-xl-12">
+                    <div id="intro" class="col-12">
                         <h1>{% t left.title %}</h1>
                         <p class="subtitle">{% t left.subtitle %}</p>
                     </div>
 
                     <!-- Big letter preview -->
-                    <div id="bigletter" class="col-xl-11 col-12 letter p-5">
+                    <div id="bigletter" class="col-12 letter p-5">
                         <h4 class="fw-bold mb-4">{% t left.preview %}</h4>
                         <p>{% t right.letter.title %}</p>
                         <p class="mb-0">
@@ -125,7 +124,7 @@ layout: default
                     </div>
 
                     <!-- CTA/Share outro -->
-                    <div id="outro" class="col-12 col-xl-8 outro">
+                    <div id="outro" class="col-12 outro mb-5">
                         <h1>{% t left.share %}</h1>
                         <p class="mb-4">{% t left.description %}</p>
 
@@ -146,6 +145,8 @@ layout: default
                         <a href="https://wa.me/?text={% t right.sharing.whatsapp %}" target="_blank"
                             rel="noreferrer nopener"><i class="fab fa-whatsapp"></i></a>
 
+                        <h3 class="mt-5 mb-3">{% t left.donateTitle %}</h3>
+                        <a class="donate" href="{{ site.baseurl }}/donate.html">{% t left.donateButton %}</a>
                     </div>
 
                     <!-- Mobile view step 3 -->
@@ -326,7 +327,7 @@ layout: default
                                                 <div class="form-floating">
                                                     <input type="text" class="form-control" id="form-year"
                                                         onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
-                                                        pattern="^((200[0-3])|(19[0-9]{2})|(189[0-9]))$"
+                                                        pattern="^((200[0-7])|(19[0-9]{2})|(189[0-9]))$"
                                                         inputmode="numeric" minlength="4" maxlength="4"
                                                         placeholder="{% t right.year %}" aria-label="{% t right.year %}"
                                                         aria-describedby="{% t right.year %}">
@@ -422,6 +423,9 @@ layout: default
                                             const emailcb1 = document.querySelector("#emailupdates");
                                             const emailcb2 = document.querySelector("#emailupdatesMobile");
 
+                                            // Clear previous messages
+                                            result.innerHTML = "";
+
                                             const data = new URLSearchParams(new FormData(document.querySelector("#subscribeform"))).toString();
                                             fetch("https://list.wahlbrief.de/?p=asubscribe&id={% t listsub %}", {
                                                 method: "POST",
@@ -431,20 +435,25 @@ layout: default
                                                 },
                                                 body: data,
                                             }).then(res => {
-                                                if (res.status >= 200 && res.status < 300) {
+                                                if (res.ok) {
                                                     return res.text();
                                                 } else {
-                                                    result.innerHTML = "<div class='error mt-3'><i class='fas fa-times-circle me-2'></i>{% t right.noprocess %}</div>";
-                                                    emailfield.value = "";
-                                                    emailfield.focus();
-                                                    emailcb1.checked = false;
-                                                    emailcb2.checked = false;
+                                                    throw new Error("Server response was not OK");
+                                                    // result.innerHTML = "<div class='error mt-3'><i class='fas fa-times-circle me-2'></i>{% t right.noprocess %}</div>";
+                                                    // emailfield.value = "";
+                                                    // emailfield.focus();
+                                                    // emailcb1.checked = false;
+                                                    // emailcb2.checked = false;
                                                 }
                                             }).then(text => {
                                                 result.innerHTML = successMessage;
                                             }).catch(e => {
                                                 console.error(e);
                                                 console.error("Failed to send data.");
+                                                result.innerHTML = "<div class='error mt-3'><i class='fas fa-times-circle me-2'></i>{% t right.noprocess %}</div>";
+                                                emailfield.value = "";
+                                                emailcb1.checked = false;
+                                                emailcb2.checked = false;
                                             })
                                         }
                                     </script>
@@ -454,7 +463,11 @@ layout: default
                                 <form>
                                     <div class="form-check mt-2 d-none d-lg-flex align-items-center">
                                         <input class="form-check-input me-2" type="checkbox"
-                                            onchange="if (checkform()) {submitForm();} return false;" value=""
+                                            onchange="if (this.checked) { 
+                                                if (checkform()) submitForm(); 
+                                            } else { 
+                                                document.querySelector('#result').innerHTML = ''; 
+                                            } return false;" value=""
                                             id="emailupdates">
                                         <label class="form-check-label" for="emailupdates">
                                             {% t right.email-updates %}
@@ -466,14 +479,18 @@ layout: default
                                         <p class="mb-0">{% t right.email-updates %}</p>
                                         <div>
                                             <input class="tgl tgl-light" id="emailupdatesMobile" type="checkbox"
-                                                value="" onchange="if (checkform()) {submitForm();} return false;" />
+                                                value="" onchange="if (this.checked) { 
+                                                    if (checkform()) submitForm(); 
+                                                } else { 
+                                                    document.querySelector('#result').innerHTML = ''; 
+                                                } return false;" />
                                             <label class="tgl-btn" for="emailupdatesMobile"></label>
                                         </div>
                                     </div>
 
                                     <div class="background-gray-100 py-3 px-3 my-3">
                                         <div class="d-flex align-items-center justify-content-lg-start">
-                                            <i class="fas fa-info-circle color-cyan-700 me-2"></i>
+                                            <i class="fas fa-info-circle color-secondary me-2"></i>
                                             <p class="mb-0">{% t right.arrival %} <strong id="arrival-date">03.02. - 14.02.</strong>
                                             </p>
                                         </div>
@@ -696,9 +713,12 @@ layout: default
                                     {% t right.message.intro %}
                                 </p>
 
+                                <span id="translation-sent" class="d-none">{% t right.message.sent %}</span>
+                                <span id="translation-copied" class="d-none">{% t right.message.success %}</span>
+
                                 <div class="row py-4 justify-content-center align-items-center">
                                     <div class="col-12 col-lg-6 mb-3 mb-lg-0">
-                                        <a id="send-text" href="#" class="btn-send" onclick="return getContent(this)">
+                                        <a id="send-email" href="#" class="btn-send">
                                             <i class="fas fa-paper-plane me-2"></i>{% t right.send %}
                                         </a>
                                     </div>
@@ -708,28 +728,6 @@ layout: default
                                         </button>
                                     </div>
                                 </div>
-
-                                <script>
-                                    // Function to show message after clicking on the send email button
-                                    const sender = document.getElementById("send-text");
-                                    sender.addEventListener("click", (event) => {
-                                        const displayMessage = document.getElementById("final-message");
-                                        displayMessage.innerHTML = "<i class='fas fa-check-circle me-2'></i>{% t right.message.sent %}";
-                                        displayMessage.classList.add("success");
-                                    });
-
-                                    // Function to copy text and show message after clicking on the copy text button
-                                    const copier = document.getElementById("copy-text");
-                                    const clip = new ClipboardJS(copier);
-                                    clip.on("success", function (e) {
-                                        e.clearSelection();
-                                    });
-                                    copier.addEventListener("click", (event) => {
-                                        const displayMessage = document.getElementById("final-message");
-                                        displayMessage.innerHTML = "<i class='fas fa-check-circle me-2'></i>{% t right.message.success %}";
-                                        displayMessage.classList.add("success");
-                                    });
-                                </script>
 
                                 <div id="outro-bottom" class="col-12 col-xl-8 my-4 p-4 outro">
                                     <h1 class="mb-3">{% t left.share %}</h1>
@@ -754,6 +752,9 @@ layout: default
                                                 class="fab fa-telegram-plane"></i></a>
                                         <a href="https://wa.me/?text={% t right.sharing.whatsapp %}" target="_blank"
                                             rel="noreferrer nopener"><i class="fab fa-whatsapp"></i></a>
+
+                                        <h3 class="mt-5 mb-3">{% t left.donateTitle %}</h3>
+                                        <a class="donate" href="{{ site.baseurl }}/donate.html">{% t left.donateButton %}</a>
                                     </div>
                                 </div>
                                 <p class="mb-0 mt-4 d-block d-lg-none">
