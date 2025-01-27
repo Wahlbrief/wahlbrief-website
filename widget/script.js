@@ -86,7 +86,8 @@
   function handleInput(e) {
     const value = e.target.value.replace(/[^0-9 ]/g, "");
     dom.input.value = value;
-    updateAutocompleteSuggestions(value.split(" ")[0]);
+    const zip = value.split(" ")[0];
+    updateAutocompleteSuggestions(zip);
   }
 
   function handleKeydown(e) {
@@ -128,12 +129,15 @@
   }
 
   async function handleSubmit() {
-    const [zip, city] = dom.input.value.split(" ");
+    const inputParts = dom.input.value.split(" ");
+    const zip = inputParts.shift();
+    const city = inputParts.join(" ");
+
     if (!validateInput(zip, city)) return;
 
     const url = new URL("https://wahlbrief.de/");
     url.searchParams.set("zip", zip);
-    url.searchParams.set("city", encodeURIComponent(city));
+    url.searchParams.set("city", city);
     window.open(url);
   }
 
