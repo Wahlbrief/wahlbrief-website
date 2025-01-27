@@ -181,6 +181,10 @@ a {
   }
 }
 
+.dropdown-menu {
+  min-width: unset;
+}
+
 .dropdown-toggle {
   border: none;
   outline: none;
