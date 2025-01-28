@@ -131,7 +131,7 @@ questions:
 imprint:
   left:
     title: "Offizielle Angaben"
-    subtitle: "wahlbrief ist ein Projekt von Mehr Demokratie e.V. zur Bundestagswahl 2025."
+    subtitle: "wahlbrief ist ein Projekt von <a href='https://www.mehr-demokratie.de/'>Mehr Demokratie e.V.</a> zur Bundestagswahl 2025."
   right:
     title: "Impressum"
     text: "
