@@ -127,11 +127,11 @@ questions:
   - title: "Kann ich den Wahlbrief auch direkt beim Wahlamt einwerfen?"
     answer: "Das ist möglich und dann sinnvoll, wenn die Briefwahlunterlagen erst am Tag vor oder am Tag der Wahl ausgefüllt werden. Der Brief muss bis zur Schließung der Wahllokale beim Wahlamt eingegangen sein."
   - title: "Wie geht es nach meinem Antrag auf Briefwahl weiter?"
-    answer: "Die Briefwahlunterlagen werden innerhalb weniger Werktage an die angegebene Adresse versandt. Eine Anleitung, wie die Briefwahlunterlagen ausgefüllt werden, gibt es auf der <a href='https://www.bundeswahlleiterin.de/bundestagswahlen/2025/informationen-waehler/briefwahl.html#2308ae86-bd0f-44e6-ac5e-4116ece45785'>Website des Bundeswahlleiters</a>."
+    answer: "Die Briefwahlunterlagen werden innerhalb weniger Werktage an die angegebene Adresse versandt. Eine Anleitung, wie die Briefwahlunterlagen ausgefüllt werden, gibt es auf der <a href='https://www.bundeswahlleiterin.de/bundestagswahlen/2025/informationen-waehler/briefwahl.html#2308ae86-bd0f-44e6-ac5e-4116ece45785' target='_blank'>Website der Bundeswahlleiterin</a>."
 imprint:
   left:
     title: "Offizielle Angaben"
-    subtitle: "wahlbrief ist ein Projekt von <a href='https://www.mehr-demokratie.de/'>Mehr Demokratie e.V.</a> zur Bundestagswahl 2025."
+    subtitle: "wahlbrief ist ein Projekt von <a href='https://www.mehr-demokratie.de/' target='_blank'>Mehr Demokratie e.V.</a> zur Bundestagswahl 2025."
   right:
     title: "Impressum"
     text: "
@@ -159,7 +159,7 @@ Hinweise zum Datenschutz: <a href='/terms.html'>Datenschutzbestimmungen</a>
 about:
   left:
     title: "Über das Projekt"
-    subtitle: "wahlbrief ist ein Projekt von <a href='https://www.mehr-demokratie.de/'>Mehr Demokratie e.V.</a> zur Bundestagswahl 2025. Wir möchten, dass so viele Menschen wie möglich an der Wahl teilnehmen. <br /><br />Es gibt viele Fälle, in denen die Briefwahl die einfachste und bequemste Art ist, zu wählen. Wir helfen dabei, innerhalb von 2 Minuten die Briefwahl-Unterlagen online beim zuständigen Wahlamt zu beantragen.<br /><br /><br />
+    subtitle: "wahlbrief ist ein Projekt von <a href='https://www.mehr-demokratie.de/' target='_blank'>Mehr Demokratie e.V.</a> zur Bundestagswahl 2025. Wir möchten, dass so viele Menschen wie möglich an der Wahl teilnehmen. <br /><br />Es gibt viele Fälle, in denen die Briefwahl die einfachste und bequemste Art ist, zu wählen. Wir helfen dabei, innerhalb von 2 Minuten die Briefwahl-Unterlagen online beim zuständigen Wahlamt zu beantragen.<br /><br /><br />
 <small><i>Mehr Demokratie e.V. ist ein überparteilicher, gemeinnütziger Verein, der sich für mehr direkte Demokratie und Bürgerbeteiligung einsetzt.
 
 <br /><br /> Konzept und Realisierung: Juris Vetra, Johann-Friedrich Salzmann<br />
