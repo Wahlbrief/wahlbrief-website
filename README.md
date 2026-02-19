@@ -1,6 +1,11 @@
 # Wahlbrief
 
-Ein OpenSource Projekt von Mehr Demokratie e.V. zur Bundestagswahl 2025
+> [!TIP]
+> Das Projekt ist seit den Landtagswahlen 2026 bei Frag den Staat / Open Knowledge Foundation Deutschland e.V. angesiedelt, siehe [Fork](https://github.com/okfde/wahlbrief-website).
+
+Ein OpenSource Projekt von Mehr Demokratie e.V. zur Bundestagswahl 2025.
+
+Konzept und Realisierung: Juris Vetra, [Johann-Friedrich Salzmann](https://jfsalzmann.com).
 
 ## Über Wahlbrief
 
